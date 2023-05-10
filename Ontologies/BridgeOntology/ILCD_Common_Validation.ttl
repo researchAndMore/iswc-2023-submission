@@ -1,0 +1,421 @@
+@prefix : <http://lca.jrc.it/ILCD/Common_Validation#> .
+@prefix j.0: <http://uri-not-absolute.com#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dtype: <http://www.srdc.com.tr/ontmalizer#> .
+@base <http://lca.jrc.it/ILCD/Common_Validation> .
+
+<http://lca.jrc.it/ILCD/Common_Validation> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.srdc.com.tr/ontmalizer#hasValue
+dtype:hasValue rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValuesDatatype
+:MethodOfReviewValuesDatatype rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#ScopeOfReviewValuesDatatype
+:ScopeOfReviewValuesDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#ENTITIESDatatype
+xsd:ENTITIESDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#ENTITYDatatype
+xsd:ENTITYDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDDatatype
+xsd:IDDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFDatatype
+xsd:IDREFDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFSDatatype
+xsd:IDREFSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NCNameDatatype
+xsd:NCNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENDatatype
+xsd:NMTOKENDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENSDatatype
+xsd:NMTOKENSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NOTATIONDatatype
+xsd:NOTATIONDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NameDatatype
+xsd:NameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#QNameDatatype
+xsd:QNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anySimpleTypeDatatype
+xsd:anySimpleTypeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anyURIDatatype
+xsd:anyURIDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#base64BinaryDatatype
+xsd:base64BinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#booleanDatatype
+xsd:booleanDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#byteDatatype
+xsd:byteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateDatatype
+xsd:dateDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateTimeDatatype
+xsd:dateTimeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#decimalDatatype
+xsd:decimalDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#doubleDatatype
+xsd:doubleDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#durationDatatype
+xsd:durationDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#floatDatatype
+xsd:floatDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gDayDatatype
+xsd:gDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDatatype
+xsd:gMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDayDatatype
+xsd:gMonthDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearDatatype
+xsd:gYearDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearMonthDatatype
+xsd:gYearMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#hexBinaryDatatype
+xsd:hexBinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#intDatatype
+xsd:intDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#integerDatatype
+xsd:integerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#languageDatatype
+xsd:languageDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#longDatatype
+xsd:longDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#negativeIntegerDatatype
+xsd:negativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonNegativeIntegerDatatype
+xsd:nonNegativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonPositiveIntegerDatatype
+xsd:nonPositiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#normalizedStringDatatype
+xsd:normalizedStringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#positiveIntegerDatatype
+xsd:positiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#shortDatatype
+xsd:shortDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#stringDatatype
+xsd:stringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#timeDatatype
+xsd:timeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#tokenDatatype
+xsd:tokenDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedByteDatatype
+xsd:unsignedByteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedIntDatatype
+xsd:unsignedIntDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedLongDatatype
+xsd:unsignedLongDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedShortDatatype
+xsd:unsignedShortDatatype rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues
+:MethodOfReviewValues rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Class ;
+                                            owl:oneOf ( :MethodOfReviewValues_Compliance_with_ISO_14040_to_14044
+                                                        :MethodOfReviewValues_Compliance_with_legal_limits
+                                                        :MethodOfReviewValues_Cross-check_with_other_data_set
+                                                        :MethodOfReviewValues_Cross-check_with_other_source
+                                                        :MethodOfReviewValues_Documentation
+                                                        :MethodOfReviewValues_Element_balance
+                                                        :MethodOfReviewValues_Energy_balance
+                                                        :MethodOfReviewValues_Evidence_collection_by_means_of_plant_visits_and_or_interviews
+                                                        :MethodOfReviewValues_Expert_judgement
+                                                        :MethodOfReviewValues_Mass_balance
+                                                        :MethodOfReviewValues_Sample_tests_on_calculations
+                                                        :MethodOfReviewValues_Validation_of_data_sources
+                                                      )
+                                          ] .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#ScopeOfReviewValues
+:ScopeOfReviewValues rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Class ;
+                                           owl:oneOf ( :ScopeOfReviewValues_Documentation
+                                                       :ScopeOfReviewValues_Goal_and_scope_definition
+                                                       :ScopeOfReviewValues_LCIA_results
+                                                       :ScopeOfReviewValues_LCIA_results_calculation
+                                                       :ScopeOfReviewValues_LCI_results_or_Partly_terminated_system
+                                                       :ScopeOfReviewValues_Life_cycle_inventory_methods
+                                                       :ScopeOfReviewValues_Raw_data
+                                                       :ScopeOfReviewValues_Unit_process_es_black_box
+                                                       :ScopeOfReviewValues_Unit_process_es_single_operation
+                                                     )
+                                         ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues_Compliance_with_ISO_14040_to_14044
+:MethodOfReviewValues_Compliance_with_ISO_14040_to_14044 rdf:type owl:NamedIndividual ,
+                                                                  :MethodOfReviewValues ;
+                                                         dtype:hasValue "Compliance with ISO 14040 to 14044" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues_Compliance_with_legal_limits
+:MethodOfReviewValues_Compliance_with_legal_limits rdf:type owl:NamedIndividual ,
+                                                            :MethodOfReviewValues ;
+                                                   dtype:hasValue "Compliance with legal limits" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues_Cross-check_with_other_data_set
+:MethodOfReviewValues_Cross-check_with_other_data_set rdf:type owl:NamedIndividual ,
+                                                               :MethodOfReviewValues ;
+                                                      dtype:hasValue "Cross-check with other data set" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues_Cross-check_with_other_source
+:MethodOfReviewValues_Cross-check_with_other_source rdf:type owl:NamedIndividual ,
+                                                             :MethodOfReviewValues ;
+                                                    dtype:hasValue "Cross-check with other source" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues_Documentation
+:MethodOfReviewValues_Documentation rdf:type owl:NamedIndividual ,
+                                             :MethodOfReviewValues ;
+                                    dtype:hasValue "Documentation" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues_Element_balance
+:MethodOfReviewValues_Element_balance rdf:type owl:NamedIndividual ,
+                                               :MethodOfReviewValues ;
+                                      dtype:hasValue "Element balance" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues_Energy_balance
+:MethodOfReviewValues_Energy_balance rdf:type owl:NamedIndividual ,
+                                              :MethodOfReviewValues ;
+                                     dtype:hasValue "Energy balance" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues_Evidence_collection_by_means_of_plant_visits_and_or_interviews
+:MethodOfReviewValues_Evidence_collection_by_means_of_plant_visits_and_or_interviews rdf:type owl:NamedIndividual ,
+                                                                                              :MethodOfReviewValues ;
+                                                                                     dtype:hasValue "Evidence collection by means of plant visits and/or interviews" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues_Expert_judgement
+:MethodOfReviewValues_Expert_judgement rdf:type owl:NamedIndividual ,
+                                                :MethodOfReviewValues ;
+                                       dtype:hasValue "Expert judgement" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues_Mass_balance
+:MethodOfReviewValues_Mass_balance rdf:type owl:NamedIndividual ,
+                                            :MethodOfReviewValues ;
+                                   dtype:hasValue "Mass balance" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues_Sample_tests_on_calculations
+:MethodOfReviewValues_Sample_tests_on_calculations rdf:type owl:NamedIndividual ,
+                                                            :MethodOfReviewValues ;
+                                                   dtype:hasValue "Sample tests on calculations" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#MethodOfReviewValues_Validation_of_data_sources
+:MethodOfReviewValues_Validation_of_data_sources rdf:type owl:NamedIndividual ,
+                                                          :MethodOfReviewValues ;
+                                                 dtype:hasValue "Validation of data sources" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#ScopeOfReviewValues_Documentation
+:ScopeOfReviewValues_Documentation rdf:type owl:NamedIndividual ,
+                                            :ScopeOfReviewValues ;
+                                   dtype:hasValue "Documentation" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#ScopeOfReviewValues_Goal_and_scope_definition
+:ScopeOfReviewValues_Goal_and_scope_definition rdf:type owl:NamedIndividual ,
+                                                        :ScopeOfReviewValues ;
+                                               dtype:hasValue "Goal and scope definition" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#ScopeOfReviewValues_LCIA_results
+:ScopeOfReviewValues_LCIA_results rdf:type owl:NamedIndividual ,
+                                           :ScopeOfReviewValues ;
+                                  dtype:hasValue "LCIA results" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#ScopeOfReviewValues_LCIA_results_calculation
+:ScopeOfReviewValues_LCIA_results_calculation rdf:type owl:NamedIndividual ,
+                                                       :ScopeOfReviewValues ;
+                                              dtype:hasValue "LCIA results calculation" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#ScopeOfReviewValues_LCI_results_or_Partly_terminated_system
+:ScopeOfReviewValues_LCI_results_or_Partly_terminated_system rdf:type owl:NamedIndividual ,
+                                                                      :ScopeOfReviewValues ;
+                                                             dtype:hasValue "LCI results or Partly terminated system" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#ScopeOfReviewValues_Life_cycle_inventory_methods
+:ScopeOfReviewValues_Life_cycle_inventory_methods rdf:type owl:NamedIndividual ,
+                                                           :ScopeOfReviewValues ;
+                                                  dtype:hasValue "Life cycle inventory methods" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#ScopeOfReviewValues_Raw_data
+:ScopeOfReviewValues_Raw_data rdf:type owl:NamedIndividual ,
+                                       :ScopeOfReviewValues ;
+                              dtype:hasValue "Raw data" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#ScopeOfReviewValues_Unit_process_es_black_box
+:ScopeOfReviewValues_Unit_process_es_black_box rdf:type owl:NamedIndividual ,
+                                                        :ScopeOfReviewValues ;
+                                               dtype:hasValue "Unit process(es), black box" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Validation#ScopeOfReviewValues_Unit_process_es_single_operation
+:ScopeOfReviewValues_Unit_process_es_single_operation rdf:type owl:NamedIndividual ,
+                                                               :ScopeOfReviewValues ;
+                                                      dtype:hasValue "Unit process(es), single operation" .
+
+
+[ owl:maxCardinality "1"^^xsd:int
+] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+j.0:MethodOfReviewValues_Enumeration dtype:hasValue j.0:MethodOfReviewValues_Cross-check_with_other_source ,
+                                                     j.0:MethodOfReviewValues_Cross-check_with_other_data_set ,
+                                                     j.0:MethodOfReviewValues_Compliance_with_ISO_14040_to_14044 ,
+                                                     j.0:MethodOfReviewValues_Element_balance ,
+                                                     j.0:MethodOfReviewValues_Documentation ,
+                                                     j.0:MethodOfReviewValues_Validation_of_data_sources ,
+                                                     j.0:MethodOfReviewValues_Sample_tests_on_calculations ,
+                                                     <http://uri-not-absolute.com#MethodOfReviewValues_Evidence_collection_by_means_of_plant_visits_and/or_interviews> ,
+                                                     j.0:MethodOfReviewValues_Expert_judgement ,
+                                                     j.0:MethodOfReviewValues_Energy_balance ,
+                                                     j.0:MethodOfReviewValues_Compliance_with_legal_limits ,
+                                                     j.0:MethodOfReviewValues_Mass_balance .
+
+
+j.0:ScopeOfReviewValues_Enumeration dtype:hasValue j.0:ScopeOfReviewValues_Raw_data ,
+                                                   j.0:ScopeOfReviewValues_Goal_and_scope_definition ,
+                                                   <http://uri-not-absolute.com#ScopeOfReviewValues_Unit_process(es),_black_box> ,
+                                                   j.0:ScopeOfReviewValues_Documentation ,
+                                                   j.0:ScopeOfReviewValues_LCI_results_or_Partly_terminated_system ,
+                                                   j.0:ScopeOfReviewValues_Life_cycle_inventory_methods ,
+                                                   <http://uri-not-absolute.com#ScopeOfReviewValues_Unit_process(es),_single_operation> ,
+                                                   j.0:ScopeOfReviewValues_LCIA_results_calculation ,
+                                                   j.0:ScopeOfReviewValues_LCIA_results .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

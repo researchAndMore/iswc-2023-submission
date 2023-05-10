@@ -1,0 +1,1084 @@
+@prefix : <http://www.EcoInvent.org/EcoSpold02/sources#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dtype: <http://www.srdc.com.tr/ontmalizer#> .
+@prefix sources: <http://www.semanticweb.org/nicolaskesseli/ontologies/2022/10/sources#> .
+@prefix sources1: <http://www.EcoInvent.org/EcoSpold02/sources#> .
+@prefix ecospold02: <http://www.EcoInvent.org/EcoSpold02#> .
+@base <http://www.EcoInvent.org/EcoSpold02/sources> .
+
+<http://www.EcoInvent.org/EcoSpold02/sources> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.srdc.com.tr/ontmalizer#hasValue
+dtype:hasValue rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdfs:domain ecospold02:TValidSource .
+
+
+###  http://www.w3.org/2001/XMLSchema#length
+xsd:length rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#maxInclusive
+xsd:maxInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#maxLength
+xsd:maxLength rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#minInclusive
+xsd:minInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#pattern
+xsd:pattern rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_26Datatype
+sources1:Class_26Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_27Datatype
+sources1:Class_27Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_28Datatype
+sources1:Class_28Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_29Datatype
+sources1:Class_29Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_30Datatype
+sources1:Class_30Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_31Datatype
+sources1:Class_31Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_32Datatype
+sources1:Class_32Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_33Datatype
+sources1:Class_33Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_34Datatype
+sources1:Class_34Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_35Datatype
+sources1:Class_35Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_36Datatype
+sources1:Class_36Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_39Datatype
+sources1:Class_39Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_3Datatype
+sources1:Class_3Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#Class_41Datatype
+sources1:Class_41Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TBaseString120Datatype
+sources1:TBaseString120Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TBaseString20Datatype
+sources1:TBaseString20Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TBaseString255Datatype
+sources1:TBaseString255Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TBaseString30Datatype
+sources1:TBaseString30Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TBaseString32000Datatype
+sources1:TBaseString32000Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TBaseString40Datatype
+sources1:TBaseString40Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TBaseString80Datatype
+sources1:TBaseString80Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TCasNumberDatatype
+sources1:TCasNumberDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TCompanyCodeDatatype
+sources1:TCompanyCodeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TFloatNumberDatatype
+sources1:TFloatNumberDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TPercentDatatype
+sources1:TPercentDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TUuidDatatype
+sources1:TUuidDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TVariableNameDatatype
+sources1:TVariableNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#ENTITIESDatatype
+xsd:ENTITIESDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#ENTITYDatatype
+xsd:ENTITYDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDDatatype
+xsd:IDDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFDatatype
+xsd:IDREFDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFSDatatype
+xsd:IDREFSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NCNameDatatype
+xsd:NCNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENDatatype
+xsd:NMTOKENDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENSDatatype
+xsd:NMTOKENSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NOTATIONDatatype
+xsd:NOTATIONDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NameDatatype
+xsd:NameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#QNameDatatype
+xsd:QNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anySimpleTypeDatatype
+xsd:anySimpleTypeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anyURIDatatype
+xsd:anyURIDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#base64BinaryDatatype
+xsd:base64BinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#booleanDatatype
+xsd:booleanDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#byteDatatype
+xsd:byteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateDatatype
+xsd:dateDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateTimeDatatype
+xsd:dateTimeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#decimalDatatype
+xsd:decimalDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#doubleDatatype
+xsd:doubleDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#durationDatatype
+xsd:durationDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#floatDatatype
+xsd:floatDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gDayDatatype
+xsd:gDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDatatype
+xsd:gMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDayDatatype
+xsd:gMonthDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearDatatype
+xsd:gYearDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearMonthDatatype
+xsd:gYearMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#hexBinaryDatatype
+xsd:hexBinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#intDatatype
+xsd:intDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#integerDatatype
+xsd:integerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#languageDatatype
+xsd:languageDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#longDatatype
+xsd:longDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#negativeIntegerDatatype
+xsd:negativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonNegativeIntegerDatatype
+xsd:nonNegativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonPositiveIntegerDatatype
+xsd:nonPositiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#normalizedStringDatatype
+xsd:normalizedStringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#positiveIntegerDatatype
+xsd:positiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#shortDatatype
+xsd:shortDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#stringDatatype
+xsd:stringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#timeDatatype
+xsd:timeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#tokenDatatype
+xsd:tokenDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedByteDatatype
+xsd:unsignedByteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedIntDatatype
+xsd:unsignedIntDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedLongDatatype
+xsd:unsignedLongDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedShortDatatype
+xsd:unsignedShortDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/XML/1998/namespace#Class_68Datatype
+<http://www.w3.org/XML/1998/namespace#Class_68Datatype> rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/XML/1998/namespace#Class_69Datatype
+<http://www.w3.org/XML/1998/namespace#Class_69Datatype> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#beta
+sources1:beta rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#binomial
+sources1:binomial rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#classificationSystem
+sources1:classificationSystem rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#classificationValue
+sources1:classificationValue rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#compartment
+sources1:compartment rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#gamma
+sources1:gamma rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#imageUrl
+sources1:imageUrl rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#lognormal
+sources1:lognormal rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#name
+sources1:name rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#normal
+sources1:normal rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#pedigreeMatrix
+sources1:pedigreeMatrix rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#requiredContextName
+sources1:requiredContextName rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#source
+sources1:source rdf:type owl:ObjectProperty ;
+                rdfs:domain sources1:TValidSource .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#sourceType
+sources1:sourceType rdf:type owl:ObjectProperty ;
+                    rdfs:domain sources1:TValidSource ;
+                    rdfs:range sources1:SourceType .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#subcompartment
+sources1:subcompartment rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#text
+sources1:text rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#triangular
+sources1:triangular rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#uncertainty
+sources1:uncertainty rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#undefined
+sources1:undefined rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#uniform
+sources1:uniform rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#unitName
+sources1:unitName rdf:type owl:ObjectProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#variable
+sources1:variable rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#additionalAuthors
+sources1:additionalAuthors rdf:type owl:DatatypeProperty ;
+                           rdfs:domain sources1:TValidSource ;
+                           rdfs:comment "List of additional authors (surname and abbreviated name, e.g. Newton I.), separated by commas. 'Et al.' may be used, if more than five additonal authors contributed to the cited publication." ;
+                           rdfs:label ""@additionalauthors .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#amount
+sources1:amount rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#comment
+sources1:comment rdf:type owl:DatatypeProperty ;
+                 rdfs:comment "Free text for additional description of the source. It may contain a brief summary of the publication and the kind of medium used (e.g. CD-ROM, hard copy)" ;
+                 rdfs:label "comment" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#contextId
+sources1:contextId rdf:type owl:DatatypeProperty ;
+                   rdfs:domain sources1:TValidSource ;
+                   rdfs:comment "Reference to the context of the master data file." ;
+                   rdfs:label ""@contextid .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#contextName
+sources1:contextName rdf:type owl:DatatypeProperty ;
+                     rdfs:domain sources1:TValidSource ;
+                     rdfs:comment "The name of the context referenced by field 3880." ;
+                     rdfs:label "contextName" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#firstAuthor
+sources1:firstAuthor rdf:type owl:DatatypeProperty ;
+                     rdfs:domain sources1:TValidSource ;
+                     rdfs:comment "Indicates the first author by surname and abbreviated name (e.g., Einstein A.). In case of measurement on site, oral communication, personal written communication and questionnaries ('sourceType'=4, 5, 6, 7) the name of the communicating person is mentioned here." ;
+                     rdfs:label ""@firstauthor .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#idSource
+sources1:idSource rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#index
+sources1:index rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#isCalculatedAmount
+sources1:isCalculatedAmount rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#isDefiningValue
+sources1:isDefiningValue rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#issueNo
+sources1:issueNo rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sources1:TValidSource ;
+                 rdfs:comment "Indicates the issue number of the journal an article is published in." ;
+                 rdfs:label ""@issueno .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#journal
+sources1:journal rdf:type owl:DatatypeProperty ;
+                 rdfs:domain sources1:TValidSource ;
+                 rdfs:comment "Indicates the name of the journal an article is published in." ;
+                 rdfs:label ""@journal .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#lang
+sources1:lang rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#majorRelease
+sources1:majorRelease rdf:type owl:DatatypeProperty ;
+                      rdfs:domain sources1:TValidSource ;
+                      rdfs:range xsd:integer ;
+                      rdfs:comment "This version number can be used to make sure that the necessary master data entries are present for an activity. They are referenced by the valid... elements of the fileAttributes element in activity datasets. The release version number is used as follows: with a major update (e.g. every second year) the major release number is increased by one (1.00, 2.00, etc.)." ;
+                      rdfs:label ""@majorrelease .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#majorRevision
+sources1:majorRevision rdf:type owl:DatatypeProperty ;
+                       rdfs:domain sources1:TValidSource ;
+                       rdfs:range xsd:integer ;
+                       rdfs:comment "This version number can be used to make sure that the necessary master data entries are present for an activity. They are referenced by the valid... elements of the fileAttributes element in activity datasets. The revision version number is used to discern different versions during the working period until the dataset is entered into the database). The revision is generated automatically with each change made in the dataset or related file." ;
+                       rdfs:label ""@majorrevision .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#mathematicalRelation
+sources1:mathematicalRelation rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#maxValue
+sources1:maxValue rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#meanValue
+sources1:meanValue rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#minValue
+sources1:minValue rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#minorRelease
+sources1:minorRelease rdf:type owl:DatatypeProperty ;
+                      rdfs:domain sources1:TValidSource ;
+                      rdfs:range xsd:integer ;
+                      rdfs:comment "This version number can be used to make sure that the necessary master data entries are present for an activity. They are referenced by the valid... elements of the fileAttributes element in activity datasets. The release version number is used as follows: minor updates (corrected errors) within the period of two major updates increase the minor release version." ;
+                      rdfs:label ""@minorrelease .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#minorRevision
+sources1:minorRevision rdf:type owl:DatatypeProperty ;
+                       rdfs:domain sources1:TValidSource ;
+                       rdfs:range xsd:integer ;
+                       rdfs:comment "This version number can be used to make sure that the necessary master data entries are present for an activity. They are referenced by the valid... elements of the fileAttributes element in activity datasets. The revision Version number is used to discern different versions during the working period until the dataset is entered into the database). The revision is generated automatically with each change made in the dataset or related file." ;
+                       rdfs:label ""@minorrevision .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#mostFrequentValue
+sources1:mostFrequentValue rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#mostLikelyValue
+sources1:mostLikelyValue rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#name
+sources1:name rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#namesOfEditors
+sources1:namesOfEditors rdf:type owl:DatatypeProperty ;
+                        rdfs:domain sources1:TValidSource ;
+                        rdfs:comment "Contains the names of the editors (if any)." ;
+                        rdfs:label ""@namesofeditors .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#originalSource
+sources1:originalSource rdf:type owl:DatatypeProperty ;
+                        rdfs:domain sources1:TValidSource ;
+                        rdfs:range xsd:anyURI ;
+                        rdfs:comment "Reference to the location of the original document. Can be used to verify the data and/or to check for updates in the future." ;
+                        rdfs:label ""@originalsource .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#pageNumbers
+sources1:pageNumbers rdf:type owl:DatatypeProperty ;
+                     rdfs:domain sources1:TValidSource ;
+                     rdfs:comment "If an article or a chapter in an anthology, list the relevant page numbers. In case of separate publications the total number of pages may be entered." ;
+                     rdfs:label ""@pagenumbers .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#placeOfPublications
+sources1:placeOfPublications rdf:type owl:DatatypeProperty ;
+                             rdfs:comment "Indicates the place(s) of publication. In case of measurements on site, oral communication, personal written communication or questionnaires, it is the location of the company which provided the information. If available via the web add the web-address." ;
+                             rdfs:label ""@placeofpublications .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#propertyContextId
+sources1:propertyContextId rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#propertyId
+sources1:propertyId rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#publisher
+sources1:publisher rdf:type owl:DatatypeProperty ;
+                   rdfs:domain sources1:TValidSource ;
+                   rdfs:comment """Lists the name of the publisher (if any).
+In case of the ecoinvent context it is the 'Swiss Centre for Life Cycle Inventories'.""" ;
+                   rdfs:label ""@publisher .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#reliability
+sources1:reliability rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#requiredContextFileLocation
+sources1:requiredContextFileLocation rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#requiredContextId
+sources1:requiredContextId rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#scale
+sources1:scale rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#shape
+sources1:shape rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#shortName
+sources1:shortName rdf:type owl:DatatypeProperty ;
+                   rdfs:domain sources1:TValidSource ;
+                   rdfs:comment "A shortname based on title for list views etc." ;
+                   rdfs:label ""@shortname .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#sourceContextId
+sources1:sourceContextId rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#sourceFirstAuthor
+sources1:sourceFirstAuthor rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#sourceId
+sources1:sourceId rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#sourceIdOverwrittenByChild
+sources1:sourceIdOverwrittenByChild rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#sourceYear
+sources1:sourceYear rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#standardDeviation95
+sources1:standardDeviation95 rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#subcompartmentContextId
+sources1:subcompartmentContextId rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#subcompartmentId
+sources1:subcompartmentId rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#temporalCorrelation
+sources1:temporalCorrelation rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#textContent
+sources1:textContent rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#title
+sources1:title rdf:type owl:DatatypeProperty ;
+               rdfs:domain sources1:TValidSource ;
+               rdfs:comment """Contains the complete title of the publication.
+Measurement on site: write \"Measurement documentation of company XY\".
+Oral communication: write \"Oral communication, company XY\".
+Personal written communication: write: \"personal written communication, Mr./Mrs. XY, company Z\".
+Questionnaires: write \"Questionnaire, filled in by Mr./Mrs. XY, company Z\".""" ;
+               rdfs:label ""@title .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#titleOfAnthology
+sources1:titleOfAnthology rdf:type owl:DatatypeProperty ;
+                          rdfs:domain sources1:TValidSource ;
+                          rdfs:comment """If the publication is a chapter in an anthology, the title of the anthology is reported here.
+For the reports of the ecoinvent context 'Final report ecoinvent 2000' is written here.""" ;
+                          rdfs:label ""@titleofanthology .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#unitContextId
+sources1:unitContextId rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#unitId
+sources1:unitId rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#variableName
+sources1:variableName rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#variance
+sources1:variance rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#varianceWithPedigreeUncertainty
+sources1:varianceWithPedigreeUncertainty rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#volumeNo
+sources1:volumeNo rdf:type owl:DatatypeProperty ;
+                  rdfs:comment "Indicates the volume of the journal an article is published in." ;
+                  rdfs:label ""@volumeno .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#year
+sources1:year rdf:type owl:DatatypeProperty ;
+              rdfs:domain sources1:TValidSource ;
+              rdfs:comment "Indicates the year of publication and communication, respectively." ;
+              rdfs:label ""@year .
+
+
+###  http://www.semanticweb.org/nicolaskesseli/ontologies/2022/10/flowData#pageNumbers
+<http://www.semanticweb.org/nicolaskesseli/ontologies/2022/10/flowData#pageNumbers> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/nicolaskesseli/ontologies/2022/10/metainformation#id
+<http://www.semanticweb.org/nicolaskesseli/ontologies/2022/10/metainformation#id> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#textContent
+xsd:textContent rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/XML/1998/namespace#base
+<http://www.w3.org/XML/1998/namespace#base> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/XML/1998/namespace#id
+<http://www.w3.org/XML/1998/namespace#id> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/XML/1998/namespace#lang
+<http://www.w3.org/XML/1998/namespace#lang> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/XML/1998/namespace#space
+<http://www.w3.org/XML/1998/namespace#space> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.w3.org/XML/1998/namespace#textContent
+<http://www.w3.org/XML/1998/namespace#textContent> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#SourceType
+sources1:SourceType rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Class ;
+                                          owl:oneOf ( sources1:article
+                                                      sources1:chaptersInAnthology
+                                                      sources1:measurementOnSite
+                                                      sources1:oralCommunication
+                                                      sources1:personalWrittenCommunication
+                                                      sources1:questionnaries
+                                                      sources1:seperatePublication
+                                                      sources1:undefined
+                                                    )
+                                        ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TValidSource
+sources1:TValidSource rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:firstAuthor ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:majorRelease ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:minorRelease ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:title ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:year ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://www.semanticweb.org/nicolaskesseli/ontologies/2022/10/metainformation#id> ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:additionalAuthors ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:contextId ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:issueNo ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:journal ;
+                                        owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:majorRevision ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:minorRevision ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:namesOfEditors ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:originalSource ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:placeOfPublications ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:publisher ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:shortName ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:titleOfAnthology ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty sources1:volumeNo ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://www.semanticweb.org/nicolaskesseli/ontologies/2022/10/flowData#pageNumbers> ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ;
+                      rdfs:comment "Contains information about author(s), title, kind of publication, place of publication, name of editors (if any), etc.." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#article
+sources1:article rdf:type owl:NamedIndividual ,
+                          sources1:SourceType ;
+                 sources1:idSource "1"^^xsd:int ;
+                 rdfs:label "Article" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#chaptersInAnthology
+sources1:chaptersInAnthology rdf:type owl:NamedIndividual ,
+                                      sources1:SourceType ;
+                             sources1:idSource "2"^^xsd:int ;
+                             rdfs:label "Chapters in anthology" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#measurementOnSite
+sources1:measurementOnSite rdf:type owl:NamedIndividual ,
+                                    sources1:SourceType ;
+                           sources1:idSource "4"^^xsd:int ;
+                           rdfs:label "Measurement on site" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#oralCommunication
+sources1:oralCommunication rdf:type owl:NamedIndividual ,
+                                    sources1:SourceType ;
+                           sources1:idSource "5"^^xsd:int ;
+                           rdfs:label "Oral communication" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#personalWrittenCommunication
+sources1:personalWrittenCommunication rdf:type owl:NamedIndividual ,
+                                               sources1:SourceType ;
+                                      sources1:idSource "6"^^xsd:int ;
+                                      rdfs:label "Personal written communication" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#questionnaries
+sources1:questionnaries rdf:type owl:NamedIndividual ,
+                                 sources1:SourceType ;
+                        sources1:idSource "7"^^xsd:int ;
+                        rdfs:label "Questionnaries" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#seperatePublication
+sources1:seperatePublication rdf:type owl:NamedIndividual ,
+                                      sources1:SourceType ;
+                             sources1:idSource "3"^^xsd:int ;
+                             rdfs:label "Seperate publication" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#undefined
+sources1:undefined rdf:type owl:NamedIndividual ,
+                            sources1:SourceType .
+
+
+[ xsd:maxLength "120"
+] .
+
+[ xsd:pattern "\\d{1,6}-\\d{2,2}-\\d"
+ ] .
+
+[ xsd:maxInclusive 7
+ ] .
+
+[ xsd:maxLength "32000"
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:maxLength "40"
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:maxLength "30"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "7"
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "40"
+ ] .
+
+[ xsd:maxLength "80"
+ ] .
+
+[ xsd:length "36"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "20"
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:minInclusive 0
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "255"
+ ] .
+
+[ xsd:maxLength "11"
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:pattern "\\w\\S*"
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+sources1:undefined rdfs:label "Undefined" ;
+                    rdfs:comment "Undefined (default)" .
+
+
+<http://www.w3.org/XML/1998/namespace#Class_69_Enumeration> dtype:hasValue <http://www.w3.org/XML/1998/namespace#Class_69_preserve> ,
+                                                                           <http://www.w3.org/XML/1998/namespace#Class_69_default> .
+
+
+<http://www.w3.org/XML/1998/namespace#Class_69_default> dtype:hasValue "default"^^xsd:NCName .
+
+
+<http://www.w3.org/XML/1998/namespace#Class_69_preserve> dtype:hasValue "preserve"^^xsd:NCName .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

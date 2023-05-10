@@ -1,0 +1,879 @@
+@prefix : <http://lca.jrc.it/ILCD/Categories#> .
+@prefix j.0: <http://lca.jrc.it/ILCD/Common_Data_Types#> .
+@prefix j.1: <http://lca.jrc.it/ILCD/Categories#> .
+@prefix j.2: <http://www.w3.org/XML/1998/namespace#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dtype: <http://www.srdc.com.tr/ontmalizer#> .
+@base <http://lca.jrc.it/ILCD/Categories> .
+
+<http://lca.jrc.it/ILCD/Categories> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.srdc.com.tr/ontmalizer#hasValue
+dtype:hasValue rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#fractionDigits
+xsd:fractionDigits rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#maxLength
+xsd:maxLength rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#minInclusive
+xsd:minInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#minLength
+xsd:minLength rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#pattern
+xsd:pattern rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#totalDigits
+xsd:totalDigits rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype
+j.0:stringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#ENTITIESDatatype
+xsd:ENTITIESDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#ENTITYDatatype
+xsd:ENTITYDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDDatatype
+xsd:IDDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFDatatype
+xsd:IDREFDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFSDatatype
+xsd:IDREFSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NCNameDatatype
+xsd:NCNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENDatatype
+xsd:NMTOKENDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENSDatatype
+xsd:NMTOKENSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NOTATIONDatatype
+xsd:NOTATIONDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NameDatatype
+xsd:NameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#QNameDatatype
+xsd:QNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anySimpleTypeDatatype
+xsd:anySimpleTypeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anyURIDatatype
+xsd:anyURIDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#base64BinaryDatatype
+xsd:base64BinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#booleanDatatype
+xsd:booleanDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#byteDatatype
+xsd:byteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateDatatype
+xsd:dateDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateTimeDatatype
+xsd:dateTimeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#decimalDatatype
+xsd:decimalDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#doubleDatatype
+xsd:doubleDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#durationDatatype
+xsd:durationDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#floatDatatype
+xsd:floatDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gDayDatatype
+xsd:gDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDatatype
+xsd:gMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDayDatatype
+xsd:gMonthDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearDatatype
+xsd:gYearDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearMonthDatatype
+xsd:gYearMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#hexBinaryDatatype
+xsd:hexBinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#intDatatype
+xsd:intDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#integerDatatype
+xsd:integerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#languageDatatype
+xsd:languageDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#longDatatype
+xsd:longDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#negativeIntegerDatatype
+xsd:negativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonNegativeIntegerDatatype
+xsd:nonNegativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonPositiveIntegerDatatype
+xsd:nonPositiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#normalizedStringDatatype
+xsd:normalizedStringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#positiveIntegerDatatype
+xsd:positiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#shortDatatype
+xsd:shortDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#stringDatatype
+xsd:stringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#timeDatatype
+xsd:timeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#tokenDatatype
+xsd:tokenDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedByteDatatype
+xsd:unsignedByteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedIntDatatype
+xsd:unsignedIntDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedLongDatatype
+xsd:unsignedLongDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedShortDatatype
+xsd:unsignedShortDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/XML/1998/namespace#Class_15Datatype
+j.2:Class_15Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/XML/1998/namespace#Class_16Datatype
+j.2:Class_16Datatype rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Categories#categories
+j.1:categories rdf:type owl:ObjectProperty ;
+               rdfs:domain j.1:CategorySystemType ;
+               rdfs:range j.1:CategoriesType .
+
+
+###  http://lca.jrc.it/ILCD/Categories#dataType
+j.1:dataType rdf:type owl:ObjectProperty ;
+             rdfs:domain j.1:CategoriesType ;
+             rdfs:range j.1:DataSetType .
+
+
+###  http://lca.jrc.it/ILCD/Categories#definedCategory
+j.1:definedCategory rdf:type owl:ObjectProperty ;
+                    rdfs:domain j.1:CategoriesType ,
+                                j.1:CategoryTypeDefined ;
+                    rdfs:range j.1:CategoriesType ,
+                               j.1:CategoryTypeDefined .
+
+
+###  http://lca.jrc.it/ILCD/Categories#hasValue
+j.1:hasValue rdf:type owl:ObjectProperty ;
+             rdfs:domain j.1:CategorySystem ,
+                         j.1:DataSetType ;
+             rdfs:range j.1:CategorySystemType .
+
+
+###  http://lca.jrc.it/ILCD/Categories#referenceToSource
+j.1:referenceToSource rdf:type owl:ObjectProperty ;
+                      rdfs:domain j.1:CategorySystemType ;
+                      rdfs:range <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType> .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#category
+<http://lca.jrc.it/ILCD/Common_Groups#category> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Categories#hasValue
+j.1:hasValue rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Categories#id
+j.1:id rdf:type owl:DatatypeProperty ;
+       rdfs:domain j.1:CategoryTypeDefined ;
+       rdfs:range xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#nameData
+<http://lca.jrc.it/ILCD/Common_Groups#nameData> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Categories#CategoriesType
+j.1:CategoriesType rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty j.1:dataType ;
+                                     owl:allValuesFrom j.1:DataSetType
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty j.1:definedCategory ;
+                                     owl:allValuesFrom j.1:CategoryTypeDefined
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty j.1:definedCategory ;
+                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass j.1:CategoryTypeDefined
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty j.1:dataType ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass j.1:DataSetType
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty j.1:definedCategory ;
+                                     owl:maxQualifiedCardinality "2147483647"^^xsd:nonNegativeInteger ;
+                                     owl:onClass j.1:CategoryTypeDefined
+                                   ] .
+
+
+###  http://lca.jrc.it/ILCD/Categories#CategorySystem
+j.1:CategorySystem rdf:type owl:Class ;
+                   rdfs:subClassOf j.1:CategorySystemType ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty j.1:hasValue ;
+                                     owl:allValuesFrom j.1:CategorySystemType
+                                   ] .
+
+
+###  http://lca.jrc.it/ILCD/Categories#CategorySystemType
+j.1:CategorySystemType rdf:type owl:Class ;
+                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty j.1:categories ;
+                                         owl:allValuesFrom j.1:CategoriesType
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty j.1:referenceToSource ;
+                                         owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty j.1:categories ;
+                                         owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                         owl:onClass j.1:CategoriesType
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty j.1:referenceToSource ;
+                                         owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                         owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty j.1:categories ;
+                                         owl:maxQualifiedCardinality "7"^^xsd:nonNegativeInteger ;
+                                         owl:onClass j.1:CategoriesType
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty j.1:referenceToSource ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#nameData> ;
+                                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                              owl:unionOf ( j.0:stringDatatype
+                                                                            xsd:string
+                                                                          )
+                                                            ]
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#nameData> ;
+                                         owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                             owl:unionOf ( j.0:stringDatatype
+                                                                           xsd:string
+                                                                         )
+                                                           ]
+                                       ] .
+
+
+###  http://lca.jrc.it/ILCD/Categories#CategoryTypeDefined
+j.1:CategoryTypeDefined rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#category> ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#CategoryType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#category> ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#CategoryType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#category> ;
+                                          owl:maxQualifiedCardinality "2147483647"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#CategoryType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty j.1:id ;
+                                          owl:allValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#nameData> ;
+                                          owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                              owl:unionOf ( j.0:stringDatatype
+                                                                            xsd:string
+                                                                          )
+                                                            ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty j.1:id ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#nameData> ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                            owl:unionOf ( j.0:stringDatatype
+                                                                          xsd:string
+                                                                        )
+                                                          ]
+                                        ] .
+
+
+###  http://lca.jrc.it/ILCD/Categories#DataSetType
+j.1:DataSetType rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty j.1:hasValue ;
+                                  owl:allValuesFrom xsd:string
+                                ] .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#CategoryType
+<http://lca.jrc.it/ILCD/Common_Groups#CategoryType> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType
+<http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Categories#DataSetType_Contact
+j.1:DataSetType_Contact rdf:type owl:NamedIndividual ,
+                                 j.1:DataSetType ;
+                        dtype:hasValue "Contact" .
+
+
+###  http://lca.jrc.it/ILCD/Categories#DataSetType_Flow
+j.1:DataSetType_Flow rdf:type owl:NamedIndividual ,
+                              j.1:DataSetType ;
+                     dtype:hasValue "Flow" .
+
+
+###  http://lca.jrc.it/ILCD/Categories#DataSetType_FlowProperty
+j.1:DataSetType_FlowProperty rdf:type owl:NamedIndividual ,
+                                      j.1:DataSetType ;
+                             dtype:hasValue "FlowProperty" .
+
+
+###  http://lca.jrc.it/ILCD/Categories#DataSetType_LCIAMethod
+j.1:DataSetType_LCIAMethod rdf:type owl:NamedIndividual ,
+                                    j.1:DataSetType ;
+                           dtype:hasValue "LCIAMethod" .
+
+
+###  http://lca.jrc.it/ILCD/Categories#DataSetType_Process
+j.1:DataSetType_Process rdf:type owl:NamedIndividual ,
+                                 j.1:DataSetType ;
+                        dtype:hasValue "Process" .
+
+
+###  http://lca.jrc.it/ILCD/Categories#DataSetType_Source
+j.1:DataSetType_Source rdf:type owl:NamedIndividual ,
+                                j.1:DataSetType ;
+                       dtype:hasValue "Source" .
+
+
+###  http://lca.jrc.it/ILCD/Categories#DataSetType_UnitGroup
+j.1:DataSetType_UnitGroup rdf:type owl:NamedIndividual ,
+                                   j.1:DataSetType ;
+                          dtype:hasValue "UnitGroup" .
+
+
+[ owl:maxCardinality "1"^^xsd:int
+] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:fractionDigits 3
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:minLength "0"
+ ] .
+
+[ xsd:totalDigits 6
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "50"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "1000"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:totalDigits 5
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:pattern "\\s*([\\-+]?(([0-8]?\\d)(\\.\\d*)?)|(90(\\.0{0,2})?))\\s*;\\s*(([\\-+]?(((1[0-7]\\d)(\\.\\d*)?)|([0-9]\\d(\\.\\d*)?)|(\\d(\\.\\d*)?)|(180(\\.[0]*)?))))\\s*"
+ ] .
+
+[ xsd:totalDigits 4
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "500"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:totalDigits 5
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:minInclusive 0
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:minLength "0"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "500"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:minLength "0"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:pattern "[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}"
+ ] .
+
+[ xsd:pattern "\\d{6}-\\d{2}-\\d"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:totalDigits 1
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:minLength "0"
+ ] .
+
+[ xsd:pattern "\\d{2}\\.\\d{2}(\\.\\d{3})?"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+j.1:DataSetType_Enumeration dtype:hasValue j.1:DataSetType_Process ,
+                                            j.1:DataSetType_FlowProperty ,
+                                            j.1:DataSetType_LCIAMethod ,
+                                            j.1:DataSetType_UnitGroup ,
+                                            j.1:DataSetType_Contact ,
+                                            j.1:DataSetType_Flow ,
+                                            j.1:DataSetType_Source .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Compliance_with_ISO_14040_to_14044> dtype:hasValue "Compliance with ISO 14040 to 14044" .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Compliance_with_legal_limits> dtype:hasValue "Compliance with legal limits" .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Cross-check_with_other_data_set> dtype:hasValue "Cross-check with other data set" .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Cross-check_with_other_source> dtype:hasValue "Cross-check with other source" .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Documentation> dtype:hasValue "Documentation" .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Element_balance> dtype:hasValue "Element balance" .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Energy_balance> dtype:hasValue "Energy balance" .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Enumeration> dtype:hasValue <http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Evidence_collection_by_means_of_plant_visits_and/or_interviews> ,
+                                                                                <http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Compliance_with_ISO_14040_to_14044> ,
+                                                                                <http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Compliance_with_legal_limits> ,
+                                                                                <http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Documentation> ,
+                                                                                <http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Cross-check_with_other_data_set> ,
+                                                                                <http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Element_balance> ,
+                                                                                <http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Sample_tests_on_calculations> ,
+                                                                                <http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Cross-check_with_other_source> ,
+                                                                                <http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Validation_of_data_sources> ,
+                                                                                <http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Expert_judgement> ,
+                                                                                <http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Energy_balance> ,
+                                                                                <http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Mass_balance> .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Expert_judgement> dtype:hasValue "Expert judgement" .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Mass_balance> dtype:hasValue "Mass balance" .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Sample_tests_on_calculations> dtype:hasValue "Sample tests on calculations" .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Validation_of_data_sources> dtype:hasValue "Validation of data sources" .
+
+
+<http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Documentation> dtype:hasValue "Documentation" .
+
+
+<http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Enumeration> dtype:hasValue <http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_LCI_results_or_Partly_terminated_system> ,
+                                                                               <http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Raw_data> ,
+                                                                               <http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Life_cycle_inventory_methods> ,
+                                                                               <http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Unit_process(es),_single_operation> ,
+                                                                               <http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_LCIA_results_calculation> ,
+                                                                               <http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Unit_process(es),_black_box> ,
+                                                                               <http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_LCIA_results> ,
+                                                                               <http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Goal_and_scope_definition> ,
+                                                                               <http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Documentation> .
+
+
+<http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Goal_and_scope_definition> dtype:hasValue "Goal and scope definition" .
+
+
+<http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_LCIA_results> dtype:hasValue "LCIA results" .
+
+
+<http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_LCIA_results_calculation> dtype:hasValue "LCIA results calculation" .
+
+
+<http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_LCI_results_or_Partly_terminated_system> dtype:hasValue "LCI results or Partly terminated system" .
+
+
+<http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Life_cycle_inventory_methods> dtype:hasValue "Life cycle inventory methods" .
+
+
+<http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Raw_data> dtype:hasValue "Raw data" .
+
+
+<http://lca.jrc.it/ILCD/Common#MethodOfReviewValues_Evidence_collection_by_means_of_plant_visits_and/or_interviews> dtype:hasValue "Evidence collection by means of plant visits and/or interviews" .
+
+
+<http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Unit_process(es),_black_box> dtype:hasValue "Unit process(es), black box" .
+
+
+<http://lca.jrc.it/ILCD/Common#ScopeOfReviewValues_Unit_process(es),_single_operation> dtype:hasValue "Unit process(es), single operation" .
+
+
+j.2:Class_16_Enumeration dtype:hasValue j.2:Class_16_preserve ,
+                                        j.2:Class_16_default .
+
+
+j.2:Class_16_default dtype:hasValue "default"^^xsd:NCName .
+
+
+j.2:Class_16_preserve dtype:hasValue "preserve"^^xsd:NCName .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

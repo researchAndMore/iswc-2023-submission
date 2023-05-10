@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#appbar .MuiButtonBase-root a{
+  color: white;
+  text-decoration: none;
+}
+
+#appbar .MuiFormControl-root label{
+  color: white;
+}
+
+#appbar .MuiFormControl-root div{
+  color: white;
+
+}
+
+#appbar .MuiFormControl-root svg{
+  color: white;
+  
+}
+
+#appbar .MuiFormControl-root p{
+  color: white;
+}
+
+#repo{
+  color:green
+}

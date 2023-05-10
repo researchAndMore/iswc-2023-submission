@@ -1,0 +1,1314 @@
+@prefix : <http://www.EcoInvent.org/EcoSpold02/metainformation#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ecospold02: <http://www.EcoInvent.org/EcoSpold02#> .
+@prefix ontmalizer: <http://www.srdc.com.tr/ontmalizer#> .
+@base <http://www.EcoInvent.org/EcoSpold02/metainformation> .
+
+<http://www.EcoInvent.org/EcoSpold02/metainformation> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.srdc.com.tr/ontmalizer#hasValue
+ontmalizer:hasValue rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#length
+xsd:length rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#maxInclusive
+xsd:maxInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#maxLength
+xsd:maxLength rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#minInclusive
+xsd:minInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#pattern
+xsd:pattern rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#ENTITIESDatatype
+xsd:ENTITIESDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#ENTITYDatatype
+xsd:ENTITYDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDDatatype
+xsd:IDDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFDatatype
+xsd:IDREFDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFSDatatype
+xsd:IDREFSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NCNameDatatype
+xsd:NCNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENDatatype
+xsd:NMTOKENDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENSDatatype
+xsd:NMTOKENSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NOTATIONDatatype
+xsd:NOTATIONDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NameDatatype
+xsd:NameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#QNameDatatype
+xsd:QNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anyURIDatatype
+xsd:anyURIDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#base64BinaryDatatype
+xsd:base64BinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#booleanDatatype
+xsd:booleanDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#byteDatatype
+xsd:byteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateDatatype
+xsd:dateDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateTimeDatatype
+xsd:dateTimeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#decimalDatatype
+xsd:decimalDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#doubleDatatype
+xsd:doubleDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#durationDatatype
+xsd:durationDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#floatDatatype
+xsd:floatDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gDayDatatype
+xsd:gDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDatatype
+xsd:gMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDayDatatype
+xsd:gMonthDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearDatatype
+xsd:gYearDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearMonthDatatype
+xsd:gYearMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#hexBinaryDatatype
+xsd:hexBinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#intDatatype
+xsd:intDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#integerDatatype
+xsd:integerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#languageDatatype
+xsd:languageDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#longDatatype
+xsd:longDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#negativeIntegerDatatype
+xsd:negativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonNegativeIntegerDatatype
+xsd:nonNegativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonPositiveIntegerDatatype
+xsd:nonPositiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#normalizedStringDatatype
+xsd:normalizedStringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#positiveIntegerDatatype
+xsd:positiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#shortDatatype
+xsd:shortDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#stringDatatype
+xsd:stringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#timeDatatype
+xsd:timeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#tokenDatatype
+xsd:tokenDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedByteDatatype
+xsd:unsignedByteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedIntDatatype
+xsd:unsignedIntDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedLongDatatype
+xsd:unsignedLongDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedShortDatatype
+xsd:unsignedShortDatatype rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#accessRestrictedTo
+:accessRestrictedTo rdf:type owl:ObjectProperty ;
+                    rdfs:domain :TDataGeneratorAndPublication .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#dataPublishedIn
+:dataPublishedIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain :TDataGeneratorAndPublication .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#requiredContext
+:requiredContext rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :TFileAttributes ;
+                 rdfs:comment "Reference to a context required to load this document with all its master data references intact." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#majorRelease
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#majorRelease> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#name
+<http://www.EcoInvent.org/EcoSpold02/flowdata#name> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#activityName
+:activityName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :TActivity ;
+              rdfs:range xsd:string ;
+              rdfs:comment "A name for the activity that is represented by this dataset." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#activityNameContextId
+:activityNameContextId rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :TActivity ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment """Reference to the context of the activity name.
+
+If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#activityNameId
+:activityNameId rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TActivity ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Reference to the activity name master data entry for this activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#allocationComment
+:allocationComment rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :TActivity ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Text and image field for further information about the allocation procedure and the allocation properties chosen. An eventual coincidence in allocation factors when comparing different allocation parameters (like physical and economic ones) may be reported here as well.Text and image fields are list of text, imageUri and variable elements. The text and imageUri elements can used to describe the current section and they can be combined in any order given by their index attribute. Text variables are defined by the variable elements, which may be used in the text as {{variablename}}. If a parent text field includes a variable, this variable may be redefined by the child activity dataset while keeping the rest of the parent text intact. This allows easy changes of text parts in child processes." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#comment
+:comment rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Remark Nicolas: No annotation here, since comment property is used in different classes" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#companyCode
+:companyCode rdf:type owl:DatatypeProperty ;
+             rdfs:domain :TDataGeneratorAndPublication ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Optional 7 letter code plaintext of the referenced company (field 3560)" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#companyContextId
+:companyContextId rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TDataGeneratorAndPublication ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Reference to the context of the company.If this attribute is omitted the context of the dataset itself will be used instead." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#companyId
+:companyId rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TDataGeneratorAndPublication ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Reference to an organisation/institute that the use of this dataset is restricted to." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#companyIdOverwrittenByChild
+:companyIdOverwrittenByChild rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :TDataGeneratorAndPublication ;
+                             rdfs:range xsd:boolean ;
+                             rdfs:comment "If a reference to a master data entity must be removed in a child dataset it is required to set the corresponding xxxOverwrittenByChild attribute to true. Otherwise the removed referenced will be interpreted as \"Keep the Parent Value\"." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#contextId
+:contextId rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TFileAttributes ;
+           rdfs:range xsd:string ;
+           rdfs:comment """Indicates the context for which this dataset is designed. The information is used, e.g. for restricting the accessibility of dataset information to one particular context and to determine which master data files are needed to access it. If this attribute is omitted the dataset is assumed to be a standalone dataset and masterdata references can not be dereferenced.
+The context replaces the ecoSpold01 quality network (field id 304). The context id for the ecoinvent quality network can be found in the Context.xml master data file.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#contextName
+:contextName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :TFileAttributes ;
+             rdfs:range xsd:string ;
+             rdfs:comment """The name of the context referenced by field 3880.
+The context replaces the ecoSpold01 quality network (field id 304). The context id for the ecoinvent quality network can be found in the Context.xml master data file.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#creationTimestamp
+:creationTimestamp rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :TFileAttributes ;
+                   rdfs:range xsd:dateTime ;
+                   rdfs:comment "Automatically generated date when dataset is created." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#datasetIcon
+:datasetIcon rdf:type owl:DatatypeProperty ;
+             rdfs:domain :TActivity ;
+             rdfs:range xsd:anyURI ;
+             rdfs:comment "The URL of the dataset icon. A dataset icon serves a quick identification of the specific dataset, and may also be used for product brands and company logos. The icon is not directly part of the dataset, but is stored locally or on the ecoinvent web-server, from where it is retrievable via the Http protocol." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#defaultLanguage
+:defaultLanguage rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :TFileAttributes ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Default language for all multi language fields of this dataset. Any multi language field should contain a value at least for the default language. If no defaultLanguage is given, the default value (\"en\") will be used." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#endDate
+:endDate rdf:type owl:DatatypeProperty ;
+         rdfs:domain :TTimePeriod ;
+         rdfs:range xsd:string ;
+         rdfs:comment "End date of the time period for which the dataset is valid, presented as a complete date (year-month-day)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#extrapolations
+:extrapolations rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TRepresentativeness ;
+                rdfs:range xsd:string ;
+                rdfs:comment """Describes extrapolations of data from another time period, another geographical area or another technology and the way these extrapolations have been carried out.
+
+It should be reported whether different extrapolations have been done on the level of individual exchanges.
+					If data representative for a activity operated in one country is used for another country's activity, its original representativity can be indicated here.
+
+Changes in mean values due to extrapolations may also be reported here.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#fileGenerator
+:fileGenerator rdf:type owl:DatatypeProperty ;
+               rdfs:domain :TFileAttributes ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Description of the program which created this file. Preferably including version." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#fileTimestamp
+:fileTimestamp rdf:type owl:DatatypeProperty ;
+               rdfs:domain :TFileAttributes ;
+               rdfs:range xsd:dateTime ;
+               rdfs:comment "Time and date this file was created." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#generalComment
+:generalComment rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TActivity ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Text and image field for general information about the dataset. Only comments and references of more general nature that cannot be placed in any of the more specific comment fields, should be placed here. In general, the information in the dataset should be sufficient to judge the appropriateness of a dataset for a specific application.Text and image fields are list of text, imageUri and variable elements. The text and imageUri elements can used to describe the current section and they can be combined in any order given by their index attribute. Text variables are defined by the variable elements, which may be used in the text as {{variablename}}. If a parent text field includes a variable, this variable may be redefined by the child activity dataset while keeping the rest of the parent text intact. This allows easy changes of text parts in child processes." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#geographyContextId
+:geographyContextId rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :TGeography ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Reference to the context of the geography. If this attribute is omitted the context of the dataset itself will be used instead." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#geographyId
+:geographyId rdf:type owl:DatatypeProperty ;
+             rdfs:domain :TGeography ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Reference to valid locations file with detailed geography information." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :TActivity ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Unique identifier for this activity. The datat type UUID is a 36 characters string with hexadecimal characters and ensures a world-wide unique identifier. A UUID for a new item must be supplied by external software. There are several UUID generators on the web and implementations in most programming languages." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#includedActivitiesEnd
+:includedActivitiesEnd rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :TActivity ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "Describes the included activities to the extent that this is not self-explanatory from the activity name, as well as activities or inputs that are intentionally excluded, e.g. if the activity “application of pesticides” as a service excludes the pesticide, in order to be applicable for many different active ingredients. The description ends by mentioning the last activity and/or point of delivery, e.g. “until and including loading of the product on lorries”." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#includedActivitiesStart
+:includedActivitiesStart rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :TActivity ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Describes the starting point of the activity. For \"system terminated\"  the starting point is always \"From cradle, i.e. including all upstream activities\". For unit processes, the starting point may be described in terms of the nature of the inputs, e.g. \"From reception of [e.g. raw material X]...\" or \"Service starting with the input of [e.g. labour and energy]." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#inheritanceDepth
+:inheritanceDepth rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TActivity ;
+                  rdfs:range xsd:integer ;
+                  rdfs:comment "The inheritance depth expresses the maximum number of parent datasets for the current dataset. The following values are used in the ecoinvent context: 0 = not a child, 1 = a geography child, 2 = a temporal child, 3 = a macro-economic scenario child." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#internalSchemaVersion
+:internalSchemaVersion rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :TFileAttributes ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "Dataset is generated based on this internal schema version." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#isActiveAuthor
+:isActiveAuthor rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TDataEntryBy ;
+                rdfs:range xsd:boolean ;
+                rdfs:comment "This field defines if the person specified by field 3400 is the active author for this dataset. The active author will be consulted in case of future changes to the dataset by different data providers." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#isCopyrightProtected
+:isCopyrightProtected rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :TDataGeneratorAndPublication ;
+                      rdfs:range xsd:boolean ;
+                      rdfs:comment "Indicates whether or not a copyright exists. '1' (Yes) or '0' (No) should be entered correspondingly." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#isDataValidForEntirePeriod
+:isDataValidForEntirePeriod rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :TTimePeriod ;
+                            rdfs:range xsd:boolean ;
+                            rdfs:comment "Indicates whether or not the activity data (elementary and intermediate exchanges reported under flow data) are valid for the entire time period stated. If not, explanations may be given under 'comment'." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#lastEditTimestamp
+:lastEditTimestamp rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :TFileAttributes ;
+                   rdfs:range xsd:dateTime ;
+                   rdfs:comment "Automatically generated date when dataset is saved." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#macroEconomicScenarioContextId
+:macroEconomicScenarioContextId rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#macroEconomicScenarioId
+:macroEconomicScenarioId rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#masterAllocationPropertyContextId
+:masterAllocationPropertyContextId rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain :TActivity ;
+                                   rdfs:range xsd:string ;
+                                   rdfs:comment "Reference to the context of the master allocation property.If this attribute is omitted the context of the dataset itself will be used instead." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#masterAllocationPropertyId
+:masterAllocationPropertyId rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :TActivity ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment """References the default Allocation Property (via UUID) for all exchanges of this dataset. The Allocation Property can be overwritten for each exchange (see field 1150 specificAllocationPropertyId).
+The allocation factor for a specific output is then the declared TProperty value for this output multiplied by the amount of the output divided by the sum of the all such multiplied TProperty values for all outputs.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#masterAllocationPropertyIdOverwrittenByChild
+:masterAllocationPropertyIdOverwrittenByChild rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain :TActivity ;
+                                              rdfs:range xsd:boolean ;
+                                              rdfs:comment "If a reference to a master data entity must be removed in a child dataset it is required to set the corresponding xxxOverwrittenByChild attribute to true. Otherwise the removed referenced will be interpreted as \"Keep the Parent Value\"." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#otherDetails
+:otherDetails rdf:type owl:DatatypeProperty ;
+              rdfs:domain :TReview ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Contains further information from the review process, e.g. on smaller corrections added after the first publication of the dataset." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#pageNumbers
+:pageNumbers rdf:type owl:DatatypeProperty ;
+             rdfs:domain :TDataGeneratorAndPublication ;
+             rdfs:range xsd:string .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#parentActivityContextId
+:parentActivityContextId rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :TActivity ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Reference to the context of the parent activity.If this attribute is omitted the context of the dataset itself will be used instead." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#parentActivityId
+:parentActivityId rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TActivity ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment """The parentActivityId is a UUID to the parent activity dataset. When this field is filled with a UUID, all the field content from the parent activity dataset is taken over by the child activity dataset (the activity that calls the parent via the UUID).
+Child activity is derived (inherited) from its parent activity and only the content changes in comparison to its parent are stored in the child process. Child activity datasets cannot be validated using the EcoSpold02 schema, since most of the required fields will not be filled. Please refer to the additional documentation regarding inheritance of datasets in the ecoinvent database for further details.
+
+There are 5 ways to fill a field in a child activity dataset (\"http://www.EcoInvent.org/EcoSpold02Child\"):
+
+1) Leave a field blank: In this case, the value from the parent activity dataset applies.
+2) Fill in content: In this case, the filled in value applies, and the value from the parent activity dataset is ignored.
+3) In a string field, fill in content including the text {{PARENTTEXT}} in which case the  field content from the parent activity dataset is included at this place in the filled in text in the child dataset.
+4) In a field with type TTextAndImage, both {{PARENTTEXT}} and {{text_variables}} are supported; the latter allows to define text variables in the parent dataset and use them in the text as {{variablename}}. If a parent textfield includes a variable, this variable may be redefined by the child activity dataset while keeping the rest of the parent text intact. This allows easy changes of text parts in child processes.
+5) In an amount field with corresponding mathematical relation fields, fill in content in the mathematicalRelation field including the reserved variable PARENTVALUE, e.g. the formula PARENTVALUE*0.5 results in halfing the value of the original amount field.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#percent
+:percent rdf:type owl:DatatypeProperty ;
+         rdfs:domain :TRepresentativeness ;
+         rdfs:range xsd:float ;
+         rdfs:comment "Percent of data sampled out of the total that the activity is intended to represent (as given by the fields under Geography, Technology and Time Period)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#personContextId
+:personContextId rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :TDataEntryBy ,
+                             :TDataGeneratorAndPublication ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Reference to the context of the person. If this attribute is omitted the context of the dataset itself will be used instead." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#personEmail
+:personEmail rdf:type owl:DatatypeProperty ;
+             rdfs:domain :TDataEntryBy ,
+                         :TDataGeneratorAndPublication ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Complete email address of the person." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#personId
+:personId rdf:type owl:DatatypeProperty ;
+          rdfs:domain :TDataEntryBy ,
+                      :TDataGeneratorAndPublication ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Entry must be identical to an existing entry in field 3610" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#personName
+:personName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :TDataEntryBy ,
+                        :TDataGeneratorAndPublication ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Name and surname of the person." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#publishedSourceContextId
+:publishedSourceContextId rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :TDataGeneratorAndPublication ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment """Reference to the context of the published source.
+
+If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#publishedSourceFirstAuthor
+:publishedSourceFirstAuthor rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :TDataGeneratorAndPublication ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment "Indicates the first author by surname and abbreviated name (e.g., Einstein A.). In case of measurement on site, oral communication, personal written communication and questionnaries ('sourceType'=4, 5, 6, 7) the name of the communicating person is mentioned here." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#publishedSourceId
+:publishedSourceId rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :TDataGeneratorAndPublication ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "ID number for the report in which the dataset is documented." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#publishedSourceIdOverwrittenByChild
+:publishedSourceIdOverwrittenByChild rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain :TDataGeneratorAndPublication ;
+                                     rdfs:range xsd:boolean ;
+                                     rdfs:comment "If a reference to a master data entity must be removed in a child dataset it is required to set the corresponding xxxOverwrittenByChild attribute to true. Otherwise the removed referenced will be interpreted as \"Keep the Parent Value\"." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#publishedSourceYear
+:publishedSourceYear rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :TDataGeneratorAndPublication ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "Indicates the year of publication and communication, respectively. For web-sites: last visited." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#reviewDate
+:reviewDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain :TReview ;
+            rdfs:range xsd:dateTime ;
+            rdfs:comment "Date of validation or review." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#reviewedMajorRelease
+:reviewedMajorRelease rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :TReview ;
+                      rdfs:range xsd:integer ;
+                      rdfs:comment "The dataset version validated or reviewed. Refers to 3800." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#reviewedMajorRevision
+:reviewedMajorRevision rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :TReview ;
+                       rdfs:range xsd:integer ;
+                       rdfs:comment "The dataset version validated or reviewed. Refers to 3810." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#reviewedMinorRelease
+:reviewedMinorRelease rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :TReview ;
+                      rdfs:range xsd:integer ;
+                      rdfs:comment "The dataset version validated or reviewed. Refers to 3805." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#reviewedMinorRevision
+:reviewedMinorRevision rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :TReview ;
+                       rdfs:range xsd:integer ;
+                       rdfs:comment "The dataset version validated or reviewed. Refers to 3815." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#reviewerContextId
+:reviewerContextId rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :TReview ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Reference to the context of the reviewer.If this attribute is omitted the context of the dataset itself will be used instead." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#reviewerEmail
+:reviewerEmail rdf:type owl:DatatypeProperty ;
+               rdfs:domain :TReview ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Complete email address of the person." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#reviewerId
+:reviewerId rdf:type owl:DatatypeProperty ;
+            rdfs:domain :TReview ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Indicates the person who carried out the review." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#reviewerName
+:reviewerName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :TReview ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Name and surname of the person." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#samplingProcedure
+:samplingProcedure rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :TRepresentativeness ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Text describing the sampling and calculation procedures applied for quantifying the exchanges. Reports whether the sampling procedure for particular elementary and intermediate exchanges differ from the general procedure. Mentions possible problems in combining different sampling procedures.Text and image fields are list of text, imageUri and variable elements. The text and imageUri elements can used to describe the current section and they can be combined in any order given by their index attribute. Text variables are defined by the variable elements, which may be used in the text as {{variablename}}. If a parent text field includes a variable, this variable may be redefined by the child activity dataset while keeping the rest of the parent text intact. This allows easy changes of text parts in child processes." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#shortName
+:shortName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TGeography ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Descriptive shortname of the location referenced by geographyId, e.g. the regional codes of EcoSpold version 1." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#specialActivityType
+:specialActivityType rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :TActivity ;
+                     rdfs:range xsd:integer ;
+                     rdfs:comment """0 = ordinary transforming activity (default), 1 = market activity, 10 = market group, 2 = IO activity, 3 = Residual activity, 4 = production mix, 5 = import activity, 6 = supply mix, 7 = export activity, 8 = re-export activity, 9 = correction activity
+
+The special activity types are: 0 = “ordinary” transforming activities. Transforming activities are human activities that transform inputs, so that the output of the activity is different from the inputs, e.g. a hard coal mine that transforms hard coal in ground to the marketable product hard coal. Transforming activities are here understood in the widest possible sense, including extraction, production, transport, consumption and waste treatment activities, i.e. any human activity where the intermediate output is different from the intermediate input. The concept “transforming activities” is introduced here simply to distinguish – in the further modelling and linking of activities – these “ordinary” activities from the market activities, production and supply mixes, import and export activities, and correction datasets.1 = market activity. Market activities do not transform their inputs, but simply transfer the intermediate output from a transforming activity to the transforming activities that consume this intermediate output as an input, e.g. from hard coal at the supplier to hard coal at the consumer. Market activities typically mix similar intermediate outputs from different transforming activities. Market activities therefore supply consumption mixes of the intermediate outputs.10 = market group. Market groups are to markets what markets are to transforming activities. In the undefined system model a market group only contains a reference product. The linking algorithm will add supplying markets as inputs which are contained in the location of the market group and have the same reference product.2 = IO activity. An IO activity represents an activity dataset from a national supply-use table, i.e. typically the supply and use of one specific industry.3 = Residual activity. A residual activity is the resulting activity when subtracting all available unit processes within an activity class from the supply-use data (IO activity) of the same activity class, for the same year and geo-graphical area. 4 = production mix. A production mix represents the production-volume-weighted average of the suppliers of a specific product within a geographical area.5 = import activity. An import activity represents the import of a specified product to a specified geographical area, solely for use in national balancing (not contributing to any auto-generated consumption mixes). Imports to administratively constrained markets and from partly isolated markets are modelled as ordinary transforming activities in order to be included in the relevant market activities (consumption mixes).6 = supply mix. A supply mix is a production mix with the addition of the import of a specified product to a specified geographical area.7 = export activity. An export activity represents the export volume of a national production mix that has the national area as its geographical location and does not contribute to any auto-generated consumption mixes. To give the correct value of the export, the same activities and data that are included with the market activities are added directly to the export activity. This includes transport activities, production losses, wholesaler and retailer activities, and product taxes and subsidies.8 = re-export activity. A re-export activity represents the re-export volume of a geographical area and does not contribute to any auto-generated consumption mixes.9 = correction activity. A correction activity is an activity that is added twice to a product system, one with a positive and once with a negative flow, in order to move one or more exchanges from one part of the system to another, e.g. to correct for downstream effects of an upstream activity, or to correct a bias in the mass-balance introduced by an allocation. More details on this is provided in the Chapters on \"Downstream changes caused by differences in product quality\" and \"Allocation corrections\" in the ecoinvent Data Quality Guidelines.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#startDate
+:startDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TTimePeriod ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Start date of the time period for which the dataset is valid, presented as a complete date (year-month-day)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#systemModelContextId
+:systemModelContextId rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :TRepresentativeness ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment """Reference to the context of the system model.
+			
+If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#systemModelId
+:systemModelId rdf:type owl:DatatypeProperty ;
+               rdfs:domain :TRepresentativeness ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The system model describes how activity datasets are linked to form product systems. Some options in the ecoinvent network are 'undefined', 'attributional, average current suppliers, revenue allocation', 'consequential, small-scale, long-term decisions'." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#systemModelName
+:systemModelName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :TRepresentativeness ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "This is the plaintext value of the referenced system model (field 3000)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#technologyLevel
+:technologyLevel rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :TTechnology ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment """0 = undefined, 1 = New, 2 = Modern, 3 = Current (default), 4 = Old, 5 = Outdated
+
+Label that grossly classifies the technology of the described activity and can be used in modelling to select processes with a specific technological level. The codes used are:0=Undefined. For market activities that do not have a technology level.1=New. For a technology assumed to be on some aspects technically superior to modern technology, but not yet the most commonly installed when investment is based on purely economic considerations.2=Modern. For a technology currently used when installing new capacity, when investment is based on purely economic considerations (most competitive technology). 3=Current (default). For a technology in between modern and old.4=Old. For a technology that is currently taken out of use, when decommissioning is based on purely economic considerations (least competitive technology).5=Outdated. For a technology no longer in use.The terms used does not necessarily reflect the age of the technologies. A modern technology can be a century old, if it is still the most competitive technology, and an old technology can be relatively young, if it is one that has quickly become superseded by other more competitive ones. The technology level is relative to the year for which the data are valid, as given under Time Period. In a time series, the same technology can move between different technology levels over time. The same technology can also be given different technology levels in different geographical locations, even in the same year.""" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TAccessRestrictedTo
+:TAccessRestrictedTo rdf:type owl:Class ;
+                     rdfs:comment "Remark Nicolas: Type for the object property accessRestrictedTo" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TActivity
+:TActivity rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :activityName ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :activityNameContextId ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :activityNameId ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :allocationComment ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :datasetIcon ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:anyURI
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :generalComment ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :id ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :includedActivitiesEnd ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :includedActivitiesStart ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :inheritanceDepth ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:integer
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :masterAllocationPropertyContextId ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :masterAllocationPropertyId ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :masterAllocationPropertyIdOverwrittenByChild ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:boolean
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :parentActivityContextId ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :parentActivityId ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :specialActivityType ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:integer
+                           ] ;
+           rdfs:comment "Contains the identifying information of an activity dataset including name and classification." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TDataEntryBy
+:TDataEntryBy rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :isActiveAuthor ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:boolean
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :personContextId ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :personEmail ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :personId ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :personName ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TDataGeneratorAndPublication
+:TDataGeneratorAndPublication rdf:type owl:Class ;
+                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                owl:onProperty :pageNumbers ;
+                                                owl:someValuesFrom xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :companyCode ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :companyContextId ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :companyId ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :companyIdOverwrittenByChild ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:boolean
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :isCopyrightProtected ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:boolean
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :personContextId ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :personEmail ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :personId ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :personName ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :publishedSourceContextId ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :publishedSourceFirstAuthor ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :publishedSourceId ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :publishedSourceIdOverwrittenByChild ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:boolean
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :publishedSourceYear ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ;
+                              rdfs:comment "Contains information about who collected, compiled or published the orginal data. This may or may not be the same person as under 'DataEntryBy'. Furthermore contains information about kind of publication underlying the dataset and the accessibility of the dataset." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TDataPublishedIn
+:TDataPublishedIn rdf:type owl:Class ;
+                  rdfs:comment "Remark Nicolas: Type for the object property dataPublishedIn" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TFileAttributes
+:TFileAttributes rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :contextId ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :contextName ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :creationTimestamp ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:dateTime
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :defaultLanguage ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :fileGenerator ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :fileTimestamp ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:dateTime
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :internalSchemaVersion ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :lastEditTimestamp ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:dateTime
+                                 ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TGeography
+:TGeography rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :comment ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :geographyContextId ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :geographyId ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :shortName ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ;
+            rdfs:comment "Contains information about the geographic validity of the process. The geography may be the point location of the activity, a line describing a mobile activity, or an area of a distributed activity or of a production mix, containing several located activities. For markets (consumption mixes), the geography describes the market boundaries, across which imports and exports are limited." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TMacroEconomicScenario
+:TMacroEconomicScenario rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://www.EcoInvent.org/EcoSpold02/flowdata#name> ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :comment ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :macroEconomicScenarioContextId ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ;
+                        rdfs:comment "References the macro-economic scenario used in this dataset." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TRepresentativeness
+:TRepresentativeness rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty :extrapolations ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :percent ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:float
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :samplingProcedure ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :systemModelContextId ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :systemModelId ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :systemModelName ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TReview
+:TReview rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :otherDetails ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :reviewDate ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:dateTime
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :reviewedMajorRelease ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:integer
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :reviewedMajorRevision ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:integer
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :reviewedMinorRelease ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:integer
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :reviewedMinorRevision ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:integer
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :reviewerContextId ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :reviewerEmail ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :reviewerId ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :reviewerName ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ;
+         rdfs:comment """Contains information about who carried out the critical review and about the main results and conclusions of the review and the recommendations made.
+
+Multiple reviewers allowed""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TTechnology
+:TTechnology rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :comment ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :technologyLevel ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:string
+                             ] ;
+             rdfs:comment "Contains a description of the technology for which data has been collected. The text should cover information necessary to identify the properties and particularities of the technology(ies) underlying the activity data." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TTimePeriod
+:TTimePeriod rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty :endDate ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :isDataValidForEntirePeriod ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:boolean
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :startDate ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:string
+                             ] ;
+             rdfs:comment "Describes start and end date of the time period for which the dataset is valid." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#0=Public
+<http://www.EcoInvent.org/EcoSpold02/metainformation#0=Public> rdf:type owl:NamedIndividual ,
+                                                                        :TAccessRestrictedTo .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#0=Data_as_such_not_published_elsewhere_(default)
+<http://www.EcoInvent.org/EcoSpold02/metainformation#0=Data_as_such_not_published_elsewhere_(default)> rdf:type owl:NamedIndividual ,
+                                                                                                                :TDataPublishedIn .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#1=Licensees
+<http://www.EcoInvent.org/EcoSpold02/metainformation#1=Licensees> rdf:type owl:NamedIndividual ,
+                                                                           :TAccessRestrictedTo .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#1=The_data_of_some_unit_processes_or_subsystems_are_published
+<http://www.EcoInvent.org/EcoSpold02/metainformation#1=The_data_of_some_unit_processes_or_subsystems_are_published> rdf:type owl:NamedIndividual ,
+                                                                                                                             :TDataPublishedIn .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#2=Results_only
+<http://www.EcoInvent.org/EcoSpold02/metainformation#2=Results_only> rdf:type owl:NamedIndividual ,
+                                                                              :TAccessRestrictedTo .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#2=Data_has_been_published_entirely_in_(refers_to_field_757)
+<http://www.EcoInvent.org/EcoSpold02/metainformation#2=Data_has_been_published_entirely_in_(refers_to_field_757)> rdf:type owl:NamedIndividual ,
+                                                                                                                           :TDataPublishedIn .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#3=Restricted
+<http://www.EcoInvent.org/EcoSpold02/metainformation#3=Restricted> rdf:type owl:NamedIndividual ,
+                                                                            :TAccessRestrictedTo .
+
+
+[ xsd:maxLength "40"
+] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:pattern "\\w\\S*"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "40"
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:length "36"
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:maxLength "32000"
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "20"
+ ] .
+
+[ xsd:maxLength "30"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "80"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "7"
+ ] .
+
+[ xsd:maxLength "120"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "11"
+ ] .
+
+[ xsd:maxLength "255"
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:pattern "\\d{1,6}-\\d{2,2}-\\d"
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.w3.org/XML/1998/namespace#Class_53_Enumeration> ontmalizer:hasValue <http://www.w3.org/XML/1998/namespace#Class_53_preserve> ,
+                                                                                 <http://www.w3.org/XML/1998/namespace#Class_53_default> .
+
+
+<http://www.w3.org/XML/1998/namespace#Class_53_default> ontmalizer:hasValue "default"^^xsd:NCName .
+
+
+<http://www.w3.org/XML/1998/namespace#Class_53_preserve> ontmalizer:hasValue "preserve"^^xsd:NCName .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

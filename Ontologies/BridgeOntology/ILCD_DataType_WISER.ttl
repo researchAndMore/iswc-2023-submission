@@ -1,0 +1,331 @@
+@prefix : <http://lca.jrc.it/ILCD/Common_Data_Types#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix Common_Enumeration_Values: <http://lca.jrc.it/ILCD/Common_Enumeration_Values#> .
+@base <http://lca.jrc.it/ILCD/Common_Data_Types> .
+
+<http://lca.jrc.it/ILCD/Common_Data_Types> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#booleanDatatype
+:booleanDatatype rdf:type rdfs:Datatype ;
+                 rdfs:comment "true, false, 1, or 0" ;
+                 owl:equivalentClass xsd:boolean .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#casNumberDatatype
+:casNumberDatatype rdf:type rdfs:Datatype ;
+                   rdfs:comment "CAS Number, leading zeros are requried." ;
+                   owl:equivalentClass xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#dateTimeDatatype
+:dateTimeDatatype rdf:type rdfs:Datatype ;
+                  rdfs:comment "Date and time format acc. to ISO 8601, chapter 5.4" ;
+                  owl:equivalentClass xsd:dateTime .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#ftDatatype
+:ftDatatype rdf:type rdfs:Datatype ;
+            rdfs:comment "Free text with an unlimited length." ;
+            owl:equivalentClass xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype
+:ftMultiLangDatatype rdf:type rdfs:Datatype ;
+                     rdfs:comment "Multi-lang free text with an unlimited length." ;
+                     owl:equivalentClass :ftDatatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#gisDatatype
+:gisDatatype rdf:type rdfs:Datatype ;
+             rdfs:comment "Global geographical reference in Latitude and LongitudeExamples: \"+42.42;-180\", \"0;0\", \"13.22 ; -3" ;
+             owl:equivalentClass xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#int1Datatype
+:int1Datatype rdf:type rdfs:Datatype ;
+              rdfs:comment "1-digit integer number" ;
+              owl:equivalentClass xsd:integer .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#int5Datatype
+:int5Datatype rdf:type rdfs:Datatype ;
+              rdfs:comment "5-digit integer number" ;
+              owl:equivalentClass xsd:integer .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#int6Datatype
+:int6Datatype rdf:type rdfs:Datatype ;
+              rdfs:comment "6-digit integer number" ;
+              owl:equivalentClass xsd:integer .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#levelTypeDatatype
+:levelTypeDatatype rdf:type rdfs:Datatype ;
+                   rdfs:comment "1-digit integer number, must be equal to or greater than 0" ;
+                   owl:equivalentClass :int1Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#matRDatatype
+:matRDatatype rdf:type rdfs:Datatype ;
+              rdfs:comment "Mathematical Rule" ;
+              owl:equivalentClass xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#matVDatatype
+:matVDatatype rdf:type rdfs:Datatype ;
+              rdfs:comment "Mathematical variable or parameter" ;
+              owl:equivalentClass xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#nullableStringDatatype
+:nullableStringDatatype rdf:type rdfs:Datatype ;
+                        rdfs:comment "String with a maximum length of 500 characters. May be empty." ;
+                        owl:equivalentClass xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#percDatatype
+:percDatatype rdf:type rdfs:Datatype ;
+              rdfs:comment "percentage amount" ;
+              owl:equivalentClass xsd:decimal .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype
+:realDatatype rdf:type rdfs:Datatype ;
+              rdfs:comment "38-digit real number" ;
+              owl:equivalentClass xsd:double .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersionDatatype
+:schemaVersionDatatype rdf:type rdfs:Datatype ;
+                       rdfs:comment "Version number" ;
+                       owl:equivalentClass xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stDatatype
+:stDatatype rdf:type rdfs:Datatype ;
+            rdfs:comment "Short text with a maximum length of 1000 characters." ;
+            owl:equivalentClass xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype
+:stMultiLangDatatype rdf:type rdfs:Datatype ;
+                     rdfs:comment "Multi-lang short text with a maximum length of 1000 characters." ;
+                     owl:equivalentClass :stDatatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype
+:stringDatatype rdf:type rdfs:Datatype ;
+                rdfs:comment "String with a maximum length of 500 characters. Must have a minimum length of 1." ;
+                owl:equivalentClass xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype
+:stringMultiLangDatatype rdf:type rdfs:Datatype ;
+                         rdfs:comment "Multi-lang string with a maximum length of 500 characters." ;
+                         owl:equivalentClass :stringDatatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#uuidDatatype
+:uuidDatatype rdf:type rdfs:Datatype ;
+              rdfs:comment "Unique Universal Identifier, 16-byte hex number" ;
+              owl:equivalentClass xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#versionDatatype
+:versionDatatype rdf:type rdfs:Datatype ;
+                 rdfs:comment "Version number" ;
+                 owl:equivalentClass xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#yearDatatype
+:yearDatatype rdf:type rdfs:Datatype ;
+              rdfs:comment "4-digit year" ;
+              owl:equivalentClass xsd:integer .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#boolean
+:boolean rdf:type owl:DatatypeProperty ;
+         rdfs:range :booleanDatatype ,
+                    xsd:boolean ;
+         rdfs:comment "true, false, 1, or 0" ;
+         rdfs:label "Boolean" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#casNumber
+:casNumber rdf:type owl:DatatypeProperty ;
+           rdfs:range :casNumberDatatype ,
+                      xsd:string ;
+           rdfs:comment "CAS Number, leading zeros are requried." ;
+           rdfs:label "CAS Number" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#dateTime
+:dateTime rdf:type owl:DatatypeProperty ;
+          rdfs:range :dateTimeDatatype ,
+                     xsd:dateTime ;
+          rdfs:comment "Date and time format acc. to ISO 8601, chapter 5.4" ;
+          rdfs:label "Date Time" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#ft
+:ft rdf:type owl:DatatypeProperty ;
+    rdfs:range :ftDatatype ,
+               xsd:string ;
+    rdfs:comment "Free text with an unlimited length." ;
+    rdfs:label "Free Text (FT)" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLang
+:ftMultiLang rdf:type owl:DatatypeProperty ;
+             rdfs:range :ftDatatype ;
+             rdfs:comment "Multi-lang free text with an unlimited length" ;
+             rdfs:label "Multi Language FT" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#gis
+:gis rdf:type owl:DatatypeProperty ;
+     rdfs:range xsd:string ;
+     rdfs:comment "Global geographical reference in Latitude and LongitudeExamples: \"+42.42;-180\", \"0;0\", \"13.22 ; -3" ;
+     rdfs:label "GIS" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#int1
+:int1 rdf:type owl:DatatypeProperty ;
+      rdfs:range :int1Datatype ,
+                 xsd:integer ;
+      rdfs:comment "1-digit integer number" ;
+      rdfs:label "Int1" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#int5
+:int5 rdf:type owl:DatatypeProperty ;
+      rdfs:range :int5Datatype ,
+                 xsd:integer ;
+      rdfs:comment "5-digit integer number" ;
+      rdfs:label "Int5" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#int6
+:int6 rdf:type owl:DatatypeProperty ;
+      rdfs:range :int6Datatype ,
+                 xsd:integer ;
+      rdfs:comment "6-digit integer number" ;
+      rdfs:label "Int6" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#levelType
+:levelType rdf:type owl:DatatypeProperty ;
+           rdfs:range :int1Datatype ;
+           rdfs:comment "1-digit integer number, must be equal to or greater than 0" ;
+           rdfs:label "Level Type" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#matR
+:matR rdf:type owl:DatatypeProperty ;
+      rdfs:range :matRDatatype ,
+                 xsd:string ;
+      rdfs:comment "Mathematical rule" ;
+      rdfs:label "MatR" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#matV
+:matV rdf:type owl:DatatypeProperty ;
+      rdfs:range :matVDatatype ,
+                 xsd:string ;
+      rdfs:comment "Mathematical variable or parameter" ;
+      rdfs:label "MatV" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#nullableString
+:nullableString rdf:type owl:DatatypeProperty ;
+                rdfs:range :nullableStringDatatype ,
+                           xsd:string ;
+                rdfs:comment "String with a maximum length of 500 characters. May be empty." ;
+                rdfs:label "Nullable String" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#perc
+:perc rdf:type owl:DatatypeProperty ;
+      rdfs:range :percDatatype ,
+                 xsd:decimal ;
+      rdfs:comment "percentage amount" ;
+      rdfs:label "Perc" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#real
+:real rdf:type owl:DatatypeProperty ;
+      rdfs:range :realDatatype ,
+                 xsd:double ;
+      rdfs:comment "38-digit real number" ;
+      rdfs:label "Real" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersion
+:schemaVersion rdf:type owl:DatatypeProperty ;
+               rdfs:range :schemaVersionDatatype ,
+                          xsd:string ;
+               rdfs:comment "Version number" ;
+               rdfs:label "Schema Version" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#st
+:st rdf:type owl:DatatypeProperty ;
+    rdfs:range :stDatatype ,
+               xsd:string ;
+    rdfs:comment "Short text with a maximum length of 1000 characters." ;
+    rdfs:label "Short Text (ST)" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLang
+:stMultiLang rdf:type owl:DatatypeProperty ;
+             rdfs:range :stMultiLangDatatype ,
+                        xsd:string ;
+             rdfs:comment "Multi-lang short text with a maximum length of 1000 characters." ;
+             rdfs:label "Multi Language ST" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#string
+:string rdf:type owl:DatatypeProperty ;
+        rdfs:range :stringDatatype ,
+                   xsd:string ;
+        rdfs:comment "String with a maximum length of 500 characters. Must have a minimum length of 1." ;
+        rdfs:label "String" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLang
+:stringMultiLang rdf:type owl:DatatypeProperty ;
+                 rdfs:range :stringMultiLangDatatype ,
+                            xsd:string ;
+                 rdfs:comment "Multi-lang string with a maximum length of 500 characters." ;
+                 rdfs:label "Multi Language String" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#uuid
+:uuid rdf:type owl:DatatypeProperty ;
+      rdfs:range :uuidDatatype ,
+                 xsd:string ;
+      rdfs:comment "Unique Universal Identifier, 16-byte hex number" ;
+      rdfs:label "UUID" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#version
+:version rdf:type owl:DatatypeProperty ;
+         rdfs:range :versionDatatype ,
+                    xsd:string ;
+         rdfs:comment "Version number" ;
+         rdfs:label "Version" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

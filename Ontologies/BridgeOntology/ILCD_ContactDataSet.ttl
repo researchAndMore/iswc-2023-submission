@@ -1,0 +1,582 @@
+@prefix : <http://lca.jrc.it/ILCD/Contact_Data_Set#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://lca.jrc.it/ILCD/Contact_Data_Set> .
+
+<http://lca.jrc.it/ILCD/Contact_Data_Set> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersionDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersionDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#stDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#uuidDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#uuidDatatype> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Groups#class
+<http://lca.jrc.it/ILCD/Common_Groups#class> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain :DataSetInformationType ;
+                                             rdfs:comment "Name of the class" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#classification
+<http://lca.jrc.it/ILCD/Common_Groups#classification> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain :DataSetInformationType .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#classificationInformation
+<http://lca.jrc.it/ILCD/Common_Groups#classificationInformation> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:domain :DataSetInformationType ;
+                                                                 rdfs:comment "Hierachical classification of the contact foreseen to be used to structure the contact content of the database. (Note: This entry is NOT required for the identification of the contact data set. It should nevertheless be avoided to use identical names for contacts in the same class." .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy
+<http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain :ContactAdministrativeInformationType ;
+                                                   rdfs:comment "Staff or entity, that documented the generated data set, entering the information into the database; plus administrative information linked to the data entry activity." .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#other
+<http://lca.jrc.it/ILCD/Common_Groups#other> rdf:type owl:ObjectProperty .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#publicationAndOwnership
+<http://lca.jrc.it/ILCD/Common_Groups#publicationAndOwnership> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain :ContactAdministrativeInformationType ;
+                                                               rdfs:comment "Information related to publication and version management of the data set including copyright and access restrictions." .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#contact
+:contact rdf:type owl:ObjectProperty ;
+         rdfs:domain :ContactAdministrativeInformationType ;
+         rdfs:range <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType> ;
+         rdfs:comment "\"Contact data set\" of the person or entity who owns this data set. (Note: this is not necessarily the publisher of the data set.)" .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#contactAdministrativeInformation
+:contactAdministrativeInformation rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :ContactDataSetType ;
+                                  rdfs:range :ContactAdministrativeInformationType ;
+                                  rdfs:comment "Information on data set management and administration." .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#contactDataSet
+:contactDataSet rdf:type owl:ObjectProperty ;
+                rdfs:domain owl:Thing ;
+                rdfs:range :ContactDataSetType .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#contactInformation
+:contactInformation rdf:type owl:ObjectProperty ;
+                    rdfs:domain :ContactDataSetType ;
+                    rdfs:range :ContactInformationType .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#dataSetInformation
+:dataSetInformation rdf:type owl:ObjectProperty ;
+                    rdfs:domain :ContactInformationType ;
+                    rdfs:range :DataSetInformationType .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#referenceToContact
+:referenceToContact rdf:type owl:ObjectProperty ;
+                    rdfs:domain :DataSetInformationType ;
+                    rdfs:range <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType> ;
+                    rdfs:comment "\"Contact data set\"s of working groups, organisations or database networks to which EITHER this person or entity OR this database, data set format, or compliance system belongs. [Note: This does not necessarily imply a legally binding relationship, but may also be a voluntary membership.]" .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#referenceToLogo
+:referenceToLogo rdf:type owl:ObjectProperty ;
+                 rdfs:domain :DataSetInformationType ;
+                 rdfs:range <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType> ;
+                 rdfs:comment "\"Source data set\" of the logo of the organisation or source to be used in reports etc." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersion
+<http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersion> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain :ContactDataSetType ;
+                                                         rdfs:comment "Indicates, which version of the ILCD format is used" .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#uuid
+<http://lca.jrc.it/ILCD/Common_Data_Types#uuid> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain :DataSetInformationType .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#nameData
+<http://lca.jrc.it/ILCD/Common_Groups#nameData> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain :DataSetInformationType ;
+                                                rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype> .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#shortName
+<http://lca.jrc.it/ILCD/Common_Groups#shortName> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain :DataSetInformationType ;
+                                                 rdfs:comment "Short name for the contact, that is used for display e.g. of links to this data set (especially in case the full name of the contact is rather long, e.g. \"FAO\" for \"Food and Agriculture Organization\")." .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#centralContactPoint
+:centralContactPoint rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :DataSetInformationType ;
+                     rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype> ;
+                     rdfs:comment "Alternative address / contact details for the contact. Provides contact information in case e.g. the person or group represented by this contact has left the organisation or changed office/telephone. This alternative contact point can hence contain also a central telephone number, e-mail, www-address etc. of the organisation." .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#contactAddress
+:contactAddress rdf:type owl:DatatypeProperty ;
+                rdfs:domain :DataSetInformationType ;
+                rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype> ;
+                rdfs:comment "Mail address of the contact; specific for the person, working group, or department. [Note: A general contact point to the organisation is to be given in \"General contact point\".]" .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#contactDescriptionOrComment
+:contactDescriptionOrComment rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :DataSetInformationType ;
+                             rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype> ;
+                             rdfs:comment "Free text for additional description of the organisation or person of the contact, such as organisational profile, person responsibilities, etc." .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :DataSetInformationType ;
+       rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype> ,
+                  xsd:string ;
+       rdfs:comment "Contact's e-mail address." .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#telefax
+:telefax rdf:type owl:DatatypeProperty ;
+         rdfs:domain :DataSetInformationType ;
+         rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype> ,
+                    xsd:string ;
+         rdfs:comment "Contact's fax number(s) including country and regional codes." .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#telephone
+:telephone rdf:type owl:DatatypeProperty ;
+           rdfs:domain :DataSetInformationType ;
+           rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype> ,
+                      xsd:string ;
+           rdfs:comment "Contact's phone number(s) including country and regional codes." .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#wwwAddress
+:wwwAddress rdf:type owl:DatatypeProperty ;
+            rdfs:domain :DataSetInformationType ;
+            rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stDatatype> ;
+            rdfs:comment "Web-address of the person, working group, organisation or database network." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Groups#ClassType
+<http://lca.jrc.it/ILCD/Common_Groups#ClassType> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#ClassificationInformationType
+<http://lca.jrc.it/ILCD/Common_Groups#ClassificationInformationType> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#ClassificationType
+<http://lca.jrc.it/ILCD/Common_Groups#ClassificationType> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup1
+<http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup1> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup2
+<http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup2> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType
+<http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup1
+<http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup1> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup2
+<http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup2> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup3
+<http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup3> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#ContactAdministrativeInformationType
+:ContactAdministrativeInformationType rdf:type owl:Class ;
+                                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy> ;
+                                                        owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup1>
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#publicationAndOwnership> ;
+                                                        owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup1>
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :contact ;
+                                                        owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy> ;
+                                                        owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup1>
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                                        owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#publicationAndOwnership> ;
+                                                        owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup1>
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :contact ;
+                                                        owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy> ;
+                                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup1>
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                                        owl:maxCardinality "4"^^xsd:nonNegativeInteger
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#publicationAndOwnership> ;
+                                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup1>
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :contact ;
+                                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                                      ] ;
+                                      rdfs:comment "Information on data set management and administration." .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#ContactDataSetType
+:ContactDataSetType rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :contactAdministrativeInformation ;
+                                      owl:allValuesFrom :ContactAdministrativeInformationType
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :contactInformation ;
+                                      owl:allValuesFrom :ContactInformationType
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :contactAdministrativeInformation ;
+                                      owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :ContactAdministrativeInformationType
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :contactInformation ;
+                                      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :ContactInformationType
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :contactAdministrativeInformation ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :ContactAdministrativeInformationType
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersion> ;
+                                      owl:someValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersionDatatype>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersion> ;
+                                      owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersionDatatype>
+                                    ] .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#ContactInformationType
+:ContactInformationType rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty :dataSetInformation ;
+                                          owl:allValuesFrom :DataSetInformationType
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :dataSetInformation ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :DataSetInformationType
+                                        ] .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#DataSetInformationType
+:DataSetInformationType rdf:type owl:Class ;
+                        rdfs:subClassOf :ContactInformationType ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#classificationInformation> ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#ClassificationInformationType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :referenceToContact ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :referenceToLogo ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#classificationInformation> ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#ClassificationInformationType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                          owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :referenceToContact ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :referenceToLogo ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#classificationInformation> ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#ClassificationInformationType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                          owl:maxCardinality "3"^^xsd:nonNegativeInteger
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :referenceToContact ;
+                                          owl:maxQualifiedCardinality "2147483647"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :referenceToLogo ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Data_Types#uuid> ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#uuidDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#nameData> ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#shortName> ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :centralContactPoint ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :contactAddress ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :contactDescriptionOrComment ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :email ;
+                                          owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                              owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                            xsd:string
+                                                                          )
+                                                            ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :telefax ;
+                                          owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                              owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                            xsd:string
+                                                                          )
+                                                            ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :telephone ;
+                                          owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                              owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                            xsd:string
+                                                                          )
+                                                            ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :wwwAddress ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#stDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#nameData> ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#nameData> ;
+                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#shortName> ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :centralContactPoint ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :contactAddress ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :contactDescriptionOrComment ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :email ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                            owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                          xsd:string
+                                                                        )
+                                                          ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :telefax ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                            owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                          xsd:string
+                                                                        )
+                                                          ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :telephone ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                            owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                          xsd:string
+                                                                        )
+                                                          ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :wwwAddress ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Data_Types#uuid> ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#uuidDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#shortName> ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :centralContactPoint ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :contactAddress ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :contactDescriptionOrComment ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :email ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                            owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                          xsd:string
+                                                                        )
+                                                          ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :telefax ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                            owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                          xsd:string
+                                                                        )
+                                                          ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :telephone ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                            owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                          xsd:string
+                                                                        )
+                                                          ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :wwwAddress ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stDatatype>
+                                        ] .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :contactDataSet ;
+                            owl:allValuesFrom :ContactDataSetType
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :contactDataSet ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :ContactDataSetType
+                          ] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

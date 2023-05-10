@@ -1,0 +1,829 @@
+@prefix : <http://www.EcoInvent.org/EcoSpold02/units#> .
+@prefix j.0: <http://www.w3.org/XML/1998/namespace#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dtype: <http://www.srdc.com.tr/ontmalizer#> .
+@base <http://www.EcoInvent.org/EcoSpold02/units> .
+
+<http://www.EcoInvent.org/EcoSpold02/units> rdf:type owl:Ontology ;
+                                             owl:imports <http://www.EcoInvent.org/EcoSpold02#> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.srdc.com.tr/ontmalizer#hasValue
+dtype:hasValue rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#length
+xsd:length rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#maxInclusive
+xsd:maxInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#maxLength
+xsd:maxLength rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#minInclusive
+xsd:minInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#pattern
+xsd:pattern rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type rdfs:Datatype ;
+                                             owl:equivalentClass :TVariableNameDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error34
+<http://org.semanticweb.owlapi/error#Error34> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:unsignedIntDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error35
+<http://org.semanticweb.owlapi/error#Error35> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:NameDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error36
+<http://org.semanticweb.owlapi/error#Error36> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:hexBinaryDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error37
+<http://org.semanticweb.owlapi/error#Error37> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass :Class_34Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error38
+<http://org.semanticweb.owlapi/error#Error38> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:tokenDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error39
+<http://org.semanticweb.owlapi/error#Error39> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:gYearMonthDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error4
+<http://org.semanticweb.owlapi/error#Error4> rdf:type rdfs:Datatype ;
+                                             owl:equivalentClass :TBaseString32000Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error40
+<http://org.semanticweb.owlapi/error#Error40> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:positiveIntegerDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error41
+<http://org.semanticweb.owlapi/error#Error41> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:shortDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error42
+<http://org.semanticweb.owlapi/error#Error42> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:doubleDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error43
+<http://org.semanticweb.owlapi/error#Error43> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass :Class_30Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error44
+<http://org.semanticweb.owlapi/error#Error44> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:negativeIntegerDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error46
+<http://org.semanticweb.owlapi/error#Error46> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:byteDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error47
+<http://org.semanticweb.owlapi/error#Error47> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass j.0:Class_54Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error48
+<http://org.semanticweb.owlapi/error#Error48> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:decimalDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error49
+<http://org.semanticweb.owlapi/error#Error49> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass :Class_29Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error5
+<http://org.semanticweb.owlapi/error#Error5> rdf:type rdfs:Datatype ;
+                                             owl:equivalentClass :TCompanyCodeDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error50
+<http://org.semanticweb.owlapi/error#Error50> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:NMTOKENDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error52
+<http://org.semanticweb.owlapi/error#Error52> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:booleanDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error54
+<http://org.semanticweb.owlapi/error#Error54> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:base64BinaryDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error55
+<http://org.semanticweb.owlapi/error#Error55> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass :TUuidDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error56
+<http://org.semanticweb.owlapi/error#Error56> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass :Class_37Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error57
+<http://org.semanticweb.owlapi/error#Error57> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:gDayDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error58
+<http://org.semanticweb.owlapi/error#Error58> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:nonNegativeIntegerDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error59
+<http://org.semanticweb.owlapi/error#Error59> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass :Class_33Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error6
+<http://org.semanticweb.owlapi/error#Error6> rdf:type rdfs:Datatype ;
+                                             owl:equivalentClass :Class_27Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error60
+<http://org.semanticweb.owlapi/error#Error60> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass :TPercentDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error61
+<http://org.semanticweb.owlapi/error#Error61> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:gMonthDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error62
+<http://org.semanticweb.owlapi/error#Error62> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:NOTATIONDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error63
+<http://org.semanticweb.owlapi/error#Error63> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass :Class_3Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error64
+<http://org.semanticweb.owlapi/error#Error64> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass j.0:Class_55Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error65
+<http://org.semanticweb.owlapi/error#Error65> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:languageDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error66
+<http://org.semanticweb.owlapi/error#Error66> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass :TBaseString20Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error67
+<http://org.semanticweb.owlapi/error#Error67> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass :Class_28Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error69
+<http://org.semanticweb.owlapi/error#Error69> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:IDDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error7
+<http://org.semanticweb.owlapi/error#Error7> rdf:type rdfs:Datatype ;
+                                             owl:equivalentClass xsd:QNameDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error70
+<http://org.semanticweb.owlapi/error#Error70> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:gYearDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error71
+<http://org.semanticweb.owlapi/error#Error71> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:timeDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error74
+<http://org.semanticweb.owlapi/error#Error74> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:normalizedStringDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error75
+<http://org.semanticweb.owlapi/error#Error75> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:dateTimeDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error77
+<http://org.semanticweb.owlapi/error#Error77> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass :TBaseString255Datatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error78
+<http://org.semanticweb.owlapi/error#Error78> rdf:type rdfs:Datatype ;
+                                              owl:equivalentClass xsd:intDatatype .
+
+
+###  http://org.semanticweb.owlapi/error#Error8
+<http://org.semanticweb.owlapi/error#Error8> rdf:type rdfs:Datatype ;
+                                             owl:equivalentClass xsd:unsignedShortDatatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#Class_26Datatype
+:Class_26Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#Class_27Datatype
+:Class_27Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#Class_28Datatype
+:Class_28Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#Class_29Datatype
+:Class_29Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#Class_30Datatype
+:Class_30Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#Class_31Datatype
+:Class_31Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#Class_32Datatype
+:Class_32Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#Class_33Datatype
+:Class_33Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#Class_34Datatype
+:Class_34Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#Class_35Datatype
+:Class_35Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#Class_37Datatype
+:Class_37Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#Class_3Datatype
+:Class_3Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TBaseString120Datatype
+:TBaseString120Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TBaseString20Datatype
+:TBaseString20Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TBaseString255Datatype
+:TBaseString255Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TBaseString30Datatype
+:TBaseString30Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TBaseString32000Datatype
+:TBaseString32000Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TBaseString40Datatype
+:TBaseString40Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TBaseString80Datatype
+:TBaseString80Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TCasNumberDatatype
+:TCasNumberDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TCompanyCodeDatatype
+:TCompanyCodeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TFloatNumberDatatype
+:TFloatNumberDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TPercentDatatype
+:TPercentDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TUuidDatatype
+:TUuidDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TVariableNameDatatype
+:TVariableNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#ENTITIESDatatype
+xsd:ENTITIESDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#ENTITYDatatype
+xsd:ENTITYDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDDatatype
+xsd:IDDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFDatatype
+xsd:IDREFDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFSDatatype
+xsd:IDREFSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NCNameDatatype
+xsd:NCNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENDatatype
+xsd:NMTOKENDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENSDatatype
+xsd:NMTOKENSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NOTATIONDatatype
+xsd:NOTATIONDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NameDatatype
+xsd:NameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#QNameDatatype
+xsd:QNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anySimpleTypeDatatype
+xsd:anySimpleTypeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anyURIDatatype
+xsd:anyURIDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#base64BinaryDatatype
+xsd:base64BinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#booleanDatatype
+xsd:booleanDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#byteDatatype
+xsd:byteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateDatatype
+xsd:dateDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateTimeDatatype
+xsd:dateTimeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#decimalDatatype
+xsd:decimalDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#doubleDatatype
+xsd:doubleDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#durationDatatype
+xsd:durationDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#floatDatatype
+xsd:floatDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gDayDatatype
+xsd:gDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDatatype
+xsd:gMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDayDatatype
+xsd:gMonthDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearDatatype
+xsd:gYearDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearMonthDatatype
+xsd:gYearMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#hexBinaryDatatype
+xsd:hexBinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#intDatatype
+xsd:intDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#integerDatatype
+xsd:integerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#languageDatatype
+xsd:languageDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#longDatatype
+xsd:longDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#negativeIntegerDatatype
+xsd:negativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonNegativeIntegerDatatype
+xsd:nonNegativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonPositiveIntegerDatatype
+xsd:nonPositiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#normalizedStringDatatype
+xsd:normalizedStringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#positiveIntegerDatatype
+xsd:positiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#shortDatatype
+xsd:shortDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#stringDatatype
+xsd:stringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#timeDatatype
+xsd:timeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#tokenDatatype
+xsd:tokenDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedByteDatatype
+xsd:unsignedByteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedIntDatatype
+xsd:unsignedIntDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedLongDatatype
+xsd:unsignedLongDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedShortDatatype
+xsd:unsignedShortDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/XML/1998/namespace#Class_54Datatype
+j.0:Class_54Datatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/XML/1998/namespace#Class_55Datatype
+j.0:Class_55Datatype rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/units#unit
+:unit rdf:type owl:ObjectProperty ;
+      rdfs:domain :ValidUnits ;
+      rdfs:range :TValidUnit ;
+      rdfs:comment "Contains multiple entries of valid units. This element provides hierarchical grouping only and contains no information on its own. For details see complex type TValidUnit below." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/units#comment
+:comment rdf:type owl:DatatypeProperty ;
+         rdfs:domain :TValidUnit ;
+         rdfs:range xsd:string ;
+         rdfs:comment "A description of the unit." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#contextId
+:contextId rdf:type owl:DatatypeProperty ;
+           rdfs:domain :ValidUnits ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Reference to the context of the master data file." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#contextName
+:contextName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :ValidUnits ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The name of the context referenced by field 3880." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :ValidUnits ;
+    rdfs:range xsd:string ;
+    rdfs:comment "Unique identifier of the unit." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#majorRelease
+:majorRelease rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ValidUnits ;
+              rdfs:range xsd:integer ;
+              rdfs:comment "This version number can be used to make sure that the necessary master data entries are present for an activity. They are referenced by the valid... elements of the fileAttributes element in activity datasets. The release version number is used as follows: with a major update (e.g. every second year) the major release number is increased by one (1.00, 2.00, etc.)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#majorRevision
+:majorRevision rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ValidUnits ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "This version number can be used to make sure that the necessary master data entries are present for an activity. They are referenced by the valid... elements of the fileAttributes element in activity datasets. The revision version number is used to discern different versions during the working period until the dataset is entered into the database). The revision is generated automatically with each change made in the dataset or related file." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#minorRelease
+:minorRelease rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ValidUnits ;
+              rdfs:range xsd:integer ;
+              rdfs:comment "This version number can be used to make sure that the necessary master data entries are present for an activity. They are referenced by the valid... elements of the fileAttributes element in activity datasets. The release version number is used as follows: minor updates (corrected errors) within the period of two major updates increase the minor release version." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#minorRevision
+:minorRevision rdf:type owl:DatatypeProperty ;
+               rdfs:domain :ValidUnits ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "This version number can be used to make sure that the necessary master data entries are present for an activity. They are referenced by the valid... elements of the fileAttributes element in activity datasets. The revision Version number is used to discern different versions during the working period until the dataset is entered into the database). The revision is generated automatically with each change made in the dataset or related file." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :TValidUnit ;
+      rdfs:range xsd:string ;
+      rdfs:comment "The unique name of the unit." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#originalSource
+:originalSource rdf:type owl:DatatypeProperty ;
+                rdfs:domain :ValidUnits ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Reference to the location of the original document. Can be used to verify the data and/or to check for updates in the future." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/units#TValidUnit
+:TValidUnit rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :comment ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :id ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :name ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/units#ValidUnits
+:ValidUnits rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :unit ;
+                              owl:someValuesFrom :TValidUnit
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :contextId ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :contextName ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :majorRelease ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :majorRevision ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :minorRelease ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :minorRevision ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:integer
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :originalSource ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:anyURI
+                            ] ;
+            rdfs:comment "Comprises all units used in the database." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3.org/XML/1998/namespace#Class_55_Enumeration
+j.0:Class_55_Enumeration rdf:type owl:NamedIndividual ;
+                         dtype:hasValue j.0:Class_55_default ,
+                                        j.0:Class_55_preserve .
+
+
+###  http://www.w3.org/XML/1998/namespace#Class_55_default
+j.0:Class_55_default rdf:type owl:NamedIndividual ;
+                     dtype:hasValue "default"^^xsd:NCName .
+
+
+###  http://www.w3.org/XML/1998/namespace#Class_55_preserve
+j.0:Class_55_preserve rdf:type owl:NamedIndividual ;
+                      dtype:hasValue "preserve"^^xsd:NCName .
+
+
+[ owl:maxCardinality "1"^^xsd:int
+] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:length "36"
+ ] .
+
+[ xsd:maxLength "30"
+ ] .
+
+[ xsd:maxLength "120"
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "255"
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:maxLength "32000"
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:pattern "\\w\\S*"
+ ] .
+
+[ xsd:pattern "\\d{1,6}-\\d{2,2}-\\d"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:maxLength "7"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "80"
+ ] .
+
+[ xsd:maxLength "40"
+ ] .
+
+[ xsd:maxLength "40"
+ ] .
+
+[ xsd:maxLength "11"
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:maxLength "20"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

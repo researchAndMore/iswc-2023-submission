@@ -1,0 +1,1142 @@
+@prefix : <http://www.EcoInvent.org/EcoSpold02/flowdata#> .
+@prefix j.0: <http://www.EcoInvent.org/EcoSpold02#> .
+@prefix j.1: <http://www.w3.org/XML/1998/namespace#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dtype: <http://www.srdc.com.tr/ontmalizer#> .
+@base <http://www.EcoInvent.org/EcoSpold02/flowdata> .
+
+<http://www.EcoInvent.org/EcoSpold02/flowdata> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.srdc.com.tr/ontmalizer#hasValue
+dtype:hasValue rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#length
+xsd:length rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#maxInclusive
+xsd:maxInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#maxLength
+xsd:maxLength rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#minInclusive
+xsd:minInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#pattern
+xsd:pattern rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#ENTITIESDatatype
+xsd:ENTITIESDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#ENTITYDatatype
+xsd:ENTITYDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDDatatype
+xsd:IDDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFDatatype
+xsd:IDREFDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFSDatatype
+xsd:IDREFSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NCNameDatatype
+xsd:NCNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENDatatype
+xsd:NMTOKENDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENSDatatype
+xsd:NMTOKENSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NOTATIONDatatype
+xsd:NOTATIONDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NameDatatype
+xsd:NameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#QNameDatatype
+xsd:QNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anySimpleTypeDatatype
+xsd:anySimpleTypeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anyURIDatatype
+xsd:anyURIDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#base64BinaryDatatype
+xsd:base64BinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#booleanDatatype
+xsd:booleanDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#byteDatatype
+xsd:byteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateDatatype
+xsd:dateDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateTimeDatatype
+xsd:dateTimeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#decimalDatatype
+xsd:decimalDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#doubleDatatype
+xsd:doubleDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#durationDatatype
+xsd:durationDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#floatDatatype
+xsd:floatDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gDayDatatype
+xsd:gDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDatatype
+xsd:gMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDayDatatype
+xsd:gMonthDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearDatatype
+xsd:gYearDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearMonthDatatype
+xsd:gYearMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#hexBinaryDatatype
+xsd:hexBinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#intDatatype
+xsd:intDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#integerDatatype
+xsd:integerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#languageDatatype
+xsd:languageDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#longDatatype
+xsd:longDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#negativeIntegerDatatype
+xsd:negativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonNegativeIntegerDatatype
+xsd:nonNegativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonPositiveIntegerDatatype
+xsd:nonPositiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#normalizedStringDatatype
+xsd:normalizedStringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#positiveIntegerDatatype
+xsd:positiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#shortDatatype
+xsd:shortDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#stringDatatype
+xsd:stringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#timeDatatype
+xsd:timeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#tokenDatatype
+xsd:tokenDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedByteDatatype
+xsd:unsignedByteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedIntDatatype
+xsd:unsignedIntDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedLongDatatype
+xsd:unsignedLongDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedShortDatatype
+xsd:unsignedShortDatatype rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#compartment
+:compartment rdf:type owl:ObjectProperty ;
+             rdfs:domain :TElementaryExchange ;
+             rdfs:comment "Name of the compartment and subcompartment of the exchange. The xml document referenced by validCompartments contains definitions of valid compartment/subcompartment pairs for a given language." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#inputGroup
+:inputGroup rdf:type owl:ObjectProperty ;
+            rdfs:domain :TIntermediateExchange ;
+            rdfs:comment """Indicates the kind of input flow. 
+The codes are: 1=Materials/Fuels, 2=Electricity/Heat, 3=Services, 5=From Technosphere (unspecified).
+						For each exchange only an inputGroup or outputGroup shall exist. This indicates the direction of the flow.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#outputGroup
+:outputGroup rdf:type owl:ObjectProperty ;
+             rdfs:domain :TIntermediateExchange ;
+             rdfs:comment """Indicates the kind of output flow. 
+The codes are: 0=ReferenceProduct, 2=By-product, 3=MaterialForTreatment, 5=Stock Additions
+For each exchange only an inputGroup or outputGroup shall exist. This indicates the direction of the flow.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeUncertainty
+:productionVolumeUncertainty rdf:type owl:ObjectProperty ;
+                             rdfs:domain :TCustomExchange ;
+                             rdfs:comment """Uncertainty information in the form of distribution functions and their parameters and/or pedigree data.
+						For the format definition see the complex type section below.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#property
+:property rdf:type owl:ObjectProperty ;
+          rdfs:domain :TCustomExchange ;
+          rdfs:comment """Properties of the exchange, e.g. dry mass, water content, price, content of specific elements or substances.
+
+For the format definition see the complex type section below.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#transferCoefficient
+:transferCoefficient rdf:type owl:ObjectProperty ;
+                     rdfs:domain :TCustomExchange ;
+                     rdfs:range :TTransferCoefficient ;
+                     rdfs:comment """Transfer coefficients relate specific inputs to specific outputs and record the share of this specific input that contributes to this specific output.
+
+For the  format definition see the complex  type section below.""" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#activityLinkContextId
+:activityLinkContextId rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :TIntermediateExchange ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment """Reference to the context of the activity link.
+
+If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#activityLinkId
+:activityLinkId rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TIntermediateExchange ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Explicit reference to the activity which supplies the intermediate product. If this field is empty the activity will determined by a linking rule, which uses geographical and temporal information of this activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#activityLinkIdOverwrittenByChild
+:activityLinkIdOverwrittenByChild rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain :TIntermediateExchange ;
+                                  rdfs:range xsd:string ;
+                                  rdfs:comment "If a reference to a master data entity must be removed in a child dataset it is required to set the corresponding xxxOverwrittenByChild attribute to true. Otherwise the removed referenced will be interpreted as \"Keep the Parent Value\"." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#amount
+:amount rdf:type owl:DatatypeProperty ;
+        rdfs:domain :TElementaryExchange ,
+                    :TIntermediateExchange ,
+                    :TParameter ,
+                    :TTransferCoefficient ;
+        rdfs:range xsd:float ;
+        rdfs:comment "Amount of an elementary or intermediate exchange." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#casNumber
+:casNumber rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TElementaryExchange ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Indicates the number according to the Chemical Abstract Service (CAS). The Format of the CAS-number: 000000-00-0, where the first string of digits needs not to be complete (i.e. less than six digits are admitted)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#elementaryExchangeContextId
+:elementaryExchangeContextId rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :TElementaryExchange ;
+                             rdfs:range xsd:string ;
+                             rdfs:comment """Reference to the context of the elementary exchange.
+						If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#elementaryExchangeId
+:elementaryExchangeId rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :TElementaryExchange ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Reference to the master data entry for this elementary exchange" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#exchangeId
+:exchangeId rdf:type owl:DatatypeProperty ;
+            rdfs:domain :TElementaryExchange ,
+                        :TTransferCoefficient ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Reference to the UUID of an exchange." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#formula
+:formula rdf:type owl:DatatypeProperty ;
+         rdfs:domain :TElementaryExchange ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Chemical formula (e.g. sum formula) may be entered." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#impactCategoryContextId
+:impactCategoryContextId rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :TImpactIndicatorResult ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Reference to the context of the impact category. If this attribute is omitted the context of the dataset itself will be used instead." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#impactCategoryId
+:impactCategoryId rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TImpactIndicatorResult ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Reference to the method of the impact category." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#impactCategoryName
+:impactCategoryName rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :TImpactIndicatorResult ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Name of the impact category." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#impactIndicatorContextId
+:impactIndicatorContextId rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :TImpactIndicatorResult ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "Reference to the context of the impact indicator. If this attribute is omitted the context of the dataset itself will be used instead." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#impactIndicatorId
+:impactIndicatorId rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :TImpactIndicatorResult ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Reference to the impact indicator." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#impactMethodContextId
+:impactMethodContextId rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :TImpactIndicatorResult ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "Reference to the context of the impact method. If this attribute is omitted the context of the dataset itself will be used instead." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#impactMethodId
+:impactMethodId rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TImpactIndicatorResult ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Reference to the method of the impact indicator." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#impactMethodName
+:impactMethodName rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TImpactIndicatorResult ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Name of the impact method." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#intermediateExchangeContextId
+:intermediateExchangeContextId rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :TIntermediateExchange ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment """Reference to the context of the intermediate exchange.
+
+If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#intermediateExchangeId
+:intermediateExchangeId rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :TIntermediateExchange ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "Reference to the master data entry for this intermediate exchange" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#isCalculatedAmount
+:isCalculatedAmount rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :TElementaryExchange ,
+                                :TParameter ,
+                                :TTransferCoefficient ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:comment "If true the value of the amount field is the calculated value of the mathematicalRelation or the transferCoefficient." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#mathematicalRelation
+:mathematicalRelation rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :TElementaryExchange ,
+                                  :TParameter ,
+                                  :TTransferCoefficient ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment """Defines a mathematical formula with references to values of flows, parameters or properties by variable names or REF function.
+The result of the formula with a specific set of variable values is written into the amount field.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :TCustomExchange ,
+                  :TElementaryExchange ,
+                  :TImpactIndicatorResult ,
+                  :TParameter ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Name of the exchange/parameter" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#pageNumbers
+:pageNumbers rdf:type owl:DatatypeProperty ;
+             rdfs:domain :TElementaryExchange ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The relevant page numbers if the data are sourced on specific pages in an article or larger publication." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#parameterContextId
+:parameterContextId rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :TParameter ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment """Reference to the context of the parameter.
+
+If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#parameterId
+:parameterId rdf:type owl:DatatypeProperty ;
+             rdfs:domain :TParameter ;
+             rdfs:range xsd:string ;
+             rdfs:comment "A reference to a valid master data parameter." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeAmount
+:productionVolumeAmount rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :TIntermediateExchange ;
+                        rdfs:range xsd:float ;
+                        rdfs:comment "The product volume expressed per year in the same unit as the exchange." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeComment
+:productionVolumeComment rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :TIntermediateExchange ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "A general comment can be made on the data source, assumptions and calculations for the production volume data." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeMathematicalRelation
+:productionVolumeMathematicalRelation rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain :TIntermediateExchange ;
+                                      rdfs:range xsd:string ;
+                                      rdfs:comment """Defines a mathematical formula which references to values of flows, parameters or properties by variable names or REF function.
+						The result of the formula with a specific set of variable values is written into the amount field.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeSourceContextId
+:productionVolumeSourceContextId rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain :TIntermediateExchange ;
+                                 rdfs:range xsd:string ;
+                                 rdfs:comment """Reference to the context of the source.
+						If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeSourceFirstAuthor
+:productionVolumeSourceFirstAuthor rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain :TIntermediateExchange ;
+                                   rdfs:range xsd:string ;
+                                   rdfs:comment "Indicates the first author by surname and abbreviated name (e.g., Einstein A.). In case of measurement on site, oral communication, personal written communication and questionnaries ('sourceType'=4, 5, 6, 7) the name of the communicating person is mentioned here." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeSourceId
+:productionVolumeSourceId rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :TIntermediateExchange ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "A reference to a valid source." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeSourceIdOverwrittenByChild
+:productionVolumeSourceIdOverwrittenByChild rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain :TIntermediateExchange ;
+                                            rdfs:range xsd:string ;
+                                            rdfs:comment "If a reference to a master data entity must be removed in a child dataset it is required to set the corresponding xxxOverwrittenByChild attribute to true. Otherwise the removed referenced will be interpreted as \"Keep the Parent Value\"." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeSourceYear
+:productionVolumeSourceYear rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :TIntermediateExchange ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment "Indicates the year of publication and communication, respectively. For web-sites: last visited." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeVariableName
+:productionVolumeVariableName rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :TIntermediateExchange ;
+                              rdfs:range xsd:string ;
+                              rdfs:comment "The variable name is a short name for the production volume of the exchange, used when refering to the production volume amount in mathematical relations (formulas). Variables may contain characters, numbers and underscores (_). Variable names must start with a character (a-z). Variable names are not case sensitive (calorific_Value equals Calorific_value)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#sourceContextId
+:sourceContextId rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :TElementaryExchange ,
+                             :TTransferCoefficient ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment """Reference to the context of the source.
+If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#sourceFirstAuthor
+:sourceFirstAuthor rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :TElementaryExchange ,
+                               :TTransferCoefficient ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Indicates the first author by surname and abbreviated name (e.g., Einstein A.). In case of measurement on site, oral communication, personal written communication and questionnaries ('sourceType'=4, 5, 6, 7) the name of the communicating person is mentioned here." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#sourceId
+:sourceId rdf:type owl:DatatypeProperty ;
+          rdfs:domain :TElementaryExchange ,
+                      :TTransferCoefficient ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Reference to a source defined in the modelling and validation section." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#sourceIdOverwrittenByChild
+:sourceIdOverwrittenByChild rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :TElementaryExchange ,
+                                        :TTransferCoefficient ;
+                            rdfs:range xsd:string ;
+                            rdfs:comment "If a reference to a master data entity must be removed in a child dataset it is required to set the corresponding xxxOverwrittenByChild attribute to true. Otherwise the removed referenced will be interpreted as \"Keep the Parent Value\"." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#sourceYear
+:sourceYear rdf:type owl:DatatypeProperty ;
+            rdfs:domain :TElementaryExchange ,
+                        :TTransferCoefficient ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Indicates the year of publication and communication, respectively. For web-sites: last visited." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#specificAllocationPropertyContextId
+:specificAllocationPropertyContextId rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain :TElementaryExchange ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment """Reference to the context of the property.
+If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#specificAllocationPropertyId
+:specificAllocationPropertyId rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :TElementaryExchange ;
+                              rdfs:range xsd:string ;
+                              rdfs:comment "Reference to the Property used by the allocation. This overrides the dataset wide default defined by masterAllocationPropertyId." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#specificAllocationPropertyIdOverwrittenByChild
+:specificAllocationPropertyIdOverwrittenByChild rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain :TElementaryExchange ;
+                                                rdfs:range xsd:string ;
+                                                rdfs:comment "If a reference to a master data entity must be removed in a child dataset it is required to set the corresponding xxxOverwrittenByChild attribute to true. Otherwise the removed referenced will be interpreted as \"Keep the Parent Value\"." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#synonym
+:synonym rdf:type owl:DatatypeProperty ;
+         rdfs:domain :TCustomExchange ;
+         rdfs:range xsd:string ;
+         rdfs:comment """List of synonyms for the name. Contrary to normal multi language strings, synonyms may contain more than one element with the same xml:lang attribute value.
+0..n entries are allowed with a max. length of 80 each.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#tag
+:tag rdf:type owl:DatatypeProperty ;
+     rdfs:domain :TCustomExchange ;
+     rdfs:range xsd:string ;
+     rdfs:comment "The tag field allows an open list of keywords which describes the activity and can be used for filtering, grouping and searching. The validTags file reference provides a list of predefined tags, but the semantic validation procedure should only display an information (not an error) if a tag entry cannot be found in the validTags master file." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#unitContextId
+:unitContextId rdf:type owl:DatatypeProperty ;
+               rdfs:domain :TElementaryExchange ,
+                           :TParameter ;
+               rdfs:range xsd:string ;
+               rdfs:comment """Reference to the context of the unit.
+If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#unitId
+:unitId rdf:type owl:DatatypeProperty ;
+        rdfs:domain :TCustomExchange ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Reference to the unit of the parameter amount." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#unitName
+:unitName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :TCustomExchange ,
+                      :TElementaryExchange ,
+                      :TImpactIndicatorResult ,
+                      :TParameter ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Unit name of the amount." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#variableName
+:variableName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :TElementaryExchange ,
+                          :TParameter ;
+              rdfs:range xsd:string ;
+              rdfs:comment "The variable name is a short name for the exchange, used when refering to the exchange amount in mathematical relations (formulas). Variables may contain characters, numbers and underscores (_). Variable names must start with a character (a-z). Variable names are not case sensitive (calorific_Value equals Calorific_value)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#comment
+<http://www.EcoInvent.org/EcoSpold02/metainformation#comment> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#id
+<http://www.EcoInvent.org/EcoSpold02/metainformation#id> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TCustomExchange
+:TCustomExchange rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :transferCoefficient ;
+                                   owl:someValuesFrom :TTransferCoefficient
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :name ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :synonym ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :tag ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :unitName ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ;
+                 rdfs:comment "This section contains elements used in both exchange types. Elements unique to either Intermediate exchanges or Exchanges with environment are listed in the sections below." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TElementaryExchange
+:TElementaryExchange rdf:type owl:Class ;
+                     rdfs:subClassOf :TCustomExchange ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :amount ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:float
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :casNumber ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :elementaryExchangeContextId ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :elementaryExchangeId ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :exchangeId ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :formula ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :isCalculatedAmount ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:boolean
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :mathematicalRelation ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :name ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :pageNumbers ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :sourceContextId ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :sourceFirstAuthor ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :sourceId ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :sourceIdOverwrittenByChild ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :sourceYear ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :specificAllocationPropertyContextId ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :specificAllocationPropertyId ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :specificAllocationPropertyIdOverwrittenByChild ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:boolean
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :unitContextId ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :unitName ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :variableName ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#id> ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ;
+                     rdfs:comment """Comprises fields (additional to the exchanges section) which are only valid for elementary exchanges. Exchanges with environment are elementary flows as inputs and outputs recorded in a unit process and its related information.
+
+This section extends the exchanges section in case of exchanges with environment.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TImpactIndicatorResult
+:TImpactIndicatorResult rdf:type owl:Class ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty :amount ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:float
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :impactCategoryContextId ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :impactCategoryId ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :impactCategoryName ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :impactIndicatorContextId ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :impactIndicatorId ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :impactMethodContextId ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :impactMethodId ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :impactMethodName ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :name ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :unitName ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:string
+                                        ] ;
+                        rdfs:comment "Calculated impact indicators" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TIntermediateExchange
+:TIntermediateExchange rdf:type owl:Class ;
+                       rdfs:subClassOf :TCustomExchange ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :activityLinkContextId ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :activityLinkId ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :activityLinkIdOverwrittenByChild ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :intermediateExchangeContextId ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :intermediateExchangeId ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :productionVolumeAmount ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:float
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :productionVolumeComment ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :productionVolumeMathematicalRelation ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :productionVolumeSourceContextId ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :productionVolumeSourceFirstAuthor ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :productionVolumeSourceId ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :productionVolumeSourceIdOverwrittenByChild ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :productionVolumeSourceYear ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :productionVolumeVariableName ;
+                                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange xsd:string
+                                       ] ;
+                       rdfs:comment """Comprises fields (additional to the exchanges section) which are only valid for intermediate exchanges. Intermediate exchanges are 
+product or waste inputs and outputs recorded in a unit process and its related information.
+
+This section extends the exchanges section in case of intermediate exchanges.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TParameter
+:TParameter rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :amount ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:float
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isCalculatedAmount ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:boolean
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :mathematicalRelation ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :name ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :parameterContextId ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :parameterId ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :unitContextId ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :unitId ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :unitName ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :variableName ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#comment> ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TTransferCoefficient
+:TTransferCoefficient rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty :amount ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:float
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :exchangeId ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :isCalculatedAmount ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:boolean
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :mathematicalRelation ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :sourceContextId ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :sourceFirstAuthor ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :sourceId ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :sourceIdOverwrittenByChild ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:boolean
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :sourceYear ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#comment> ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] ;
+                      rdfs:comment "Transfer coefficients for calculating amounts of outputs from amounts of inputs." .
+
+
+[ xsd:minInclusive 1
+] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:minInclusive 4
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxInclusive 4
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

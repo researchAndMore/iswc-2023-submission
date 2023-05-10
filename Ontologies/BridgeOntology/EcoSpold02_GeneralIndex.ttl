@@ -1,0 +1,1264 @@
+@prefix : <http://www.EcoInvent.org/EcoSpold02/base#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix flowdata: <http://www.EcoInvent.org/EcoSpold02/flowdata#> .
+@prefix dataTypes: <http://www.EcoInvent.org/EcoSpold02/dataTypes#> .
+@prefix ontmalizer: <http://www.srdc.com.tr/ontmalizer#> .
+@base <http://www.EcoInvent.org/EcoSpold02/generalIndex> .
+
+<http://www.EcoInvent.org/EcoSpold02/generalIndex> rdf:type owl:Ontology ;
+                                                    owl:imports <http://www.EcoInvent.org/EcoSpold02/activity> ,
+                                                                <http://www.EcoInvent.org/EcoSpold02/dataTypes> ,
+                                                                <http://www.EcoInvent.org/EcoSpold02/flowdata> ,
+                                                                <http://www.EcoInvent.org/EcoSpold02/metainformation> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#uncertainty
+dataTypes:uncertainty rdf:type owl:AnnotationProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#amount
+flowdata:amount rdf:type owl:AnnotationProperty ;
+                rdfs:domain dataTypes:TProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#elementaryExchange
+<http://www.EcoInvent.org/EcoSpold02/activity#elementaryExchange> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:range flowdata:TElementaryExchange .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#fileAttributes
+<http://www.EcoInvent.org/EcoSpold02/activity#fileAttributes> rdf:type owl:ObjectProperty ;
+                                                              rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TFileAttributes> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#intermediateExchange
+<http://www.EcoInvent.org/EcoSpold02/activity#intermediateExchange> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:range flowdata:TIntermediateExchange .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#macroEconomicScenario
+<http://www.EcoInvent.org/EcoSpold02/activity#macroEconomicScenario> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TMacroEconomicScenario> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#representativeness
+<http://www.EcoInvent.org/EcoSpold02/activity#representativeness> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TRepresentativeness> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#review
+<http://www.EcoInvent.org/EcoSpold02/activity#review> rdf:type owl:ObjectProperty ;
+                                                      rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TReview> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#uncertainty
+dataTypes:uncertainty rdf:type owl:ObjectProperty ;
+                      rdfs:domain flowdata:TParameter ,
+                                  flowdata:TTransferCoefficient .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#compartment
+flowdata:compartment rdf:type owl:ObjectProperty ;
+                     rdfs:range dataTypes:TCompartment .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#inputGroup
+flowdata:inputGroup rdf:type owl:ObjectProperty ;
+                    rdfs:range :TInputGroup .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#outputGroup
+flowdata:outputGroup rdf:type owl:ObjectProperty ;
+                     rdfs:range :TOutputGroup .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeUncertainty
+flowdata:productionVolumeUncertainty rdf:type owl:ObjectProperty ;
+                                     rdfs:range dataTypes:TUncertainty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#property
+flowdata:property rdf:type owl:ObjectProperty ;
+                  rdfs:range dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#activityDataset
+:activityDataset rdf:type owl:ObjectProperty ;
+                 rdfs:domain :TEcoSpold ;
+                 rdfs:range <http://www.EcoInvent.org/EcoSpold02/activity#TActivityDataset> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#allocationComment
+:allocationComment rdf:type owl:ObjectProperty ;
+                   rdfs:domain <http://www.EcoInvent.org/EcoSpold02/metainformation#TActivity> ;
+                   rdfs:range dataTypes:TTextAndImage .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#beta
+:beta rdf:type owl:ObjectProperty ;
+      rdfs:domain dataTypes:UncertaintyModellingMethod ;
+      rdfs:range dataTypes:Beta .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#binomial
+:binomial rdf:type owl:ObjectProperty ;
+          rdfs:domain dataTypes:UncertaintyModellingMethod ;
+          rdfs:range dataTypes:Binomial .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#classification
+:classification rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://www.EcoInvent.org/EcoSpold02/activity#TActivityDescription> ;
+                rdfs:range dataTypes:TClassification .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#comment
+:comment rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://www.EcoInvent.org/EcoSpold02/activity#TGeography> ,
+                     <http://www.EcoInvent.org/EcoSpold02/activity#TTechnology> ,
+                     :TTimePeriod ;
+         rdfs:range dataTypes:TTextAndImage .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#compartment
+:compartment rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> ;
+             rdfs:range dataTypes:TCompartment .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#completeness
+:completeness rdf:type owl:ObjectProperty ;
+              rdfs:domain dataTypes:TUncertainty ;
+              rdfs:range <http://www.ecoinvent.org/EcoSpold02/base#TCompleteness> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#complexTypes
+:complexTypes rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://www.EcoInvent.org/EcoSpold02/activity#TFlowData> ;
+              rdfs:range <http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#customExchange
+:customExchange rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://www.EcoInvent.org/EcoSpold02/activity#TFlowData> ;
+                rdfs:range flowdata:TCustomExchange .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#dataEntryBy
+:dataEntryBy rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.ecoinvent.org/EcoSpold02/base#TAdministrativeInformation> ;
+             rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TDataEntryBy> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#details
+:details rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://www.EcoInvent.org/EcoSpold02/metainformation#TReview> ;
+         rdfs:range dataTypes:TTextAndImage ;
+         rdfs:comment "Text and image field for the comment of the reviewer of the dataset. Text and image fields are list of text, imageUri and variable elements. The text and imageUri elements can used to describe the current section and they can be combined in any order given by their index attribute. Text variables are defined by the variable elements, which may be used in the text as {{variablename}}. If a parent text field includes a variable, this variable may be redefined by the child activity dataset while keeping the rest of the parent text intact. This allows easy changes of text parts in child processes." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#elementaryExchange
+:elementaryExchange rdf:type owl:ObjectProperty ;
+                    rdfs:domain flowdata:TCustomExchange ;
+                    rdfs:range flowdata:TIntermediateExchange .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#furtherTechnologyCorrelation
+:furtherTechnologyCorrelation rdf:type owl:ObjectProperty ;
+                              rdfs:domain dataTypes:TUncertainty ;
+                              rdfs:range <http://www.ecoinvent.org/EcoSpold02/base#TFurtherTechnologyCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#gamma
+:gamma rdf:type owl:ObjectProperty ;
+       rdfs:domain dataTypes:UncertaintyModellingMethod ;
+       rdfs:range dataTypes:Gamma .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#generalComment
+:generalComment rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://www.EcoInvent.org/EcoSpold02/metainformation#TActivity> ;
+                rdfs:range dataTypes:TTextAndImage .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#geographicalCorrelation
+:geographicalCorrelation rdf:type owl:ObjectProperty ;
+                         rdfs:domain dataTypes:TUncertainty ;
+                         rdfs:range <http://www.ecoinvent.org/EcoSpold02/base#TGeographicalCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#impactIndicatorResult
+:impactIndicatorResult rdf:type owl:ObjectProperty ;
+                       rdfs:domain <http://www.EcoInvent.org/EcoSpold02/activity#TFlowData> ;
+                       rdfs:range flowdata:TImpactIndicatorResult .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#intermediateExchange
+:intermediateExchange rdf:type owl:ObjectProperty ;
+                      rdfs:domain flowdata:TCustomExchange ;
+                      rdfs:range flowdata:TIntermediateExchange .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#lognormal
+:lognormal rdf:type owl:ObjectProperty ;
+           rdfs:domain dataTypes:UncertaintyModellingMethod ;
+           rdfs:range dataTypes:Lognormal .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#normal
+:normal rdf:type owl:ObjectProperty ;
+        rdfs:domain dataTypes:UncertaintyModellingMethod ;
+        rdfs:range dataTypes:Normal .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#pedigreeMatrix
+:pedigreeMatrix rdf:type owl:ObjectProperty ;
+                rdfs:domain dataTypes:TUncertainty ;
+                rdfs:range dataTypes:PedigreeMatrix .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#property
+:property rdf:type owl:ObjectProperty ;
+          rdfs:domain <http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> ;
+          rdfs:range dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#reliability
+:reliability rdf:type owl:ObjectProperty ;
+             rdfs:domain dataTypes:TUncertainty ;
+             rdfs:range <http://www.ecoinvent.org/EcoSpold02/base#TReliability> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#requiredContextReference
+:requiredContextReference rdf:type owl:ObjectProperty ;
+                          rdfs:domain <http://www.ecoinvent.org/EcoSpold02/base#TAdministrativeInformation> ;
+                          rdfs:range dataTypes:TRequiredContextReference .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#temporalCorrelation
+:temporalCorrelation rdf:type owl:ObjectProperty ;
+                     rdfs:domain dataTypes:TUncertainty ;
+                     rdfs:range <http://www.ecoinvent.org/EcoSpold02/base#TTemporalCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#textAndImage
+:textAndImage rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> ;
+              rdfs:range dataTypes:TTextAndImage .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#timePeriod
+:timePeriod rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://www.EcoInvent.org/EcoSpold02/activity#TActivityDescription> ;
+            rdfs:range :TTimePeriod .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#transferCoefficient
+:transferCoefficient rdf:type owl:ObjectProperty ;
+                     rdfs:domain <http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> ;
+                     rdfs:range flowdata:TTransferCoefficient .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#triangular
+:triangular rdf:type owl:ObjectProperty ;
+            rdfs:domain dataTypes:UncertaintyModellingMethod ;
+            rdfs:range dataTypes:Triangular .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#uncertainty
+:uncertainty rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> ;
+             rdfs:range dataTypes:TUncertainty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#uncertaintyModellingMethod
+:uncertaintyModellingMethod rdf:type owl:ObjectProperty ;
+                            rdfs:domain dataTypes:TUncertainty ;
+                            rdfs:range dataTypes:UncertaintyModellingMethod .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#undefined
+:undefined rdf:type owl:ObjectProperty ;
+           rdfs:domain dataTypes:UncertaintyModellingMethod ;
+           rdfs:range dataTypes:Undefined .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#uniform
+:uniform rdf:type owl:ObjectProperty ;
+         rdfs:domain dataTypes:UncertaintyModellingMethod ;
+         rdfs:range dataTypes:Uniform .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#accessRestrictedTo
+<http://www.EcoInvent.org/EcoSpold02/metainformation#accessRestrictedTo> rdf:type owl:ObjectProperty ;
+                                                                         rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TAccessRestrictedTo> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#dataPublishedIn
+<http://www.EcoInvent.org/EcoSpold02/metainformation#dataPublishedIn> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TDataPublishedIn> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#requiredContext
+<http://www.EcoInvent.org/EcoSpold02/metainformation#requiredContext> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:range dataTypes:TRequiredContextReference .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#energyValues
+<http://www.ecoinvent.org/EcoSpold02/base#energyValues> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <http://www.EcoInvent.org/EcoSpold02/activity#TActivityDescription> ;
+                                                        rdfs:range <http://www.ecoinvent.org/EcoSpold02/base#TEnergyValues> .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#specialActivityType
+<http://www.ecoinvent.org/EcoSpold02/base#specialActivityType> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://www.EcoInvent.org/EcoSpold02/metainformation#TActivity> ;
+                                                               rdfs:range <http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#technologyLevel
+<http://www.ecoinvent.org/EcoSpold02/base#technologyLevel> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://www.EcoInvent.org/EcoSpold02/activity#TTechnology> ;
+                                                           rdfs:range <http://www.ecoinvent.org/EcoSpold02/base#TTechnologyLevel> .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#type
+<http://www.ecoinvent.org/EcoSpold02/base#type> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <http://www.EcoInvent.org/EcoSpold02/metainformation#TActivity> ;
+                                                rdfs:range <http://www.ecoinvent.org/EcoSpold02/base#TTypeActivity> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#isDefiningValue
+dataTypes:isDefiningValue rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#majorRelease
+dataTypes:majorRelease rdf:type owl:DatatypeProperty ;
+                       rdfs:domain <http://www.EcoInvent.org/EcoSpold02/metainformation#TFileAttributes> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#majorRevision
+dataTypes:majorRevision rdf:type owl:DatatypeProperty ;
+                        rdfs:domain <http://www.EcoInvent.org/EcoSpold02/metainformation#TFileAttributes> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#minorRelease
+dataTypes:minorRelease rdf:type owl:DatatypeProperty ;
+                       rdfs:domain <http://www.EcoInvent.org/EcoSpold02/metainformation#TFileAttributes> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#minorRevision
+dataTypes:minorRevision rdf:type owl:DatatypeProperty ;
+                        rdfs:domain <http://www.EcoInvent.org/EcoSpold02/metainformation#TFileAttributes> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#isCalculatedAmount
+flowdata:isCalculatedAmount rdf:type owl:DatatypeProperty ;
+                            rdfs:domain dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#mathematicalRelation
+flowdata:mathematicalRelation rdf:type owl:DatatypeProperty ;
+                              rdfs:domain dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#name
+flowdata:name rdf:type owl:DatatypeProperty ;
+              rdfs:domain dataTypes:TProperty ,
+                          flowdata:TCustomExchange ,
+                          <http://www.EcoInvent.org/EcoSpold02/metainformation#TMacroEconomicScenario> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#sourceContextId
+flowdata:sourceContextId rdf:type owl:DatatypeProperty ;
+                         rdfs:domain dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#sourceFirstAuthor
+flowdata:sourceFirstAuthor rdf:type owl:DatatypeProperty ;
+                           rdfs:domain dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#sourceId
+flowdata:sourceId rdf:type owl:DatatypeProperty ;
+                  rdfs:domain dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#sourceIdOverwrittenByChild
+flowdata:sourceIdOverwrittenByChild rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#sourceYear
+flowdata:sourceYear rdf:type owl:DatatypeProperty ;
+                    rdfs:domain dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#unitContextId
+flowdata:unitContextId rdf:type owl:DatatypeProperty ;
+                       rdfs:domain dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#unitId
+flowdata:unitId rdf:type owl:DatatypeProperty ;
+                rdfs:domain dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#unitName
+flowdata:unitName rdf:type owl:DatatypeProperty ;
+                  rdfs:domain dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#variableName
+flowdata:variableName rdf:type owl:DatatypeProperty ;
+                      rdfs:domain dataTypes:TProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#comment
+<http://www.EcoInvent.org/EcoSpold02/metainformation#comment> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.EcoInvent.org/EcoSpold02/activity#TGeography> ,
+                                                                          <http://www.EcoInvent.org/EcoSpold02/activity#TTechnology> ,
+                                                                          dataTypes:TProperty ,
+                                                                          dataTypes:TUncertainty ,
+                                                                          flowdata:TCustomExchange ,
+                                                                          flowdata:TParameter ,
+                                                                          flowdata:TTransferCoefficient ,
+                                                                          <http://www.EcoInvent.org/EcoSpold02/metainformation#TMacroEconomicScenario> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#geographyContextId
+<http://www.EcoInvent.org/EcoSpold02/metainformation#geographyContextId> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#geographyId
+<http://www.EcoInvent.org/EcoSpold02/metainformation#geographyId> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#id
+<http://www.EcoInvent.org/EcoSpold02/metainformation#id> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain flowdata:TElementaryExchange .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#macroEconomicScenarioContextId
+<http://www.EcoInvent.org/EcoSpold02/metainformation#macroEconomicScenarioContextId> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:domain <http://www.EcoInvent.org/EcoSpold02/metainformation#TMacroEconomicScenario> ;
+                                                                                     rdfs:range xsd:string .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#macroEconomicScenarioId
+<http://www.EcoInvent.org/EcoSpold02/metainformation#macroEconomicScenarioId> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:domain <http://www.EcoInvent.org/EcoSpold02/metainformation#TMacroEconomicScenario> ;
+                                                                              rdfs:range xsd:string .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#shortName
+<http://www.EcoInvent.org/EcoSpold02/metainformation#shortName> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TActivityDataset
+<http://www.EcoInvent.org/EcoSpold02/activity#TActivityDataset> rdf:type owl:Class .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TActivityDescription
+<http://www.EcoInvent.org/EcoSpold02/activity#TActivityDescription> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf :TEcoSpold ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://www.EcoInvent.org/EcoSpold02/activity#macroEconomicScenario> ;
+                                                                                      owl:someValuesFrom <http://www.EcoInvent.org/EcoSpold02/metainformation#TMacroEconomicScenario>
+                                                                                    ] ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :classification ;
+                                                                                      owl:someValuesFrom dataTypes:TClassification
+                                                                                    ] ,
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty :timePeriod ;
+                                                                                      owl:someValuesFrom :TTimePeriod
+                                                                                    ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TFlowData
+<http://www.EcoInvent.org/EcoSpold02/activity#TFlowData> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :TEcoSpold ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :complexTypes ;
+                                                                           owl:someValuesFrom <http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes>
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :customExchange ;
+                                                                           owl:someValuesFrom flowdata:TCustomExchange
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :impactIndicatorResult ;
+                                                                           owl:someValuesFrom flowdata:TImpactIndicatorResult
+                                                                         ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TGeography
+<http://www.EcoInvent.org/EcoSpold02/activity#TGeography> rdf:type owl:Class ;
+                                                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :comment ;
+                                                                            owl:someValuesFrom dataTypes:TTextAndImage
+                                                                          ] ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#geographyContextId> ;
+                                                                            owl:someValuesFrom xsd:string
+                                                                          ] ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#geographyId> ;
+                                                                            owl:someValuesFrom xsd:string
+                                                                          ] ,
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#shortName> ;
+                                                                            owl:someValuesFrom xsd:string
+                                                                          ] ;
+                                                          rdfs:comment "Contains information about the geographic validity of the process. The geography may be the point location of the activity, a line describing a mobile activity, or an area of a distributed activity or of a production mix, containing several located activities. For markets (consumption mixes), the geography describes the market boundaries, across which imports and exports are limited." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TTechnology
+<http://www.EcoInvent.org/EcoSpold02/activity#TTechnology> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.EcoInvent.org/EcoSpold02/activity#TActivityDescription> ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :comment ;
+                                                                             owl:someValuesFrom dataTypes:TTextAndImage
+                                                                           ] ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://www.ecoinvent.org/EcoSpold02/base#technologyLevel> ;
+                                                                             owl:someValuesFrom <http://www.ecoinvent.org/EcoSpold02/base#TTechnologyLevel>
+                                                                           ] ;
+                                                           rdfs:comment "Contains a description of the technology for which data has been collected. The text should cover information necessary to identify the properties and particularities of the technology(ies) underlying the activity data." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#PedigreeMatrix
+dataTypes:PedigreeMatrix rdf:type owl:Class ;
+                         rdfs:subClassOf dataTypes:TUncertainty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TClassification
+dataTypes:TClassification rdf:type owl:Class ;
+                          rdfs:subClassOf <http://www.EcoInvent.org/EcoSpold02/activity#TActivityDescription> ;
+                          rdfs:comment "Contains classification pairs to specify the activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TCompartment
+dataTypes:TCompartment rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> ;
+                       rdfs:comment "Contains compartment pairs to specify an exchange." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TProperty
+dataTypes:TProperty rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty dataTypes:isDefiningValue ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty flowdata:isCalculatedAmount ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty flowdata:mathematicalRelation ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty flowdata:name ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty flowdata:sourceContextId ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty flowdata:sourceFirstAuthor ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty flowdata:sourceId ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty flowdata:sourceIdOverwrittenByChild ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty flowdata:sourceYear ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty flowdata:unitContextId ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty flowdata:unitId ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty flowdata:unitName ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty flowdata:variableName ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#comment> ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ;
+                    rdfs:comment "Format to specify properties of exchanges." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TRequiredContextReference
+dataTypes:TRequiredContextReference rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://www.ecoinvent.org/EcoSpold02/base#TAdministrativeInformation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TTextAndImage
+dataTypes:TTextAndImage rdf:type owl:Class ;
+                        rdfs:subClassOf <http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> ;
+                        rdfs:comment "List of text, imageUri and variable elements. These can be combined in any order. Their desired order in the result must be given by the index attributes of the text and imageUrl elements." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TUncertainty
+dataTypes:TUncertainty rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :completeness ;
+                                         owl:someValuesFrom <http://www.ecoinvent.org/EcoSpold02/base#TCompleteness>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :furtherTechnologyCorrelation ;
+                                         owl:someValuesFrom <http://www.ecoinvent.org/EcoSpold02/base#TFurtherTechnologyCorrelation>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :geographicalCorrelation ;
+                                         owl:someValuesFrom <http://www.ecoinvent.org/EcoSpold02/base#TGeographicalCorrelation>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :pedigreeMatrix ;
+                                         owl:someValuesFrom dataTypes:PedigreeMatrix
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :reliability ;
+                                         owl:someValuesFrom <http://www.ecoinvent.org/EcoSpold02/base#TReliability>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :temporalCorrelation ;
+                                         owl:someValuesFrom <http://www.ecoinvent.org/EcoSpold02/base#TTemporalCorrelation>
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :uncertaintyModellingMethod ;
+                                         owl:someValuesFrom dataTypes:UncertaintyModellingMethod
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#comment> ;
+                                         owl:someValuesFrom xsd:string
+                                       ] ;
+                       rdfs:comment "Of the following uncertainty methods (lognormal, normal, ..., undefined) exactly one must be selected. The TUncertainty complex type is used in several places, so one dataset may contain several uncertainty elements in distinct places. But each element which has uncertainty may only contain one." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#UncertaintyModellingMethod
+dataTypes:UncertaintyModellingMethod rdf:type owl:Class ;
+                                     rdfs:subClassOf dataTypes:TUncertainty ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :beta ;
+                                                       owl:someValuesFrom dataTypes:Beta
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :binomial ;
+                                                       owl:someValuesFrom dataTypes:Binomial
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :gamma ;
+                                                       owl:someValuesFrom dataTypes:Gamma
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :lognormal ;
+                                                       owl:someValuesFrom dataTypes:Lognormal
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :normal ;
+                                                       owl:someValuesFrom dataTypes:Normal
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :triangular ;
+                                                       owl:someValuesFrom dataTypes:Triangular
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :undefined ;
+                                                       owl:someValuesFrom dataTypes:Undefined
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :uniform ;
+                                                       owl:someValuesFrom dataTypes:Uniform
+                                                     ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TCustomExchange
+flowdata:TCustomExchange rdf:type owl:Class ;
+                         rdfs:subClassOf <http://www.EcoInvent.org/EcoSpold02/activity#TFlowData> ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :elementaryExchange ;
+                                           owl:someValuesFrom flowdata:TElementaryExchange
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :intermediateExchange ;
+                                           owl:someValuesFrom flowdata:TIntermediateExchange
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#comment> ;
+                                           owl:someValuesFrom xsd:string
+                                         ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TElementaryExchange
+flowdata:TElementaryExchange rdf:type owl:Class ;
+                             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                               owl:onProperty flowdata:compartment ;
+                                               owl:someValuesFrom dataTypes:TCompartment
+                                             ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TImpactIndicatorResult
+flowdata:TImpactIndicatorResult rdf:type owl:Class ;
+                                rdfs:subClassOf <http://www.EcoInvent.org/EcoSpold02/activity#TFlowData> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TIntermediateExchange
+flowdata:TIntermediateExchange rdf:type owl:Class .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TParameter
+flowdata:TParameter rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.EcoInvent.org/EcoSpold02/activity#TFlowData> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty dataTypes:uncertainty ;
+                                      owl:someValuesFrom dataTypes:TUncertainty
+                                    ] ;
+                    rdfs:comment "Dataset parameters for use in formulas." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TTransferCoefficient
+flowdata:TTransferCoefficient rdf:type owl:Class ;
+                              rdfs:subClassOf <http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty dataTypes:uncertainty ;
+                                                owl:someValuesFrom dataTypes:TUncertainty
+                                              ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#TEcoSpold
+:TEcoSpold rdf:type owl:Class .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#TInputGroup
+:TInputGroup rdf:type owl:Class ;
+             rdfs:comment """Indicates the kind of input flow. The codes are: 1=Materials/Fuels, 2=Electricity/Heat, 3=Services, 5=From Technosphere (unspecified).
+For each exchange only an inputGroup or outputGroup shall exist. This indicates the direction of the flow.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#TOutputGroup
+:TOutputGroup rdf:type owl:Class ;
+              rdfs:comment """Indicates the kind of output flow. The codes are: 0=ReferenceProduct, 2=By-product, 3=MaterialForTreatment, 5=Stock Additions
+For each exchange only an inputGroup or outputGroup shall exist. This indicates the direction of the flow.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#TTimePeriod
+:TTimePeriod rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.EcoInvent.org/EcoSpold02/activity#TActivityDescription> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :comment ;
+                               owl:someValuesFrom dataTypes:TTextAndImage
+                             ] ;
+             rdfs:comment """Describes start and end date of the time period for which the dataset is valid.
+
+Remark: Only in general index file""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TAccessRestrictedTo
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TAccessRestrictedTo> rdf:type owl:Class .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TActivity
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TActivity> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.EcoInvent.org/EcoSpold02/activity#TActivityDescription> ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.ecoinvent.org/EcoSpold02/base#type> ;
+                                                                                  owl:someValuesFrom <http://www.ecoinvent.org/EcoSpold02/base#TTypeActivity>
+                                                                                ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TDataEntryBy
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TDataEntryBy> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf <http://www.ecoinvent.org/EcoSpold02/base#TAdministrativeInformation> ;
+                                                                   rdfs:comment "Contains information about the author of the dataset, i.e. the person that entered data into the database format and thereby is the person responsible for the data." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TDataGeneratorAndPublication
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TDataGeneratorAndPublication> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.ecoinvent.org/EcoSpold02/base#TAdministrativeInformation> ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#dataPublishedIn> ;
+                                                                                                     owl:someValuesFrom <http://www.EcoInvent.org/EcoSpold02/metainformation#TDataPublishedIn>
+                                                                                                   ] ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#accessRestrictedTo> ;
+                                                                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                     owl:onClass <http://www.EcoInvent.org/EcoSpold02/metainformation#TAccessRestrictedTo>
+                                                                                                   ] ;
+                                                                                   rdfs:comment "Contains information about who collected, compiled or published the orginal data. This may or may not be the same person as under 'DataEntryBy'. Furthermore contains information about kind of publication underlying the dataset and the accessibility of the dataset." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TDataPublishedIn
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TDataPublishedIn> rdf:type owl:Class .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TFileAttributes
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TFileAttributes> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf <http://www.ecoinvent.org/EcoSpold02/base#TAdministrativeInformation> ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#requiredContext> ;
+                                                                                        owl:someValuesFrom dataTypes:TRequiredContextReference
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty dataTypes:majorRelease ;
+                                                                                        owl:someValuesFrom xsd:string
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty dataTypes:majorRevision ;
+                                                                                        owl:someValuesFrom xsd:int
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty dataTypes:minorRelease ;
+                                                                                        owl:someValuesFrom xsd:int
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty dataTypes:minorRevision ;
+                                                                                        owl:someValuesFrom xsd:int
+                                                                                      ] ;
+                                                                      rdfs:comment "Contains metainformation regarding the file as a whole." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TGeography
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TGeography> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.EcoInvent.org/EcoSpold02/activity#TActivityDescription> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TMacroEconomicScenario
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TMacroEconomicScenario> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf <http://www.EcoInvent.org/EcoSpold02/activity#TActivityDescription> ,
+                                                                                             [ rdf:type owl:Restriction ;
+                                                                                               owl:onProperty <http://www.EcoInvent.org/EcoSpold02/metainformation#macroEconomicScenarioId> ;
+                                                                                               owl:someValuesFrom xsd:string
+                                                                                             ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TRepresentativeness
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TRepresentativeness> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.ecoinvent.org/EcoSpold02/base#TModellingAndValidation> ;
+                                                                          rdfs:comment "Contains information about the representativeness of the information in the dataset and about how data have been sampled and/or calculated." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TReview
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TReview> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.ecoinvent.org/EcoSpold02/base#TModellingAndValidation> .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TAdministrativeInformation
+<http://www.ecoinvent.org/EcoSpold02/base#TAdministrativeInformation> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf :TEcoSpold ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://www.EcoInvent.org/EcoSpold02/activity#dataGeneratorAndPublication> ;
+                                                                                        owl:someValuesFrom <http://www.EcoInvent.org/EcoSpold02/metainformation#TDataGeneratorAndPublication>
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://www.EcoInvent.org/EcoSpold02/activity#fileAttributes> ;
+                                                                                        owl:someValuesFrom <http://www.EcoInvent.org/EcoSpold02/metainformation#TFileAttributes>
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty :dataEntryBy ;
+                                                                                        owl:someValuesFrom <http://www.EcoInvent.org/EcoSpold02/metainformation#TDataEntryBy>
+                                                                                      ] ,
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty :requiredContextReference ;
+                                                                                        owl:someValuesFrom dataTypes:TRequiredContextReference
+                                                                                      ] ;
+                                                                      rdfs:comment "Contains the administrative information about the dataset at issue: The persons that compiled and entered the dataset in the database and about kind of publication and the accessibility of the dataset, timestamp, version and internalVersion number as well as language and localLanguage code." .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TCompleteness
+<http://www.ecoinvent.org/EcoSpold02/base#TCompleteness> rdf:type owl:Class ;
+                                                         rdfs:subClassOf dataTypes:TUncertainty .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes
+<http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.EcoInvent.org/EcoSpold02/activity#TFlowData> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :compartment ;
+                                                                           owl:someValuesFrom dataTypes:TCompartment
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :property ;
+                                                                           owl:someValuesFrom dataTypes:TProperty
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :textAndImage ;
+                                                                           owl:someValuesFrom dataTypes:TTextAndImage
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :transferCoefficient ;
+                                                                           owl:someValuesFrom flowdata:TTransferCoefficient
+                                                                         ] ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :uncertainty ;
+                                                                           owl:someValuesFrom dataTypes:TUncertainty
+                                                                         ] ;
+                                                         rdfs:comment "Remark: Superclass of different complex types" .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TEnergyValues
+<http://www.ecoinvent.org/EcoSpold02/base#TEnergyValues> rdf:type owl:Class .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TFurtherTechnologyCorrelation
+<http://www.ecoinvent.org/EcoSpold02/base#TFurtherTechnologyCorrelation> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf dataTypes:TUncertainty .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TGeographicalCorrelation
+<http://www.ecoinvent.org/EcoSpold02/base#TGeographicalCorrelation> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf dataTypes:TUncertainty .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TModellingAndValidation
+<http://www.ecoinvent.org/EcoSpold02/base#TModellingAndValidation> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf :TEcoSpold ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.EcoInvent.org/EcoSpold02/activity#representativeness> ;
+                                                                                     owl:someValuesFrom <http://www.EcoInvent.org/EcoSpold02/metainformation#TRepresentativeness>
+                                                                                   ] ,
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://www.EcoInvent.org/EcoSpold02/activity#review> ;
+                                                                                     owl:someValuesFrom <http://www.EcoInvent.org/EcoSpold02/metainformation#TReview>
+                                                                                   ] ;
+                                                                   rdfs:comment "Contains metainformation about how unit processes are modelled and about the review/validation of the dataset." .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TReliability
+<http://www.ecoinvent.org/EcoSpold02/base#TReliability> rdf:type owl:Class ;
+                                                        rdfs:subClassOf dataTypes:TUncertainty .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType
+<http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> rdf:type owl:Class ;
+                                                                 rdfs:comment "Remark Nicolas: Created for the specialActivityType object property in activity" .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TTechnologyLevel
+<http://www.ecoinvent.org/EcoSpold02/base#TTechnologyLevel> rdf:type owl:Class .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TTemporalCorrelation
+<http://www.ecoinvent.org/EcoSpold02/base#TTemporalCorrelation> rdf:type owl:Class ;
+                                                                rdfs:subClassOf dataTypes:TUncertainty .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TTypeActivity
+<http://www.ecoinvent.org/EcoSpold02/base#TTypeActivity> rdf:type owl:Class ;
+                                                         rdfs:comment "Remark Nicolas: Created for the type object property in activity" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Representative_data_from_all_sites_relevant_for_the_market_considered_over_an_adequate_period_to_even_out_normal_fluctuations
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Representative_data_from_all_sites_relevant_for_the_market_considered_over_an_adequate_period_to_even_out_normal_fluctuations> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                                         <http://www.ecoinvent.org/EcoSpold02/base#TCompleteness> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Verified_data_based_on_measurements
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Verified_data_based_on_measurements> rdf:type owl:NamedIndividual ,
+                                                                                               <http://www.ecoinvent.org/EcoSpold02/base#TReliability> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Data_from_enterprises,_processes_and_materials_under_study
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Data_from_enterprises,_processes_and_materials_under_study> rdf:type owl:NamedIndividual ,
+                                                                                                                      <http://www.ecoinvent.org/EcoSpold02/base#TFurtherTechnologyCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Less_than_3_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Less_than_3_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)> rdf:type owl:NamedIndividual ,
+                                                                                                                                              <http://www.ecoinvent.org/EcoSpold02/base#TTemporalCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Average_data_from_larger_area_in_which_the_area_under_study_is_included
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Average_data_from_larger_area_in_which_the_area_under_study_is_included> rdf:type owl:NamedIndividual ,
+                                                                                                                                   <http://www.ecoinvent.org/EcoSpold02/base#TGeographicalCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Representative_data_from_and_greater_than_50_per_cent_of_the_sites_relevant_for_the_market_considered_over_an_adequate_period_to_even_out_normal_fluctuations
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Representative_data_from_and_greater_than_50_per_cent_of_the_sites_relevant_for_the_market_considered_over_an_adequate_period_to_even_out_normal_fluctuations> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                                                                         <http://www.ecoinvent.org/EcoSpold02/base#TCompleteness> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Verified_data_partly_based_on_assumptions_OR_nonverified_data_based_on_measurements
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Verified_data_partly_based_on_assumptions_OR_nonverified_data_based_on_measurements> rdf:type owl:NamedIndividual ,
+                                                                                                                                               <http://www.ecoinvent.org/EcoSpold02/base#TReliability> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Data_from_processes_and_materials_under_study__(i.e._identical_technology)_but_from_different_enterprises
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Data_from_processes_and_materials_under_study__(i.e._identical_technology)_but_from_different_enterprises> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                     <http://www.ecoinvent.org/EcoSpold02/base#TFurtherTechnologyCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Less_than_6_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Less_than_6_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)> rdf:type owl:NamedIndividual ,
+                                                                                                                                              <http://www.ecoinvent.org/EcoSpold02/base#TTemporalCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Data_from_area_with_similar_production_conditions
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Data_from_area_with_similar_production_conditions> rdf:type owl:NamedIndividual ,
+                                                                                                             <http://www.ecoinvent.org/EcoSpold02/base#TGeographicalCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Data_from_processes_and_materials_under_study_but_from_different_technology
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Data_from_processes_and_materials_under_study_but_from_different_technology> rdf:type owl:NamedIndividual ,
+                                                                                                                                       <http://www.ecoinvent.org/EcoSpold02/base#TFurtherTechnologyCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Non-verified_data_partly_based_on_qualified_estimates
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Non-verified_data_partly_based_on_qualified_estimates> rdf:type owl:NamedIndividual ,
+                                                                                                                 <http://www.ecoinvent.org/EcoSpold02/base#TReliability> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Representative_data_from_only_some_sites_much_less_than_50_per_cent_relevant_for_the_market_considered_OR_and_greater_than_50_per_cent_of_sites_but_from_shorter_periods
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Representative_data_from_only_some_sites_much_less_than_50_per_cent_relevant_for_the_market_considered_OR_and_greater_than_50_per_cent_of_sites_but_from_shorter_periods> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                                                                                    <http://www.ecoinvent.org/EcoSpold02/base#TCompleteness> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Less_than_10_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Less_than_10_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)> rdf:type owl:NamedIndividual ,
+                                                                                                                                               <http://www.ecoinvent.org/EcoSpold02/base#TTemporalCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Data_from_are_with_slightly_similar_production_conditions
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Data_from_are_with_slightly_similar_production_conditions> rdf:type owl:NamedIndividual ,
+                                                                                                                     <http://www.ecoinvent.org/EcoSpold02/base#TGeographicalCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Data_on_related_processes_or_materials
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Data_on_related_processes_or_materials> rdf:type owl:NamedIndividual ,
+                                                                                                  <http://www.ecoinvent.org/EcoSpold02/base#TFurtherTechnologyCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Representative_data_from_only_one_site_relevant_for_the_market_considered_OR_some_sites_but_from_shorter_periods
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Representative_data_from_only_one_site_relevant_for_the_market_considered_OR_some_sites_but_from_shorter_periods> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                            <http://www.ecoinvent.org/EcoSpold02/base#TCompleteness> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Less_than_15_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Less_than_15_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)> rdf:type owl:NamedIndividual ,
+                                                                                                                                               <http://www.ecoinvent.org/EcoSpold02/base#TTemporalCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Qualified_estimate_(e.g._by_industrial_expert)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Qualified_estimate_(e.g._by_industrial_expert)> rdf:type owl:NamedIndividual ,
+                                                                                                          <http://www.ecoinvent.org/EcoSpold02/base#TReliability> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Data_on_related_processes_on_laboratory_scale_or_from_different_technology
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Data_on_related_processes_on_laboratory_scale_or_from_different_technology> rdf:type owl:NamedIndividual ,
+                                                                                                                                      <http://www.ecoinvent.org/EcoSpold02/base#TFurtherTechnologyCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Representativeness_unknown_or_data_from_a_small_number_of_sites_AND_from_shorter_periods
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Representativeness_unknown_or_data_from_a_small_number_of_sites_AND_from_shorter_periods> rdf:type owl:NamedIndividual ,
+                                                                                                                                                    <http://www.ecoinvent.org/EcoSpold02/base#TCompleteness> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Age_of_data_unknown_or_more_than_15_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Age_of_data_unknown_or_more_than_15_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                      <http://www.ecoinvent.org/EcoSpold02/base#TTemporalCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Data_from_unknown_OR_distinctly_different_area_(north_america_instead_of_middle_east,_OECD-Europe_instead_of_Russia)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Data_from_unknown_OR_distinctly_different_area_(north_america_instead_of_middle_east,_OECD-Europe_instead_of_Russia)> rdf:type owl:NamedIndividual ,
+                                                                                                                                                                                <http://www.ecoinvent.org/EcoSpold02/base#TGeographicalCorrelation> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Non-qualified_estimate_(default)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Non-qualified_estimate_(default)> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.ecoinvent.org/EcoSpold02/base#TReliability> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#0=Undefined
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#0=Undefined> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.ecoinvent.org/EcoSpold02/base#TTechnologyLevel> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#0=Ordinary_transforming_activity(default)
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#0=Ordinary_transforming_activity(default)> rdf:type owl:NamedIndividual ,
+                                                                                                      <http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#0=Undefined_(default)
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#0=Undefined_(default)> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.ecoinvent.org/EcoSpold02/base#TEnergyValues> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#0_=_ReferenceProduct
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#0_=_ReferenceProduct> rdf:type owl:NamedIndividual ,
+                                                                                 :TOutputGroup .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#10=Market_group
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#10=Market_group> rdf:type owl:NamedIndividual ,
+                                                                            <http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#1=Market_activity
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#1=Market_activity> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#1=Net_values
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#1=Net_values> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.ecoinvent.org/EcoSpold02/base#TEnergyValues> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#1=New
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#1=New> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.ecoinvent.org/EcoSpold02/base#TTechnologyLevel> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#1=Unit_process
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#1=Unit_process> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.ecoinvent.org/EcoSpold02/base#TTypeActivity> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#1_=_Materials/Fuels
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#1_=_Materials/Fuels> rdf:type owl:NamedIndividual ,
+                                                                                :TInputGroup .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#2=Gross_values
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#2=Gross_values> rdf:type owl:NamedIndividual ,
+                                                                           <http://www.ecoinvent.org/EcoSpold02/base#TEnergyValues> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#2=IO_activity
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#2=IO_activity> rdf:type owl:NamedIndividual ,
+                                                                          <http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#2=Modern
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#2=Modern> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.ecoinvent.org/EcoSpold02/base#TTechnologyLevel> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#2=System_terminated
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#2=System_terminated> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.ecoinvent.org/EcoSpold02/base#TTypeActivity> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#2_=_By-product
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#2_=_By-product> rdf:type owl:NamedIndividual ,
+                                                                           :TOutputGroup .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#2_=_Electricity/Heat
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#2_=_Electricity/Heat> rdf:type owl:NamedIndividual ,
+                                                                                 :TInputGroup .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#3=Residual_activity
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#3=Residual_activity> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#3=Current(default)
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#3=Current(default)> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.ecoinvent.org/EcoSpold02/base#TTechnologyLevel> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#3_=_Material_for_Treatment
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#3_=_Material_for_Treatment> rdf:type owl:NamedIndividual ,
+                                                                                       :TOutputGroup .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#3_=_Services
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#3_=_Services> rdf:type owl:NamedIndividual ,
+                                                                         :TInputGroup .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#4=Old
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#4=Old> rdf:type owl:NamedIndividual ,
+                                                                  <http://www.ecoinvent.org/EcoSpold02/base#TTechnologyLevel> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#4=Production_mix
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#4=Production_mix> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#5=Import_activity
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#5=Import_activity> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#5=Outdated
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#5=Outdated> rdf:type owl:NamedIndividual ,
+                                                                       <http://www.ecoinvent.org/EcoSpold02/base#TTechnologyLevel> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#5=Stock_Additions
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#5=Stock_Additions> rdf:type owl:NamedIndividual ,
+                                                                              :TOutputGroup .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#5_=_From_Technosphere_(unspecified)
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#5_=_From_Technosphere_(unspecified)> rdf:type owl:NamedIndividual ,
+                                                                                                :TInputGroup .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#6=Supply_mix
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#6=Supply_mix> rdf:type owl:NamedIndividual ,
+                                                                         <http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#7=Export_activity
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#7=Export_activity> rdf:type owl:NamedIndividual ,
+                                                                              <http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#8=Re-export_activity
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#8=Re-export_activity> rdf:type owl:NamedIndividual ,
+                                                                                 <http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/generalIndex#9=Correction_activity
+<http://www.EcoInvent.org/EcoSpold02/generalIndex#9=Correction_activity> rdf:type owl:NamedIndividual ,
+                                                                                  <http://www.ecoinvent.org/EcoSpold02/base#TSpecialAcitivityType> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

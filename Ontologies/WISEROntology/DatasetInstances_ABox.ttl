@@ -1,0 +1,401 @@
+@prefix ns1: <http://www.EcoInvent.org/EcoSpold02/metainformation#> .
+@prefix ns2: <http://lca.jrc.it/ILCD/Process_Data_Set#> .
+@prefix ns3: <http://www.EcoInvent.org/EcoSpold02/activity#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns2:092d2d42-12d0-496e-b849-ea70a7fc2589 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Construction of hospitals v1.79" ;
+    ns2:geography [ ns2:location "TU" ] .
+
+ns2:0aac24a3-91f7-46f0-b6ad-bd4afbaed916 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Electricity production from biomass v1.78" ;
+    ns2:geography [ ns2:location "Europe without Switzerland" ] .
+
+ns2:0e36c53c-b0ab-4e37-9788-79af6a66178b a ns2:DataSetInformationType ;
+    rdfs:label "LCA Electricity production from biomass v1.23" ;
+    ns2:geography [ ns2:location "FR" ] .
+
+ns2:0fcddfa9-3cc7-4aed-855f-0b9de8607761 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Electricity production from nuclear power plants v1.38" ;
+    ns2:geography [ ns2:location "NL" ] .
+
+ns2:114cc7a0-3729-4142-aa12-57cb209eb021 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Wind turbine production v1.16" ;
+    ns2:geography [ ns2:location "WEU" ] .
+
+ns2:163d100c-9dc5-41cf-950f-5de7ddfcd790 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Manufacturing of electronic devices v1.95" ;
+    ns2:geography [ ns2:location "NL" ] .
+
+ns2:1b8e0935-d0a6-49c1-af1d-a1916099be1d a ns2:DataSetInformationType ;
+    rdfs:label "LCA Production of nitric acid v1.27" ;
+    ns2:geography [ ns2:location "RU" ] .
+
+ns2:27d2c52d-77b8-4e8d-976d-9ae623fed208 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Polymer production v1.31" ;
+    ns2:geography [ ns2:location "NL" ] .
+
+ns2:2fcf1060-c937-415b-9c3e-6939a287f503 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Production of polycarbonate v1.8" ;
+    ns2:geography [ ns2:location "Europe without Switzerland" ] .
+
+ns2:3bdeed7f-3f92-403a-a322-a0f5dbe272e6 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Production of phosphoric acid v1.71" ;
+    ns2:geography [ ns2:location "Europe, without Russia and Turkey" ] .
+
+ns2:3d38c830-4d3e-4043-9321-4b408d7c2c80 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Electricity production from solar panels v1.28" ;
+    ns2:geography [ ns2:location "WEU" ] .
+
+ns2:3f074410-2fb6-4795-aac6-3bc83272dd37 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Construction of office buildings v1.45" ;
+    ns2:geography [ ns2:location "AT" ] .
+
+ns2:455be0e5-6f7f-4a68-8da6-3cda9caeefd4 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Manufacturing of wind turbine blades v1.52" ;
+    ns2:geography [ ns2:location "Europe, without Russia and Turkey" ] .
+
+ns2:50aa2f83-8a9e-4ee3-88a9-6d43e2ffef41 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Office building construction v1.1" ;
+    ns2:geography [ ns2:location "RU" ] .
+
+ns2:52bfbc09-0036-49d2-8f65-04a8a9233a91 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Electricity production from nuclear power plants v1.72" ;
+    ns2:geography [ ns2:location "WEU" ] .
+
+ns2:561da25b-4176-43da-8149-89db3ae11f24 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Manufacturing of medical equipment v1.70" ;
+    ns2:geography [ ns2:location "TU" ] .
+
+ns2:57785beb-5f37-4267-a05f-2a86522fc2d0 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Construction of airports v1.36" ;
+    ns2:geography [ ns2:location "CH" ] .
+
+ns2:5c12d782-2ece-4b58-b430-a5ab4c180eb4 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Manufacturing of pharmaceuticals v1.10" ;
+    ns2:geography [ ns2:location "Europe without Switzerland" ] .
+
+ns2:62555ef9-e098-4ad5-a364-f49bbb44e4a1 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Manufacturing of solar panels v1.67" ;
+    ns2:geography [ ns2:location "Switzerland" ] .
+
+ns2:63e9a29d-a355-431b-a93f-ab3009acf966 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Production of phosphoric acid v1.85" ;
+    ns2:geography [ ns2:location "CH" ] .
+
+ns2:6502784c-74b6-43db-8edb-49cac1ded53f a ns2:DataSetInformationType ;
+    rdfs:label "LCA Manufacturing of sports equipment v1.74" ;
+    ns2:geography [ ns2:location "NL" ] .
+
+ns2:68f040cd-ac07-4c3c-8808-d2c44f3eadc1 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Mining of lead ore v1.65" ;
+    ns2:geography [ ns2:location "Europe, without Russia and Turkey" ] .
+
+ns2:6ec8021a-cffe-4888-a746-a58d1ce4c7dc a ns2:DataSetInformationType ;
+    rdfs:label "LCA Wind turbine production v1.86" ;
+    ns2:geography [ ns2:location "RER w/o CH+DE" ] .
+
+ns2:768be99a-a352-4e50-aaf8-694ed933e67f a ns2:DataSetInformationType ;
+    rdfs:label "LCA Manufacturing of sports equipment v1.3" ;
+    ns2:geography [ ns2:location "FR" ] .
+
+ns2:7b24680b-2449-46ea-8b95-9dc6035d8a8e a ns2:DataSetInformationType ;
+    rdfs:label "LCA Recycling of glass products v1.62" ;
+    ns2:geography [ ns2:location "FR" ] .
+
+ns2:7ecf8ab4-2c3f-4f01-8311-aca0614efc4d a ns2:DataSetInformationType ;
+    rdfs:label "LCA Production of nitric acid v1.87" ;
+    ns2:geography [ ns2:location "Europe, without Russia and Turkey" ] .
+
+ns2:80a931ef-a298-4af6-afeb-9fb7a9b252da a ns2:DataSetInformationType ;
+    rdfs:label "LCA Manufacturing of furniture v1.58" ;
+    ns2:geography [ ns2:location "RU" ] .
+
+ns2:89160958-405e-47a6-9611-90eaaeb62506 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Production of sulfuric acid v1.69" ;
+    ns2:geography [ ns2:location "RER w/o CH+DE" ] .
+
+ns2:8b6e9b92-3e48-461f-a767-0651cd28c598 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Wind turbine production v1.73" ;
+    ns2:geography [ ns2:location "RU" ] .
+
+ns2:8df5556d-2980-4c44-9070-4ee2b0fa2671 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Glass manufacturing v1.68" ;
+    ns2:geography [ ns2:location "DE" ] .
+
+ns2:9a90d17d-a43e-4c5e-a88e-dea25c99b375 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Agricultural production of corn v1.56" ;
+    ns2:geography [ ns2:location "AT" ] .
+
+ns2:9aa9fd96-15dc-431b-9d81-c3713c36c2f3 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Manufacturing of pharmaceuticals v1.47" ;
+    ns2:geography [ ns2:location "CH" ] .
+
+ns2:a2cc5c37-a3d0-43a8-b63d-9a835c386be6 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Aluminum recycling v1.40" ;
+    ns2:geography [ ns2:location "RER w/o CH+DE" ] .
+
+ns2:a47be78e-b8d5-471c-b42c-6ed77c675376 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Waste water treatment v1.35" ;
+    ns2:geography [ ns2:location "TU" ] .
+
+ns2:a8b7ded7-0768-4715-86eb-da28aaadab79 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Production of PET bottles v1.89" ;
+    ns2:geography [ ns2:location "AT" ] .
+
+ns2:ac4eab4c-2e07-40ad-a132-ee380af68714 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Electricity production from biomass v1.11" ;
+    ns2:geography [ ns2:location "WEU" ] .
+
+ns2:b2d475cf-8aad-4486-b949-5a1ef4282346 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Mining of silver ore v1.51" ;
+    ns2:geography [ ns2:location "Europe, without Russia and Turkey" ] .
+
+ns2:b78e2b13-13a9-43c9-8a26-053c356cf860 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Manufacturing of plastic toys v1.96" ;
+    ns2:geography [ ns2:location "AT" ] .
+
+ns2:bd340a99-bf22-4894-b97b-db64bba94504 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Manufacturing of plastic pipes v1.88" ;
+    ns2:geography [ ns2:location "DE" ] .
+
+ns2:bdaed681-00ce-425a-8c56-44b53081414f a ns2:DataSetInformationType ;
+    rdfs:label "LCA Waste water treatment v1.37" ;
+    ns2:geography [ ns2:location "RER w/o CH+DE" ] .
+
+ns2:c28805cd-03f4-48d1-8177-84adb815cc59 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Steel manufacturing v1.64" ;
+    ns2:geography [ ns2:location "Europe without Switzerland" ] .
+
+ns2:c2b1b79d-1d47-4e59-a1fd-6cb4e6808495 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Wind turbine production v1.19" ;
+    ns2:geography [ ns2:location "RER w/o CH+DE" ] .
+
+ns2:c5e82d43-8ef6-4baf-b13e-e264608851da a ns2:DataSetInformationType ;
+    rdfs:label "LCA Agricultural production of beef v1.42" ;
+    ns2:geography [ ns2:location "CH" ] .
+
+ns2:cf27b523-c727-4316-bc5f-b6f5186a46ad a ns2:DataSetInformationType ;
+    rdfs:label "LCA Agricultural production of beef v1.66" ;
+    ns2:geography [ ns2:location "WEU" ] .
+
+ns2:d61f9e97-fd3f-489f-b4c1-baa88e32b356 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Production of HDPE v1.54" ;
+    ns2:geography [ ns2:location "CH" ] .
+
+ns2:e4fdc5db-6688-462b-ade6-6d83e1f3dbe1 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Production of phosphoric acid v1.18" ;
+    ns2:geography [ ns2:location "Europe without Switzerland" ] .
+
+ns2:edc76584-7cdb-42f6-9953-2b17d71e228b a ns2:DataSetInformationType ;
+    rdfs:label "LCA Manufacturing of home appliances v1.93" ;
+    ns2:geography [ ns2:location "WEU" ] .
+
+ns2:ff68bbfe-508a-458c-9191-695c7bf13096 a ns2:DataSetInformationType ;
+    rdfs:label "LCA Production of nitrogen fertilizer v1.17" ;
+    ns2:geography [ ns2:location "TU" ] .
+
+ns1:02968d9e-d90a-46ed-b572-575d6689d0f1 a ns1:TActivity ;
+    rdfs:label "LCA Manufacturing of furniture v1.57" ;
+    ns3:geography [ ns1:shortName "RER w/o CH+DE" ] .
+
+ns1:1682599c-cf98-4cab-8039-6bf90bcc3d9a a ns1:TActivity ;
+    rdfs:label "LCA Manufacturing of solar panels v1.80" ;
+    ns3:geography [ ns1:shortName "Europe without Switzerland" ] .
+
+ns1:19a49a0b-f1e7-4d32-bfe9-0ca172f8123e a ns1:TActivity ;
+    rdfs:label "LCA Electricity production from natural gas v1.32" ;
+    ns3:geography [ ns1:shortName "Europe, without Russia and Turkey" ] .
+
+ns1:1ad539e4-9c53-4647-a98c-1a89194fefb3 a ns1:TActivity ;
+    rdfs:label "LCA Mining of silver ore v1.55" ;
+    ns3:geography [ ns1:shortName "Europe without Switzerland" ] .
+
+ns1:1df72acb-8fcc-4138-8335-0a92b1543714 a ns1:TActivity ;
+    rdfs:label "LCA Electric vehicle manufacturing v1.91" ;
+    ns3:geography [ ns1:shortName "CH" ] .
+
+ns1:21d6f046-048e-4ba0-9bdd-27c667593927 a ns1:TActivity ;
+    rdfs:label "LCA Manufacturing of pharmaceuticals v1.30" ;
+    ns3:geography [ ns1:shortName "AT" ] .
+
+ns1:2347bedf-04bc-45f7-94d9-dc766bc17fee a ns1:TActivity ;
+    rdfs:label "LCA Transport of goods by rail v1.2" ;
+    ns3:geography [ ns1:shortName "Europe without Switzerland" ] .
+
+ns1:24dea4d7-74c2-49ce-9832-cff9e5f6fdb8 a ns1:TActivity ;
+    rdfs:label "LCA Production of phosphate fertilizer v1.14" ;
+    ns3:geography [ ns1:shortName "RER w/o CH+DE" ] .
+
+ns1:2c61a115-8cb4-4a3d-ad85-0657783ef21c a ns1:TActivity ;
+    rdfs:label "LCA Transport of goods by pipeline v1.22" ;
+    ns3:geography [ ns1:shortName "WEU" ] .
+
+ns1:2d347fa2-e6bb-4747-b581-7835616b17ce a ns1:TActivity ;
+    rdfs:label "LCA Manufacturing of wind turbine blades v1.90" ;
+    ns3:geography [ ns1:shortName "TU" ] .
+
+ns1:300c8657-aa3f-42a5-91cb-247317eeb207 a ns1:TActivity ;
+    rdfs:label "LCA Recycling of electronic waste v1.46" ;
+    ns3:geography [ ns1:shortName "NL" ] .
+
+ns1:33b10a0d-046a-4388-b63e-3c14efd0e483 a ns1:TActivity ;
+    rdfs:label "LCA Electricity production from solar panels v1.41" ;
+    ns3:geography [ ns1:shortName "FR" ] .
+
+ns1:38efca1e-235b-4025-b90b-b91585032d98 a ns1:TActivity ;
+    rdfs:label "LCA Mining of lead ore v1.81" ;
+    ns3:geography [ ns1:shortName "RU" ] .
+
+ns1:3b8d3db2-2f57-4e5a-b19d-5d3fa1debb4d a ns1:TActivity ;
+    rdfs:label "LCA Transport of passengers by car v1.26" ;
+    ns3:geography [ ns1:shortName "CH" ] .
+
+ns1:48875664-5bbe-4b59-a48c-41734f48f45f a ns1:TActivity ;
+    rdfs:label "LCA Glass manufacturing v1.92" ;
+    ns3:geography [ ns1:shortName "Europe, without Russia and Turkey" ] .
+
+ns1:4bdc41b9-45cc-4d70-8296-3ea7e5451c63 a ns1:TActivity ;
+    rdfs:label "LCA Recycling of plastic film v1.29" ;
+    ns3:geography [ ns1:shortName "AT" ] .
+
+ns1:4d696db0-bcf0-400b-9d15-1e52e355922b a ns1:TActivity ;
+    rdfs:label "LCA Recycling of plastic film v1.7" ;
+    ns3:geography [ ns1:shortName "WEU" ] .
+
+ns1:53e67a3b-5550-4bde-b6d9-38f359e7551a a ns1:TActivity ;
+    rdfs:label "LCA Agricultural production of beef v1.5" ;
+    ns3:geography [ ns1:shortName "Switzerland" ] .
+
+ns1:5462e79a-15c7-47cd-887e-d0509568348c a ns1:TActivity ;
+    rdfs:label "LCA Mining of iron ore v1.24" ;
+    ns3:geography [ ns1:shortName "Europe without Switzerland" ] .
+
+ns1:5b9e6c0a-c39a-4f8d-9b3e-d20c8d383a99 a ns1:TActivity ;
+    rdfs:label "LCA Plastic packaging production v1.21" ;
+    ns3:geography [ ns1:shortName "RU" ] .
+
+ns1:5d835fdb-b20e-4801-8c38-3f287952c1d8 a ns1:TActivity ;
+    rdfs:label "LCA Production of PVC pipes v1.76" ;
+    ns3:geography [ ns1:shortName "WEU" ] .
+
+ns1:60764d80-d2a4-40a7-9df8-10fb7d7f612f a ns1:TActivity ;
+    rdfs:label "LCA Manufacturing of plastic pipes v1.82" ;
+    ns3:geography [ ns1:shortName "WEU" ] .
+
+ns1:60865c32-94ef-4ba4-982a-0d1eb9b56001 a ns1:TActivity ;
+    rdfs:label "LCA Mining of nickel ore v1.34" ;
+    ns3:geography [ ns1:shortName "DE" ] .
+
+ns1:630f558d-9998-4010-9d8e-86d3d1b65a62 a ns1:TActivity ;
+    rdfs:label "LCA Electricity production from hydroelectric power plants v1.97" ;
+    ns3:geography [ ns1:shortName "RER w/o CH+DE" ] .
+
+ns1:6408b8d3-10f2-4ce5-97ab-4369888f1cdd a ns1:TActivity ;
+    rdfs:label "LCA Mining of bauxite ore v1.75" ;
+    ns3:geography [ ns1:shortName "Europe, without Russia and Turkey" ] .
+
+ns1:6437fa56-59b2-49e2-acdf-2779f5aa51f3 a ns1:TActivity ;
+    rdfs:label "LCA Transport of passengers by train v1.33" ;
+    ns3:geography [ ns1:shortName "Europe, without Russia and Turkey" ] .
+
+ns1:6b87ad51-4a5a-460c-9b9f-e76f9e1c2d4c a ns1:TActivity ;
+    rdfs:label "LCA Manufacturing of pharmaceuticals v1.15" ;
+    ns3:geography [ ns1:shortName "AT" ] .
+
+ns1:6f22106b-8b84-481e-b8c9-343b7cfe2d82 a ns1:TActivity ;
+    rdfs:label "LCA Construction of single-family homes v1.60" ;
+    ns3:geography [ ns1:shortName "AT" ] .
+
+ns1:6f459a30-de95-4e00-9f29-2897a334f2ca a ns1:TActivity ;
+    rdfs:label "LCA Mining of silver ore v1.50" ;
+    ns3:geography [ ns1:shortName "TU" ] .
+
+ns1:71be4686-00e3-4ffb-baec-8174c9b0fd19 a ns1:TActivity ;
+    rdfs:label "LCA Mining of nickel ore v1.99" ;
+    ns3:geography [ ns1:shortName "Switzerland" ] .
+
+ns1:7ad59588-0167-4b78-9cc4-7787fc8c8e3a a ns1:TActivity ;
+    rdfs:label "LCA Construction of single-family homes v1.61" ;
+    ns3:geography [ ns1:shortName "RU" ] .
+
+ns1:7d01eec2-58f3-423c-9e74-5c66223ee8de a ns1:TActivity ;
+    rdfs:label "LCA Mining of copper ore v1.84" ;
+    ns3:geography [ ns1:shortName "TU" ] .
+
+ns1:7db8e374-5417-458b-a91c-45996ecfde75 a ns1:TActivity ;
+    rdfs:label "LCA Production of phosphoric acid v1.9" ;
+    ns3:geography [ ns1:shortName "Europe without Switzerland" ] .
+
+ns1:854099da-c436-432f-8142-5c41f13dc919 a ns1:TActivity ;
+    rdfs:label "LCA Recycling of hazardous waste v1.13" ;
+    ns3:geography [ ns1:shortName "TU" ] .
+
+ns1:961fb3d3-740c-4233-9db1-ea1089daf960 a ns1:TActivity ;
+    rdfs:label "LCA Electricity production from geothermal power plants v1.4" ;
+    ns3:geography [ ns1:shortName "Europe without Switzerland" ] .
+
+ns1:ba03e29f-4b53-4b1a-add0-1827b0681895 a ns1:TActivity ;
+    rdfs:label "LCA Mining of lead ore v1.59" ;
+    ns3:geography [ ns1:shortName "CH" ] .
+
+ns1:baeb5d86-93c8-4cb0-a9b9-558fecc56079 a ns1:TActivity ;
+    rdfs:label "LCA Plastic packaging production v1.25" ;
+    ns3:geography [ ns1:shortName "Europe without Switzerland" ] .
+
+ns1:bc555824-0e28-48e8-b83b-797233d7636e a ns1:TActivity ;
+    rdfs:label "LCA Agricultural production of tomatoes v1.6" ;
+    ns3:geography [ ns1:shortName "Switzerland" ] .
+
+ns1:d0d93eaa-f1fd-467c-84fc-7ccf76b9bba9 a ns1:TActivity ;
+    rdfs:label "LCA Construction of sports facilities v1.39" ;
+    ns3:geography [ ns1:shortName "FR" ] .
+
+ns1:ebeb59c3-abdb-4859-8989-4b909bf30c7e a ns1:TActivity ;
+    rdfs:label "LCA Manufacturing of airplane parts v1.43" ;
+    ns3:geography [ ns1:shortName "NL" ] .
+
+ns1:ececc310-d42e-4831-a264-61be9bfba04f a ns1:TActivity ;
+    rdfs:label "LCA Mining of bauxite ore v1.77" ;
+    ns3:geography [ ns1:shortName "AT" ] .
+
+ns1:eee981c9-6cbd-4b3d-acec-2333e78e20d5 a ns1:TActivity ;
+    rdfs:label "LCA Production of nitric acid v1.44" ;
+    ns3:geography [ ns1:shortName "TU" ] .
+
+ns1:f196268f-637f-4985-8181-9f8f42e49e5e a ns1:TActivity ;
+    rdfs:label "LCA Electricity production from coal-fired power plants v1.83" ;
+    ns3:geography [ ns1:shortName "RER w/o CH+DE" ] .
+
+ns1:f34ee484-54e5-4464-acfd-a5a8d4401f88 a ns1:TActivity ;
+    rdfs:label "LCA Electricity production from hydroelectric power plants v1.98" ;
+    ns3:geography [ ns1:shortName "CH" ] .
+
+ns1:f69ca112-4131-4ecb-b28f-cec4d90cc3ac a ns1:TActivity ;
+    rdfs:label "LCA Agricultural production of corn v1.94" ;
+    ns3:geography [ ns1:shortName "RU" ] .
+
+ns1:f7a411b5-5ec9-404c-b26e-5fc79c286a21 a ns1:TActivity ;
+    rdfs:label "LCA Electricity production from natural gas v1.49" ;
+    ns3:geography [ ns1:shortName "WEU" ] .
+
+ns1:f7ad60d4-4f4e-46d1-a81b-4dfe8193a845 a ns1:TActivity ;
+    rdfs:label "LCA Manufacturing of sports equipment v1.53" ;
+    ns3:geography [ ns1:shortName "Europe, without Russia and Turkey" ] .
+
+ns1:f87126df-62ec-4a7f-ab9e-bb730ea41267 a ns1:TActivity ;
+    rdfs:label "LCA Production of nitrogen fertilizer v1.20" ;
+    ns3:geography [ ns1:shortName "Europe, without Russia and Turkey" ] .
+
+ns1:fa198b11-3cbb-44cc-98e2-50f31f1eb896 a ns1:TActivity ;
+    rdfs:label "LCA Glass manufacturing v1.12" ;
+    ns3:geography [ ns1:shortName "AT" ] .
+
+ns1:fdf8510a-3360-4949-bbbe-ea9d6dc613c7 a ns1:TActivity ;
+    rdfs:label "LCA Mining of iron ore v1.63" ;
+    ns3:geography [ ns1:shortName "DE" ] .
+
+ns1:fdfc248f-b1b1-46e5-abc5-70943a60c3ae a ns1:TActivity ;
+    rdfs:label "LCA Mining of lead ore v1.48" ;
+    ns3:geography [ ns1:shortName "FR" ] .
+

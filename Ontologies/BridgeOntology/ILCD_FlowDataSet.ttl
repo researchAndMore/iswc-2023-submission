@@ -1,0 +1,1196 @@
+@prefix : <http://lca.jrc.it/ILCD/Flow_Data_Set#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://lca.jrc.it/ILCD/Flow_Data_Set> .
+
+<http://lca.jrc.it/ILCD/Flow_Data_Set> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#casNumberDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#casNumberDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#dateTimeDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#dateTimeDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#int5Datatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#int5Datatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#percDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#percDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersionDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersionDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#uuidDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#uuidDatatype> rdf:type rdfs:Datatype .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#versionDatatype
+<http://lca.jrc.it/ILCD/Common_Data_Types#versionDatatype> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Categories#definedCategory
+<http://lca.jrc.it/ILCD/Categories#definedCategory> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain :DataSetInformationType .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#class
+<http://lca.jrc.it/ILCD/Common_Groups#class> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain :DataSetInformationType .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#classification
+<http://lca.jrc.it/ILCD/Common_Groups#classification> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain :DataSetInformationType .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#classificationInformation
+<http://lca.jrc.it/ILCD/Common_Groups#classificationInformation> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:domain :DataSetInformationType ;
+                                                                 rdfs:comment "Hierachical classification of the Flow property foreseen to be used to structure the Flow property content of the database. (Note: This entry is NOT required for the identification of the Flow property data set. It should nevertheless be avoided to use identical names for Flow properties in the same class." .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy
+<http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain :FlowAdministrativeInformationType ;
+                                                   rdfs:comment "Staff or entity, that documented the generated data set, entering the information into the database; plus administrative information linked to the data entry activity." .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#elementaryFlowCategorization
+<http://lca.jrc.it/ILCD/Common_Groups#elementaryFlowCategorization> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain :DataSetInformationType ;
+                                                                    rdfs:comment "Identifying category/compartment information exclusively used for elementary flows. E.g. \"Emission to air\", \"Renewable resource\", etc." .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#name
+<http://lca.jrc.it/ILCD/Common_Groups#name> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain :DataSetInformationType ;
+                                            rdfs:range :NameType .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#other
+<http://lca.jrc.it/ILCD/Common_Groups#other> rdf:type owl:ObjectProperty .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#publicationAndOwnership
+<http://lca.jrc.it/ILCD/Common_Groups#publicationAndOwnership> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain :FlowAdministrativeInformationType ;
+                                                               rdfs:comment "Information related to publication and version management of the data set including copyright and access restrictions." .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#referenceToOwnershipOfDataSet
+<http://lca.jrc.it/ILCD/Common_Groups#referenceToOwnershipOfDataSet> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain :FlowAdministrativeInformationType ;
+                                                                     rdfs:comment "\"Contact data set\" of the person or entity who owns this data set. (Note: this is not necessarily the publisher of the data set.)" .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#LCIMethod
+:LCIMethod rdf:type owl:ObjectProperty ;
+           rdfs:domain :FlowModellingAndValidationType ;
+           rdfs:range :LCIMethodType .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#compliance
+:compliance rdf:type owl:ObjectProperty ;
+            rdfs:domain :ComplianceDeclarationsType ;
+            rdfs:range <http://lca.jrc.it/ILCD/Common_Groups#ComplianceGroup> ;
+            rdfs:comment "one compliance declaration" .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#complianceDeclarations
+:complianceDeclarations rdf:type owl:ObjectProperty ;
+                        rdfs:domain :FlowModellingAndValidationType ;
+                        rdfs:range :ComplianceDeclarationsType ;
+                        rdfs:comment "Statements on compliance of several data set aspects with compliance requirements as defined by the referenced compliance system (e.g. an EPD scheme, handbook of a national or international data network such as the ILCD, etc.)." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#dataDerivationTypeStatus
+:dataDerivationTypeStatus rdf:type owl:ObjectProperty ;
+                          rdfs:domain :FlowPropertyType ;
+                          rdfs:range <http://lca.jrc.it/ILCD/Common_Enumeration_Values#FlowDataDerivationTypeStatusValues> ;
+                          rdfs:comment "Identifies the way by which the Flow property value was derived (e.g. measured, estimated etc.), respectively the status and relevancy of missing data." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#dataSetInformation
+:dataSetInformation rdf:type owl:ObjectProperty ;
+                    rdfs:domain :FlowInformationType ;
+                    rdfs:range :DataSetInformationType ;
+                    rdfs:comment "General data set information. Covers the ISO/TS 14048 fields 1.2.1, 1.2.3, 1.2.4, 1.2.5, (1.2.6), (1.2.7),1.2.10.1, 1.2.10.2, 1.2.10.3, and references to 1.2.11 (Flow property) and 1.2.11.2 (Unit)." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#flowAdministrativeInformation
+:flowAdministrativeInformation rdf:type owl:ObjectProperty ;
+                               rdfs:domain :FlowDataSetType ;
+                               rdfs:range :FlowAdministrativeInformationType ;
+                               rdfs:comment "Information on data set management and administration." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#flowDataSet
+:flowDataSet rdf:type owl:ObjectProperty ;
+             rdfs:domain owl:Thing ;
+             rdfs:range :FlowDataSetType .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#flowInformation
+:flowInformation rdf:type owl:ObjectProperty ;
+                 rdfs:domain :FlowDataSetType ;
+                 rdfs:range :FlowInformationType ;
+                 rdfs:comment "Covers the INvariable flow information addressed in ISO/TS 14048's section \"Inputs and outputs\"" .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#flowModellingAndValidation
+:flowModellingAndValidation rdf:type owl:ObjectProperty ;
+                            rdfs:domain :FlowDataSetType ;
+                            rdfs:range :FlowModellingAndValidationType ;
+                            rdfs:comment "Covers the five sub-sections 1) LCI method, 2) Data sources, treatment and representativeness (not used for flows), 3) Completeness (not used for flows), 4) Validation (not used for flows), and 5) Compliance." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#flowProperties
+:flowProperties rdf:type owl:ObjectProperty ;
+                rdfs:domain :FlowDataSetType ;
+                rdfs:range :FlowPropertiesType .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#flowProperty
+:flowProperty rdf:type owl:ObjectProperty ;
+              rdfs:domain :FlowPropertiesType ;
+              rdfs:range :FlowPropertyType ;
+              rdfs:comment "One flow property" .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#geography
+:geography rdf:type owl:ObjectProperty ;
+           rdfs:domain :FlowInformationType ;
+           rdfs:range :GeographyType ;
+           rdfs:comment "Provides information about the geographical representativeness of the data set." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#quantitativeReference
+:quantitativeReference rdf:type owl:ObjectProperty ;
+                       rdfs:domain :FlowInformationType ;
+                       rdfs:range :QuantitativeReferenceType ;
+                       rdfs:comment "This section names the type of quantitative reference used for this Flow data set, which is always one of the Flow's Flow properties (see section \"Flow properties\")." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#referenceToFlowPropertyDataSet
+:referenceToFlowPropertyDataSet rdf:type owl:ObjectProperty ;
+                                rdfs:domain :FlowPropertyType ;
+                                rdfs:range <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType> ;
+                                rdfs:comment "\"Flow property data set\"." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#referenceToTechnicalSpecification
+:referenceToTechnicalSpecification rdf:type owl:ObjectProperty ;
+                                   rdfs:domain :TechnologyType ;
+                                   rdfs:range <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType> ;
+                                   rdfs:comment "\"Source data set(s)\" of the product's or waste's technical specification, waste data sheet, safety data sheet, etc." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#technology
+:technology rdf:type owl:ObjectProperty ;
+            rdfs:domain :FlowInformationType ;
+            rdfs:range :TechnologyType ;
+            rdfs:comment "Provides information about the technological representativeness of the flow in case it is a product or waste flow." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#typeOfDataSet
+:typeOfDataSet rdf:type owl:ObjectProperty ;
+               rdfs:domain :LCIMethodType ;
+               rdfs:range <http://lca.jrc.it/ILCD/Common_Enumeration_Values#FlowTypeValues> ;
+               rdfs:comment "Names the basic type of the flow." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#uncertaintyDistributionType
+:uncertaintyDistributionType rdf:type owl:ObjectProperty ;
+                             rdfs:domain :FlowPropertyType ;
+                             rdfs:range <http://lca.jrc.it/ILCD/Common_Enumeration_Values#UncertaintyDistributionTypeValues> ;
+                             rdfs:comment "Defines the kind of uncertainty distribution that is valid for this particular object or parameter." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#casNumber
+<http://lca.jrc.it/ILCD/Common_Data_Types#casNumber> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain :DataSetInformationType .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersion
+<http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersion> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain :FlowDataSetType .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#uuid
+<http://lca.jrc.it/ILCD/Common_Data_Types#uuid> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain :DataSetInformationType .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#generalComment
+<http://lca.jrc.it/ILCD/Common_Groups#generalComment> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain :DataSetInformationType ,
+                                                                  :FlowPropertyType ;
+                                                      rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype> ;
+                                                      rdfs:comment "Free text for general information about the Flow data set. It may contain information about e.g. the use of the substance, good, service or process in a specific technology or industry-context, information sources used, data selection principles etc." .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#nameData
+<http://lca.jrc.it/ILCD/Common_Groups#nameData> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain :DataSetInformationType .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#synonyms
+<http://lca.jrc.it/ILCD/Common_Groups#synonyms> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain :DataSetInformationType ;
+                                                rdfs:comment "Synonyms / alternative names / brands of the good, service, or process. Separated by semicolon." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#baseName
+:baseName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :NameType ;
+          rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype> ;
+          rdfs:comment "General descriptive name of the elementary, waste or product flow, for the latter including it's level of processing." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#dataSetInternalID
+:dataSetInternalID rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :FlowPropertyType ;
+                   rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#int5Datatype> ;
+                   rdfs:comment "Automated entry: internal ID, used in the \"Quantitative reference\" section to identify the reference flow property." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#flowPropertiesName
+:flowPropertiesName rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :NameType ;
+                    rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype> ;
+                    rdfs:comment "List of flow properties (with all variable information linked to that respective flow)." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#locationOfSupply
+:locationOfSupply rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :QuantitativeReferenceType ;
+                  rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype> ;
+                  rdfs:comment "Only used for product or waste flows and only required for matrix-type databases. Location or region of supply / consumption or production of the good or service, or operation of the process. [Note 1: Entry can be of type \"two-letter ISO 3166 country code\" for countries, \"seven-letter regional codes\" for regions or continents, or \"market areas and market organisations\", as predefined for the ILCD. Also a name for e.g. a specific plant etc. can be given here (e.g. \"FR, Lyon, XY Company, Z Site\"; user defined). Note 2: The fact whether the entry refers to production or to consumption / supply has to be stated in the name-field \"Mix and location types\" e.g. as \"Production mix\".]" .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#locations
+:locations rdf:type owl:DatatypeProperty ;
+           rdfs:domain :FlowDataSetType ;
+           rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype> ,
+                      xsd:string .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#maximumValue
+:maximumValue rdf:type owl:DatatypeProperty ;
+              rdfs:domain :FlowPropertyType ;
+              rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype> .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#meanValue
+:meanValue rdf:type owl:DatatypeProperty ;
+           rdfs:domain :FlowPropertyType ;
+           rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype> ;
+           rdfs:comment "Value for the flow expressed in this flow property in relationship to the the value of the flow expressed in its reference flow property (see field \"Reference to reference flow property\" in the \"Quantitative reference\" section). [Notes and examples: If the product flow \"Diesel\" is expressed by default in \"Mass\" (= reference flow property) and \"kg\" (= corresponding reference unit), the value that would be stated here for an additional flow property e.g. \"Net calorific value\" would be \"42.5\", as this flow property has the reference unit \"MJ\" and Diesel has a net calorific value of 42.5 MJ per 1 kg. It is recommended to report only significant digits of the value.]" .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#minimumValue
+:minimumValue rdf:type owl:DatatypeProperty ;
+              rdfs:domain :FlowPropertyType ;
+              rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype> ;
+              rdfs:comment "Minimum value of this flow property in case uncertainty distribution is uniform or triangular." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#mixAndLocationTypes
+:mixAndLocationTypes rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :NameType ;
+                     rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype> ;
+                     rdfs:comment "Specifying information on the good, service, or process whether being a production mix or consumption mix, location type of availability (such as e.g. \"to consumer\" or \"at plant\"). Separated by commata." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#referenceToReferenceFlowProperty
+:referenceToReferenceFlowProperty rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain :QuantitativeReferenceType ;
+                                  rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#int5Datatype> ;
+                                  rdfs:comment "One of the Flow's Flow properties, which is set as the default flow property in which the flow measured. (Data set internal reference to one of the flow properties in section \"Quantitative flow properties\".)" .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#relativeStandardDeviation95In
+:relativeStandardDeviation95In rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :FlowPropertyType ;
+                               rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#percDatatype> ;
+                               rdfs:comment "The resulting overall uncertainty of the calculated variable value considering uncertainty of measurements, modelling, appropriateness etc. [Notes: For log-normal distribution the square of the geometric standard deviation (SDg^2) is stated. Mean value times SDg^2 equals the 97.5% value (= Maximum value), Mean value divided by SDg^2 equals the 2.5% value (= Minimum value). For normal distribution the doubled standard deviation value (2*SD) is entered. Mean value plus 2*SD equals 97.5% value (= Maximum value), Mean value minus 2*SD equals 2.5% value (= Minimum value). This data field remains empty when uniform or triangular uncertainty distribution is applied.]" .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#sumFormula
+:sumFormula rdf:type owl:DatatypeProperty ;
+            rdfs:domain :DataSetInformationType ;
+            rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype> ,
+                       xsd:string ;
+            rdfs:comment "Chemical sum formula of the substance." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#technologicalApplicability
+:technologicalApplicability rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :TechnologyType ;
+                            rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype> ;
+                            rdfs:comment "Description of the intended / possible applications of the good or service, or waste. E.g. for which type of products the material, represented by this data set, is used. Examples: \"This high purity chemical is used for analytical laboratories only.\" or \"This technical quality bulk chemical is used for large scale synthesis in chemical industry.\". Or: \"This type of biowaste is typically composted or biodigested as the water content is too high for efficient combustion\"." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#treatmentStandardRoutes
+:treatmentStandardRoutes rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :NameType ;
+                         rdfs:range <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype> ;
+                         rdfs:comment "Specifying information on the (product or waste) flow in technical term(s): treatment received, standard fulfilled, product quality, use information, production route name, educt name, primary / secondary etc. Separated by commata.." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Categories#CategoryTypeDefined
+<http://lca.jrc.it/ILCD/Categories#CategoryTypeDefined> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Enumeration_Values#ComplianceValues
+<http://lca.jrc.it/ILCD/Common_Enumeration_Values#ComplianceValues> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Enumeration_Values#FlowDataDerivationTypeStatusValues
+<http://lca.jrc.it/ILCD/Common_Enumeration_Values#FlowDataDerivationTypeStatusValues> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Enumeration_Values#FlowTypeValues
+<http://lca.jrc.it/ILCD/Common_Enumeration_Values#FlowTypeValues> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Enumeration_Values#UncertaintyDistributionTypeValues
+<http://lca.jrc.it/ILCD/Common_Enumeration_Values#UncertaintyDistributionTypeValues> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#ClassType
+<http://lca.jrc.it/ILCD/Common_Groups#ClassType> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#ClassificationInformationType
+<http://lca.jrc.it/ILCD/Common_Groups#ClassificationInformationType> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#ClassificationType
+<http://lca.jrc.it/ILCD/Common_Groups#ClassificationType> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#ComplianceGroup
+<http://lca.jrc.it/ILCD/Common_Groups#ComplianceGroup> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup1
+<http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup1> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup2
+<http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup2> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#FlowCategorizationType
+<http://lca.jrc.it/ILCD/Common_Groups#FlowCategorizationType> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType
+<http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup1
+<http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup1> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup2
+<http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup2> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup3
+<http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup3> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#ComplianceDeclarationsType
+:ComplianceDeclarationsType rdf:type owl:Class ;
+                            rdfs:subClassOf :FlowModellingAndValidationType ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :compliance ;
+                                              owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#ComplianceGroup>
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                              owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :compliance ;
+                                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#ComplianceGroup>
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                              owl:maxCardinality "2"^^xsd:nonNegativeInteger
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :compliance ;
+                                              owl:maxQualifiedCardinality "2147483647"^^xsd:nonNegativeInteger ;
+                                              owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#ComplianceGroup>
+                                            ] .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#DataSetInformationType
+:DataSetInformationType rdf:type owl:Class ;
+                        rdfs:subClassOf :FlowInformationType ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Categories#definedCategory> ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Categories#CategoryTypeDefined>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#classificationInformation> ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#ClassificationInformationType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#elementaryFlowCategorization> ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#FlowCategorizationType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#name> ;
+                                          owl:allValuesFrom :NameType
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Categories#definedCategory> ;
+                                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Categories#CategoryTypeDefined>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#classificationInformation> ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#ClassificationInformationType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#elementaryFlowCategorization> ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#FlowCategorizationType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#name> ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :NameType
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                          owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Categories#definedCategory> ;
+                                          owl:maxQualifiedCardinality "2147483647"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Categories#CategoryTypeDefined>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#classificationInformation> ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#ClassificationInformationType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#elementaryFlowCategorization> ;
+                                          owl:maxQualifiedCardinality "2147483647"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#FlowCategorizationType>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#name> ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass :NameType
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                          owl:maxCardinality "3"^^xsd:nonNegativeInteger
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Data_Types#casNumber> ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#casNumberDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Data_Types#uuid> ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#uuidDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#generalComment> ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#nameData> ;
+                                          owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                              owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                            xsd:string
+                                                                          )
+                                                            ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#synonyms> ;
+                                          owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :sumFormula ;
+                                          owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                              owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                            xsd:string
+                                                                          )
+                                                            ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Data_Types#casNumber> ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#casNumberDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#generalComment> ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#nameData> ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                            owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                          xsd:string
+                                                                        )
+                                                          ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#synonyms> ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :sumFormula ;
+                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                            owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                          xsd:string
+                                                                        )
+                                                          ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Data_Types#uuid> ;
+                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#uuidDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Data_Types#casNumber> ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#casNumberDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#generalComment> ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#nameData> ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                            owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                          xsd:string
+                                                                        )
+                                                          ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#synonyms> ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :sumFormula ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                            owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                          xsd:string
+                                                                        )
+                                                          ]
+                                        ] ;
+                        rdfs:comment "General data set information. Covers the ISO/TS 14048 fields 1.2.1, 1.2.3, 1.2.4, 1.2.5, (1.2.6), (1.2.7),1.2.10.1, 1.2.10.2, 1.2.10.3, and references to 1.2.11 (Flow property) and 1.2.11.2 (Unit)." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#FlowAdministrativeInformationType
+:FlowAdministrativeInformationType rdf:type owl:Class ;
+                                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy> ;
+                                                     owl:allValuesFrom [ rdf:type owl:Class ;
+                                                                         owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup1>
+                                                                                       <http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup2>
+                                                                                     )
+                                                                       ]
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#publicationAndOwnership> ;
+                                                     owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup1>
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy> ;
+                                                     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup1>
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy> ;
+                                                     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup2>
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                                     owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#referenceToOwnershipOfDataSet> ;
+                                                     owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#publicationAndOwnership> ;
+                                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup1>
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy> ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup1>
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy> ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup2>
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                                     owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#referenceToOwnershipOfDataSet> ;
+                                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                     owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                                   ] ;
+                                   rdfs:comment "Information on data set management and administration." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#FlowDataSetType
+:FlowDataSetType rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :flowAdministrativeInformation ;
+                                   owl:allValuesFrom :FlowAdministrativeInformationType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :flowInformation ;
+                                   owl:allValuesFrom :FlowInformationType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :flowModellingAndValidation ;
+                                   owl:allValuesFrom :FlowModellingAndValidationType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :flowProperties ;
+                                   owl:allValuesFrom :FlowPropertiesType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :flowAdministrativeInformation ;
+                                   owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :FlowAdministrativeInformationType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :flowModellingAndValidation ;
+                                   owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :FlowModellingAndValidationType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :flowProperties ;
+                                   owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :FlowPropertiesType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :flowInformation ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :FlowInformationType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :flowAdministrativeInformation ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :FlowAdministrativeInformationType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :flowModellingAndValidation ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :FlowModellingAndValidationType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :flowProperties ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onClass :FlowPropertiesType
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersion> ;
+                                   owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersionDatatype>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :locations ;
+                                   owl:allValuesFrom [ rdf:type rdfs:Datatype ;
+                                                       owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                     xsd:string
+                                                                   )
+                                                     ]
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersion> ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#schemaVersionDatatype>
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :locations ;
+                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                     owl:unionOf ( <http://lca.jrc.it/ILCD/Common_Data_Types#stringDatatype>
+                                                                   xsd:string
+                                                                 )
+                                                   ]
+                                 ] .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#FlowInformationType
+:FlowInformationType rdf:type owl:Class ;
+                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                       owl:onProperty :dataSetInformation ;
+                                       owl:allValuesFrom :DataSetInformationType
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :geography ;
+                                       owl:allValuesFrom :GeographyType
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :quantitativeReference ;
+                                       owl:allValuesFrom :QuantitativeReferenceType
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :technology ;
+                                       owl:allValuesFrom :TechnologyType
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :geography ;
+                                       owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :GeographyType
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :quantitativeReference ;
+                                       owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :QuantitativeReferenceType
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :technology ;
+                                       owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :TechnologyType
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :dataSetInformation ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :DataSetInformationType
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :geography ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :GeographyType
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :quantitativeReference ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :QuantitativeReferenceType
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :technology ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass :TechnologyType
+                                     ] .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#FlowModellingAndValidationType
+:FlowModellingAndValidationType rdf:type owl:Class ;
+                                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :LCIMethod ;
+                                                  owl:allValuesFrom :LCIMethodType
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :complianceDeclarations ;
+                                                  owl:allValuesFrom :ComplianceDeclarationsType
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :LCIMethod ;
+                                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :LCIMethodType
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :complianceDeclarations ;
+                                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :ComplianceDeclarationsType
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :LCIMethod ;
+                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :LCIMethodType
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :complianceDeclarations ;
+                                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :ComplianceDeclarationsType
+                                                ] ;
+                                rdfs:comment "Covers the five sub-sections 1) LCI method, 2) Data sources, treatment and representativeness (not used for flows), 3) Completeness (not used for flows), 4) Validation (not used for flows), and 5) Compliance." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#FlowPropertiesType
+:FlowPropertiesType rdf:type owl:Class ;
+                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                      owl:onProperty :flowProperty ;
+                                      owl:allValuesFrom :FlowPropertyType
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :flowProperty ;
+                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :FlowPropertyType
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :flowProperty ;
+                                      owl:maxQualifiedCardinality "2147483647"^^xsd:nonNegativeInteger ;
+                                      owl:onClass :FlowPropertyType
+                                    ] ;
+                    rdfs:comment "List of flow properties (with all variable information linked to that respective flow)." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#FlowPropertyType
+:FlowPropertyType rdf:type owl:Class ;
+                  rdfs:subClassOf :FlowPropertiesType ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :dataDerivationTypeStatus ;
+                                    owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Enumeration_Values#FlowDataDerivationTypeStatusValues>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :referenceToFlowPropertyDataSet ;
+                                    owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :uncertaintyDistributionType ;
+                                    owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Enumeration_Values#UncertaintyDistributionTypeValues>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                    owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :dataDerivationTypeStatus ;
+                                    owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                    owl:onClass <http://lca.jrc.it/ILCD/Common_Enumeration_Values#FlowDataDerivationTypeStatusValues>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :uncertaintyDistributionType ;
+                                    owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                    owl:onClass <http://lca.jrc.it/ILCD/Common_Enumeration_Values#UncertaintyDistributionTypeValues>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :referenceToFlowPropertyDataSet ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                    owl:maxCardinality "3"^^xsd:nonNegativeInteger
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :dataDerivationTypeStatus ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass <http://lca.jrc.it/ILCD/Common_Enumeration_Values#FlowDataDerivationTypeStatusValues>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :uncertaintyDistributionType ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass <http://lca.jrc.it/ILCD/Common_Enumeration_Values#UncertaintyDistributionTypeValues>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :dataSetInternalID ;
+                                    owl:someValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#int5Datatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#generalComment> ;
+                                    owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :dataSetInternalID ;
+                                    owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#int5Datatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :maximumValue ;
+                                    owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :meanValue ;
+                                    owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :minimumValue ;
+                                    owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :relativeStandardDeviation95In ;
+                                    owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#percDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#generalComment> ;
+                                    owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :maximumValue ;
+                                    owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :minimumValue ;
+                                    owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :relativeStandardDeviation95In ;
+                                    owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#percDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :meanValue ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#generalComment> ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :maximumValue ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :minimumValue ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#realDatatype>
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :relativeStandardDeviation95In ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#percDatatype>
+                                  ] ;
+                  rdfs:comment "One flow property" .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#GeographyType
+:GeographyType rdf:type owl:Class ;
+               rdfs:subClassOf :FlowInformationType ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                 owl:minCardinality "0"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :locationOfSupply ;
+                                 owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :locationOfSupply ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                               ] ;
+               rdfs:comment "Provides information about the geographical representativeness of the data set." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#LCIMethodType
+:LCIMethodType rdf:type owl:Class ;
+               rdfs:subClassOf :FlowModellingAndValidationType ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :typeOfDataSet ;
+                                 owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Enumeration_Values#FlowTypeValues>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                 owl:minCardinality "0"^^xsd:nonNegativeInteger
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :typeOfDataSet ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass <http://lca.jrc.it/ILCD/Common_Enumeration_Values#FlowTypeValues>
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                 owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                               ] ;
+               rdfs:comment "LCI methodological modelling aspects." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#NameType
+:NameType rdf:type owl:Class ;
+          rdfs:subClassOf :DataSetInformationType ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :baseName ;
+                            owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :flowPropertiesName ;
+                            owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :mixAndLocationTypes ;
+                            owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :treatmentStandardRoutes ;
+                            owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :flowPropertiesName ;
+                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :mixAndLocationTypes ;
+                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :treatmentStandardRoutes ;
+                            owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :baseName ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :flowPropertiesName ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :mixAndLocationTypes ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :treatmentStandardRoutes ;
+                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#stringMultiLangDatatype>
+                          ] .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#QuantitativeReferenceType
+:QuantitativeReferenceType rdf:type owl:Class ;
+                           rdfs:subClassOf :FlowInformationType ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                             owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                             owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :referenceToReferenceFlowProperty ;
+                                             owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#int5Datatype>
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :referenceToReferenceFlowProperty ;
+                                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#int5Datatype>
+                                           ] ;
+                           rdfs:comment "This section names the type of quantitative reference used for this Flow data set, which is always one of the Flow's Flow properties (see section \"Flow properties\")." .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#TechnologyType
+:TechnologyType rdf:type owl:Class ;
+                rdfs:subClassOf :FlowInformationType ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :referenceToTechnicalSpecification ;
+                                  owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                  owl:minCardinality "0"^^xsd:nonNegativeInteger
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :referenceToTechnicalSpecification ;
+                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                  owl:maxCardinality "2"^^xsd:nonNegativeInteger
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :referenceToTechnicalSpecification ;
+                                  owl:maxQualifiedCardinality "2147483647"^^xsd:nonNegativeInteger ;
+                                  owl:onClass <http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :technologicalApplicability ;
+                                  owl:allValuesFrom <http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :technologicalApplicability ;
+                                  owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :technologicalApplicability ;
+                                  owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange <http://lca.jrc.it/ILCD/Common_Data_Types#ftMultiLangDatatype>
+                                ] ;
+                rdfs:comment "Provides information about the technological representativeness of the flow in case it is a product or waste flow." .
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+owl:Thing rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :flowDataSet ;
+                            owl:allValuesFrom :FlowDataSetType
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :flowDataSet ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onClass :FlowDataSetType
+                          ] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,1865 @@
+@prefix : <https://purl.org/wiser#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://purl.org/wiser#> .
+
+<https://purl.org/wiser#> rdf:type owl:Ontology ;
+                              owl:imports <http://lca.jrc.it/ILCD/Categories> ,
+                                          <http://lca.jrc.it/ILCD/Common_Data_Types> ,
+                                          <http://lca.jrc.it/ILCD/Common_Enumeration_Values> ,
+                                          <http://lca.jrc.it/ILCD/Common_Groups> ,
+                                          <http://lca.jrc.it/ILCD/Common_Validation> ,
+                                          <http://lca.jrc.it/ILCD/Process_Data_Set> ,
+                                          <http://www.EcoInvent.org/EcoSpold02/activity> ,
+                                          <http://www.EcoInvent.org/EcoSpold02/dataTypes> ,
+                                          <http://www.EcoInvent.org/EcoSpold02/flowdata> ,
+                                          <http://www.EcoInvent.org/EcoSpold02/metainformation> ,
+                                          <http://www.EcoInvent.org/EcoSpold02/sources> .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Groups#classificationInformation
+<http://lca.jrc.it/ILCD/Common_Groups#classificationInformation> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:subPropertyOf :bClassification ;
+                                                                 rdfs:domain :BClassification .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy
+<http://lca.jrc.it/ILCD/Common_Groups#dataEntryBy> rdfs:subPropertyOf :bDataEntryBy ,
+                                                                      :bFileAttributes ;
+                                                   rdfs:domain :BDataEntryBy ,
+                                                               :BFileAttributes .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#publicationAndOwnership
+<http://lca.jrc.it/ILCD/Common_Groups#publicationAndOwnership> rdfs:subPropertyOf :bDataGeneratorAndPublication ,
+                                                                                  :bFileAttributes ;
+                                                               rdfs:domain :BDataGeneratorAndPublication ,
+                                                                           :BFileAttributes .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#referenceToDataSource
+<http://lca.jrc.it/ILCD/Common_Groups#referenceToDataSource> rdfs:subPropertyOf :bSource ;
+                                                             rdfs:domain :BSource .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#referenceToOwnershipOfDataSet
+<http://lca.jrc.it/ILCD/Common_Groups#referenceToOwnershipOfDataSet> rdfs:subPropertyOf :bPerson ;
+                                                                     rdfs:domain :BPerson .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#referenceToPersonOrEntityEnteringTheData
+<http://lca.jrc.it/ILCD/Common_Groups#referenceToPersonOrEntityEnteringTheData> rdfs:subPropertyOf :bPerson ;
+                                                                                rdfs:domain :BPerson .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#referenceToPersonOrEntityGeneratingTheDataSet
+<http://lca.jrc.it/ILCD/Common_Groups#referenceToPersonOrEntityGeneratingTheDataSet> rdfs:subPropertyOf :bPerson ;
+                                                                                     rdfs:domain :BPerson .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#validation
+<http://lca.jrc.it/ILCD/Common_Groups#validation> rdfs:subPropertyOf :bReview ;
+                                                  rdfs:domain :BReview .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#flowProperties
+<http://lca.jrc.it/ILCD/Flow_Data_Set#flowProperties> rdf:type owl:ObjectProperty ;
+                                                      rdfs:subPropertyOf :bProperty .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#dataGenerator
+<http://lca.jrc.it/ILCD/Process_Data_Set#dataGenerator> rdfs:subPropertyOf :bDataGeneratorAndPublication ;
+                                                        rdfs:domain :BDataGeneratorAndPublication .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#dataSourcesTreatmentAndRepresentativeness
+<http://lca.jrc.it/ILCD/Process_Data_Set#dataSourcesTreatmentAndRepresentativeness> rdfs:subPropertyOf :bRepresentativeness ;
+                                                                                    rdfs:domain :BRepresentativeness .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#exchanges
+<http://lca.jrc.it/ILCD/Process_Data_Set#exchanges> rdfs:subPropertyOf :bCustomExchange ;
+                                                    rdfs:domain :BCustomExchange .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#geography
+<http://lca.jrc.it/ILCD/Process_Data_Set#geography> rdfs:subPropertyOf :bGeography ;
+                                                    rdfs:domain :BGeography .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#quantitativeReference
+<http://lca.jrc.it/ILCD/Process_Data_Set#quantitativeReference> rdfs:subPropertyOf :bMacroEconomicScenario ;
+                                                                rdfs:domain :BMacroEconomicScenario .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#technology
+<http://lca.jrc.it/ILCD/Process_Data_Set#technology> rdfs:subPropertyOf :bTechnology ;
+                                                     rdfs:domain :BTechnology .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#time
+<http://lca.jrc.it/ILCD/Process_Data_Set#time> rdfs:subPropertyOf :bTimePeriod ;
+                                               rdfs:domain :BTimePeriod .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#uncertaintyDistributionType
+<http://lca.jrc.it/ILCD/Process_Data_Set#uncertaintyDistributionType> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:subPropertyOf :bUncertainty .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#validationGroup
+<http://lca.jrc.it/ILCD/Process_Data_Set#validationGroup> rdf:type owl:ObjectProperty ;
+                                                          rdfs:subPropertyOf :bDetails .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#variableParameter
+<http://lca.jrc.it/ILCD/Process_Data_Set#variableParameter> rdfs:subPropertyOf :bParameter ;
+                                                            rdfs:domain :BParameter .
+
+
+###  https://purl.org/wiser#bClassification
+:bClassification rdf:type owl:ObjectProperty ;
+                 rdfs:domain :BActivity ;
+                 rdfs:range :BClassification .
+
+
+###  https://purl.org/wiser#bCompartment
+:bCompartment rdf:type owl:ObjectProperty .
+
+
+###  https://purl.org/wiser#bCustomExchange
+:bCustomExchange rdf:type owl:ObjectProperty ;
+                 rdfs:domain :BActivity ;
+                 rdfs:range :BCustomExchange .
+
+
+###  https://purl.org/wiser#bDataEntryBy
+:bDataEntryBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :BActivity ;
+              rdfs:range :BDataEntryBy .
+
+
+###  https://purl.org/wiser#bDataGeneratorAndPublication
+:bDataGeneratorAndPublication rdf:type owl:ObjectProperty ;
+                              rdfs:domain :BActivity ;
+                              rdfs:range :BDataGeneratorAndPublication .
+
+
+###  https://purl.org/wiser#bDetails
+:bDetails rdf:type owl:ObjectProperty .
+
+
+###  https://purl.org/wiser#bFileAttributes
+:bFileAttributes rdf:type owl:ObjectProperty ;
+                 rdfs:domain :BActivity ;
+                 rdfs:range :BFileAttributes .
+
+
+###  https://purl.org/wiser#bGeography
+:bGeography rdf:type owl:ObjectProperty ;
+            rdfs:domain :BActivity ;
+            rdfs:range :BGeography .
+
+
+###  https://purl.org/wiser#bMacroEconomicScenario
+:bMacroEconomicScenario rdf:type owl:ObjectProperty ;
+                        rdfs:domain :BActivity ;
+                        rdfs:range :BMacroEconomicScenario .
+
+
+###  https://purl.org/wiser#bParameter
+:bParameter rdf:type owl:ObjectProperty ;
+            rdfs:domain :BActivity ;
+            rdfs:range :BParameter .
+
+
+###  https://purl.org/wiser#bPerson
+:bPerson rdf:type owl:ObjectProperty ;
+         rdfs:domain :BActivity ;
+         rdfs:range :BPerson .
+
+
+###  https://purl.org/wiser#bProperty
+:bProperty rdf:type owl:ObjectProperty .
+
+
+###  https://purl.org/wiser#bRepresentativeness
+:bRepresentativeness rdf:type owl:ObjectProperty ;
+                     rdfs:domain :BActivity ;
+                     rdfs:range :BRepresentativeness .
+
+
+###  https://purl.org/wiser#bReview
+:bReview rdf:type owl:ObjectProperty ;
+         rdfs:domain :BActivity ;
+         rdfs:range :BReview .
+
+
+###  https://purl.org/wiser#bSource
+:bSource rdf:type owl:ObjectProperty ;
+         rdfs:domain :BActivity ;
+         rdfs:range :BSource .
+
+
+###  https://purl.org/wiser#bTechnology
+:bTechnology rdf:type owl:ObjectProperty ;
+             rdfs:domain :BActivity ;
+             rdfs:range :BTechnology .
+
+
+###  https://purl.org/wiser#bTimePeriod
+:bTimePeriod rdf:type owl:ObjectProperty ;
+             rdfs:domain :BActivity ;
+             rdfs:range :BTimePeriod .
+
+
+###  https://purl.org/wiser#bUncertainty
+:bUncertainty rdf:type owl:ObjectProperty .
+
+
+###  https://purl.org/wiser#tValidSource
+:tValidSource rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :bSource ;
+              rdfs:domain :BSource ;
+              rdfs:range <http://www.EcoInvent.org/EcoSpold02/sources#TValidSource> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#dataGeneratorAndPublication
+<http://www.EcoInvent.org/EcoSpold02/activity#dataGeneratorAndPublication> rdfs:subPropertyOf :bDataGeneratorAndPublication ;
+                                                                           rdfs:domain :BDataGeneratorAndPublication ;
+                                                                           rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TDataGeneratorAndPublication> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#fileAttributes
+<http://www.EcoInvent.org/EcoSpold02/activity#fileAttributes> rdfs:subPropertyOf :bFileAttributes ;
+                                                              rdfs:domain :BFileAttributes ;
+                                                              rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TFileAttributes> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#geography
+<http://www.EcoInvent.org/EcoSpold02/activity#geography> rdfs:subPropertyOf :bGeography ;
+                                                         rdfs:domain :BGeography .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#macroEconomicScenario
+<http://www.EcoInvent.org/EcoSpold02/activity#macroEconomicScenario> rdfs:subPropertyOf :bMacroEconomicScenario ;
+                                                                     rdfs:domain :BMacroEconomicScenario ;
+                                                                     rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TMacroEconomicScenario> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#parameter
+<http://www.EcoInvent.org/EcoSpold02/activity#parameter> rdfs:subPropertyOf :bParameter ;
+                                                         rdfs:domain :BParameter .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#representativeness
+<http://www.EcoInvent.org/EcoSpold02/activity#representativeness> rdfs:subPropertyOf :bRepresentativeness ;
+                                                                  rdfs:domain :BRepresentativeness ;
+                                                                  rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TRepresentativeness> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#review
+<http://www.EcoInvent.org/EcoSpold02/activity#review> rdfs:subPropertyOf :bPerson ,
+                                                                         :bReview ;
+                                                      rdfs:domain :BPerson ,
+                                                                  :BReview ;
+                                                      rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TReview> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#technology
+<http://www.EcoInvent.org/EcoSpold02/activity#technology> rdfs:subPropertyOf :bTechnology ;
+                                                          rdfs:domain :BTechnology .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/base#classification
+<http://www.EcoInvent.org/EcoSpold02/base#classification> rdf:type owl:ObjectProperty ;
+                                                          rdfs:subPropertyOf :bClassification ;
+                                                          rdfs:domain :BClassification ;
+                                                          rdfs:range <http://www.EcoInvent.org/EcoSpold02/dataTypes#TClassification> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/base#customExchange
+<http://www.EcoInvent.org/EcoSpold02/base#customExchange> rdf:type owl:ObjectProperty ;
+                                                          rdfs:subPropertyOf :bCustomExchange ;
+                                                          rdfs:domain :BCustomExchange ;
+                                                          rdfs:range <http://www.EcoInvent.org/EcoSpold02/flowdata#TCustomExchange> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/base#dataEntryBy
+<http://www.EcoInvent.org/EcoSpold02/base#dataEntryBy> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf :bDataEntryBy ;
+                                                       rdfs:domain :BDataEntryBy ;
+                                                       rdfs:range <http://www.EcoInvent.org/EcoSpold02/metainformation#TDataEntryBy> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/base#details
+<http://www.EcoInvent.org/EcoSpold02/base#details> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf :bDetails .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/base#timePeriod
+<http://www.EcoInvent.org/EcoSpold02/base#timePeriod> rdf:type owl:ObjectProperty ;
+                                                      rdfs:subPropertyOf :bTimePeriod ;
+                                                      rdfs:domain :BTimePeriod ;
+                                                      rdfs:range <http://www.EcoInvent.org/EcoSpold02/base#TTimePeriod> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#uncertainty
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#uncertainty> rdf:type owl:ObjectProperty ;
+                                                            rdfs:subPropertyOf :bUncertainty ;
+                                                            rdfs:domain <http://www.EcoInvent.org/EcoSpold02/flowdata#TCustomExchange> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#property
+<http://www.EcoInvent.org/EcoSpold02/flowdata#property> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf :bProperty .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#type
+<http://www.ecoinvent.org/EcoSpold02/base#type> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#casNumber
+<http://lca.jrc.it/ILCD/Common_Data_Types#casNumber> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf :bCasNumber .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#levelType
+<http://lca.jrc.it/ILCD/Common_Data_Types#levelType> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf :bClassificationValue .
+
+
+###  http://lca.jrc.it/ILCD/Common_Data_Types#uuid
+<http://lca.jrc.it/ILCD/Common_Data_Types#uuid> rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf :bActivityNameId ,
+                                                                   :bId .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#accessRestriction
+<http://lca.jrc.it/ILCD/Common_Groups#accessRestriction> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf :bAccessRestrictedTo .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#copyright
+<http://lca.jrc.it/ILCD/Common_Groups#copyright> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf :bIsCopyrightProtected .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#dataSetValidUntil
+<http://lca.jrc.it/ILCD/Common_Groups#dataSetValidUntil> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf :bEndDate .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#dateOfLastRevision
+<http://lca.jrc.it/ILCD/Common_Groups#dateOfLastRevision> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf :bLasteditTimestamp .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#generalComment
+<http://lca.jrc.it/ILCD/Common_Groups#generalComment> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf :bCommentExchange .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#nameData
+<http://lca.jrc.it/ILCD/Common_Groups#nameData> rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf :bClassificationSystem ,
+                                                                   :bOrganisationName ,
+                                                                   :bUnitName ;
+                                                rdfs:domain [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :bOrganisationWebsite ;
+                                                              owl:someValuesFrom xsd:string
+                                                            ] .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#otherReviewDetails
+<http://lca.jrc.it/ILCD/Common_Groups#otherReviewDetails> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf :bOtherDetails .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#refObjectId
+<http://lca.jrc.it/ILCD/Common_Groups#refObjectId> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:subPropertyOf :bReviewerId ,
+                                                                      :bSourceId .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#referenceYear
+<http://lca.jrc.it/ILCD/Common_Groups#referenceYear> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf :bStartDate .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#shortName
+<http://lca.jrc.it/ILCD/Common_Groups#shortName> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf :bShortName .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#synonyms
+<http://lca.jrc.it/ILCD/Common_Groups#synonyms> rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf :bSynonym .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#timeRepresentativenessDescription
+<http://lca.jrc.it/ILCD/Common_Groups#timeRepresentativenessDescription> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:subPropertyOf :bCommentTimePeriod ,
+                                                                                            :bIsDataValidForEntirePeriod .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#timeStamp
+<http://lca.jrc.it/ILCD/Common_Groups#timeStamp> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf :bCreationTimestamp .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#contactAddress
+<http://lca.jrc.it/ILCD/Contact_Data_Set#contactAddress> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf :bAddress .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#email
+<http://lca.jrc.it/ILCD/Contact_Data_Set#email> rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf :bEmail .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#telefax
+<http://lca.jrc.it/ILCD/Contact_Data_Set#telefax> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:subPropertyOf :bTelefax .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#telephone
+<http://lca.jrc.it/ILCD/Contact_Data_Set#telephone> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:subPropertyOf :bTelephone .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#wwwAddress
+<http://lca.jrc.it/ILCD/Contact_Data_Set#wwwAddress> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf :bOrganisationWebsite .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#baseName
+<http://lca.jrc.it/ILCD/Flow_Data_Set#baseName> rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf :bName .
+
+
+###  http://lca.jrc.it/ILCD/Flow_Data_Set#sumFormula
+<http://lca.jrc.it/ILCD/Flow_Data_Set#sumFormula> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:subPropertyOf :bFormula .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#annualSupplyOrProductionVolume
+<http://lca.jrc.it/ILCD/Process_Data_Set#annualSupplyOrProductionVolume> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:subPropertyOf :bProductionVolumeAmount ,
+                                                                                            :bProductionVolumeComment .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#baseName
+<http://lca.jrc.it/ILCD/Process_Data_Set#baseName> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:subPropertyOf :bActivityName .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#comment
+<http://lca.jrc.it/ILCD/Process_Data_Set#comment> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:subPropertyOf :bCommentParameter ,
+                                                                     :bUnitName .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#dataTreatmentAndExtrapolationsPrinciples
+<http://lca.jrc.it/ILCD/Process_Data_Set#dataTreatmentAndExtrapolationsPrinciples> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf :bExtrapolation .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#descriptionOfRestrictions
+<http://lca.jrc.it/ILCD/Process_Data_Set#descriptionOfRestrictions> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf :bCommentGeography .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#deviationsFromLCIMethodApproaches
+<http://lca.jrc.it/ILCD/Process_Data_Set#deviationsFromLCIMethodApproaches> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf :bAllocationComment .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#formula
+<http://lca.jrc.it/ILCD/Process_Data_Set#formula> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:subPropertyOf :bMathematicalRelation .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#location
+<http://lca.jrc.it/ILCD/Process_Data_Set#location> rdfs:subPropertyOf :bGeographyTerm .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#locations
+<http://lca.jrc.it/ILCD/Process_Data_Set#locations> rdf:type owl:DatatypeProperty .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#percentageSupplyOrProductionCovered
+<http://lca.jrc.it/ILCD/Process_Data_Set#percentageSupplyOrProductionCovered> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:subPropertyOf :bPercent .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#referenceToVariable
+<http://lca.jrc.it/ILCD/Process_Data_Set#referenceToVariable> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:subPropertyOf :bVariableName .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#resultingAmount
+<http://lca.jrc.it/ILCD/Process_Data_Set#resultingAmount> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf :bAmount .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#samplingProcedure
+<http://lca.jrc.it/ILCD/Process_Data_Set#samplingProcedure> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:subPropertyOf :bSamplingProcedure .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#technologicalApplicability
+<http://lca.jrc.it/ILCD/Process_Data_Set#technologicalApplicability> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf :bCommentTechnology ,
+                                                                                        :bGeneralComment .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#technologyDescriptionAndIncludedProcesses
+<http://lca.jrc.it/ILCD/Process_Data_Set#technologyDescriptionAndIncludedProcesses> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:subPropertyOf :bIncludedActivitiesEnd ,
+                                                                                                       :bIncludedActivitiesStart .
+
+
+###  http://lca.jrc.it/ILCD/Source_Data_Set#sourceCitation
+<http://lca.jrc.it/ILCD/Source_Data_Set#sourceCitation> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf :bAdditionalAuthor ,
+                                                                           :bFirstAuthor ,
+                                                                           :bIssueNo ,
+                                                                           :bJournal ,
+                                                                           :bNamesOfEditors ,
+                                                                           :bPageNumbers ,
+                                                                           :bPlaceOfPublication ,
+                                                                           :bPublisher ,
+                                                                           :bTitle ,
+                                                                           :bTitleOfAnthology ,
+                                                                           :bVolumeNo ,
+                                                                           :bYear .
+
+
+###  http://lca.jrc.it/ILCD/Source_Data_Set#sourceDescriptionOrComment
+<http://lca.jrc.it/ILCD/Source_Data_Set#sourceDescriptionOrComment> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf :bCommentSource .
+
+
+###  https://purl.org/wiser#bAccessRestrictedTo
+:bAccessRestrictedTo rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bActivityName
+:bActivityName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bActivityNameId
+:bActivityNameId rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bAdditionalAuthor
+:bAdditionalAuthor rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bAddress
+:bAddress rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bAllocationComment
+:bAllocationComment rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bAmount
+:bAmount rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bCasNumber
+:bCasNumber rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bClassificationSystem
+:bClassificationSystem rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bClassificationValue
+:bClassificationValue rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bCommentExchange
+:bCommentExchange rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bCommentGeography
+:bCommentGeography rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bCommentParameter
+:bCommentParameter rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bCommentSource
+:bCommentSource rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bCommentTechnology
+:bCommentTechnology rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bCommentTimePeriod
+:bCommentTimePeriod rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bCreationTimestamp
+:bCreationTimestamp rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bEmail
+:bEmail rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bEndDate
+:bEndDate rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bExtrapolation
+:bExtrapolation rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bFirstAuthor
+:bFirstAuthor rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bFormula
+:bFormula rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bGeneralComment
+:bGeneralComment rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bId
+:bId rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bIncludedActivitiesEnd
+:bIncludedActivitiesEnd rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bIncludedActivitiesStart
+:bIncludedActivitiesStart rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bIsCopyrightProtected
+:bIsCopyrightProtected rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bIsDataValidForEntirePeriod
+:bIsDataValidForEntirePeriod rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bIssueNo
+:bIssueNo rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bJournal
+:bJournal rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bLasteditTimestamp
+:bLasteditTimestamp rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bGeographyTerm
+:bGeographyTerm rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bMathematicalRelation
+:bMathematicalRelation rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bName
+:bName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bNamesOfEditors
+:bNamesOfEditors rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bOrganisationName
+:bOrganisationName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bOrganisationWebsite
+:bOrganisationWebsite rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bOtherDetails
+:bOtherDetails rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bPageNumbers
+:bPageNumbers rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bPercent
+:bPercent rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bPlaceOfPublication
+:bPlaceOfPublication rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bProductionVolumeAmount
+:bProductionVolumeAmount rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bProductionVolumeComment
+:bProductionVolumeComment rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bPublisher
+:bPublisher rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bReviewerId
+:bReviewerId rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bSamplingProcedure
+:bSamplingProcedure rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bShortName
+:bShortName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bSourceId
+:bSourceId rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bStartDate
+:bStartDate rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bSynonym
+:bSynonym rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bTelefax
+:bTelefax rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bTelephone
+:bTelephone rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bTitle
+:bTitle rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bTitleOfAnthology
+:bTitleOfAnthology rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bUnitName
+:bUnitName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bVariableName
+:bVariableName rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bVolumeNo
+:bVolumeNo rdf:type owl:DatatypeProperty .
+
+
+###  https://purl.org/wiser#bYear
+:bYear rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02#address
+<http://www.EcoInvent.org/EcoSpold02#address> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf :bAddress .
+
+
+###  http://www.EcoInvent.org/EcoSpold02#email
+<http://www.EcoInvent.org/EcoSpold02#email> rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf :bEmail .
+
+
+###  http://www.EcoInvent.org/EcoSpold02#telefax
+<http://www.EcoInvent.org/EcoSpold02#telefax> rdf:type owl:DatatypeProperty ;
+                                              rdfs:subPropertyOf :bTelefax .
+
+
+###  http://www.EcoInvent.org/EcoSpold02#telephone
+<http://www.EcoInvent.org/EcoSpold02#telephone> rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf :bTelephone .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/base#productionVolumeComment
+<http://www.EcoInvent.org/EcoSpold02/base#productionVolumeComment> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:subPropertyOf :bProductionVolumeComment .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/base#synonym
+<http://www.EcoInvent.org/EcoSpold02/base#synonym> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:subPropertyOf :bSynonym .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/base#unitName
+<http://www.EcoInvent.org/EcoSpold02/base#unitName> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:subPropertyOf :bUnitName .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#classificationSystem
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#classificationSystem> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf :bClassificationSystem .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#classificationValue
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#classificationValue> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf :bClassificationValue .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#activityLinkId
+<http://www.EcoInvent.org/EcoSpold02/flowdata#activityLinkId> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#amount
+<http://www.EcoInvent.org/EcoSpold02/flowdata#amount> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf :bAmount .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#casNumber
+<http://www.EcoInvent.org/EcoSpold02/flowdata#casNumber> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf :bCasNumber .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#formula
+<http://www.EcoInvent.org/EcoSpold02/flowdata#formula> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:subPropertyOf :bFormula .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#mathematicalRelation
+<http://www.EcoInvent.org/EcoSpold02/flowdata#mathematicalRelation> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:subPropertyOf :bMathematicalRelation .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#name
+<http://www.EcoInvent.org/EcoSpold02/flowdata#name> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:subPropertyOf :bName .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#pageNumbers
+<http://www.EcoInvent.org/EcoSpold02/flowdata#pageNumbers> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:subPropertyOf :bPageNumbers .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeAmount
+<http://www.EcoInvent.org/EcoSpold02/flowdata#productionVolumeAmount> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:subPropertyOf :bProductionVolumeAmount .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#sourceId
+<http://www.EcoInvent.org/EcoSpold02/flowdata#sourceId> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf :bSourceId .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#sourceYear
+<http://www.EcoInvent.org/EcoSpold02/flowdata#sourceYear> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf :bYear .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#variableName
+<http://www.EcoInvent.org/EcoSpold02/flowdata#variableName> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:subPropertyOf :bVariableName .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#accessRestrictedTo
+<http://www.EcoInvent.org/EcoSpold02/metainformation#accessRestrictedTo> rdf:type owl:DatatypeProperty ;
+                                                                         rdfs:subPropertyOf :bAccessRestrictedTo .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#activityName
+<http://www.EcoInvent.org/EcoSpold02/metainformation#activityName> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:subPropertyOf :bActivityName .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#activityNameId
+<http://www.EcoInvent.org/EcoSpold02/metainformation#activityNameId> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf :bActivityNameId .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#allocationComment
+<http://www.EcoInvent.org/EcoSpold02/metainformation#allocationComment> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:subPropertyOf :bAllocationComment .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#comment
+<http://www.EcoInvent.org/EcoSpold02/metainformation#comment> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:subPropertyOf :bCommentExchange ,
+                                                                                 :bCommentGeography ,
+                                                                                 :bCommentParameter ,
+                                                                                 :bCommentSource ,
+                                                                                 :bCommentTechnology ,
+                                                                                 :bCommentTimePeriod ;
+                                                              rdfs:domain <http://www.EcoInvent.org/EcoSpold02/flowdata#TCustomExchange> ,
+                                                                          <http://www.EcoInvent.org/EcoSpold02/flowdata#TParameter> ,
+                                                                          <http://www.EcoInvent.org/EcoSpold02/flowdata#TTransferCoefficient> .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#creationTimestamp
+<http://www.EcoInvent.org/EcoSpold02/metainformation#creationTimestamp> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:subPropertyOf :bCreationTimestamp .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#endDate
+<http://www.EcoInvent.org/EcoSpold02/metainformation#endDate> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:subPropertyOf :bEndDate .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#extrapolations
+<http://www.EcoInvent.org/EcoSpold02/metainformation#extrapolations> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf :bExtrapolation .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#generalComment
+<http://www.EcoInvent.org/EcoSpold02/metainformation#generalComment> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:subPropertyOf :bGeneralComment .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#id
+<http://www.EcoInvent.org/EcoSpold02/metainformation#id> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf :bId .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#includedActivitiesEnd
+<http://www.EcoInvent.org/EcoSpold02/metainformation#includedActivitiesEnd> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:subPropertyOf :bIncludedActivitiesEnd .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#includedActivitiesStart
+<http://www.EcoInvent.org/EcoSpold02/metainformation#includedActivitiesStart> rdf:type owl:DatatypeProperty ;
+                                                                              rdfs:subPropertyOf :bIncludedActivitiesStart .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#isCopyrightProtected
+<http://www.EcoInvent.org/EcoSpold02/metainformation#isCopyrightProtected> rdf:type owl:DatatypeProperty ;
+                                                                           rdfs:subPropertyOf :bIsCopyrightProtected .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#isDataValidForEntirePeriod
+<http://www.EcoInvent.org/EcoSpold02/metainformation#isDataValidForEntirePeriod> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf :bIsDataValidForEntirePeriod .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#lastEditTimestamp
+<http://www.EcoInvent.org/EcoSpold02/metainformation#lastEditTimestamp> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:subPropertyOf :bLasteditTimestamp .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#otherDetails
+<http://www.EcoInvent.org/EcoSpold02/metainformation#otherDetails> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:subPropertyOf :bOtherDetails .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#percent
+<http://www.EcoInvent.org/EcoSpold02/metainformation#percent> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:subPropertyOf :bPercent .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#reviewerId
+<http://www.EcoInvent.org/EcoSpold02/metainformation#reviewerId> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:subPropertyOf :bReviewerId .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#samplingProcedure
+<http://www.EcoInvent.org/EcoSpold02/metainformation#samplingProcedure> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:subPropertyOf :bSamplingProcedure .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#shortName
+<http://www.EcoInvent.org/EcoSpold02/metainformation#shortName> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:subPropertyOf :bGeographyTerm .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#startDate
+<http://www.EcoInvent.org/EcoSpold02/metainformation#startDate> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:subPropertyOf :bStartDate .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/person#organisationName
+<http://www.EcoInvent.org/EcoSpold02/person#organisationName> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:subPropertyOf :bOrganisationName .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/person#website
+<http://www.EcoInvent.org/EcoSpold02/person#website> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf :bOrganisationWebsite .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#additionalAuthors
+<http://www.EcoInvent.org/EcoSpold02/sources#additionalAuthors> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:subPropertyOf :bAdditionalAuthor .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#firstAuthor
+<http://www.EcoInvent.org/EcoSpold02/sources#firstAuthor> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:subPropertyOf :bFirstAuthor .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#issueNo
+<http://www.EcoInvent.org/EcoSpold02/sources#issueNo> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf :bIssueNo .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#journal
+<http://www.EcoInvent.org/EcoSpold02/sources#journal> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:subPropertyOf :bJournal .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#namesOfEditors
+<http://www.EcoInvent.org/EcoSpold02/sources#namesOfEditors> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:subPropertyOf :bNamesOfEditors .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#placeOfPublications
+<http://www.EcoInvent.org/EcoSpold02/sources#placeOfPublications> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:subPropertyOf :bPlaceOfPublication .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#publisher
+<http://www.EcoInvent.org/EcoSpold02/sources#publisher> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf :bPublisher .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#shortName
+<http://www.EcoInvent.org/EcoSpold02/sources#shortName> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf :bShortName .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#title
+<http://www.EcoInvent.org/EcoSpold02/sources#title> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:subPropertyOf :bTitle .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#titleOfAnthology
+<http://www.EcoInvent.org/EcoSpold02/sources#titleOfAnthology> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:subPropertyOf :bTitleOfAnthology .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#volumeNo
+<http://www.EcoInvent.org/EcoSpold02/sources#volumeNo> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:subPropertyOf :bVolumeNo .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://lca.jrc.it/ILCD/Common_Groups#ClassType
+<http://lca.jrc.it/ILCD/Common_Groups#ClassType> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://lca.jrc.it/ILCD/Common_Groups#other> ;
+                                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                                 ] .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#ClassificationInformationType
+<http://lca.jrc.it/ILCD/Common_Groups#ClassificationInformationType> rdfs:subClassOf :BClassification .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup1
+<http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup1> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :BFileAttributes .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup2
+<http://lca.jrc.it/ILCD/Common_Groups#DataEntryByGroup2> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :BDataEntryBy .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType
+<http://lca.jrc.it/ILCD/Common_Groups#GlobalReferenceType> rdfs:subClassOf :BPerson ,
+                                                                           :BSource .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup1
+<http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup1> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf :BFileAttributes .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup2
+<http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup2> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf :BDataGeneratorAndPublication .
+
+
+###  http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup3
+<http://lca.jrc.it/ILCD/Common_Groups#PublicationAndOwnershipGroup3> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf :BDataGeneratorAndPublication .
+
+
+###  http://lca.jrc.it/ILCD/Contact_Data_Set#ContactInformationType
+<http://lca.jrc.it/ILCD/Contact_Data_Set#ContactInformationType> rdf:type owl:Class .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#DataGeneratorType
+<http://lca.jrc.it/ILCD/Process_Data_Set#DataGeneratorType> rdf:type owl:Class ;
+                                                            rdfs:subClassOf :BDataGeneratorAndPublication .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#DataSetInformationType
+<http://lca.jrc.it/ILCD/Process_Data_Set#DataSetInformationType> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf :BActivity .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#DataSourcesTreatmentAndRepresentativenessType
+<http://lca.jrc.it/ILCD/Process_Data_Set#DataSourcesTreatmentAndRepresentativenessType> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf :BRepresentativeness .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#ExchangesType
+<http://lca.jrc.it/ILCD/Process_Data_Set#ExchangesType> rdf:type owl:Class ;
+                                                        rdfs:subClassOf :BCustomExchange .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#GeographicalRepresentativenessType
+<http://lca.jrc.it/ILCD/Process_Data_Set#GeographicalRepresentativenessType> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf :BGeography .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#QuantitativeReferenceType
+<http://lca.jrc.it/ILCD/Process_Data_Set#QuantitativeReferenceType> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf :BMacroEconomicScenario .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#TechnologicalRepresentativenessType
+<http://lca.jrc.it/ILCD/Process_Data_Set#TechnologicalRepresentativenessType> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf :BTechnology .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#TimeRepresentativenessType
+<http://lca.jrc.it/ILCD/Process_Data_Set#TimeRepresentativenessType> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf :BTimePeriod .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#ValidationType
+<http://lca.jrc.it/ILCD/Process_Data_Set#ValidationType> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :BReview .
+
+
+###  http://lca.jrc.it/ILCD/Process_Data_Set#VariableParameterType
+<http://lca.jrc.it/ILCD/Process_Data_Set#VariableParameterType> rdf:type owl:Class ;
+                                                                rdfs:subClassOf :BParameter .
+
+
+###  http://lca.jrc.it/ILCD/Source_Data_Set#SourceInformationType
+<http://lca.jrc.it/ILCD/Source_Data_Set#SourceInformationType> rdf:type owl:Class .
+
+
+###  https://purl.org/wiser#BActivity
+:BActivity rdf:type owl:Class ;
+           rdfs:subClassOf :BActivityDescription ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bClassification ;
+                             owl:allValuesFrom :BClassification
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bCustomExchange ;
+                             owl:allValuesFrom :BCustomExchange
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bDataEntryBy ;
+                             owl:allValuesFrom :BDataEntryBy
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bDataGeneratorAndPublication ;
+                             owl:allValuesFrom :BDataGeneratorAndPublication
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bFileAttributes ;
+                             owl:allValuesFrom :BFileAttributes
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bGeography ;
+                             owl:allValuesFrom :BGeography
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bMacroEconomicScenario ;
+                             owl:allValuesFrom :BMacroEconomicScenario
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bParameter ;
+                             owl:allValuesFrom :BParameter
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bPerson ;
+                             owl:allValuesFrom :BPerson
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bRepresentativeness ;
+                             owl:allValuesFrom :BRepresentativeness
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bReview ;
+                             owl:allValuesFrom :BReview
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bSource ;
+                             owl:allValuesFrom :BSource
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bTechnology ;
+                             owl:allValuesFrom :BTechnology
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bTimePeriod ;
+                             owl:allValuesFrom :BTimePeriod
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bClassification ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BClassification
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bCustomExchange ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BCustomExchange
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bDataEntryBy ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BDataEntryBy
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bDataGeneratorAndPublication ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BDataGeneratorAndPublication
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bFileAttributes ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BFileAttributes
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bGeography ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BGeography
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bMacroEconomicScenario ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BMacroEconomicScenario
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bParameter ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BParameter
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bPerson ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BPerson
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bRepresentativeness ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BRepresentativeness
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bReview ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BReview
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bSource ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BSource
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bTechnology ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BTechnology
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bTimePeriod ;
+                             owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BTimePeriod
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bClassification ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BClassification
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bCustomExchange ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BCustomExchange
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bDataEntryBy ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BDataEntryBy
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bDataGeneratorAndPublication ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BDataGeneratorAndPublication
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bFileAttributes ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BFileAttributes
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bGeography ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BGeography
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bMacroEconomicScenario ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BMacroEconomicScenario
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bParameter ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BParameter
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bPerson ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BPerson
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bRepresentativeness ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BRepresentativeness
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bReview ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BReview
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bSource ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BSource
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bTechnology ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BTechnology
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bTimePeriod ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :BTimePeriod
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bActivityName ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bActivityNameId ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bAllocationComment ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bGeneralComment ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bIncludedActivitiesEnd ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bIncludedActivitiesStart ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :bSynonym ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] .
+
+
+###  https://purl.org/wiser#BActivityDescription
+:BActivityDescription rdf:type owl:Class ;
+                      rdfs:subClassOf :Bridge ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :bCommentGeography ;
+                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange xsd:string
+                                      ] .
+
+
+###  https://purl.org/wiser#BAdministrativeInformation
+:BAdministrativeInformation rdf:type owl:Class ;
+                            rdfs:subClassOf :Bridge .
+
+
+###  https://purl.org/wiser#BClassification
+:BClassification rdf:type owl:Class ;
+                 rdfs:subClassOf :BActivityDescription ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bClassificationSystem ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bClassificationValue ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] .
+
+
+###  https://purl.org/wiser#BCustomExchange
+:BCustomExchange rdf:type owl:Class ;
+                 rdfs:subClassOf :BFlowData ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bProductionVolumeAmount ;
+                                   owl:someValuesFrom xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bProductionVolumeComment ;
+                                   owl:someValuesFrom xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://www.EcoInvent.org/EcoSpold02/flowdata#activityLinkId> ;
+                                   owl:someValuesFrom xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bAmount ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bCasNumber ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bCommentExchange ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bName ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bSynonym ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bUnitName ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bVariableName ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] .
+
+
+###  https://purl.org/wiser#BDataEntryBy
+:BDataEntryBy rdf:type owl:Class ;
+              rdfs:subClassOf :BAdministrativeInformation .
+
+
+###  https://purl.org/wiser#BDataGeneratorAndPublication
+:BDataGeneratorAndPublication rdf:type owl:Class ;
+                              rdfs:subClassOf :BAdministrativeInformation ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :bAccessRestrictedTo ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :bIsCopyrightProtected ;
+                                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                owl:onDataRange xsd:string
+                                              ] .
+
+
+###  https://purl.org/wiser#BFileAttributes
+:BFileAttributes rdf:type owl:Class ;
+                 rdfs:subClassOf :BAdministrativeInformation ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bCreationTimestamp ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bLasteditTimestamp ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] .
+
+
+###  https://purl.org/wiser#BFlowData
+:BFlowData rdf:type owl:Class ;
+           rdfs:subClassOf :Bridge .
+
+
+###  https://purl.org/wiser#BGeography
+:BGeography rdf:type owl:Class ;
+            rdfs:subClassOf :BActivityDescription ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :bCommentGeography ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :bGeographyTerm ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] .
+
+
+###  https://purl.org/wiser#BMacroEconomicScenario
+:BMacroEconomicScenario rdf:type owl:Class ;
+                        rdfs:subClassOf :BActivityDescription .
+
+
+###  https://purl.org/wiser#BModellingAndValidation
+:BModellingAndValidation rdf:type owl:Class ;
+                         rdfs:subClassOf :Bridge .
+
+
+###  https://purl.org/wiser#BParameter
+:BParameter rdf:type owl:Class ;
+            rdfs:subClassOf :BFlowData ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :bCommentParameter ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :bMathematicalRelation ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :bName ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :bUnitName ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :bVariableName ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:string
+                            ] .
+
+
+###  https://purl.org/wiser#BPerson
+:BPerson rdf:type owl:Class ;
+         rdfs:subClassOf :BAdministrativeInformation ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bAddress ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bEmail ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bId ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bName ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bOrganisationName ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bOrganisationWebsite ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bTelefax ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bTelephone ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] .
+
+
+###  https://purl.org/wiser#BRepresentativeness
+:BRepresentativeness rdf:type owl:Class ;
+                     rdfs:subClassOf :BModellingAndValidation ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :bExtrapolation ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :bPercent ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :bSamplingProcedure ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] .
+
+
+###  https://purl.org/wiser#BReview
+:BReview rdf:type owl:Class ;
+         rdfs:subClassOf :BModellingAndValidation ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bOtherDetails ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] .
+
+
+###  https://purl.org/wiser#BSource
+:BSource rdf:type owl:Class ;
+         rdfs:subClassOf :BModellingAndValidation ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bAdditionalAuthor ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bCommentSource ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bFirstAuthor ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bIssueNo ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bJournal ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bNamesOfEditors ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bPageNumbers ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bPlaceOfPublication ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bPublisher ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bShortName ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bTitle ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bTitleOfAnthology ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bVolumeNo ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :bYear ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:string
+                         ] .
+
+
+###  https://purl.org/wiser#BTechnology
+:BTechnology rdf:type owl:Class ;
+             rdfs:subClassOf :BActivityDescription ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :bCommentTechnology ;
+                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onDataRange xsd:string
+                             ] .
+
+
+###  https://purl.org/wiser#BTimePeriod
+:BTimePeriod rdf:type owl:Class ;
+             rdfs:subClassOf :BActivityDescription ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :bCommentTimePeriod ;
+                               owl:someValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :bEndDate ;
+                               owl:someValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :bIsDataValidForEntirePeriod ;
+                               owl:someValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :bStartDate ;
+                               owl:someValuesFrom xsd:string
+                             ] .
+
+
+###  https://purl.org/wiser#Bridge
+:Bridge rdf:type owl:Class .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TTechnology
+<http://www.EcoInvent.org/EcoSpold02/activity#TTechnology> rdf:type owl:Class ;
+                                                           rdfs:subClassOf :BTechnology .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/base#TAdministrativeInformation
+<http://www.EcoInvent.org/EcoSpold02/base#TAdministrativeInformation> rdf:type owl:Class .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/base#TTimePeriod
+<http://www.EcoInvent.org/EcoSpold02/base#TTimePeriod> rdf:type owl:Class ;
+                                                       rdfs:subClassOf :BTimePeriod .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TClassification
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#TClassification> rdf:type owl:Class ;
+                                                                rdfs:subClassOf :BClassification .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TRequiredContextReference
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#TRequiredContextReference> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :BAdministrativeInformation .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TCustomExchange
+<http://www.EcoInvent.org/EcoSpold02/flowdata#TCustomExchange> rdf:type owl:Class ;
+                                                               rdfs:subClassOf :BCustomExchange .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TImpactIndicatorResult
+<http://www.EcoInvent.org/EcoSpold02/flowdata#TImpactIndicatorResult> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf :BFlowData .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TParameter
+<http://www.EcoInvent.org/EcoSpold02/flowdata#TParameter> rdf:type owl:Class ;
+                                                          rdfs:subClassOf :BParameter .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#TTransferCoefficient
+<http://www.EcoInvent.org/EcoSpold02/flowdata#TTransferCoefficient> rdf:type owl:Class .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TActivity
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TActivity> rdf:type owl:Class ;
+                                                                rdfs:subClassOf :BActivity ,
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://www.ecoinvent.org/EcoSpold02/base#type> ;
+                                                                                  owl:someValuesFrom <http://www.ecoinvent.org/EcoSpold02/base#TTypeActivity>
+                                                                                ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TDataEntryBy
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TDataEntryBy> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf :BDataEntryBy .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TDataGeneratorAndPublication
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TDataGeneratorAndPublication> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf :BDataGeneratorAndPublication .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TFileAttributes
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TFileAttributes> rdf:type owl:Class ;
+                                                                      rdfs:subClassOf :BFileAttributes .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TGeography
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TGeography> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf :BGeography .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TMacroEconomicScenario
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TMacroEconomicScenario> rdf:type owl:Class ;
+                                                                             rdfs:subClassOf :BMacroEconomicScenario .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TRepresentativeness
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TRepresentativeness> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf :BRepresentativeness .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/metainformation#TReview
+<http://www.EcoInvent.org/EcoSpold02/metainformation#TReview> rdf:type owl:Class ;
+                                                              rdfs:subClassOf :BPerson ,
+                                                                              :BReview .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/sources#TValidSource
+<http://www.EcoInvent.org/EcoSpold02/sources#TValidSource> rdfs:subClassOf :BSource .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes
+<http://www.ecoinvent.org/EcoSpold02/base#TComplexTypes> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :BFlowData .
+
+
+###  http://www.ecoinvent.org/EcoSpold02/base#TTypeActivity
+<http://www.ecoinvent.org/EcoSpold02/base#TTypeActivity> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

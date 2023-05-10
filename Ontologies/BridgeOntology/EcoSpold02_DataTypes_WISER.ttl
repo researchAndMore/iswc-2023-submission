@@ -1,0 +1,1130 @@
+@prefix : <http://www.EcoInvent.org/EcoSpold02/dataTypes#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ecospold02: <http://www.EcoInvent.org/EcoSpold02#> .
+@prefix ontmalizer: <http://www.srdc.com.tr/ontmalizer#> .
+@base <http://www.EcoInvent.org/EcoSpold02/dataTypes> .
+
+<http://www.EcoInvent.org/EcoSpold02/dataTypes> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.srdc.com.tr/ontmalizer#hasValue
+ontmalizer:hasValue rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#length
+xsd:length rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#maxInclusive
+xsd:maxInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#maxLength
+xsd:maxLength rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#minInclusive
+xsd:minInclusive rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2001/XMLSchema#pattern
+xsd:pattern rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#maxCardinality
+owl:maxCardinality rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#ENTITIESDatatype
+xsd:ENTITIESDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#ENTITYDatatype
+xsd:ENTITYDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDDatatype
+xsd:IDDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFDatatype
+xsd:IDREFDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#IDREFSDatatype
+xsd:IDREFSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NCNameDatatype
+xsd:NCNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENDatatype
+xsd:NMTOKENDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NMTOKENSDatatype
+xsd:NMTOKENSDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NOTATIONDatatype
+xsd:NOTATIONDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#NameDatatype
+xsd:NameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#QNameDatatype
+xsd:QNameDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#anyURIDatatype
+xsd:anyURIDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#base64BinaryDatatype
+xsd:base64BinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#booleanDatatype
+xsd:booleanDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#byteDatatype
+xsd:byteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateDatatype
+xsd:dateDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#dateTimeDatatype
+xsd:dateTimeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#decimalDatatype
+xsd:decimalDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#doubleDatatype
+xsd:doubleDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#durationDatatype
+xsd:durationDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#floatDatatype
+xsd:floatDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gDayDatatype
+xsd:gDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDatatype
+xsd:gMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gMonthDayDatatype
+xsd:gMonthDayDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearDatatype
+xsd:gYearDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#gYearMonthDatatype
+xsd:gYearMonthDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#hexBinaryDatatype
+xsd:hexBinaryDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#intDatatype
+xsd:intDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#integerDatatype
+xsd:integerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#languageDatatype
+xsd:languageDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#longDatatype
+xsd:longDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#negativeIntegerDatatype
+xsd:negativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonNegativeIntegerDatatype
+xsd:nonNegativeIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#nonPositiveIntegerDatatype
+xsd:nonPositiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#normalizedStringDatatype
+xsd:normalizedStringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#positiveIntegerDatatype
+xsd:positiveIntegerDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#shortDatatype
+xsd:shortDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#stringDatatype
+xsd:stringDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#timeDatatype
+xsd:timeDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#tokenDatatype
+xsd:tokenDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedByteDatatype
+xsd:unsignedByteDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedIntDatatype
+xsd:unsignedIntDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedLongDatatype
+xsd:unsignedLongDatatype rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#unsignedShortDatatype
+xsd:unsignedShortDatatype rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#hasUncertaintyModellingMethod
+:hasUncertaintyModellingMethod rdf:type owl:ObjectProperty ;
+                               rdfs:domain :TUncertainty ;
+                               rdfs:range :UncertaintyModellingMethod .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#pedigreeMatrix
+:pedigreeMatrix rdf:type owl:ObjectProperty ;
+                rdfs:domain :UncertaintyModellingMethod ;
+                rdfs:range :PedigreeMatrix ;
+                rdfs:comment "The data quality indicators provides a qualitative assessment of data quality. This can be converted to a quantitative additional uncertainty, which can be added to the basic uncertainty. The pedigreeMatrix element groups the 5 data quality indicators and contains no data itself." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#uncertainty
+:uncertainty rdf:type owl:ObjectProperty ;
+             rdfs:domain :TProperty ;
+             rdfs:range :TUncertainty ;
+             rdfs:comment "Of the following uncertainty methods (lognormal, normal, ..., undefined) exactly one must be selected. The TUncertainty complex type is used in several places, so one dataset may contain several uncertainty elements in distinct places. But each element which has uncertainty may only contain one." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#arithmeticMean
+:arithmeticMean rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Normal ;
+                rdfs:range xsd:float ;
+                rdfs:comment "Arithmetic mean of the underlying normal distribution" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#classificationContextID
+:classificationContextID rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :TClassification ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Reference to the context of the classification. If this attribute is omitted the context of the dataset itself will be used instead." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#classificationID
+:classificationID rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TClassification ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Reference to the value of a classification system. Must be defined in list of valid classifications (see field 5160)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#classificationSystem
+:classificationSystem rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :TClassification ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "The name of the classification system used, e.g. ISIC Rev. 4. This is an optional plaintext value of the referenced classification system (field 320)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#classificationValue
+:classificationValue rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :TClassification ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "The class that the activity belongs to within the specified classification system.  This is an optional plaintext value of the referenced classification value (field 320)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#compartmentName
+:compartmentName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :TCompartment ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "The name of the compartment.This is the plaintext value of the referenced compartment (field 5315)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#completeness
+:completeness rdf:type owl:DatatypeProperty ;
+              rdfs:domain :PedigreeMatrix ;
+              rdfs:range xsd:int ;
+              rdfs:comment """1=Representative data from all sites relevant for the market considered over an adequate period to even out normal fluctuations
+2=Representative data from &gt;50% of the sites relevant for the market considered over an adequate period to even out normal fluctuations
+3=Representative data from only some sites (&lt;&lt;50%) relevant for the market considered OR &gt;50% of sites but from shorter periods
+4=Representative data from only one site relevant for the market considered OR some sites but from shorter periods
+5=Representativeness unknown or data from a small number of sites AND from shorter periods</xsd:documentation>""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#furtherTechnologyCorrelation
+:furtherTechnologyCorrelation rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :PedigreeMatrix ;
+                              rdfs:range xsd:int ;
+                              rdfs:comment """1=Data from enterprises, processes and materials under study
+2=Data from processes and materials under study  (i.e. identical technology) but from different enterprises$
+3=Data from processes and materials under study but from different technology
+4=Data on related processes or materials
+5=Data on related processes on laboratory scale or from different technology</xsd:documentation>""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#geographicalCorrelation
+:geographicalCorrelation rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :PedigreeMatrix ;
+                         rdfs:range xsd:int ;
+                         rdfs:comment """1=Data from area under study
+2=Average data from larger area in which the area under study is included
+3=Data from area with similar production conditions
+4=Data from are with slightly similar production conditions
+5=Data from unknown OR distinctly different area (north america instead of middle east, OECD-Europe instead of Russia)""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#geometricMean
+:geometricMean rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Lognormal ;
+               rdfs:range xsd:float ;
+               rdfs:comment "Geometric mean" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#imageURL
+:imageURL rdf:type owl:DatatypeProperty ;
+          rdfs:domain :TTextAndImage ;
+          rdfs:range xsd:anyURI ;
+          rdfs:comment "Can be used to mix images between texts. Its index attribute is used to enforce a specific order of text and image elements." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#isDefiningValue
+:isDefiningValue rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :TProperty ;
+                 rdfs:range xsd:boolean ;
+                 rdfs:comment "If this field is true, the value of this property is a part of the definition of the exchange and therefore has a fixed relation to the amount of the exchange that cannot be changed for individual instances of the exchange in different datasets." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#majorRelease
+:majorRelease rdf:type owl:DatatypeProperty ;
+              rdfs:domain :TRequiredContextReference ;
+              rdfs:range xsd:int ;
+              rdfs:comment "This version number can be used to make sure that the necessary master data entries are present for an activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#majorRevision
+:majorRevision rdf:type owl:DatatypeProperty ;
+               rdfs:domain :TRequiredContextReference ;
+               rdfs:range xsd:int ;
+               rdfs:comment "This version number can be used to make sure that the necessary master data entries are present for an activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#maxValue
+:maxValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Beta ,
+                      :Triangular ,
+                      :Undefined ,
+                      :Uniform ;
+          rdfs:range xsd:float ;
+          rdfs:comment "Maximum value" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#meanValue
+:meanValue rdf:type owl:DatatypeProperty ;
+           rdfs:domain :UncertaintyModellingMethod ;
+           rdfs:range xsd:float ;
+           rdfs:comment "Geometric mean" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#minValue
+:minValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Beta ,
+                      :Gamma ,
+                      :Triangular ,
+                      :Undefined ,
+                      :Uniform ;
+          rdfs:range xsd:float ;
+          rdfs:comment "Minimum value" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#minorRelease
+:minorRelease rdf:type owl:DatatypeProperty ;
+              rdfs:domain :TRequiredContextReference ;
+              rdfs:range xsd:int ;
+              rdfs:comment "This version number can be used to make sure that the necessary master data entries are present for an activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#minorRevision
+:minorRevision rdf:type owl:DatatypeProperty ;
+               rdfs:domain :TRequiredContextReference ;
+               rdfs:range xsd:int ;
+               rdfs:comment "This version number can be used to make sure that the necessary master data entries are present for an activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#mostFrequentValue
+:mostFrequentValue rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Beta ;
+                   rdfs:range xsd:float ;
+                   rdfs:comment "Most Frequent value (m)" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#mostLikelyValue
+:mostLikelyValue rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Triangular ;
+                 rdfs:range xsd:float ;
+                 rdfs:comment "Mode" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#mu
+:mu rdf:type owl:DatatypeProperty ;
+    rdfs:domain :Lognormal ;
+    rdfs:range xsd:float ;
+    rdfs:comment "Arithmetic mean of the underlying normal distribution" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#n
+:n rdf:type owl:DatatypeProperty ;
+   rdfs:domain :Binomial ;
+   rdfs:range xsd:int ;
+   rdfs:comment "Number of independant trials" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#p
+:p rdf:type owl:DatatypeProperty ;
+   rdfs:domain :Binomial ;
+   rdfs:range xsd:float ;
+   rdfs:comment "Probability of success in each trial" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#propertyContextId
+:propertyContextId rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :TProperty ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment """Reference to the context of the property.
+If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#propertyId
+:propertyId rdf:type owl:DatatypeProperty ;
+            rdfs:domain :TProperty ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Reference to the master data entry for this property." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#reliability
+:reliability rdf:type owl:DatatypeProperty ;
+             rdfs:domain :PedigreeMatrix ;
+             rdfs:range xsd:int ;
+             rdfs:comment """1=Verified data based on measurements
+2=Verified data partly based on assumptions OR nonverified data based on measurements
+3=Non-verified data partly based on qualified estimates
+4=Qualified estimate (e.g. by industrial expert)
+5=Non-qualified estimate (default)""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#requiredContextFileLocation
+:requiredContextFileLocation rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :TRequiredContextReference ;
+                             rdfs:range xsd:anyURI ;
+                             rdfs:comment "Optional URI reference to the directory containing the master data files of this context." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#requiredContextId
+:requiredContextId rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :TRequiredContextReference ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment """Reference to the context of the master data file.
+If this attribute is omitted the context of the dataset itself should be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#requiredContextName
+:requiredContextName rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :TRequiredContextReference ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "The name of the context referenced by field 7850." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#scale
+:scale rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Gamma ;
+       rdfs:range xsd:float ;
+       rdfs:comment "Scale parameter" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#shape
+:shape rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Gamma ;
+       rdfs:range xsd:float ;
+       rdfs:comment "Shape parameter" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#standardDeviation95
+:standardDeviation95 rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Undefined ;
+                     rdfs:range xsd:float ;
+                     rdfs:comment "The value, extended from both sides of the mean, that would be necessary to cover 95% of the population" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#subcompartment
+:subcompartment rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TCompartment ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The name of the subcompartment.This is the plaintext value of the referenced subcompartment (field 5325)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#subcompartmentContextId
+:subcompartmentContextId rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :TCompartment ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment """Reference to the context of the subcompartment
+If this attribute is omitted the context of the dataset itself will be used instead.""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#subcompartmentId
+:subcompartmentId rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TCompartment ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Reference to the compartment/subcompartment pair. Must be defined in list of valid compartments (see field 5330)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#temporalCorrelation
+:temporalCorrelation rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :PedigreeMatrix ;
+                     rdfs:range xsd:int ;
+                     rdfs:comment """1=Less than 3 years of difference to the time period of the dataset (fields 600-610)
+2=Less than 6 years of difference to the time period of the dataset (fields 600-610)
+3=Less than 10 years of difference to the time period of the dataset (fields 600-610)
+4=Less than 15 years of difference to the time period of the dataset (fields 600-610)
+5=Age of data unknown or more than 15 years of difference to the time period of the dataset (fields 600-610)""" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#text
+:text rdf:type owl:DatatypeProperty ;
+      rdfs:domain :TTextAndImage ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Free text used to describe the current section. Its index attribute is used to enforce a specific order of text and image elements." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#variable
+:variable rdf:type owl:DatatypeProperty ;
+          rdfs:domain :TTextAndImage ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Defines a varible name and its value used in a text element in this section. These can be overriden by derived datasets to change the value of variables." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#variance
+:variance rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Lognormal ,
+                      :Normal ;
+          rdfs:range xsd:float ;
+          rdfs:comment "Unbiased variance of the underlying normal distribution" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#varianceWithPedigreeUncertainty
+:varianceWithPedigreeUncertainty rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain :Lognormal ,
+                                             :Normal ;
+                                 rdfs:range xsd:float ;
+                                 rdfs:comment "Unbiased variance of the underlying normal distribution, basic uncertainty with pedigree uncertainty" .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/flowdata#amount
+<http://www.EcoInvent.org/EcoSpold02/flowdata#amount> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#Beta
+:Beta rdf:type owl:Class ;
+      rdfs:subClassOf :UncertaintyModellingMethod ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :maxValue ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:float
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :minValue ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:float
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :mostFrequentValue ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:float
+                      ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#Binomial
+:Binomial rdf:type owl:Class ;
+          rdfs:subClassOf :UncertaintyModellingMethod ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :n ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:int
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :p ;
+                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                            owl:onDataRange xsd:float
+                          ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#Gamma
+:Gamma rdf:type owl:Class ;
+       rdfs:subClassOf :UncertaintyModellingMethod ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :minValue ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:float
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :scale ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:float
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :shape ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:float
+                       ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#Lognormal
+:Lognormal rdf:type owl:Class ;
+           rdfs:subClassOf :UncertaintyModellingMethod ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :geometricMean ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:float
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :mu ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:float
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :varianceWithPedigreeUncertainty ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:float
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :variance ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:float
+                           ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#Normal
+:Normal rdf:type owl:Class ;
+        rdfs:subClassOf :UncertaintyModellingMethod ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :arithmeticMean ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:float
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :varianceWithPedigreeUncertainty ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:float
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :variance ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:float
+                        ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#PedigreeMatrix
+:PedigreeMatrix rdf:type owl:Class ;
+                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  owl:onProperty :completeness ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:int
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :furtherTechnologyCorrelation ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:int
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :geographicalCorrelation ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:int
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :reliability ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:int
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :temporalCorrelation ;
+                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                  owl:onDataRange xsd:int
+                                ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TClassification
+:TClassification rdf:type owl:Class ;
+                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                   owl:onProperty :classificationContextID ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :classificationID ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :classificationSystem ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :classificationValue ;
+                                   owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                   owl:onDataRange xsd:string
+                                 ] ;
+                 rdfs:comment "Contains classification pairs to specify the activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TCompartment
+:TCompartment rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :compartmentName ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :subcompartment ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :subcompartmentContextId ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :subcompartmentId ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onDataRange xsd:string
+                              ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TProperty
+:TProperty rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :uncertainty ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :TUncertainty
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :propertyId ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isDefiningValue ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:boolean
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :propertyContextId ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:string
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://www.EcoInvent.org/EcoSpold02/flowdata#amount> ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:float
+                           ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TRequiredContextReference
+:TRequiredContextReference rdf:type owl:Class ;
+                           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                             owl:onProperty :majorRelease ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onDataRange xsd:int
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :majorRevision ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onDataRange xsd:int
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :minorRelease ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onDataRange xsd:int
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :minorRevision ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onDataRange xsd:int
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :requiredContextFileLocation ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onDataRange xsd:anyURI
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :requiredContextId ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onDataRange xsd:string
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :requiredContextName ;
+                                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onDataRange xsd:string
+                                           ] ;
+                           rdfs:comment "This type allows to specify which context(s) must be known if a dataset is to be read using the master data referenced by it.It can be used signal that master data entries from different contexts are needed to read this dataset. The software reading the dataset must be aware of those contexts and must know where to find the actual master data files of each context." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TTextAndImage
+:TTextAndImage rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :imageURL ;
+                                 owl:someValuesFrom xsd:anyURI
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :text ;
+                                 owl:someValuesFrom xsd:string
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :variable ;
+                                 owl:someValuesFrom xsd:string
+                               ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#TUncertainty
+:TUncertainty rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasUncertaintyModellingMethod ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :UncertaintyModellingMethod
+                              ] ;
+              rdfs:comment "Of the following uncertainty methods (lognormal, normal, ..., undefined) exactly one must be selected. The TUncertainty complex type is used in several places, so one dataset may contain several uncertainty elements in distinct places. But each element which has uncertainty may only contain one." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#Triangular
+:Triangular rdf:type owl:Class ;
+            rdfs:subClassOf :UncertaintyModellingMethod ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :maxValue ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:float
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :minValue ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:float
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :mostLikelyValue ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:float
+                            ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#UncertaintyModellingMethod
+:UncertaintyModellingMethod rdf:type owl:Class ;
+                            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty :pedigreeMatrix ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onClass :PedigreeMatrix
+                                            ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#Undefined
+:Undefined rdf:type owl:Class ;
+           rdfs:subClassOf :UncertaintyModellingMethod ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :maxValue ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:float
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :minValue ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:float
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :standardDeviation95 ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:float
+                           ] .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#Uniform
+:Uniform rdf:type owl:Class ;
+         rdfs:subClassOf :UncertaintyModellingMethod ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :maxValue ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:float
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :minValue ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:float
+                         ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Representative_data_from_all_sites_relevant_for_the_market_considered_over_an_adequate_period_to_even_out_normal_fluctuations
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Representative_data_from_all_sites_relevant_for_the_market_considered_over_an_adequate_period_to_even_out_normal_fluctuations> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Verified_data_based_on_measurements
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Verified_data_based_on_measurements> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Data_from_enterprises,_processes_and_materials_under_study
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Data_from_enterprises,_processes_and_materials_under_study> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Less_than_3_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#1=Less_than_3_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Average_data_from_larger_area_in_which_the_area_under_study_is_included
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Average_data_from_larger_area_in_which_the_area_under_study_is_included> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Representative_data_from_and_greater_than_50_per_cent_of_the_sites_relevant_for_the_market_considered_over_an_adequate_period_to_even_out_normal_fluctuations
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Representative_data_from_and_greater_than_50_per_cent_of_the_sites_relevant_for_the_market_considered_over_an_adequate_period_to_even_out_normal_fluctuations> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Verified_data_partly_based_on_assumptions_OR_nonverified_data_based_on_measurements
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Verified_data_partly_based_on_assumptions_OR_nonverified_data_based_on_measurements> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Data_from_processes_and_materials_under_study__(i.e._identical_technology)_but_from_different_enterprises
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Data_from_processes_and_materials_under_study__(i.e._identical_technology)_but_from_different_enterprises> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Less_than_6_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#2=Less_than_6_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Data_from_area_with_similar_production_conditions
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Data_from_area_with_similar_production_conditions> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Data_from_processes_and_materials_under_study_but_from_different_technology
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Data_from_processes_and_materials_under_study_but_from_different_technology> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Non-verified_data_partly_based_on_qualified_estimates
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Non-verified_data_partly_based_on_qualified_estimates> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Representative_data_from_only_some_sites_much_less_than_50_per_cent_relevant_for_the_market_considered_OR_and_greater_than_50_per_cent_of_sites_but_from_shorter_periods
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Representative_data_from_only_some_sites_much_less_than_50_per_cent_relevant_for_the_market_considered_OR_and_greater_than_50_per_cent_of_sites_but_from_shorter_periods> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Less_than_10_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#3=Less_than_10_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Data_from_are_with_slightly_similar_production_conditions
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Data_from_are_with_slightly_similar_production_conditions> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Data_on_related_processes_or_materials
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Data_on_related_processes_or_materials> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Representative_data_from_only_one_site_relevant_for_the_market_considered_OR_some_sites_but_from_shorter_periods
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Representative_data_from_only_one_site_relevant_for_the_market_considered_OR_some_sites_but_from_shorter_periods> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Less_than_15_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Less_than_15_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Qualified_estimate_(e.g._by_industrial_expert)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#4=Qualified_estimate_(e.g._by_industrial_expert)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Data_on_related_processes_on_laboratory_scale_or_from_different_technology
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Data_on_related_processes_on_laboratory_scale_or_from_different_technology> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Representativeness_unknown_or_data_from_a_small_number_of_sites_AND_from_shorter_periods
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Representativeness_unknown_or_data_from_a_small_number_of_sites_AND_from_shorter_periods> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Age_of_data_unknown_or_more_than_15_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Age_of_data_unknown_or_more_than_15_years_of_difference_to_the_time_period_of_the_dataset_(fields_600-610)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Data_from_unknown_OR_distinctly_different_area_(north_america_instead_of_middle_east,_OECD-Europe_instead_of_Russia)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Data_from_unknown_OR_distinctly_different_area_(north_america_instead_of_middle_east,_OECD-Europe_instead_of_Russia)> rdf:type owl:NamedIndividual .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Non-qualified_estimate_(default)
+<http://www.EcoInvent.org/EcoSpold02/dataTypes#5=Non-qualified_estimate_(default)> rdf:type owl:NamedIndividual .
+
+
+[ owl:maxCardinality "1"^^xsd:int
+] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:maxLength "30"
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "20"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "7"
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:maxLength "11"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:pattern "\\w\\S*"
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ xsd:maxLength "80"
+ ] .
+
+[ xsd:length "36"
+ ] .
+
+[ xsd:maxLength "255"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "40"
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxLength "120"
+ ] .
+
+[ xsd:minInclusive 1
+ ] .
+
+[ owl:maxCardinality "1"^^xsd:int
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:maxLength "40"
+ ] .
+
+[ xsd:maxLength "32000"
+ ] .
+
+[ xsd:maxInclusive 5
+ ] .
+
+[ xsd:pattern "\\d{1,6}-\\d{2,2}-\\d"
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.w3.org/XML/1998/namespace#Class_53_Enumeration> ontmalizer:hasValue <http://www.w3.org/XML/1998/namespace#Class_53_preserve> ,
+                                                                                 <http://www.w3.org/XML/1998/namespace#Class_53_default> .
+
+
+<http://www.w3.org/XML/1998/namespace#Class_53_default> ontmalizer:hasValue "default"^^xsd:NCName .
+
+
+<http://www.w3.org/XML/1998/namespace#Class_53_preserve> ontmalizer:hasValue "preserve"^^xsd:NCName .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,186 @@
+@prefix : <http://www.EcoInvent.org/EcoSpold02/activity#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.EcoInvent.org/EcoSpold02/activity> .
+
+<http://www.EcoInvent.org/EcoSpold02/activity> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#activityDescription
+:activityDescription rdf:type owl:ObjectProperty ;
+                     rdfs:domain :TActivityDataset ;
+                     rdfs:range :TActivityDescription ;
+                     rdfs:comment "Contains content-related metainformation for the activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#administrativeInformation
+:administrativeInformation rdf:type owl:ObjectProperty ;
+                           rdfs:domain :TActivityDataset ;
+                           rdfs:range :TAdministrativeInformation ;
+                           rdfs:comment "Contains the administrative information about the dataset at issue: The persons that compiled and entered the dataset in the database and about kind of publication and the accessibility of the dataset, timestamp, version and internalVersion number as well as language and localLanguage code." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#dataGeneratorAndPublication
+:dataGeneratorAndPublication rdf:type owl:ObjectProperty ;
+                             rdfs:domain :TAdministrativeInformation ;
+                             rdfs:comment "Contains information about who collected, compiled or published the orginal data. This may or may not be the same person as under 'DataEntryBy'. Furthermore contains information about kind of publication underlying the dataset and the accessibility of the dataset." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#elementaryExchange
+:elementaryExchange rdf:type owl:ObjectProperty ;
+                    rdfs:domain :TFlowData ;
+                    rdfs:comment "Comprises elementary inputs and outputs (exchanges with the environment) for the activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#fileAttributes
+:fileAttributes rdf:type owl:ObjectProperty ;
+                rdfs:domain :TAdministrativeInformation ;
+                rdfs:comment "This constraint ensures that each xml:lang attribute is only used once in this context. I.e. there must be only one translation of the element." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#flowData
+:flowData rdf:type owl:ObjectProperty ;
+          rdfs:domain :TActivityDataset ;
+          rdfs:range :TFlowData ;
+          rdfs:comment "Contains information about inputs and outputs of the given activity (exchanges with environment as well as intermediate exchanges) as well as their properties, allocations, transfer coefficients, uncertainties and parameters for the use in mathematical formulas." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#geography
+:geography rdf:type owl:ObjectProperty ;
+           rdfs:domain :TActivityDescription ;
+           rdfs:range :TGeography ;
+           rdfs:comment "This constraint ensures that each xml:lang attribute is only used once in this context. I.e. there must be only one translation of the element." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#intermediateExchange
+:intermediateExchange rdf:type owl:ObjectProperty ;
+                      rdfs:domain :TFlowData ;
+                      rdfs:comment "Comprises intermediate product and waste inputs and outputs for the activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#macroEconomicScenario
+:macroEconomicScenario rdf:type owl:ObjectProperty ;
+                       rdfs:domain :TActivityDescription ;
+                       rdfs:comment "This constraint ensures that each xml:lang attribute is only used once in this context. I.e. there must be only one translation of the element." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#modellingAndValidation
+:modellingAndValidation rdf:type owl:ObjectProperty ;
+                        rdfs:domain :TActivityDataset ;
+                        rdfs:range :TModellingAndValidation ;
+                        rdfs:comment "Contains metainformation about how unit processes are modelled and about the review/validation of the dataset." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#parameter
+:parameter rdf:type owl:ObjectProperty ;
+           rdfs:domain :TFlowData ;
+           rdfs:range :TParameter ;
+           rdfs:comment "Ccomprises all parameters of the activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#representativeness
+:representativeness rdf:type owl:ObjectProperty ;
+                    rdfs:domain :TModellingAndValidation ;
+                    rdfs:comment "Contains information about the representativeness of the unit process data (meta information and flow data)." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#review
+:review rdf:type owl:ObjectProperty ;
+        rdfs:domain :TModellingAndValidation ;
+        rdfs:comment "Contains information about the reviewers' comments on the dataset content." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#technology
+:technology rdf:type owl:ObjectProperty ;
+            rdfs:domain :TActivityDescription ;
+            rdfs:range :TTechnology ;
+            rdfs:comment "Describes the technological properties of the unit process." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#timePeriod
+:timePeriod rdf:type owl:DatatypeProperty ;
+            rdfs:domain :TActivityDescription ;
+            rdfs:range xsd:dateTime ;
+            rdfs:comment "Characterises the temporal properties of the unit activity (or system terminated) at issue." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TActivityDataset
+:TActivityDataset rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty :activityDescription ;
+                                    owl:someValuesFrom :TActivityDescription
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :administrativeInformation ;
+                                    owl:someValuesFrom :TAdministrativeInformation
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :flowData ;
+                                    owl:someValuesFrom :TFlowData
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :modellingAndValidation ;
+                                    owl:someValuesFrom :TModellingAndValidation
+                                  ] ;
+                  rdfs:comment "Contains information about one individual activity. Information is divided into metaInformation and flowData." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TActivityDescription
+:TActivityDescription rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty :geography ;
+                                        owl:someValuesFrom :TGeography
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :technology ;
+                                        owl:someValuesFrom :TTechnology
+                                      ] ;
+                      rdfs:comment "Contains content-related metainformation for the activity." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TAdministrativeInformation
+:TAdministrativeInformation rdf:type owl:Class ;
+                            rdfs:comment "Contains the administrative information about the dataset at issue: The persons that compiled and entered the dataset in the database and about kind of publication and the accessibility of the dataset, timestamp, version and internalVersion number as well as language and localLanguage code." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TFlowData
+:TFlowData rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :parameter ;
+                             owl:someValuesFrom :TParameter
+                           ] ;
+           rdfs:comment "Contains information about inputs and outputs of the given activity (exchanges with environment as well as intermediate exchanges) as well as their properties, allocations, transfer coefficients, uncertainties and parameters for the use in mathematical formulas." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TGeography
+:TGeography rdf:type owl:Class .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TModellingAndValidation
+:TModellingAndValidation rdf:type owl:Class ;
+                         rdfs:comment "Contains meta information about how unit processes are modelled and about the review/validation of the dataset." .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TParameter
+:TParameter rdf:type owl:Class .
+
+
+###  http://www.EcoInvent.org/EcoSpold02/activity#TTechnology
+:TTechnology rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ch.unisg.ics.interactions.wiser.tests.units.DatasetImporterTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-22T15:46:54" hostname="nicolas-macbook" time="1.318">
+  <properties/>
+  <testcase name="correctInsertOfActivity()" classname="ch.unisg.ics.interactions.wiser.tests.units.DatasetImporterTests" time="1.318"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

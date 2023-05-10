@@ -1,0 +1,133 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://purl.org/wiser/> .
+
+<https://purl.org/wiser/> rdf:type owl:Ontology ;
+                           owl:imports <http://www.w3.org/2004/02/skos/core> ;
+                           rdfs:comment "WISER Search Ontology Integration"@en .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://purl.org/wiser#BAustria
+<https://purl.org/wiser#BAustria> rdf:type owl:NamedIndividual ;
+                                  owl:sameAs <https://sws.geonames.org/2782113/> ;
+                                  <https://purl.org/wiser#bGeographyTerm> "AT" .
+
+
+###  https://purl.org/wiser#BEurope
+<https://purl.org/wiser#BEurope> rdf:type owl:NamedIndividual ;
+                                 owl:sameAs <https://sws.geonames.org/6255148/> ;
+                                 <https://purl.org/wiser#bGeographyTerm> "Europe, without Russia and Turkey" .
+
+
+###  https://purl.org/wiser#BEuropeWithoutSwitzerland
+<https://purl.org/wiser#BEuropeWithoutSwitzerland> rdf:type owl:NamedIndividual ;
+                                                   owl:sameAs <https://sws.geonames.org/6695072/> ;
+                                                   <https://purl.org/wiser#bGeographyTerm> "Europe without Switzerland" .
+
+
+###  https://purl.org/wiser#BFrance
+<https://purl.org/wiser#BFrance> rdf:type owl:NamedIndividual ;
+                                 owl:sameAs <https://sws.geonames.org/3017382/> ;
+                                 <https://purl.org/wiser#bGeographyTerm> "FR" .
+
+
+###  https://purl.org/wiser#BGermany
+<https://purl.org/wiser#BGermany> rdf:type owl:NamedIndividual ;
+                                  owl:sameAs <https://sws.geonames.org/2921044/> ;
+                                  <https://purl.org/wiser#bGeographyTerm> "DE" .
+
+
+###  https://purl.org/wiser#BNetherlands
+<https://purl.org/wiser#BNetherlands> rdf:type owl:NamedIndividual ;
+                                      owl:sameAs <https://sws.geonames.org/2750405/> ;
+                                      <https://purl.org/wiser#bGeographyTerm> "NE" .
+
+
+###  https://purl.org/wiser#BRERwoCHDE
+<https://purl.org/wiser#BRERwoCHDE> rdf:type owl:NamedIndividual ;
+                                    <https://purl.org/wiser#bGeographyTerm> "RER w/o CH+DE" .
+
+
+###  https://purl.org/wiser#BRussia
+<https://purl.org/wiser#BRussia> rdf:type owl:NamedIndividual ;
+                                 owl:sameAs <https://sws.geonames.org/2017370/> ;
+                                 <https://purl.org/wiser#bGeographyTerm> "RU" .
+
+
+###  https://purl.org/wiser#BSwitzerland
+<https://purl.org/wiser#BSwitzerland> rdf:type owl:NamedIndividual ;
+                                      owl:sameAs <https://sws.geonames.org/2658434/> ;
+                                      <https://purl.org/wiser#bGeographyTerm> "CH" ,
+                                                                              "Switzerland" .
+
+
+###  https://purl.org/wiser#BTurkey
+<https://purl.org/wiser#BTurkey> rdf:type owl:NamedIndividual ;
+                                 owl:sameAs <https://sws.geonames.org/298795/> ;
+                                 <https://purl.org/wiser#bGeographyTerm> "TR" ,
+                                                                         "TU" .
+
+
+###  https://purl.org/wiser#BWesternEurope
+<https://purl.org/wiser#BWesternEurope> rdf:type owl:NamedIndividual ;
+                                        owl:sameAs <https://sws.geonames.org/9408659/> ;
+                                        <https://purl.org/wiser#bGeographyTerm> "WEU" .
+
+
+###  https://sws.geonames.org/2017370/
+<https://sws.geonames.org/2017370/> rdf:type owl:NamedIndividual ;
+                                    rdfs:comment "Russia" .
+
+
+###  https://sws.geonames.org/2658434/
+<https://sws.geonames.org/2658434/> rdf:type owl:NamedIndividual ;
+                                    rdfs:comment "Switzerland" ;
+                                    rdfs:label "Switzerland" .
+
+
+###  https://sws.geonames.org/2750405/
+<https://sws.geonames.org/2750405/> rdf:type owl:NamedIndividual ;
+                                    rdfs:comment "Netherlands" .
+
+
+###  https://sws.geonames.org/2782113/
+<https://sws.geonames.org/2782113/> rdf:type owl:NamedIndividual ;
+                                    rdfs:comment "Austria" .
+
+
+###  https://sws.geonames.org/2921044/
+<https://sws.geonames.org/2921044/> rdf:type owl:NamedIndividual ;
+                                    rdfs:comment "Germany" .
+
+
+###  https://sws.geonames.org/298795/
+<https://sws.geonames.org/298795/> rdf:type owl:NamedIndividual ;
+                                   rdfs:comment "Turkey" .
+
+
+###  https://sws.geonames.org/3017382/
+<https://sws.geonames.org/3017382/> rdf:type owl:NamedIndividual ;
+                                    rdfs:comment "France" .
+
+
+###  https://sws.geonames.org/6255148/
+<https://sws.geonames.org/6255148/> rdf:type owl:NamedIndividual ;
+                                    rdfs:comment "Europe" .
+
+
+###  https://sws.geonames.org/6695072/
+<https://sws.geonames.org/6695072/> rdf:type owl:NamedIndividual ;
+                                    rdfs:label "EU" .
+
+
+###  https://sws.geonames.org/9408659/
+<https://sws.geonames.org/9408659/> rdf:type owl:NamedIndividual ;
+                                    rdfs:label "Western Europe" .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,3821 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.geonames.org/ontology#> .
+@prefix ns2: <http://creativecommons.org/ns#> .
+@prefix ns3: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://sws.geonames.org/10922497/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2015-11-10"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2018-08-23"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/10922497/> .
+
+<https://sws.geonames.org/11609024/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2017-07-12"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2018-08-23"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/11609024/> .
+
+<https://sws.geonames.org/11812257/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2018-02-07"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2018-09-02"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/11812257/> .
+
+<https://sws.geonames.org/11812265/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2018-02-07"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2018-02-08"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/11812265/> .
+
+<https://sws.geonames.org/11961320/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2018-10-06"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2018-10-09"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/11961320/> .
+
+<https://sws.geonames.org/11961322/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2018-10-07"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2018-10-09"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/11961322/> .
+
+<https://sws.geonames.org/12217088/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2021-02-23"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2021-02-26"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/12217088/> .
+
+<https://sws.geonames.org/12360395/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2021-11-13"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2021-11-27"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/12360395/> .
+
+<https://sws.geonames.org/2017370/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-12-10"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2017370/> .
+
+<https://sws.geonames.org/2635167/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-10-03"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2635167/> .
+
+<https://sws.geonames.org/2643743/> a ns1:Feature ;
+    ns1:alternateName "London",
+        "Лондан"@ab,
+        "Londen"@af,
+        "London"@als,
+        "ለንደን"@am,
+        "Londres"@an,
+        "Lunden"@ang,
+        "لندن"@ar,
+        "ܠܘܢܕܘܢ"@arc,
+        "لندن"@arz,
+        "Londres"@ast,
+        "London"@az,
+        "لندن"@azb,
+        "Лондон"@ba,
+        "Londres"@bcl,
+        "Лондан"@be,
+        "Лёндан"@be,
+        "Лондон"@bg,
+        "लंदन"@bh,
+        "লন্ডন"@bn,
+        "ལོན་ཊོན།"@bo,
+        "Londrez"@br,
+        "London"@bs,
+        "Лондон"@bxr,
+        "Londres"@ca,
+        "Lùng-dŭng"@cdo,
+        "Лондон"@ce,
+        "ᎫᎴ ᏗᏍᎪᏂᎯᏱ"@chr,
+        "لەندەن"@ckb,
+        "Londra"@co,
+        "Londýn"@cs,
+        "Londin"@csb,
+        "Лондонъ"@cu,
+        "Лондон"@cv,
+        "Llundain"@cy,
+        "London"@da,
+        "London"@de,
+        "Londra"@diq,
+        "Λονδίνο"@el,
+        "Londono"@eo,
+        "Londres"@es,
+        "London"@et,
+        "London"@eu,
+        "Londres"@eu,
+        "Londri"@ext,
+        "لندن"@fa,
+        "Lontoo"@fi,
+        "Lodoni"@fj,
+        "Londro"@frp,
+        "Londen"@fy,
+        "Londain"@ga,
+        "倫敦"@gan,
+        "Lunnainn"@gd,
+        "Londres"@gl,
+        "Londye"@gn,
+        "લંડન"@gu,
+        "Lunnin"@gv,
+        "Lùn-tûn"@hak,
+        "Lākana"@haw,
+        "London"@hbs,
+        "לונדון"@he,
+        "लंदन"@hi,
+        "London"@hr,
+        "Lonn"@ht,
+        "London"@hu,
+        "Լոնդոն"@hy,
+        "London"@ia,
+        "London"@id,
+        "Londres"@ilo,
+        "London"@io,
+        "London"@is,
+        "Lundúnir"@is,
+        "Londra"@it,
+        "ロンドン"@ja,
+        "london"@jbo,
+        "ლონდონი"@ka,
+        "Лондон"@kbd,
+        "Лондон"@kk,
+        "ಲಂಡನ್"@kn,
+        "런던"@ko,
+        "Лондон"@koi,
+        "Лондон"@krc,
+        "London"@ku,
+        "Лондон"@kv,
+        "Loundres"@kw,
+        "Лондон"@ky,
+        "Londinium"@la,
+        "Londra"@lad,
+        "London"@lb,
+        "Лондон"@lbe,
+        "Лондон"@lez,
+        "Londe"@li,
+        "Londra"@lij,
+        "Lundra"@lmo,
+        "Londoni"@ln,
+        "ລອນດອນ"@lo,
+        "لأندأن"@lrc,
+        "Londonas"@lt,
+        "Londona"@lv,
+        "倫敦"@lzh,
+        "लण्डन"@mai,
+        "Лондон"@mhr,
+        "Rānana"@mi,
+        "Лондон"@mk,
+        "ലണ്ടൻ"@ml,
+        "Лондон"@mn,
+        "लंडन"@mr,
+        "Лондон"@mrj,
+        "London"@ms,
+        "Londra"@mt,
+        "Londres"@mwl,
+        "လန်ဒန်မြို့"@my,
+        "Лондон ош"@myv,
+        "لندن"@mzn,
+        "Londres"@nah,
+        "Lûn-tun"@nan,
+        "Londra"@nap,
+        "London"@nds,
+        "लण्डन"@ne,
+        "लन्दन"@new,
+        "Londen"@nl,
+        "London"@nn,
+        "London"@no,
+        "Londres"@nrm,
+        "Londres"@oc,
+        "Landan"@om,
+        "ଲଣ୍ଡନ"@or,
+        "Лондон"@os,
+        "ਲੰਡਨ"@pa,
+        "Londe"@pcd,
+        "Londyn"@pl,
+        "Londra"@pms,
+        "لندن"@pnb,
+        "Λονδίνο"@pnt,
+        "لندن"@ps,
+        "Londres"@pt,
+        "London"@qu,
+        "Londra"@rm,
+        "Londra"@ro,
+        "Лондон"@ru,
+        "Лондон"@rue,
+        "लन्डन्"@sa,
+        "Лондон"@sah,
+        "Londra"@sc,
+        "Londra"@scn,
+        "Lunnon"@sco,
+        "Londons"@sgs,
+        "ලන්ඩන්"@si,
+        "Londýn"@sk,
+        "London"@sl,
+        "Londra"@sq,
+        "Лондон"@sr,
+        "London"@sv,
+        "Lůndůn"@szl,
+        "இலண்டன்"@ta,
+        "లండన్"@te,
+        "Londres"@tet,
+        "Лондон"@tg,
+        "ลอนดอน"@th,
+        "Londres"@tl,
+        "Landen"@tpi,
+        "Londra"@tr,
+        "Лондон"@tt,
+        "Лондон"@udm,
+        "لوندون"@ug,
+        "Лондон"@uk,
+        "لندن"@ur,
+        "Łondra"@vec,
+        "Luân Đôn"@vi,
+        "Londn"@vls,
+        "London"@vo,
+        "Londar"@wo,
+        "伦敦"@wuu,
+        "ლონდონი"@xmf,
+        "לאנדאן"@yi,
+        "Lọndọnu"@yo,
+        "倫敦"@yue,
+        "Londen"@zea,
+        "伦敦"@zh,
+        "ILondon"@zu ;
+    ns1:countryCode "GB" ;
+    ns1:featureClass <https://www.geonames.org/ontology#P> ;
+    ns1:featureCode <https://www.geonames.org/ontology#P.PPLC> ;
+    ns1:locationMap <https://www.geonames.org/2643743/london.html> ;
+    ns1:name "London" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/2643743/nearby.rdf> ;
+    ns1:officialName "London"@en,
+        "Londres"@fr,
+        "倫敦"@zh ;
+    ns1:parentADM1 <https://sws.geonames.org/6269131/> ;
+    ns1:parentADM2 <https://sws.geonames.org/2648110/> ;
+    ns1:parentCountry <https://sws.geonames.org/2635167/> ;
+    ns1:parentFeature <https://sws.geonames.org/2648110/> ;
+    ns1:population "8961989" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/London>,
+        <https://uk.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BD%D0%B4%D0%BE%D0%BD> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2643743/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/London> ;
+    ns3:lat "51.50853" ;
+    ns3:long "-0.12574" .
+
+<https://sws.geonames.org/2643743/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-03-09"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2643743/> .
+
+<https://sws.geonames.org/2648110/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2021-04-29"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2648110/> .
+
+<https://sws.geonames.org/2657889/> a ns1:Feature ;
+    ns1:alternateName "Zuzwil",
+        "Zuzwil SG"@de ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#P> ;
+    ns1:featureCode <https://www.geonames.org/ontology#P.PPL> ;
+    ns1:locationMap <https://www.geonames.org/2657889/zuzwil.html> ;
+    ns1:name "Zuzwil" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/2657889/nearby.rdf> ;
+    ns1:parentADM1 <https://sws.geonames.org/2658821/> ;
+    ns1:parentADM2 <https://sws.geonames.org/6458840/> ;
+    ns1:parentADM3 <https://sws.geonames.org/7287653/> ;
+    ns1:parentCountry <https://sws.geonames.org/2658434/> ;
+    ns1:parentFeature <https://sws.geonames.org/7287653/> ;
+    ns1:population "4226" ;
+    ns1:postalCode "9524" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Zuzwil%2C_St._Gallen> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2657889/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Zuzwil%2C_St._Gallen> ;
+    ns3:lat "47.47452" ;
+    ns3:long "9.11196" .
+
+<https://sws.geonames.org/2657889/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2013-04-02"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2657889/> .
+
+<https://sws.geonames.org/2658205/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-10-21"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2658205/> .
+
+<https://sws.geonames.org/2658434/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2023-01-02"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2658434/> .
+
+<https://sws.geonames.org/2658576/> a ns1:Feature ;
+    ns1:alternateName "Sion",
+        "Sitten",
+        "Sitten VS"@als,
+        "Сьён"@be,
+        "Сион"@bg,
+        "Sion"@cs,
+        "Сьон"@cv,
+        "Sion"@en,
+        "Sion"@es,
+        "سیون، سوئیس"@fa,
+        "סיון"@he,
+        "Sion"@it,
+        "シオン"@ja,
+        "სიონი"@ka,
+        "시옹"@ko,
+        "Sedunum"@la,
+        "Sionas"@lt,
+        "Sion"@nl,
+        "Sion i Sveits"@nn,
+        "Sion"@no,
+        "Sion"@pl,
+        "سیؤن"@pnb,
+        "Sião"@pt,
+        "Sion"@rm,
+        "Sion"@ro,
+        "Сьон"@ru,
+        "Сион"@sr,
+        "Sion"@sv,
+        "Сьйон"@uk,
+        "锡永"@zh ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#P> ;
+    ns1:featureCode <https://www.geonames.org/ontology#P.PPLA> ;
+    ns1:locationMap <https://www.geonames.org/2658576/sitten.html> ;
+    ns1:name "Sion" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/2658576/nearby.rdf> ;
+    ns1:officialName "Sitten"@de,
+        "Sion"@fr ;
+    ns1:parentADM1 <https://sws.geonames.org/2658205/> ;
+    ns1:parentADM2 <https://sws.geonames.org/6458745/> ;
+    ns1:parentADM3 <https://sws.geonames.org/7287176/> ;
+    ns1:parentCountry <https://sws.geonames.org/2658434/> ;
+    ns1:parentFeature <https://sws.geonames.org/7287176/> ;
+    ns1:population "28045" ;
+    ns1:postalCode "1950" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Sion%2C_Switzerland>,
+        <https://ru.wikipedia.org/wiki/%D0%A1%D1%8C%D0%BE%D0%BD> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2658576/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Sion%2C_Switzerland> ;
+    ns3:alt "500" ;
+    ns3:lat "46.22739" ;
+    ns3:long "7.35559" .
+
+<https://sws.geonames.org/2658576/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2019-09-05"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2658576/> .
+
+<https://sws.geonames.org/2658821/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-10-21"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2658821/> .
+
+<https://sws.geonames.org/2658822/> a ns1:Feature ;
+    ns1:alternateName "Saint Gallen",
+        "Saint-Gall",
+        "San Gallo",
+        "سانت غالن"@ar,
+        "St. Gallen"@cs,
+        "Sankt Gallen"@da,
+        "St. Gallen"@da,
+        "St. Gallen"@de,
+        "Saint Gallen"@en,
+        "St. Gallen"@en,
+        "Sankt-Galo"@eo,
+        "San Galo"@es,
+        "Saint-Gall"@fr,
+        "San Gallo"@it,
+        "Sanctogallum"@la,
+        "Sankt Gallen"@nl,
+        "Sankt Gallen"@no,
+        "Sankt Gallen"@pl,
+        "Son Gagl"@rm,
+        "St. Gallen"@ro,
+        "Санкт-Галлен"@ru,
+        "San Gallu"@scn,
+        "Sankt Gallen"@sv ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#P> ;
+    ns1:featureCode <https://www.geonames.org/ontology#P.PPLA> ;
+    ns1:locationMap <https://www.geonames.org/2658822/sankt-gallen.html> ;
+    ns1:name "Saint Gallen" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/2658822/nearby.rdf> ;
+    ns1:parentADM1 <https://sws.geonames.org/2658821/> ;
+    ns1:parentADM2 <https://sws.geonames.org/6458770/> ;
+    ns1:parentADM3 <https://sws.geonames.org/7287240/> ;
+    ns1:parentCountry <https://sws.geonames.org/2658434/> ;
+    ns1:parentFeature <https://sws.geonames.org/7287240/> ;
+    ns1:population "70572" ;
+    ns1:postalCode "9000",
+        "9008",
+        "9011",
+        "9012",
+        "9014",
+        "9015",
+        "9016" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/St._Gallen> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2658822/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/St._Gallen> ;
+    ns3:lat "47.42391" ;
+    ns3:long "9.37477" .
+
+<https://sws.geonames.org/2658822/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2021-02-20"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2658822/> .
+
+<https://sws.geonames.org/2761333/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2023-02-16"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2761333/> .
+
+<https://sws.geonames.org/2761367/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2023-02-16"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2761367/> .
+
+<https://sws.geonames.org/2761369/> a ns1:Feature ;
+    ns1:alternateName "ቪየና"@am,
+        "فيينا"@ar,
+        "Viena"@ca,
+        "Vídeň"@cs,
+        "Fiena"@cy,
+        "Wien"@da,
+        "Βιέννη"@el,
+        "Vienna"@en,
+        "Vieno"@eo,
+        "Wien"@fi,
+        "Vienne"@fr,
+        "Vín"@ga,
+        "Beč"@hr,
+        "Bécs"@hu,
+        "Vín"@is,
+        "Vínarborg"@is,
+        "Vienna"@it,
+        "비엔나"@ko,
+        "Vindobona"@la,
+        "Wenen"@nl,
+        "Wiedeń"@pl,
+        "Viena"@pt,
+        "Вена"@ru,
+        "Dunaj"@sl,
+        "Беч"@sr,
+        "Wien"@sv,
+        "เวียนนา"@th,
+        "Beç"@tr,
+        "Viyana"@tr ;
+    ns1:countryCode "AT" ;
+    ns1:featureClass <https://www.geonames.org/ontology#P> ;
+    ns1:featureCode <https://www.geonames.org/ontology#P.PPLC> ;
+    ns1:locationMap <https://www.geonames.org/2761369/vienna.html> ;
+    ns1:name "Vienna" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/2761369/nearby.rdf> ;
+    ns1:officialName "Виена"@bg,
+        "Beč"@bs,
+        "Wien"@de,
+        "Viena"@es,
+        "Viin"@et,
+        "빈"@ko,
+        "Viena"@lt,
+        "Wien"@no,
+        "Viena"@ro,
+        "Viedeň"@sk,
+        "Відень"@uk ;
+    ns1:parentADM1 <https://sws.geonames.org/2761367/> ;
+    ns1:parentADM2 <https://sws.geonames.org/2761333/> ;
+    ns1:parentCountry <https://sws.geonames.org/2782113/> ;
+    ns1:parentFeature <https://sws.geonames.org/2761333/> ;
+    ns1:population "1691468" ;
+    ns1:postalCode "1010",
+        "1020",
+        "1030",
+        "1040",
+        "1050",
+        "1060",
+        "1070",
+        "1080",
+        "1090",
+        "1100",
+        "1110",
+        "1120",
+        "1130",
+        "1140",
+        "1150",
+        "1160",
+        "1170",
+        "1180",
+        "1190",
+        "1200",
+        "1210",
+        "1220",
+        "1230" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Vienna>,
+        <https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BD%D0%B0> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2761369/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Vienna> ;
+    ns3:alt "171" ;
+    ns3:lat "48.20849" ;
+    ns3:long "16.37208" .
+
+<https://sws.geonames.org/2761369/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-12-27"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2761369/> .
+
+<https://sws.geonames.org/2782113/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2023-01-02"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2782113/> .
+
+<https://sws.geonames.org/2921044/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2023-01-23"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2921044/> .
+
+<https://sws.geonames.org/2950157/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-12-26"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2950157/> .
+
+<https://sws.geonames.org/2950159/> a ns1:Feature ;
+    ns1:alternateName "Berlyn"@af,
+        "Berlin"@als,
+        "Berlín"@an,
+        "Berlin"@ang,
+        "برلين"@ar,
+        "ܒܪܠܝܢ"@arc,
+        "Berlín"@ast,
+        "Berlin"@bar,
+        "Берлін"@be,
+        "Бэрлін"@be,
+        "Берлин"@bg,
+        "বার্লিন"@bn,
+        "Berlin"@br,
+        "Berlin"@bs,
+        "Berlín"@ca,
+        "Estat de Berlín"@ca,
+        "Berlín"@cs,
+        "Berlin"@csb,
+        "Berlëno"@csb,
+        "Берлин"@cv,
+        "Berlin"@cy,
+        "Berlin"@da,
+        "Βερολίνο"@el,
+        "Berlin"@en,
+        "Berlino"@eo,
+        "Berlín"@es,
+        "Berliin"@et,
+        "Berlin"@eu,
+        "برلین"@fa,
+        "Berliini"@fi,
+        "Berlin"@fo,
+        "Berlin"@fr,
+        "Beirlín"@ga,
+        "Berlin"@gd,
+        "Berlín"@gl,
+        "Berlin"@hbs,
+        "ברלין"@he,
+        "Berlin"@hr,
+        "Berlin"@hu,
+        "Բերլին"@hy,
+        "Berlin"@ia,
+        "Berlin"@id,
+        "Berlin"@io,
+        "Berlín"@is,
+        "Berlino"@it,
+        "ベルリン"@ja,
+        "Berlin"@jv,
+        "ბერლინი"@ka,
+        "베를린"@ko,
+        "Berlîn"@ku,
+        "Berlin"@kw,
+        "Berolinum"@la,
+        "Berlin"@lb,
+        "Berlien"@li,
+        "Berlynas"@lt,
+        "Berlīne"@lv,
+        "Берлин"@mk,
+        "बर्लिन"@mr,
+        "Berlin"@ms,
+        "Berlin"@nds,
+        "Berlijn"@nl,
+        "Berlin"@nn,
+        "Berlin"@no,
+        "Bèrlîn"@nrm,
+        "Berlin"@oc,
+        "Berlin"@pdc,
+        "Berlin"@pl,
+        "Berlin"@pms,
+        "Berlim"@pt,
+        "Berlin"@qu,
+        "Berlín"@qu,
+        "Berlin"@rm,
+        "Berlin"@ro,
+        "Берлин"@ru,
+        "Birlinu"@scn,
+        "Berlín"@sk,
+        "Berlin"@sl,
+        "Berlini"@sq,
+        "Берлин"@sr,
+        "Berlin"@sv,
+        "Berlin"@sw,
+        "பெர்லின்"@ta,
+        "เบอร์ลิน"@th,
+        "Belin"@tpi,
+        "Berlin"@tr,
+        "Berlin"@ty,
+        "بېرلىن"@ug,
+        "Берлін"@uk,
+        "Berlin"@vi,
+        "Berlin"@vo,
+        "בערלין"@yi,
+        "柏林"@zh ;
+    ns1:countryCode "DE" ;
+    ns1:featureClass <https://www.geonames.org/ontology#P> ;
+    ns1:featureCode <https://www.geonames.org/ontology#P.PPLC> ;
+    ns1:locationMap <https://www.geonames.org/2950159/berlin.html> ;
+    ns1:name "Berlin" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/2950159/nearby.rdf> ;
+    ns1:officialName "Berlin"@de ;
+    ns1:parentADM1 <https://sws.geonames.org/2950157/> ;
+    ns1:parentADM3 <https://sws.geonames.org/6547383/> ;
+    ns1:parentADM4 <https://sws.geonames.org/6547539/> ;
+    ns1:parentCountry <https://sws.geonames.org/2921044/> ;
+    ns1:parentFeature <https://sws.geonames.org/6547539/> ;
+    ns1:population "3426354" ;
+    ns1:postalCode "10967",
+        "13347" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Berlin>,
+        <https://uk.wikipedia.org/wiki/%D0%91%D0%B5%D1%80%D0%BB%D1%96%D0%BD> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2950159/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Berlin> ;
+    ns3:alt "74" ;
+    ns3:lat "52.52437" ;
+    ns3:long "13.41053" .
+
+<https://sws.geonames.org/2950159/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-03-09"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2950159/> .
+
+<https://sws.geonames.org/2968815/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-03-10"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2968815/> .
+
+<https://sws.geonames.org/298795/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2023-01-23"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/298795/> .
+
+<https://sws.geonames.org/2988506/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-03-27"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2988506/> .
+
+<https://sws.geonames.org/2988507/> a ns1:Feature ;
+    ns1:alternateName "Parys"@af,
+        "Paris"@als,
+        "ፓሪስ"@am,
+        "París"@an,
+        "باريس"@ar,
+        "ܦܐܪܝܣ"@arc,
+        "باريس"@arz,
+        "París"@ast,
+        "Париж"@ba,
+        "Парыж"@be,
+        "Париж"@bg,
+        "প্যারিস"@bn,
+        "ཕ་རི།"@bo,
+        "Pariz"@br,
+        "Pariz"@bs,
+        "París"@ca,
+        "پاریس"@ckb,
+        "Parighji"@co,
+        "Paříž"@cs,
+        "Парижь"@cu,
+        "Парис"@cv,
+        "Baris"@cy,
+        "Paris"@da,
+        "Île-de-France"@de,
+        "Παρίσι"@el,
+        "Pariis"@et,
+        "Paris"@eu,
+        "París"@ext,
+        "پاریس"@fa,
+        "Pariisi"@fi,
+        "Paname"@fr,
+        "Pantruche"@fr,
+        "Ville-Lumière"@fr,
+        "Parîs"@fur,
+        "Parys"@fy,
+        "Páras"@ga,
+        "巴黎"@gan,
+        "Paris"@gd,
+        "París"@gl,
+        "Parĩ"@gn,
+        "પૅરિસ"@gu,
+        "Paarys"@gv,
+        "Pariis"@ha,
+        "Palika"@haw,
+        "Pariz"@hbs,
+        "פריז"@he,
+        "पैरिस"@hi,
+        "Pariz"@hr,
+        "Párizs"@hu,
+        "Փարիզ"@hy,
+        "Paris"@ia,
+        "Paris"@id,
+        "Paris"@io,
+        "París"@is,
+        "Parigi"@it,
+        "パリ"@ja,
+        "paris"@jbo,
+        "პარიზი"@ka,
+        "Париж"@kk,
+        "ប៉ារីស"@km,
+        "ಪ್ಯಾರಿಸ್"@kn,
+        "파리"@ko,
+        "Париж"@krc,
+        "Paris"@ksh,
+        "Parîs"@ku,
+        "Париж"@kv,
+        "Paris"@kw,
+        "Париж"@ky,
+        "Lutetia"@la,
+        "Lutetia Parisorum"@la,
+        "Lutèce"@la,
+        "Paris"@lad,
+        "Paräis"@lb,
+        "Paries"@li,
+        "Pariggi"@lij,
+        "Paris"@lmo,
+        "Pari"@ln,
+        "Paryžius"@lt,
+        "Parīze"@lv,
+        "Paris"@mg,
+        "Париж"@mhr,
+        "Parī"@mi,
+        "Париз"@mk,
+        "പാരിസ്"@ml,
+        "Парис"@mn,
+        "पॅरिस"@mr,
+        "Париж"@mrj,
+        "Paris"@ms,
+        "ပါရီမြို့"@my,
+        "Париж ош"@myv,
+        "پاریس"@mzn,
+        "Paris"@na,
+        "Parigge"@nap,
+        "Paris"@nds,
+        "पेरिस"@ne,
+        "Paris"@nn,
+        "Paris"@no,
+        "París"@oc,
+        "Pariižu"@olo,
+        "Париж"@os,
+        "ਪੈਰਿਸ"@pa,
+        "Paryż"@pl,
+        "Paris"@pms,
+        "پیرس"@pnb,
+        "پاريس"@ps,
+        "Paris"@pt,
+        "Paris"@ro,
+        "Париж"@ru,
+        "Паріж"@rue,
+        "Париж"@sah,
+        "Parigi"@sc,
+        "Pariggi"@scn,
+        "Paris"@sco,
+        "Paríž"@sk,
+        "Pariz"@sl,
+        "Baariis"@so,
+        "Paris"@sq,
+        "Parisi"@sq,
+        "Париз"@sr,
+        "Paris"@sv,
+        "Paris"@sw,
+        "Paryż"@szl,
+        "பாரிஸ்"@ta,
+        "పారిస్"@te,
+        "París"@tet,
+        "Париж"@tg,
+        "ปารีส"@th,
+        "Pariž"@tk,
+        "Lungsod ng Paris"@tl,
+        "Paris"@tl,
+        "Paris"@tr,
+        "Париж"@tt,
+        "Paris"@ty,
+        "Париж"@udm,
+        "پارىژ"@ug,
+        "Париж"@uk,
+        "پیرس"@ur,
+        "Parij"@uz,
+        "Parixe"@vec,
+        "Pa-ri"@vi,
+        "Parys"@vls,
+        "Pari"@wo,
+        "პარიზი"@xmf,
+        "פאריז"@yi,
+        "Parisi"@yo,
+        "Bahliz"@za,
+        "巴黎"@zh ;
+    ns1:countryCode "FR" ;
+    ns1:featureClass <https://www.geonames.org/ontology#P> ;
+    ns1:featureCode <https://www.geonames.org/ontology#P.PPLC> ;
+    ns1:locationMap <https://www.geonames.org/2988507/paris.html> ;
+    ns1:name "Paris" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/2988507/nearby.rdf> ;
+    ns1:officialName "Paris"@de,
+        "Paris"@en,
+        "Parizo"@eo,
+        "París"@es,
+        "Paris"@fr,
+        "Parijs"@nl,
+        "Paris"@vi ;
+    ns1:parentADM1 <https://sws.geonames.org/3012874/> ;
+    ns1:parentADM2 <https://sws.geonames.org/2968815/> ;
+    ns1:parentADM3 <https://sws.geonames.org/2988506/> ;
+    ns1:parentADM4 <https://sws.geonames.org/6455259/> ;
+    ns1:parentCountry <https://sws.geonames.org/3017382/> ;
+    ns1:parentFeature <https://sws.geonames.org/6455259/> ;
+    ns1:population "2138551" ;
+    ns1:postalCode "75000",
+        "75001",
+        "75002",
+        "75003",
+        "75004",
+        "75005",
+        "75006",
+        "75007",
+        "75008",
+        "75009",
+        "75010",
+        "75011",
+        "75012",
+        "75013",
+        "75014",
+        "75015",
+        "75016",
+        "75017",
+        "75018",
+        "75019",
+        "75020" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Paris>,
+        <https://es.wikipedia.org/wiki/Par%C3%ADs>,
+        <https://uk.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B8%D0%B6> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2988507/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Paris> ;
+    ns3:lat "48.85341" ;
+    ns3:long "2.3488" .
+
+<https://sws.geonames.org/2988507/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2023-02-09"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/2988507/> .
+
+<https://sws.geonames.org/3012874/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-12-26"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/3012874/> .
+
+<https://sws.geonames.org/3017382/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2023-01-02"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/3017382/> .
+
+<https://sws.geonames.org/524894/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2023-01-12"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/524894/> .
+
+<https://sws.geonames.org/524901/> a ns1:Feature ;
+    ns1:alternateName "Moscou",
+        "Moskau",
+        "Moskwa",
+        "Москва",
+        "Moskou"@af,
+        "Moskau"@als,
+        "ሞስኮ"@am,
+        "Moscú"@an,
+        "Moscoƿ"@ang,
+        "موسكو"@ar,
+        "ܡܘܣܩܒܐ"@arc,
+        "Moscú"@ast,
+        "Масква"@be,
+        "Москва"@bg,
+        "মস্কো"@bn,
+        "མོ་སི་ཁོ།"@bo,
+        "Moskov"@br,
+        "Moskva"@bs,
+        "Moscou"@ca,
+        "Москох"@ce,
+        "Moscù"@co,
+        "Moskva"@cs,
+        "Mòskwa"@csb,
+        "Москъва"@cu,
+        "Мускав"@cv,
+        "Moscfa"@cy,
+        "Moskva"@da,
+        "Moskau"@de,
+        "Moskowa"@diq,
+        "Μόσχα"@el,
+        "Moskvo"@eo,
+        "Moskva"@et,
+        "Mosku"@eu,
+        "مسکو"@fa,
+        "Moskova"@fi,
+        "Moscou"@frp,
+        "Moskou"@fy,
+        "Moscó"@ga,
+        "Moscova"@gl,
+        "Moskva"@hbs,
+        "מוסקבה"@he,
+        "मास्को"@hi,
+        "Moskva"@hr,
+        "Moskwa"@hsb,
+        "Moszkva"@hu,
+        "Մոսկվա"@hy,
+        "Moscova"@ia,
+        "Moskwa"@id,
+        "Moskva"@io,
+        "Moskva"@is,
+        "Mosca"@it,
+        "モスクワ"@ja,
+        "Moskuas"@jbo,
+        "მოსკოვი"@ka,
+        "Мәскеу"@kk,
+        "모스크바"@ko,
+        "Mosko"@ku,
+        "Moskow"@ku,
+        "Moscua"@la,
+        "Moskau"@lb,
+        "Moskou"@li,
+        "Maskva"@lt,
+        "Maskava"@lv,
+        "Москва"@mk,
+        "मॉस्को"@mr,
+        "Moskau"@nds,
+        "Moskou"@nl,
+        "Moskva"@nn,
+        "Moskva"@no,
+        "Moscou"@nrm,
+        "Moscòu"@oc,
+        "Moskovu"@olo,
+        "Мæскуы"@os,
+        "Moskwa"@pl,
+        "مسکو"@ps,
+        "Moscou"@pt,
+        "Москова"@ro,
+        "Москве"@ru,
+        "Москвы"@ru,
+        "Mosca"@scn,
+        "Moskva"@sk,
+        "Moskva"@sl,
+        "Moska"@sq,
+        "Москва"@sr,
+        "Moskva"@sv,
+        "மாஸ்கோ"@ta,
+        "Маскав"@tg,
+        "มอสโก"@th,
+        "Moskova"@tr,
+        "Мәскәү"@tt,
+        "Муско"@udm,
+        "موسكۋا"@ug,
+        "Москва"@uk,
+        "ماسکو"@ur,
+        "Moskva"@uz,
+        "Matxcơva"@vi,
+        "Moskva"@vi,
+        "Mát-xcơ-va"@vi,
+        "Moskva"@vo,
+        "Moscou"@wa,
+        "מאָסקװע"@yi,
+        "מאסקווע"@yi,
+        "莫斯科"@zh ;
+    ns1:countryCode "RU" ;
+    ns1:featureClass <https://www.geonames.org/ontology#P> ;
+    ns1:featureCode <https://www.geonames.org/ontology#P.PPLC> ;
+    ns1:locationMap <https://www.geonames.org/524901/moscow.html> ;
+    ns1:name "Moscow" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/524901/nearby.rdf> ;
+    ns1:officialName "Moskva",
+        "Moskva"@az,
+        "Moscow"@en,
+        "Moscú"@es,
+        "Moscou"@fr,
+        "Moscovo"@pt,
+        "Moscova"@ro,
+        "Москва"@ru ;
+    ns1:parentADM1 <https://sws.geonames.org/524894/> ;
+    ns1:parentCountry <https://sws.geonames.org/2017370/> ;
+    ns1:parentFeature <https://sws.geonames.org/524894/> ;
+    ns1:population "10381222" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Moscow>,
+        <https://uk.wikipedia.org/wiki/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/524901/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Moscow> ;
+    ns3:lat "55.75222" ;
+    ns3:long "37.61556" .
+
+<https://sws.geonames.org/524901/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-12-10"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/524901/> .
+
+<https://sws.geonames.org/6255148/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-06-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-12-09"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/6255148/> .
+
+<https://sws.geonames.org/6269131/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-06-21"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2023-02-06"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/6269131/> .
+
+<https://sws.geonames.org/6295630/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-10-17"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2023-04-16"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/6295630/> .
+
+<https://sws.geonames.org/6455259/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2007-04-01"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2019-03-23"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/6455259/> .
+
+<https://sws.geonames.org/6458745/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2007-04-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-04-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/6458745/> .
+
+<https://sws.geonames.org/6458770/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2007-04-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2015-04-28"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/6458770/> .
+
+<https://sws.geonames.org/6458840/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2007-04-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-04-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/6458840/> .
+
+<https://sws.geonames.org/6547383/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2007-07-16"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-10-25"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/6547383/> .
+
+<https://sws.geonames.org/6547539/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2007-07-16"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2023-01-10"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/6547539/> .
+
+<https://sws.geonames.org/6692542/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2008-05-21"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2021-11-13"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/6692542/> .
+
+<https://sws.geonames.org/6695072/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2008-07-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2021-01-02"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/6695072/> .
+
+<https://sws.geonames.org/7287176/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2010-04-05"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2021-12-03"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/7287176/> .
+
+<https://sws.geonames.org/7287240/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2010-04-05"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2021-12-03"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/7287240/> .
+
+<https://sws.geonames.org/7287653/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2010-04-05"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2021-12-03"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/7287653/> .
+
+<https://sws.geonames.org/745042/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-10-12"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/745042/> .
+
+<https://sws.geonames.org/745044/> a ns1:Feature ;
+    ns1:alternateName "Byzantion",
+        "Constantinopoli",
+        "Constantinopolis",
+        "Istamboul",
+        "Istambul",
+        "Konstantinopel",
+        "Konstantinoupolis",
+        "Kustantiniyah",
+        "Stamboul",
+        "Stambul",
+        "Κωνσταντινούπολις",
+        "اسطنبول"@ar,
+        "Tsarigrad"@bg,
+        "Истанбул"@bg,
+        "ইস্তাম্বুল"@bn,
+        "Constantinoble"@ca,
+        "Byzantion"@cs,
+        "Byzantion"@de,
+        "Konstantinopel"@de,
+        "Βυζάντιο"@el,
+        "Βυζαντιο"@el,
+        "Ισταμπουλ"@el,
+        "Κωνσταντινουπολη"@el,
+        "Κωνσταντινούπολη"@el,
+        "στην Πόλι [stimˈboli]"@el,
+        "Byzantium"@en,
+        "Constantinople"@en,
+        "Konstantinopolo"@eo,
+        "Constantinopla"@es,
+        "Byzantion"@fi,
+        "Byzance"@fr,
+        "ביזנטיון"@he,
+        "इस्तांबुल"@hi,
+        "Bizánc"@hu,
+        "Konstantinápoly"@hu,
+        "Costantinopoli"@it,
+        "ビュザンティオン"@ja,
+        "비잔티움"@ko,
+        "Byzantium"@la,
+        "Византија (Vizantija)"@mk,
+        "Byzanz"@nds,
+        "Constantinopolen"@nl,
+        "Mikligarður"@non,
+        "Istambuł"@pl,
+        "Стамбул"@ru,
+        "Byzantion"@sk,
+        "Истанбул"@sr,
+        "Byzantion"@sv,
+        "Konstantinopel"@sv,
+        "Micklagård"@sv,
+        "Стамбул"@uk,
+        "伊斯坦堡"@zh ;
+    ns1:countryCode "TR" ;
+    ns1:featureClass <https://www.geonames.org/ontology#P> ;
+    ns1:featureCode <https://www.geonames.org/ontology#P.PPLA> ;
+    ns1:locationMap <https://www.geonames.org/745044/istanbul.html> ;
+    ns1:name "Istanbul" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/745044/nearby.rdf> ;
+    ns1:officialName "Istanbul",
+        "Istanbul"@ca,
+        "Istanbul"@cs,
+        "Istanbul"@da,
+        "Istanbul"@de,
+        "Ισταμπούλ"@el,
+        "Istanbul"@en,
+        "Estambul"@es,
+        "Istanbul"@fi,
+        "Istanbul"@fr,
+        "Isztambul"@hu,
+        "Istanbúl"@is,
+        "Istanbul"@it,
+        "イスタンブール"@ja,
+        "이스탄불"@ko,
+        "Stambula"@lv,
+        "Istanbul"@nl,
+        "Istanbul"@no,
+        "Stambuł"@pl,
+        "Istambul"@pt,
+        "Istanbul"@sv,
+        "İstanbul"@tr ;
+    ns1:parentADM1 <https://sws.geonames.org/745042/> ;
+    ns1:parentCountry <https://sws.geonames.org/298795/> ;
+    ns1:parentFeature <https://sws.geonames.org/745042/> ;
+    ns1:population "14804116" ;
+    ns1:postalCode "34122" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Constantinople>,
+        <https://en.wikipedia.org/wiki/Istanbul>,
+        <https://no.wikipedia.org/wiki/Istanbul>,
+        <https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BC%D0%B1%D1%83%D0%BB>,
+        <https://uk.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BC%D0%B1%D1%83%D0%BB> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/745044/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Constantinople>,
+        <https://dbpedia.org/resource/Istanbul> ;
+    ns3:lat "41.01384" ;
+    ns3:long "28.94966" .
+
+<https://sws.geonames.org/745044/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2006-01-15"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2022-03-09"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/745044/> .
+
+<https://sws.geonames.org/9961132/about.rdf> a foaf:Document ;
+    ns2:attributionName "GeoNames"^^<https://www.w3.org/2001/XMLSchema#string> ;
+    ns2:attributionURL <https://www.geonames.org> ;
+    ns2:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:created "2015-01-17"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2021-02-26"^^<https://www.w3.org/2001/XMLSchema#date> ;
+    foaf:primaryTopic <https://sws.geonames.org/9961132/> .
+
+<https://sws.geonames.org/10922497/> a ns1:Feature ;
+    ns1:alternateName "Marmara Bölgesi"@tr ;
+    ns1:countryCode "TR" ;
+    ns1:featureClass <https://www.geonames.org/ontology#L> ;
+    ns1:featureCode <https://www.geonames.org/ontology#L.RGN> ;
+    ns1:locationMap <https://www.geonames.org/10922497/marmara-region.html> ;
+    ns1:name "Marmara Region" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/10922497/nearby.rdf> ;
+    ns1:parentCountry <https://sws.geonames.org/298795/> ;
+    ns1:parentFeature <https://sws.geonames.org/298795/> ;
+    ns1:population "22290000" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Marmara_Region> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/10922497/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Marmara_Region> ;
+    ns3:lat "40.62794" ;
+    ns3:long "27.68408" .
+
+<https://sws.geonames.org/11609024/> a ns1:Feature ;
+    ns1:alternateName "Ceremonial County Greater London"@en ;
+    ns1:countryCode "GB" ;
+    ns1:featureClass <https://www.geonames.org/ontology#L> ;
+    ns1:featureCode <https://www.geonames.org/ontology#L.RGN> ;
+    ns1:locationMap <https://www.geonames.org/11609024/greater-london.html> ;
+    ns1:name "Greater London" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/11609024/nearby.rdf> ;
+    ns1:parentADM1 <https://sws.geonames.org/6269131/> ;
+    ns1:parentCountry <https://sws.geonames.org/2635167/> ;
+    ns1:parentFeature <https://sws.geonames.org/6269131/> ;
+    ns1:population "7500000" ;
+    ns1:shortName "Greater London"@en ;
+    rdfs:isDefinedBy <https://sws.geonames.org/11609024/about.rdf> ;
+    ns3:lat "51.50052" ;
+    ns3:long "-0.10938" .
+
+<https://sws.geonames.org/11812257/> a ns1:Feature ;
+    ns1:alternateName "British Commonwealth of Nations" ;
+    ns1:childrenFeatures <https://sws.geonames.org/11812257/contains.rdf> ;
+    ns1:countryCode "GB" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ZN> ;
+    ns1:locationMap <https://www.geonames.org/11812257/commonwealth-of-nations.html> ;
+    ns1:name "Commonwealth of Nations" ;
+    ns1:parentCountry <https://sws.geonames.org/2635167/> ;
+    ns1:parentFeature <https://sws.geonames.org/2635167/> ;
+    ns1:population "2400000000" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Commonwealth_of_Nations> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/11812257/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Commonwealth_of_Nations> ;
+    ns3:lat "51.50488" ;
+    ns3:long "-0.13602" .
+
+<https://sws.geonames.org/11812265/> a ns1:Feature ;
+    ns1:childrenFeatures <https://sws.geonames.org/11812265/contains.rdf> ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ZN> ;
+    ns1:locationMap <https://www.geonames.org/11812265/commonwealth-of-independent-states.html> ;
+    ns1:name "Commonwealth of Independent States" ;
+    ns1:parentFeature <https://sws.geonames.org/6295630/> ;
+    ns1:population "282000000" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Commonwealth_of_Independent_States> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/11812265/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Commonwealth_of_Independent_States> ;
+    ns3:lat "55.75295" ;
+    ns3:long "37.62948" .
+
+<https://sws.geonames.org/11961320/> a ns1:Feature ;
+    ns1:countryCode "RU" ;
+    ns1:featureClass <https://www.geonames.org/ontology#L> ;
+    ns1:featureCode <https://www.geonames.org/ontology#L.RGN> ;
+    ns1:locationMap <https://www.geonames.org/11961320/european-russia.html> ;
+    ns1:name "European Russia" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/11961320/nearby.rdf> ;
+    ns1:parentCountry <https://sws.geonames.org/2017370/> ;
+    ns1:parentFeature <https://sws.geonames.org/2017370/> ;
+    ns1:population "110000000" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/European_Russia> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/11961320/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/European_Russia> ;
+    ns3:lat "55" ;
+    ns3:long "40" .
+
+<https://sws.geonames.org/11961322/> a ns1:Feature ;
+    ns1:alternateName "Central Federal District" ;
+    ns1:countryCode "RU" ;
+    ns1:featureClass <https://www.geonames.org/ontology#L> ;
+    ns1:featureCode <https://www.geonames.org/ontology#L.RGN> ;
+    ns1:locationMap <https://www.geonames.org/11961322/central.html> ;
+    ns1:name "Central" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/11961322/nearby.rdf> ;
+    ns1:parentCountry <https://sws.geonames.org/2017370/> ;
+    ns1:parentFeature <https://sws.geonames.org/11961320/> ;
+    ns1:population "38438600" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Central_Federal_District> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/11961322/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Central_Federal_District> ;
+    ns3:lat "55.75383" ;
+    ns3:long "37.6224" .
+
+<https://sws.geonames.org/12360395/> a ns1:Feature ;
+    ns1:countryCode "AT" ;
+    ns1:featureClass <https://www.geonames.org/ontology#L> ;
+    ns1:featureCode <https://www.geonames.org/ontology#L.RGN> ;
+    ns1:locationMap <https://www.geonames.org/12360395/ostoesterreich.html> ;
+    ns1:name "Ostösterreich" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/12360395/nearby.rdf> ;
+    ns1:parentCountry <https://sws.geonames.org/2782113/> ;
+    ns1:parentFeature <https://sws.geonames.org/2782113/> ;
+    ns1:population "3430000" ;
+    rdfs:isDefinedBy <https://sws.geonames.org/12360395/about.rdf> ;
+    ns3:lat "48.23199" ;
+    ns3:long "15.97249" .
+
+<https://sws.geonames.org/6255148/> a ns1:Feature ;
+    ns1:alternateName "أوروبا"@ar,
+        "Еўропа"@be,
+        "Европа"@bg,
+        "Evropa"@bs,
+        "Evropa"@cs,
+        "Ewrop"@cy,
+        "Europa"@da,
+        "Ευρώπη"@el,
+        "Eŭropo"@eo,
+        "El viejo continente"@es,
+        "Europa"@eu,
+        "Eurooppa"@fi,
+        "Europe"@fr,
+        "an Eoraip"@ga,
+        "אירופה"@he,
+        "यूरोप"@hi,
+        "Európa"@hu,
+        "Eropa"@id,
+        "Evrópa"@is,
+        "Europa"@it,
+        "ヨーロッパ"@ja,
+        "Ewropa"@ku,
+        "Europa"@la,
+        "Europa"@lt,
+        "Eiropa"@lv,
+        "Europa"@nb,
+        "Europa"@no,
+        "Europa"@pl,
+        "Europa"@pt,
+        "Европы"@ru,
+        "Рашка"@ru,
+        "Eurohpá"@se,
+        "Europa"@sv,
+        "ยุโรป"@th,
+        "Avrupa"@tr,
+        "Європа"@uk,
+        "Châu Âu"@vi,
+        "欧洲"@zh ;
+    ns1:childrenFeatures <https://sws.geonames.org/6255148/contains.rdf> ;
+    ns1:featureClass <https://www.geonames.org/ontology#L> ;
+    ns1:featureCode <https://www.geonames.org/ontology#L.CONT> ;
+    ns1:locationMap <https://www.geonames.org/6255148/europe.html> ;
+    ns1:name "Europe" ;
+    ns1:officialName "Europa"@ca,
+        "Europa"@de,
+        "Europe"@en,
+        "Europa"@es,
+        "Euroopa"@et,
+        "유럽"@ko,
+        "Europa"@nl,
+        "Europa"@ro,
+        "Европа"@ru,
+        "Európa"@sk ;
+    ns1:parentFeature <https://sws.geonames.org/6295630/> ;
+    ns1:population "741000000" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Europe> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/6255148/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Europe> ;
+    ns3:lat "48.69096" ;
+    ns3:long "9.14062" .
+
+<https://sws.geonames.org/6692542/> a ns1:Feature ;
+    ns1:alternateName "Eastern Switzerland"@en ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#L> ;
+    ns1:featureCode <https://www.geonames.org/ontology#L.RGN> ;
+    ns1:locationMap <https://www.geonames.org/6692542/ostschweiz.html> ;
+    ns1:name "Eastern Switzerland" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/6692542/nearby.rdf> ;
+    ns1:parentCountry <https://sws.geonames.org/2658434/> ;
+    ns1:parentFeature <https://sws.geonames.org/2658434/> ;
+    ns1:population "820000" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Eastern_Switzerland> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/6692542/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Eastern_Switzerland> ;
+    ns3:lat "47.41322" ;
+    ns3:long "9.03625" .
+
+<https://sws.geonames.org/9961132/> a ns1:Feature ;
+    ns1:alternateName "Europäische Freihandelsassoziation"@de,
+        "Association européenne de libre-échange"@fr ;
+    ns1:featureClass <https://www.geonames.org/ontology#L> ;
+    ns1:featureCode <https://www.geonames.org/ontology#L.RGNE> ;
+    ns1:locationMap <https://www.geonames.org/9961132/european-free-trade-association.html> ;
+    ns1:name "European Free Trade Association" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/9961132/nearby.rdf> ;
+    ns1:parentFeature <https://sws.geonames.org/6295630/> ;
+    ns1:population "14220000" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/European_Free_Trade_Association> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/9961132/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/European_Free_Trade_Association> ;
+    ns3:lat "46.22026" ;
+    ns3:long "6.1387" .
+
+<https://sws.geonames.org/12217088/> a ns1:Feature ;
+    ns1:featureClass <https://www.geonames.org/ontology#L> ;
+    ns1:featureCode <https://www.geonames.org/ontology#L.RGNE> ;
+    ns1:locationMap <https://www.geonames.org/12217088/mediterranean-basin.html> ;
+    ns1:name "Mediterranean Basin" ;
+    ns1:nearbyFeatures <https://sws.geonames.org/12217088/nearby.rdf> ;
+    ns1:parentFeature <https://sws.geonames.org/6295630/> ;
+    ns1:population "506090000" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Mediterranean_Basin> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/12217088/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Mediterranean_Basin> ;
+    ns3:lat "35.78" ;
+    ns3:long "19.33" .
+
+<https://sws.geonames.org/2648110/> a ns1:Feature ;
+    ns1:alternateName "Greater London",
+        "Grand Londres"@fr ;
+    ns1:childrenFeatures <https://sws.geonames.org/2648110/contains.rdf> ;
+    ns1:countryCode "GB" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM2> ;
+    ns1:locationMap <https://www.geonames.org/2648110/greater-london.html> ;
+    ns1:name "Greater London" ;
+    ns1:officialName "Greater London"@en,
+        "Londres"@es,
+        "Londra"@it,
+        "Stor-London"@no ;
+    ns1:parentADM1 <https://sws.geonames.org/6269131/> ;
+    ns1:parentCountry <https://sws.geonames.org/2635167/> ;
+    ns1:parentFeature <https://sws.geonames.org/11609024/> ;
+    ns1:population "7504800" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Greater_London> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2648110/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Greater_London> ;
+    ns3:lat "51.5" ;
+    ns3:long "-0.16667" .
+
+<https://sws.geonames.org/2761333/> a ns1:Feature ;
+    ns1:alternateName "Wien",
+        "Vienna"@en ;
+    ns1:childrenFeatures <https://sws.geonames.org/2761333/contains.rdf> ;
+    ns1:countryCode "AT" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM2> ;
+    ns1:locationMap <https://www.geonames.org/2761333/wien-stadt.html> ;
+    ns1:name "Vienna" ;
+    ns1:officialName "Viena"@es ;
+    ns1:parentADM1 <https://sws.geonames.org/2761367/> ;
+    ns1:parentCountry <https://sws.geonames.org/2782113/> ;
+    ns1:parentFeature <https://sws.geonames.org/2761367/> ;
+    ns1:population "1951354" ;
+    ns1:shortName "Wien"@de ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Vienna> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2761333/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Vienna> ;
+    ns3:lat "48.2066" ;
+    ns3:long "16.37341" .
+
+<https://sws.geonames.org/524894/> a ns1:Feature ;
+    ns1:alternateName "Мәскеу"@kk,
+        "Moskovu"@olo,
+        "Moskva"@sv ;
+    ns1:childrenFeatures <https://sws.geonames.org/524894/contains.rdf> ;
+    ns1:countryCode "RU" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM1> ;
+    ns1:locationMap <https://www.geonames.org/524894/moskva.html> ;
+    ns1:name "Moscow" ;
+    ns1:officialName "Moskau"@de,
+        "Moscow"@en,
+        "Moscú"@es,
+        "Moscou"@fr,
+        "Maskva"@lt,
+        "Moskou"@nl,
+        "Moskva"@no,
+        "Москва"@ru,
+        "Москва"@uk ;
+    ns1:parentCountry <https://sws.geonames.org/2017370/> ;
+    ns1:parentFeature <https://sws.geonames.org/11961322/> ;
+    ns1:population "13010112" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Moscow>,
+        <https://sv.wikipedia.org/wiki/Moskva> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/524894/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Moscow> ;
+    ns3:lat "55.76167" ;
+    ns3:long "37.60667" .
+
+<https://sws.geonames.org/6455259/> a ns1:Feature ;
+    ns1:childrenFeatures <https://sws.geonames.org/6455259/contains.rdf> ;
+    ns1:countryCode "FR" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM4> ;
+    ns1:locationMap <https://www.geonames.org/6455259/paris.html> ;
+    ns1:name "Paris" ;
+    ns1:officialName "Paris"@de,
+        "Paris"@en,
+        "Paris"@fr ;
+    ns1:parentADM1 <https://sws.geonames.org/3012874/> ;
+    ns1:parentADM2 <https://sws.geonames.org/2968815/> ;
+    ns1:parentADM3 <https://sws.geonames.org/2988506/> ;
+    ns1:parentCountry <https://sws.geonames.org/3017382/> ;
+    ns1:parentFeature <https://sws.geonames.org/11875708/>,
+        <https://sws.geonames.org/2988506/> ;
+    ns1:population "2190327" ;
+    rdfs:isDefinedBy <https://sws.geonames.org/6455259/about.rdf> ;
+    owl:sameAs <http://id.insee.fr/geo/commune/75056> ;
+    ns3:lat "48.86" ;
+    ns3:long "2.34444" .
+
+<https://sws.geonames.org/6547539/> a ns1:Feature ;
+    ns1:alternateName "Stadt Berlin" ;
+    ns1:childrenFeatures <https://sws.geonames.org/6547539/contains.rdf> ;
+    ns1:countryCode "DE" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM4> ;
+    ns1:locationMap <https://www.geonames.org/6547539/berlin.html> ;
+    ns1:name "Berlin" ;
+    ns1:officialName "Berlin"@de,
+        "Berlin"@en,
+        "Berlin"@fr,
+        "Berlino"@it ;
+    ns1:parentADM1 <https://sws.geonames.org/2950157/> ;
+    ns1:parentADM3 <https://sws.geonames.org/6547383/> ;
+    ns1:parentCountry <https://sws.geonames.org/2921044/> ;
+    ns1:parentFeature <https://sws.geonames.org/6547383/> ;
+    ns1:population "3677472" ;
+    ns1:shortName "Berlin" ;
+    rdfs:isDefinedBy <https://sws.geonames.org/6547539/about.rdf> ;
+    ns3:lat "52.5233" ;
+    ns3:long "13.41377" .
+
+<https://sws.geonames.org/7287176/> a ns1:Feature ;
+    ns1:childrenFeatures <https://sws.geonames.org/7287176/contains.rdf> ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM3> ;
+    ns1:locationMap <https://www.geonames.org/7287176/sion.html> ;
+    ns1:name "Sion" ;
+    ns1:parentADM1 <https://sws.geonames.org/2658205/> ;
+    ns1:parentADM2 <https://sws.geonames.org/6458745/> ;
+    ns1:parentCountry <https://sws.geonames.org/2658434/> ;
+    ns1:parentFeature <https://sws.geonames.org/6458745/> ;
+    ns1:population "34710" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Sion_%28district%29> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/7287176/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Sion_%28district%29> ;
+    ns3:lat "46.23045" ;
+    ns3:long "7.36606" .
+
+<https://sws.geonames.org/7287240/> a ns1:Feature ;
+    ns1:alternateName "Saint Gall"@en,
+        "St. Gall"@en ;
+    ns1:childrenFeatures <https://sws.geonames.org/7287240/contains.rdf> ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM3> ;
+    ns1:locationMap <https://www.geonames.org/7287240/st-gallen.html> ;
+    ns1:name "St. Gallen" ;
+    ns1:officialName "St. Gallen"@de,
+        "St. Gallen"@en,
+        "Saint-Gall"@fr,
+        "San Gallo"@it ;
+    ns1:parentADM1 <https://sws.geonames.org/2658821/> ;
+    ns1:parentADM2 <https://sws.geonames.org/6458770/> ;
+    ns1:parentCountry <https://sws.geonames.org/2658434/> ;
+    ns1:parentFeature <https://sws.geonames.org/6458770/> ;
+    ns1:population "76090" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/St._Gallen> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/7287240/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/St._Gallen> ;
+    ns3:lat "47.42214" ;
+    ns3:long "9.37554" .
+
+<https://sws.geonames.org/7287653/> a ns1:Feature ;
+    ns1:childrenFeatures <https://sws.geonames.org/7287653/contains.rdf> ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM3> ;
+    ns1:locationMap <https://www.geonames.org/7287653/zuzwil-sg.html> ;
+    ns1:name "Zuzwil (SG)" ;
+    ns1:parentADM1 <https://sws.geonames.org/2658821/> ;
+    ns1:parentADM2 <https://sws.geonames.org/6458840/> ;
+    ns1:parentCountry <https://sws.geonames.org/2658434/> ;
+    ns1:parentFeature <https://sws.geonames.org/6458840/> ;
+    ns1:population "4792" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Zuzwil,_St._Gallen> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/7287653/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Zuzwil%2C_St._Gallen> ;
+    ns3:lat "47.47126" ;
+    ns3:long "9.10217" .
+
+<https://sws.geonames.org/745042/> a ns1:Feature ;
+    ns1:alternateName "Miklagard",
+        "Miklagård",
+        "İstanbul Vilâyeti",
+        "اسطنبول"@ar,
+        "Истанбул"@bg,
+        "Istanbul Province"@en,
+        "Provincia de Estambul"@es,
+        "Iostanbúl"@ga,
+        "Istanbul"@no,
+        "Стамбул"@ru,
+        "Стамбул"@uk,
+        "伊斯坦布尔"@zh ;
+    ns1:childrenFeatures <https://sws.geonames.org/745042/contains.rdf> ;
+    ns1:countryCode "TR" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM1> ;
+    ns1:locationMap <https://www.geonames.org/745042/istanbul.html> ;
+    ns1:name "Istanbul" ;
+    ns1:officialName "Istanbul"@de,
+        "Ισταμπούλ"@el,
+        "Istanbul"@en,
+        "イスタンブール"@ja,
+        "İstanbul"@tr ;
+    ns1:parentCountry <https://sws.geonames.org/298795/> ;
+    ns1:parentFeature <https://sws.geonames.org/10922497/> ;
+    ns1:population "15840900" ;
+    ns1:shortName "İst" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Istanbul_Province>,
+        <https://uk.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BC%D0%B1%D1%83%D0%BB_(%D1%96%D0%BB)> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/745042/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Istanbul_Province> ;
+    ns3:lat "41.03508" ;
+    ns3:long "28.98331" .
+
+<https://sws.geonames.org/2761367/> a ns1:Feature ;
+    ns1:alternateName "Viena"@ca,
+        "Vieno"@eo,
+        "Viena"@es,
+        "Vienne"@fr,
+        "Viana"@pt,
+        "Wien"@sv ;
+    ns1:childrenFeatures <https://sws.geonames.org/2761367/contains.rdf> ;
+    ns1:countryCode "AT" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM1> ;
+    ns1:locationMap <https://www.geonames.org/2761367/wien.html> ;
+    ns1:name "Vienna" ;
+    ns1:officialName "Vídeň"@cs,
+        "Wien"@de,
+        "Vienna"@en,
+        "Vienna"@it,
+        "Wien"@no,
+        "Wiedeń"@pl,
+        "Вена"@ru ;
+    ns1:parentCountry <https://sws.geonames.org/2782113/> ;
+    ns1:parentFeature <https://sws.geonames.org/12360395/> ;
+    ns1:population "1951354" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Vienna> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2761367/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Vienna> ;
+    ns3:lat "48.2082" ;
+    ns3:long "16.37169" .
+
+<https://sws.geonames.org/2988506/> a ns1:Feature ;
+    ns1:alternateName "Páras"@ga ;
+    ns1:childrenFeatures <https://sws.geonames.org/2988506/contains.rdf> ;
+    ns1:countryCode "FR" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM3> ;
+    ns1:locationMap <https://www.geonames.org/2988506/paris.html> ;
+    ns1:name "Paris" ;
+    ns1:officialName "Parigi"@it ;
+    ns1:parentADM1 <https://sws.geonames.org/3012874/> ;
+    ns1:parentADM2 <https://sws.geonames.org/2968815/> ;
+    ns1:parentCountry <https://sws.geonames.org/3017382/> ;
+    ns1:parentFeature <https://sws.geonames.org/2968815/> ;
+    ns1:population "4380654" ;
+    ns1:shortName "Paris",
+        "Paris"@en,
+        "París"@es,
+        "Paris"@fr ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2988506/about.rdf> ;
+    owl:sameAs <http://id.insee.fr/geo/arrondissement/751> ;
+    ns3:lat "48.85339" ;
+    ns3:long "2.34864" .
+
+<https://sws.geonames.org/6458745/> a ns1:Feature ;
+    ns1:alternateName "District de Sion"@fr ;
+    ns1:childrenFeatures <https://sws.geonames.org/6458745/contains.rdf> ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM2> ;
+    ns1:locationMap <https://www.geonames.org/6458745/sion-district.html> ;
+    ns1:name "Sion District" ;
+    ns1:officialName "Sion"@fr ;
+    ns1:parentADM1 <https://sws.geonames.org/2658205/> ;
+    ns1:parentCountry <https://sws.geonames.org/2658434/> ;
+    ns1:parentFeature <https://sws.geonames.org/2658205/> ;
+    ns1:population "48447" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Sion_%28district%29> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/6458745/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Sion_%28district%29> ;
+    ns3:lat "46.23343" ;
+    ns3:long "7.34939" .
+
+<https://sws.geonames.org/6458770/> a ns1:Feature ;
+    ns1:alternateName "Wahlkreis St. Gallen"@de ;
+    ns1:childrenFeatures <https://sws.geonames.org/6458770/contains.rdf> ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM2> ;
+    ns1:locationMap <https://www.geonames.org/6458770/wahlkreis-st-gallen.html> ;
+    ns1:name "Wahlkreis St. Gallen" ;
+    ns1:officialName "St. Gallen"@de ;
+    ns1:parentADM1 <https://sws.geonames.org/2658821/> ;
+    ns1:parentCountry <https://sws.geonames.org/2658434/> ;
+    ns1:parentFeature <https://sws.geonames.org/2658821/> ;
+    ns1:population "119598" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/St._Gallen_%28Wahlkreis%29> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/6458770/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/St._Gallen_%28Wahlkreis%29> ;
+    ns3:lat "47.46342" ;
+    ns3:long "9.39052" .
+
+<https://sws.geonames.org/6458840/> a ns1:Feature ;
+    ns1:alternateName "Wahlkreis Wil"@de ;
+    ns1:childrenFeatures <https://sws.geonames.org/6458840/contains.rdf> ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM2> ;
+    ns1:locationMap <https://www.geonames.org/6458840/wahlkreis-wil.html> ;
+    ns1:name "Wahlkreis Wil" ;
+    ns1:officialName "Wil"@de ;
+    ns1:parentADM1 <https://sws.geonames.org/2658821/> ;
+    ns1:parentCountry <https://sws.geonames.org/2658434/> ;
+    ns1:parentFeature <https://sws.geonames.org/2658821/> ;
+    ns1:population "76439" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Wil_%28Wahlkreis%29> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/6458840/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Wil_%28Wahlkreis%29> ;
+    ns3:lat "47.42591" ;
+    ns3:long "9.12451" .
+
+<https://sws.geonames.org/6547383/> a ns1:Feature ;
+    ns1:childrenFeatures <https://sws.geonames.org/6547383/contains.rdf> ;
+    ns1:countryCode "DE" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM3> ;
+    ns1:locationMap <https://www.geonames.org/6547383/berlin-stadt.html> ;
+    ns1:name "Berlin, Stadt" ;
+    ns1:parentADM1 <https://sws.geonames.org/2950157/> ;
+    ns1:parentCountry <https://sws.geonames.org/2921044/> ;
+    ns1:parentFeature <https://sws.geonames.org/2950157/> ;
+    ns1:population "3677472" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Berlin> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/6547383/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Berlin> ;
+    ns3:lat "52.5233" ;
+    ns3:long "13.41377" .
+
+<https://sws.geonames.org/6695072/> a ns1:Feature ;
+    ns1:alternateName "Union Européenne"@fr ;
+    ns1:childrenFeatures <https://sws.geonames.org/6695072/contains.rdf> ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ZN> ;
+    ns1:locationMap <https://www.geonames.org/6695072/european-union.html> ;
+    ns1:name "European Union" ;
+    ns1:officialName "Evropská unie"@cs,
+        "Europese Unie"@nl ;
+    ns1:parentFeature <https://sws.geonames.org/6255148/> ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/European_Union> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/6695072/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/European_Union> ;
+    ns3:lat "50.83857" ;
+    ns3:long "4.37599" .
+
+<https://sws.geonames.org/2658205/> a ns1:Feature ;
+    ns1:alternateName "Valais"@en,
+        "Canton Valais"@fr ;
+    ns1:childrenFeatures <https://sws.geonames.org/2658205/contains.rdf> ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM1> ;
+    ns1:locationMap <https://www.geonames.org/2658205/canton-du-valais.html> ;
+    ns1:name "Valais" ;
+    ns1:officialName "Kanton Wallis"@de,
+        "Canton du Valais"@fr,
+        "Canton Vallese"@it,
+        "발레 주"@ko,
+        "Wallis"@nl,
+        "Chantun Vallais"@rm ;
+    ns1:parentCountry <https://sws.geonames.org/2658434/> ;
+    ns1:parentFeature <https://sws.geonames.org/2658434/> ;
+    ns1:population "348503" ;
+    ns1:shortName "Wallis"@de,
+        "Valais"@fr,
+        "Vallese"@it,
+        "Vallais"@rm ;
+    ns1:wikipediaArticle <https://de.wikipedia.org/wiki/Kanton_Wallis>,
+        <https://en.wikipedia.org/wiki/Valais>,
+        <https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%BB%D0%B5_%28%D0%BA%D0%B0%D0%BD%D1%82%D0%BE%D0%BD%29> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2658205/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Valais> ;
+    ns3:lat "46.22925" ;
+    ns3:long "7.45972" .
+
+<https://sws.geonames.org/2950157/> a ns1:Feature ;
+    ns1:alternateName "Land Berlin",
+        "Berlyn"@af,
+        "በርሊን"@am,
+        "Berlín"@an,
+        "برلين"@ar,
+        "ܒܪܠܝܢ"@arc,
+        "بيرلين"@arz,
+        "Berlín"@ast,
+        "Берлин"@ba,
+        "Горад Берлін"@be,
+        "Берлин"@bg,
+        "বার্লিন"@bn,
+        "པེར་ལིན​།"@bo,
+        "Berlín"@ca,
+        "بەرلین"@ckb,
+        "Berlinu"@co,
+        "Berlín"@cs,
+        "Berlëno"@csb,
+        "Бєрлинъ"@cu,
+        "Берлин"@cv,
+        "Barliń"@dsb,
+        "Βερολίνο"@el,
+        "Berlino"@eo,
+        "Berliin"@et,
+        "Berlín"@ext,
+        "برلین"@fa,
+        "Berliini"@fi,
+        "Bèrlin"@frp,
+        "Berlyn"@fy,
+        "Beirlín"@ga,
+        "柏林"@gan,
+        "Berlín"@gl,
+        "Berleen"@gv,
+        "Pelelina"@haw,
+        "ברלין"@he,
+        "बर्लिन"@hi,
+        "Bèlen"@ht,
+        "Բեռլին"@hy,
+        "Berlín"@is,
+        "Berlino"@it,
+        "ベルリン"@ja,
+        "berlin"@jbo,
+        "ბერლინი"@ka,
+        "Берлин"@kk,
+        "ಬರ್ಲಿನ್"@kn,
+        "베를린"@ko,
+        "Берлин"@koi,
+        "बर्लिन"@ks,
+        "Bälliin"@ksh,
+        "Berlîn"@ku,
+        "Берлин"@kv,
+        "Berolinum"@la,
+        "Berlien"@li,
+        "Berlynas"@lt,
+        "Berlīne"@lv,
+        "Берлин"@mhr,
+        "Pearīni"@mi,
+        "Берлин"@mk,
+        "ബെർലിൻ"@ml,
+        "Берлин"@mn,
+        "बर्लिन"@mr,
+        "Берлин"@mrj,
+        "ဘာလင်မြို့"@my,
+        "Берлин ош"@myv,
+        "Berlino"@nap,
+        "Berlijn"@nl,
+        "Bèrlîn"@nrm,
+        "Берлин"@os,
+        "Balin"@pfl,
+        "برلن"@pnb,
+        "Βερολίνον"@pnt,
+        "برلين"@ps,
+        "Berlim"@pt,
+        "Берлин"@ru,
+        "Берлін"@rue,
+        "Берлин"@sah,
+        "Berlino"@sc,
+        "Birlinu"@scn,
+        "Berlín"@sk,
+        "Baarliin"@so,
+        "Berlini"@sq,
+        "Берлин"@sr,
+        "பெர்லின்"@ta,
+        "బెర్లిన్"@te,
+        "Berlín"@tet,
+        "Берлин"@tg,
+        "เบอร์ลิน"@th,
+        "Берлин"@tt,
+        "Берлин"@udm,
+        "Bérlin"@ug,
+        "Берлін"@uk,
+        "برلن"@ur,
+        "Berlyn"@vls,
+        "בערלין"@yi,
+        "柏林"@zh,
+        "IBerlini"@zu ;
+    ns1:childrenFeatures <https://sws.geonames.org/2950157/contains.rdf> ;
+    ns1:countryCode "DE" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM1> ;
+    ns1:locationMap <https://www.geonames.org/2950157/land-berlin.html> ;
+    ns1:name "Land Berlin" ;
+    ns1:officialName "Berlin",
+        "Berlín"@es,
+        "Berlin"@fr ;
+    ns1:parentCountry <https://sws.geonames.org/2921044/> ;
+    ns1:parentFeature <https://sws.geonames.org/2921044/> ;
+    ns1:population "3677472" ;
+    ns1:shortName "Berlin"@de ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Berlin> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2950157/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Berlin> ;
+    ns3:lat "52.5" ;
+    ns3:long "13.41667" .
+
+<https://sws.geonames.org/2968815/> a ns1:Feature ;
+    ns1:alternateName "Département de Paris",
+        "Paris Department"@en ;
+    ns1:childrenFeatures <https://sws.geonames.org/2968815/contains.rdf> ;
+    ns1:countryCode "FR" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM2> ;
+    ns1:locationMap <https://www.geonames.org/2968815/paris.html> ;
+    ns1:name "Paris" ;
+    ns1:officialName "Paris"@de,
+        "Paris"@en,
+        "Paris"@es,
+        "Paris"@fr,
+        "Parigi"@it ;
+    ns1:parentADM1 <https://sws.geonames.org/3012874/> ;
+    ns1:parentCountry <https://sws.geonames.org/3017382/> ;
+    ns1:parentFeature <https://sws.geonames.org/3012874/> ;
+    ns1:population "2165423" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Paris> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2968815/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Paris> ;
+    owl:sameAs <http://id.insee.fr/geo/departement/75> ;
+    ns3:lat "48.8534" ;
+    ns3:long "2.3486" .
+
+<https://sws.geonames.org/298795/> a ns1:Feature ;
+    ns1:alternateName "Tourkía",
+        "Turchia",
+        "Turquie",
+        "Türkei",
+        "Turquía"@an,
+        "ܛܘܪܩܝܐ"@arc,
+        "Turquía"@ast,
+        "تورکیا"@ckb,
+        "Турци"@cv,
+        "Tırkiya"@diq,
+        "Republic of Turkey"@en,
+        "Turkio"@eo,
+        "estroict de Sibyle"@fr,
+        "Turquía - Türkiye"@gl,
+        "Turska"@hbs,
+        "תורכיה"@he,
+        "Turkowska"@hsb,
+        "Turkey"@id,
+        "Turkia"@io,
+        "Tyrk Nunaat"@kl,
+        "तुर्किये"@ks,
+        "Turki"@kw,
+        "Turcia"@la,
+        "Turkije"@li,
+        "Törkieë"@li,
+        "Turchia"@nap,
+        "Törkie"@nds,
+        "Tyrkia"@nn,
+        "Turtchie"@nrm,
+        "Turquia"@oc,
+        "Turtsii"@olo,
+        "Турк"@os,
+        "Turkiya"@pam,
+        "Turkie"@pdc,
+        "Welschhinkel"@pdc,
+        "Turkiya"@qu,
+        "Turkya"@qu,
+        "Turkiya"@rmy,
+        "तुर्की"@sa,
+        "Turchìa"@scn,
+        "Turkey"@sco,
+        "Turkiga"@so,
+        "Turqia"@sq,
+        "ประเทศตุรกี"@th,
+        "Turkiya"@tl,
+        "Republic of Türkiye"@tr,
+        "Türkiye Cumhuriyeti"@tr,
+        "تۈركىيە جۇمھۇرىيىتى"@ug,
+        "Türkän"@vo ;
+    ns1:childrenFeatures <https://sws.geonames.org/298795/contains.rdf> ;
+    ns1:countryCode "TR" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.PCLI> ;
+    ns1:locationMap <https://www.geonames.org/298795/republic-of-turkey.html> ;
+    ns1:name "Turkey" ;
+    ns1:neighbouringFeatures <https://sws.geonames.org/298795/neighbours.rdf> ;
+    ns1:officialName "Turkye"@af,
+        "Tɛɛki"@ak,
+        "ቱርክ"@am,
+        "تركيا"@ar,
+        "তুৰ্কি"@as,
+        "Türkiya"@az,
+        "Türkiyə"@az,
+        "Турцыя"@be,
+        "Турция"@bg,
+        "Turiki"@bm,
+        "তুরস্ক"@bn,
+        "ཏུརཀི།"@bo,
+        "Turkia"@br,
+        "Turska"@bs,
+        "Turquia"@ca,
+        "Туркойчоь"@ce,
+        "Turecko"@cs,
+        "Twrci"@cy,
+        "Tyrkiet"@da,
+        "Türkei"@de,
+        "ཊཱར་ཀི"@dz,
+        "Tɛki nutome"@ee,
+        "Τουρκία"@el,
+        "Turkey"@en,
+        "Turkujo"@eo,
+        "Turquía"@es,
+        "Türgi"@et,
+        "Turkia"@eu,
+        "ترکیه"@fa,
+        "Turkii"@ff,
+        "Turkki"@fi,
+        "Turkaland"@fo,
+        "Turquie"@fr,
+        "Turkije"@fy,
+        "an Tuirc"@ga,
+        "An Tuirc"@gd,
+        "Turquía"@gl,
+        "તુર્કી"@gu,
+        "Turkiyya"@ha,
+        "טורקיה"@he,
+        "तुर्की"@hi,
+        "Turska"@hr,
+        "Törökország"@hu,
+        "Թուրքիա"@hy,
+        "Turchia"@ia,
+        "Turki"@id,
+        "Turkey"@ig,
+        "Tyrkland"@is,
+        "Turchia"@it,
+        "トルコ"@ja,
+        "トルコ共和国"@ja,
+        "Turki"@jv,
+        "თურქეთი"@ka,
+        "Uturuki"@ki,
+        "Түркия"@kk,
+        "Tyrkia"@kl,
+        "តួកគី"@km,
+        "ಟರ್ಕಿ"@kn,
+        "터키"@ko,
+        "تُرکی"@ks,
+        "Tirkiye"@ku,
+        "Түркия"@ky,
+        "Tierkei"@lb,
+        "Ttake"@lg,
+        "Tiliki"@ln,
+        "ເທີຄີ"@lo,
+        "Turkija"@lt,
+        "Tuluki"@lu,
+        "Turcija"@lv,
+        "Torkia"@mg,
+        "Турција"@mk,
+        "തുർക്കി"@ml,
+        "Турк"@mn,
+        "तुर्की"@mr,
+        "Turki"@ms,
+        "it-Turkija"@mt,
+        "တူရကီ"@my,
+        "Tyrkia"@nb,
+        "Thekhi"@nd,
+        "टर्की"@ne,
+        "Turkije"@nl,
+        "Tyrkia"@no,
+        "Turkanmua"@olo,
+        "ତୁର୍କୀ"@or,
+        "ਤੁਰਕੀ"@pa,
+        "Turcja"@pl,
+        "ترکي"@ps,
+        "Turquia"@pt,
+        "Turquía"@qu,
+        "Tirchia"@rm,
+        "Turukiya"@rn,
+        "Turcia"@ro,
+        "Турция"@ru,
+        "ترڪي"@sd,
+        "Durka"@se,
+        "Turukïi"@sg,
+        "තුර්කිය"@si,
+        "Turecko"@sk,
+        "Turčija"@sl,
+        "Turkey"@sn,
+        "Turki"@so,
+        "Turqi"@sq,
+        "Турска"@sr,
+        "Turkiet"@sv,
+        "Uturuki"@sw,
+        "துருக்கி"@ta,
+        "టర్కీ"@te,
+        "Туркия"@tg,
+        "ตุรกี"@th,
+        "ቱርክ"@ti,
+        "Türkiýe"@tk,
+        "Toake"@to,
+        "Türkiye"@tr,
+        "Төркия"@tt,
+        "تۈركىيە"@ug,
+        "Туреччина"@uk,
+        "ترکی"@ur,
+        "Turkiya"@uz,
+        "Thổ Nhĩ Kỳ"@vi,
+        "Tirki"@wo,
+        "טערקיי"@yi,
+        "Tọọki"@yo,
+        "土耳其"@zh,
+        "i-Turkey"@zu ;
+    ns1:parentFeature <https://sws.geonames.org/12217088/>,
+        <https://sws.geonames.org/6269133/>,
+        <https://sws.geonames.org/7729897/> ;
+    ns1:population "82319724" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Turkey>,
+        <https://ru.wikipedia.org/wiki/%D0%A2%D1%83%D1%80%D1%86%D0%B8%D1%8F> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/298795/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Turkey> ;
+    ns3:lat "39" ;
+    ns3:long "35" .
+
+<https://sws.geonames.org/6269131/> a ns1:Feature ;
+    ns1:alternateName "Anglia",
+        "Inggréh"@ace,
+        "Engeland"@af,
+        "Ngyiresi"@ak,
+        "ኢንግላንድ"@am,
+        "Anglaterra"@an,
+        "Englaland"@ang,
+        "إنجلترا"@ar,
+        "انجلترا"@arz,
+        "ইংলেণ্ড"@as,
+        "Inglaterra"@ast,
+        "İngiltərə"@az,
+        "اینگیلیس"@azb,
+        "Англия"@ba,
+        "Inglatera"@bcl,
+        "Англія"@be,
+        "Англия"@bg,
+        "इंग्लैण्ड"@bh,
+        "ইংল্যান্ড"@bn,
+        "Engleska"@bs,
+        "Англи"@bxr,
+        "Anglaterra"@ca,
+        "Ĭng-gáik-làng"@cdo,
+        "Англи"@ce,
+        "Inglatera"@ceb,
+        "ئینگلتەرا"@ckb,
+        "Anglie"@cs,
+        "Англи"@cv,
+        "Lloegr"@cy,
+        "İngıltere"@diq,
+        "Engelska"@dsb,
+        "އިނގިރޭސިވިލާތް"@dv,
+        "Αγγλία"@el,
+        "Anglio"@eo,
+        "Inglaterra"@es,
+        "Inglismaa"@et,
+        "Ingalaterra"@eu,
+        "Ingalaterra"@ext,
+        "انگلستان"@fa,
+        "Englanti"@fi,
+        "Ongland"@fo,
+        "Angleterre"@fr,
+        "Ingelun"@frr,
+        "Anglie"@fur,
+        "Ingelân"@fy,
+        "Sasana"@ga,
+        "Sasainn"@gd,
+        "Inglaterra"@gl,
+        "Ingyaterra"@gn,
+        "इंग्लंड"@gom,
+        "Sostyn"@gv,
+        "Engleska"@hbs,
+        "אנגליה"@he,
+        "इंग्लैण्ड"@hi,
+        "Engleska"@hr,
+        "Jendźelska"@hsb,
+        "Angletè"@ht,
+        "Անգլիա"@hy,
+        "Anglaterra"@ia,
+        "Inggris"@id,
+        "Inglatera"@ilo,
+        "Inghilterra"@it,
+        "イングランド"@ja,
+        "Inggris"@jv,
+        "ინგლისი"@ka,
+        "Angliya"@kaa,
+        "Ngeretha"@ki,
+        "Англия"@kk,
+        "អង់គ្លេស"@km,
+        "ಇಂಗ್ಲೆಂಡ್"@kn,
+        "잉글랜드"@ko,
+        "Îngilistan"@ku,
+        "Pow Sows"@kw,
+        "Англия"@ky,
+        "Inglaterra"@lad,
+        "Англия"@lez,
+        "Ingeland"@li,
+        "Inghiltæra"@lij,
+        "Inghiltèra"@lmo,
+        "Ingɛlandi"@ln,
+        "ປະເທດອັງກິດ"@lo,
+        "Anglija"@lt,
+        "Anglija"@lv,
+        "英格蘭"@lzh,
+        "Ingarangi"@mi,
+        "Inggirih"@min,
+        "Англија"@mk,
+        "ഇംഗ്ലണ്ട്"@ml,
+        "Англи"@mn,
+        "इंग्लंड"@mr,
+        "Ingilterra"@mt,
+        "အင်္ဂလန်နိုင်ငံ"@my,
+        "Inglatlalpan"@nah,
+        "Eng-tē"@nan,
+        "Ngreterra"@nap,
+        "इङ्ल्यान्ड"@ne,
+        "Angliétèrre"@nrm,
+        "Anglatèrra"@oc,
+        "ଇଂଲଣ୍ଡ"@or,
+        "Англис"@os,
+        "ਇੰਗਲੈਂਡ"@pa,
+        "Inglaterra"@pam,
+        "Inglatera"@pap,
+        "Ingueltière"@pcd,
+        "Ingland"@pih,
+        "Anglia"@pl,
+        "Anghiltèra"@pms,
+        "انگلستان"@pnb,
+        "انګلېنډ"@ps,
+        "Inglaterra"@pt,
+        "Inlatirra"@qu,
+        "Engalterra"@rm,
+        "Англия"@ru,
+        "इङ्ग्लेण्ड्"@sa,
+        "Inghilterra"@sc,
+        "Nglaterra"@scn,
+        "Ingland"@sco,
+        "Englánda"@se,
+        "Onglėjė"@sgs,
+        "Anglicko"@sk,
+        "Anglija"@sl,
+        "Ingiriiska"@so,
+        "Енглеска"@sr,
+        "Ngilandi"@ss,
+        "Engelane"@st,
+        "Änglound"@stq,
+        "Inggris"@su,
+        "England"@sv,
+        "Uingereza"@sw,
+        "Yngland"@szl,
+        "இங்கிலாந்து"@ta,
+        "ఇంగ్లాండు"@te,
+        "Inglaterra"@tet,
+        "Англия"@tg,
+        "ประเทศอังกฤษ"@th,
+        "Angliýa"@tk,
+        "Inglatera"@tl,
+        "ʻIngilani"@to,
+        "Inglan"@tpi,
+        "İngiltere"@tr,
+        "Англия"@tt,
+        "Англія"@uk,
+        "انگلستان"@ur,
+        "Angliya"@uz,
+        "Inghiltera"@vec,
+        "Anglii"@vep,
+        "Anh"@vi,
+        "Iengeland"@vls,
+        "Linglän"@vo,
+        "Inglaterra"@war,
+        "英格兰"@wuu,
+        "Инглишин Таңһч"@xal,
+        "INgesi"@xh,
+        "ინგლისი"@xmf,
+        "ענגלאנד"@yi,
+        "Ilẹ̀gẹ̀ẹ́sì"@yo,
+        "英倫"@yue,
+        "Iengeland"@zea,
+        "英格兰"@zh,
+        "INgilandi"@zu ;
+    ns1:childrenFeatures <https://sws.geonames.org/6269131/contains.rdf> ;
+    ns1:countryCode "GB" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM1> ;
+    ns1:locationMap <https://www.geonames.org/6269131/england.html> ;
+    ns1:name "England" ;
+    ns1:officialName "Bro-Saoz"@br,
+        "England"@de,
+        "England"@en,
+        "Anglujo"@eo,
+        "Engeland"@nl,
+        "England"@no ;
+    ns1:parentCountry <https://sws.geonames.org/2635167/> ;
+    ns1:parentFeature <https://sws.geonames.org/2635167/> ;
+    ns1:population "56286961" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/England> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/6269131/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/England> ;
+    ns3:lat "52.16045" ;
+    ns3:long "-0.70312" .
+
+<https://sws.geonames.org/6295630/> a ns1:Feature ;
+    ns1:alternateName "Ер шары"@ba,
+        "পৃথিবী"@bn,
+        "Terra"@ca,
+        "el món"@ca,
+        "Welt"@de,
+        "Υδρόγειος"@el,
+        "Globe"@en,
+        "World"@en,
+        "Mondo"@eo,
+        "Tero"@eo,
+        "Mundo"@es,
+        "Planeta Tierra"@es,
+        "Tierra"@es,
+        "el planeta"@es,
+        "nuestro planeta"@es,
+        "Lurra"@eu,
+        "Mundua"@eu,
+        "Maa"@fi,
+        "Terre"@fr,
+        "पृथ्वी"@hi,
+        "Globo"@it,
+        "Mondo"@it,
+        "Pianeta Terra"@it,
+        "La terdi"@jbo,
+        "Orbs"@la,
+        "Terra"@la,
+        "Aarde"@nl,
+        "Jorden"@no,
+        "Tiksimuyu"@qu,
+        "Pamânt"@ro,
+        "Җир шары"@tt ;
+    ns1:childrenFeatures <https://sws.geonames.org/6295630/contains.rdf> ;
+    ns1:featureClass <https://www.geonames.org/ontology#L> ;
+    ns1:featureCode <https://www.geonames.org/ontology#L.AREA> ;
+    ns1:locationMap <https://www.geonames.org/6295630/earth.html> ;
+    ns1:name "Earth" ;
+    ns1:officialName "Erde"@de,
+        "Γη"@el,
+        "Monde"@fr,
+        "Föld"@hu,
+        "Terra"@it,
+        "Zeme"@lv,
+        "Ziemia"@pl,
+        "Земля"@ru,
+        "Yeryüzü"@tr ;
+    ns1:population "6814400000" ;
+    ns1:shortName "Earth"@en ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Earth> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/6295630/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Earth> ;
+    ns3:lat "0" ;
+    ns3:long "0" .
+
+<https://sws.geonames.org/2017370/> a ns1:Feature ;
+    ns1:alternateName "Rossiya",
+        "Rossiyskaya Federatsiya",
+        "Rossiyskaya Sovetskaya Federativnaya Sotsialisticheskaya Respublika",
+        "Russian Socialist Federative Soviet Republic",
+        "Russian Soviet Federated Socialist Republic",
+        "Russian Soviet Federative Socialist Republic",
+        "Руска Федерация"@bg,
+        "রাশিয়া"@bn,
+        "ڕووسیا"@ckb,
+        "Russische Föderation"@de,
+        "Russian Federation"@en,
+        "Russian Socialist Federative Soviet Republic"@en,
+        "Russian Soviet Federated Socialist Republic"@en,
+        "Russian Soviet Federative Socialist Republic"@en,
+        "רוסיה, הפדרציה של"@he,
+        "Ruska Federacija"@hr,
+        "Federazione Russa"@it,
+        "Den russiske føderasjon"@nb,
+        "Russische Federatie"@nl,
+        "Den russiske føderasjon"@nn,
+        "Россией"@ru,
+        "России"@ru,
+        "Российская Федерация"@ru,
+        "Ruská federácia"@sk,
+        "Ruska federacija"@sl,
+        "Rusya Federasyonu"@tr ;
+    ns1:childrenFeatures <https://sws.geonames.org/2017370/contains.rdf> ;
+    ns1:countryCode "RU" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.PCLI> ;
+    ns1:locationMap <https://www.geonames.org/2017370/russian-federation.html> ;
+    ns1:name "Russia" ;
+    ns1:neighbouringFeatures <https://sws.geonames.org/2017370/neighbours.rdf> ;
+    ns1:officialName "Russia"@aa,
+        "Rusland"@af,
+        "Rɔhyea"@ak,
+        "ሩስያ"@am,
+        "روسيا"@ar,
+        "ৰাছিয়া"@as,
+        "Rusiya"@az,
+        "Расійская Федэрацыя"@be,
+        "Расія"@be,
+        "Русия"@bg,
+        "Irisi"@bm,
+        "রাশিয়া"@bn,
+        "ཨུ་རུ་སུ་"@bo,
+        "Rusia"@br,
+        "Rusija"@bs,
+        "Rússia"@ca,
+        "Росси"@ce,
+        "Rusko"@cs,
+        "Rwsia"@cy,
+        "Rusland"@da,
+        "Russland"@de,
+        "ཨུ་རུ་སུ"@dz,
+        "Russia nutome"@ee,
+        "Ρωσία"@el,
+        "Russia"@en,
+        "Rusujo"@eo,
+        "Rusia"@es,
+        "Venemaa"@et,
+        "Errusia"@eu,
+        "روسیه"@fa,
+        "Riisii"@ff,
+        "Venäjä"@fi,
+        "Russland"@fo,
+        "Russie"@fr,
+        "Ruslân"@fy,
+        "an Rúis"@ga,
+        "An Ruis"@gd,
+        "Rusia"@gl,
+        "રશિયા"@gu,
+        "Rasha"@ha,
+        "חבר המדינות הרוסיות"@he,
+        "रूस"@hi,
+        "Rusija"@hr,
+        "Oroszország"@hu,
+        "Ռուսաստան"@hy,
+        "Russia"@ia,
+        "Rusia"@id,
+        "Rụssịa"@ig,
+        "ꊉꇆꌦ"@ii,
+        "Rússland"@is,
+        "Russia"@it,
+        "ロシア"@ja,
+        "Rusia"@jv,
+        "რუსეთი"@ka,
+        "Urusi"@ki,
+        "Ресей"@kk,
+        "Ruslandi"@kl,
+        "រុស្ស៊ី"@km,
+        "ರಷ್ಯಾ"@kn,
+        "러시아"@ko,
+        "روٗس"@ks,
+        "Rûsya"@ku,
+        "Russi"@kw,
+        "Россия"@ky,
+        "Russland"@lb,
+        "Lasa"@lg,
+        "Risí"@ln,
+        "ຣັດເຊຍ"@lo,
+        "Rusija"@lt,
+        "Risi"@lu,
+        "Krievija"@lv,
+        "Rosia"@mg,
+        "Rūhia"@mi,
+        "Русија"@mk,
+        "റഷ്യ"@ml,
+        "Орос"@mn,
+        "रशिया"@mr,
+        "Rusia"@ms,
+        "ir-Russja"@mt,
+        "ရုရှား"@my,
+        "Russland"@nb,
+        "Rashiya"@nd,
+        "रूस"@ne,
+        "Rusland"@nl,
+        "Russland"@nn,
+        "Russland"@no,
+        "Russia"@oc,
+        "Russia"@om,
+        "ରୁଷିଆ"@or,
+        "Уӕрӕсе"@os,
+        "ਰੂਸ"@pa,
+        "Rosja"@pl,
+        "روسیه"@ps,
+        "Rússia"@pt,
+        "Rusia"@qu,
+        "Russia"@rm,
+        "Uburusiya"@rn,
+        "Federația Rusă"@ro,
+        "Rusia"@ro,
+        "Россия"@ru,
+        "रष्यदेश:"@sa,
+        "روس"@sd,
+        "Ruošša"@se,
+        "Rusïi"@sg,
+        "රුසියාව"@si,
+        "Rusko"@sk,
+        "Rusija"@sl,
+        "Russia"@sn,
+        "Ruush"@so,
+        "Rusi"@sq,
+        "Русија"@sr,
+        "Rusia"@su,
+        "Ryssland"@sv,
+        "Urusi"@sw,
+        "ரஷ்யா"@ta,
+        "రష్యా"@te,
+        "Русия"@tg,
+        "รัสเซีย"@th,
+        "ራሺያ"@ti,
+        "Russiýa"@tk,
+        "Lūsia"@to,
+        "Rusya"@tr,
+        "Россия"@tt,
+        "رۇسىيە"@ug,
+        "Російська Федерація"@uk,
+        "Росія"@uk,
+        "روس"@ur,
+        "Rossiya"@uz,
+        "Nga"@vi,
+        "Risi"@wo,
+        "רוסלאַנד"@yi,
+        "Rọṣia"@yo,
+        "俄罗斯"@zh,
+        "i-Russia"@zu ;
+    ns1:parentFeature <https://sws.geonames.org/11812265/>,
+        <https://sws.geonames.org/12217089/>,
+        <https://sws.geonames.org/7729884/> ;
+    ns1:population "144478050" ;
+    ns1:shortName "Venäjä"@krl,
+        "Ven'a"@olo ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Russia> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2017370/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Russia> ;
+    ns3:lat "60" ;
+    ns3:long "100" .
+
+<https://sws.geonames.org/2782113/> a ns1:Feature ;
+    ns1:alternateName "Austria",
+        "Österreich",
+        "Austria"@an,
+        "অস্ট্রিয়া"@bn,
+        "Republik Österreich"@de,
+        "ཨས་ཊི་ཡ"@dz,
+        "Republic of Austria"@en,
+        "ອົອດສະເຕຼຍ"@lo,
+        "Awstrija"@mt,
+        "Öösterriek"@nds,
+        "Østerrike"@nn,
+        "Avstrii"@olo ;
+    ns1:childrenFeatures <https://sws.geonames.org/2782113/contains.rdf> ;
+    ns1:countryCode "AT" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.PCLI> ;
+    ns1:locationMap <https://www.geonames.org/2782113/republic-of-austria.html> ;
+    ns1:name "Austria" ;
+    ns1:neighbouringFeatures <https://sws.geonames.org/2782113/neighbours.rdf> ;
+    ns1:officialName "Oostenryk"@af,
+        "Ɔstria"@ak,
+        "ኦስትሪያ"@am,
+        "النمسا"@ar,
+        "অষ্ট্ৰিয়া"@as,
+        "Avstriya"@az,
+        "Аўстрыя"@be,
+        "Австрия"@bg,
+        "Otirisi"@bm,
+        "অস্ট্রিয়া"@bn,
+        "ཨསྟྲི་ཡ།"@bo,
+        "Aostria"@br,
+        "Austrija"@bs,
+        "República d'Àustria"@ca,
+        "Àustria"@ca,
+        "Австри"@ce,
+        "نەمسا"@ckb,
+        "Rakousko"@cs,
+        "Awstria"@cy,
+        "Østrig"@da,
+        "Österreich"@de,
+        "ཨཱོས་ཊྲི་ཡ"@dz,
+        "Austria nutome"@ee,
+        "Αυστρία"@el,
+        "Austria"@en,
+        "Aŭstrujo"@eo,
+        "Austria"@es,
+        "Austria"@et,
+        "Austria"@eu,
+        "اتريش"@fa,
+        "اتریش"@fa,
+        "Otiriis"@ff,
+        "Itävalta"@fi,
+        "Eysturríki"@fo,
+        "Autriche"@fr,
+        "Eastenryk"@fy,
+        "an Ostair"@ga,
+        "An Ostair"@gd,
+        "Austria"@gl,
+        "ઑસ્ટ્રિયા"@gu,
+        "Ostiriya"@ha,
+        "אוסטריה"@he,
+        "ऑस्ट्रिया"@hi,
+        "Austrija"@hr,
+        "Ausztria"@hu,
+        "Ավստրիա"@hy,
+        "Austria"@ia,
+        "Austria"@id,
+        "Austria"@ig,
+        "Austurríki"@is,
+        "Austria"@it,
+        "オーストリア"@ja,
+        "オーストリア共和国"@ja,
+        "Ostenrik"@jv,
+        "ავსტრია"@ka,
+        "Austria"@ki,
+        "Австрия"@kk,
+        "Østrigi"@kl,
+        "អូទ្រីស"@km,
+        "ಆಸ್ಟ್ರಿಯಾ"@kn,
+        "오스트리아"@ko,
+        "آسٹِیا"@ks,
+        "Awistirya"@ku,
+        "Австрия"@ky,
+        "Éisträich"@lb,
+        "Awusituriya"@lg,
+        "Otilisi"@ln,
+        "ອອສເທຣຍ"@lo,
+        "Austrija"@lt,
+        "Otilisi"@lu,
+        "Austrija"@lv,
+        "Aotrisy"@mg,
+        "Австрија"@mk,
+        "ഓസ്ട്രിയ"@ml,
+        "Австри"@mn,
+        "ऑस्ट्रिया"@mr,
+        "Austria"@ms,
+        "l-Awstrija"@mt,
+        "ဩစတြီးယား"@my,
+        "Østerrike"@nb,
+        "Austria"@nd,
+        "अष्ट्रिया"@ne,
+        "Oostenrijk"@nl,
+        "Austerrike"@nn,
+        "Østerrike"@no,
+        "Àustria"@oc,
+        "ଅଷ୍ଟ୍ରିଆ"@or,
+        "ਆਸਟਰੀਆ"@pa,
+        "Austria"@pl,
+        "اتریش"@ps,
+        "Áustria"@pt,
+        "Austria"@qu,
+        "Austria"@rm,
+        "Otirishe"@rn,
+        "Austria"@ro,
+        "Австрия"@ru,
+        "آسٽريا"@sd,
+        "Nuortariika"@se,
+        "Otrîsi"@sg,
+        "ඔස්ට්‍රියාව"@si,
+        "Rakúsko"@sk,
+        "Avstrija"@sl,
+        "Austria"@sn,
+        "Awsteriya"@so,
+        "Austri"@sq,
+        "Аустрија"@sr,
+        "Österrike"@sv,
+        "Austria"@sw,
+        "ஆஸ்திரியா"@ta,
+        "ఆస్ట్రియా"@te,
+        "Австрия"@tg,
+        "ออสเตรีย"@th,
+        "ኦስትሪያ"@ti,
+        "Awstriýa"@tk,
+        "ʻAositulia"@to,
+        "Avusturya"@tr,
+        "Австрия"@tt,
+        "ئاۋىستىرىيە"@ug,
+        "Австрія"@uk,
+        "آسٹریا"@ur,
+        "Avstriya"@uz,
+        "Áo"@vi,
+        "Ótiriis"@wo,
+        "עסטרייך"@yi,
+        "Asítíríà"@yo,
+        "Orílẹ́ède Asítíríà"@yo,
+        "奥地利"@zh,
+        "i-Austria"@zu ;
+    ns1:parentFeature <https://sws.geonames.org/12217848/>,
+        <https://sws.geonames.org/12503661/>,
+        <https://sws.geonames.org/6695072/>,
+        <https://sws.geonames.org/9408659/> ;
+    ns1:population "8847037" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Austria> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2782113/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Austria> ;
+    ns3:lat "47.33333" ;
+    ns3:long "13.33333" .
+
+<https://sws.geonames.org/2921044/> a ns1:Feature ;
+    ns1:alternateName "Duitschland",
+        "Alemaña"@an,
+        "Þēodiscland"@ang,
+        "المانيا"@ar,
+        "ܓܪܡܢ"@arc,
+        "Alemaña"@ast,
+        "Deitschland"@bar,
+        "Deitschlånd"@bar,
+        "Нямеччына"@be,
+        "ئەڵمانیا"@ckb,
+        "Miemieckô"@csb,
+        "Германи"@cv,
+        "Federal Republic of Germany"@en,
+        "West Germany"@en,
+        "Germanio"@eo,
+        "Alemagne"@frp,
+        "Gjermanie"@fur,
+        "A' Ghearmailt"@gd,
+        "Alemaña"@gn,
+        "Yn Ghermaan"@gv,
+        "Nemačka"@hbs,
+        "Němska"@hsb,
+        "Germany"@ig,
+        "Alemania"@ilo,
+        "Germania"@io,
+        "dotygu'e"@jbo,
+        "Jerman"@jv,
+        "Алмания"@kk,
+        "Germania"@la,
+        "Alemania"@lad,
+        "Girimane"@lg,
+        "Duutsjlandj"@li,
+        "Discüssiun sura la fundazziun"@lmo,
+        "Germania"@lmo,
+        "Alémani"@ln,
+        "ജര്‍മ്മനി"@ml,
+        "Germany"@na,
+        "Teutōtitlan"@nah,
+        "Düütschland"@nds,
+        "Tyskland"@nn,
+        "Allemangne"@nrm,
+        "Germuanii"@olo,
+        "Germany"@pam,
+        "Deitschland"@pdc,
+        "Germania"@pms,
+        "جرمني/آلمان"@ps,
+        "Alimaniya"@qu,
+        "Alimanya"@qu,
+        "Jermaniya"@rmy,
+        "Ӂермания"@ro,
+        "Германии"@ru,
+        "Germània"@sc,
+        "Girmania"@scn,
+        "Germany"@sco,
+        "Jarmalka"@so,
+        "Gjermania"@sq,
+        "Tôitšhi"@st,
+        "Jėrman"@su,
+        "Udachi"@sw,
+        "ஜெர்மன்"@ta,
+        "Alemaña"@tet,
+        "Олмон"@tg,
+        "ประเทศเยอรมนี"@th,
+        "สหพันธ์สาธารณรัฐเยอรมนี"@th,
+        "Alemanya"@tl,
+        "Siaman"@tpi,
+        "Heremani"@ty,
+        "Германия"@udm,
+        "Olmoniya"@uz,
+        "Germania"@vec,
+        "Duutsland"@vls,
+        "Deutän"@vo,
+        "Alemanya"@war,
+        "דייטשלאנד"@yi,
+        "德國"@zh,
+        "德意志联邦共和国"@zh,
+        "德意志聯邦共和國"@zh,
+        "IJalimani"@zu ;
+    ns1:childrenFeatures <https://sws.geonames.org/2921044/contains.rdf> ;
+    ns1:countryCode "DE" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.PCLI> ;
+    ns1:locationMap <https://www.geonames.org/2921044/federal-republic-of-germany.html> ;
+    ns1:name "Germany" ;
+    ns1:neighbouringFeatures <https://sws.geonames.org/2921044/neighbours.rdf> ;
+    ns1:officialName "Germany"@aa,
+        "Duitsland"@af,
+        "Gyaaman"@ak,
+        "ጀርመን"@am,
+        "ألمانيا"@ar,
+        "জাৰ্মানী"@as,
+        "Almaniya"@az,
+        "Германія"@be,
+        "Германия"@bg,
+        "Alimaɲi"@bm,
+        "জার্মানি"@bn,
+        "འཇར་མན་"@bo,
+        "Alamagn"@br,
+        "Nemačka"@bs,
+        "Njemačka"@bs,
+        "Alemanya"@ca,
+        "Германи"@ce,
+        "Německo"@cs,
+        "Yr Almaen"@cy,
+        "Tyskland"@da,
+        "Bundesrepublik Deutschland"@de,
+        "Deutschland"@de,
+        "ཇཱར་མ་ནི"@dz,
+        "Germania nutome"@ee,
+        "Γερμανία"@el,
+        "Germany"@en,
+        "Germanujo"@eo,
+        "Alemania"@es,
+        "Saksamaa"@et,
+        "Alemania"@eu,
+        "آلمان"@fa,
+        "Almaañ"@ff,
+        "Saksa"@fi,
+        "Týskland"@fo,
+        "Allemagne"@fr,
+        "Dútslân"@fy,
+        "an Ghearmáin"@ga,
+        "A’ Ghearmailt"@gd,
+        "Alemaña"@gl,
+        "જર્મની"@gu,
+        "Jamus"@ha,
+        "גרמניה"@he,
+        "जर्मनी"@hi,
+        "Njemačka"@hr,
+        "Németország"@hu,
+        "Գերմանիա"@hy,
+        "Germania"@ia,
+        "Jerman"@id,
+        "Jamanị"@ig,
+        "ꄓꇩ"@ii,
+        "Þýskaland"@is,
+        "Germania"@it,
+        "ドイツ"@ja,
+        "ドイツ連邦共和国"@ja,
+        "Jérman"@jv,
+        "გერმანია"@ka,
+        "Njeremani"@ki,
+        "Германия"@kk,
+        "Tysklandi"@kl,
+        "អាល្លឺម៉ង់"@km,
+        "ಜರ್ಮನಿ"@kn,
+        "독일"@ko,
+        "جرمٔنی"@ks,
+        "Almanya"@ku,
+        "Almayn"@kw,
+        "Германия"@ky,
+        "Däitschland"@lb,
+        "Budaaki"@lg,
+        "Alemani"@ln,
+        "ເຢຍລະມັນ"@lo,
+        "Vokietija"@lt,
+        "Alemanu"@lu,
+        "Vācija"@lv,
+        "Alemaina"@mg,
+        "Tiamana"@mi,
+        "Германија"@mk,
+        "ജർമ്മനി"@ml,
+        "Герман"@mn,
+        "जमिन"@mr,
+        "जर्मनी"@mr,
+        "Jerman"@ms,
+        "il-Ġermanja"@mt,
+        "ဂျာမနီ"@my,
+        "Tyskland"@nb,
+        "Germany"@nd,
+        "जर्मनी"@ne,
+        "Duitsland"@nl,
+        "Tyskland"@no,
+        "Alemanha"@oc,
+        "Germany"@om,
+        "ଜର୍ମାନୀ"@or,
+        "Герман"@os,
+        "ਜਰਮਨੀ"@pa,
+        "Niemcy"@pl,
+        "المان"@ps,
+        "Alemanha"@pt,
+        "Alemania"@qu,
+        "Germania"@rm,
+        "Ubudage"@rn,
+        "Germania"@ro,
+        "Германия"@ru,
+        "जर्मनीदेश:"@sa,
+        "جرمني"@sd,
+        "Duiska"@se,
+        "Duiskka"@se,
+        "Zâmani"@sg,
+        "ජර්මනිය"@si,
+        "Nemecko"@sk,
+        "Nemčija"@sl,
+        "Germany"@sn,
+        "Jarmal"@so,
+        "Gjermani"@sq,
+        "Немачка"@sr,
+        "Jérman"@su,
+        "Tyskland"@sv,
+        "Ujerumani"@sw,
+        "ஜெர்மனி"@ta,
+        "జర్మనీ"@te,
+        "Германия"@tg,
+        "เยอรมนี"@th,
+        "เยอรมัน"@th,
+        "ጀርመን"@ti,
+        "Germaniýa"@tk,
+        "Siamane"@to,
+        "Almanya"@tr,
+        "Германия"@tt,
+        "گېرمانىيە"@ug,
+        "Німеччина"@uk,
+        "جرمنی"@ur,
+        "Germaniya"@uz,
+        "Đức"@vi,
+        "Almaañ"@wo,
+        "דייטשלאַנד"@yi,
+        "Jámánì"@yo,
+        "Orílẹ́ède Gemani"@yo,
+        "德国"@zh,
+        "i-Germany"@zu ;
+    ns1:parentFeature <https://sws.geonames.org/12217848/>,
+        <https://sws.geonames.org/12503661/>,
+        <https://sws.geonames.org/6695072/>,
+        <https://sws.geonames.org/9408659/> ;
+    ns1:population "82927922" ;
+    ns1:shortName "Bundesrepublik"@de,
+        "ФРГ"@ru ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Germany>,
+        <https://uk.wikipedia.org/wiki/%D0%9D%D1%96%D0%BC%D0%B5%D1%87%D1%87%D0%B8%D0%BD%D0%B0> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2921044/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Germany> ;
+    ns3:lat "51.5" ;
+    ns3:long "10.5" .
+
+<https://sws.geonames.org/3012874/> a ns1:Feature ;
+    ns1:alternateName "Ile de France"@de,
+        "Francilio (Parizio)"@eo,
+        "Région parisienne"@fr,
+        "Ilha de França"@pt ;
+    ns1:childrenFeatures <https://sws.geonames.org/3012874/contains.rdf> ;
+    ns1:countryCode "FR" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM1> ;
+    ns1:locationMap <https://www.geonames.org/3012874/ile-de-france.html> ;
+    ns1:name "Île-de-France" ;
+    ns1:officialName "Île-de-France"@de,
+        "Île-de-France Region"@en,
+        "Isla de Francia"@es,
+        "Région Île-de-France"@fr,
+        "Île-de-France"@fr,
+        "일드프랑스"@ko ;
+    ns1:parentCountry <https://sws.geonames.org/3017382/> ;
+    ns1:parentFeature <https://sws.geonames.org/3017382/> ;
+    ns1:population "12262544" ;
+    ns1:shortName "Île-de-France"@en ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/%C3%8Ele-de-France_%28region%29>,
+        <https://ru.wikipedia.org/wiki/%D0%98%D0%BB%D1%8C-%D0%B4%D0%B5-%D0%A4%D1%80%D0%B0%D0%BD%D1%81_%28%D1%80%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%29> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/3012874/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/%C3%8Ele-de-France_%28region%29> ;
+    owl:sameAs <http://id.insee.fr/geo/region/11> ;
+    ns3:lat "48.7" ;
+    ns3:long "2.5" .
+
+<https://sws.geonames.org/3017382/> a ns1:Feature ;
+    ns1:alternateName "Republic of France",
+        "ፈረንሣይ"@am,
+        "Franzia"@an,
+        "Francland"@ang,
+        "ܦܪܢܣܐ"@arc,
+        "Francia"@ast,
+        "Frankreich"@bar,
+        "Bro-C'hall"@br,
+        "Huák-guók"@cdo,
+        "Pransiya"@ceb,
+        "فەڕەنسا"@ckb,
+        "Francia"@co,
+        "Francëjô"@csb,
+        "Франци"@cv,
+        "ފަރަންސޭސިވިލާތް"@dv,
+        "Francio"@eo,
+        "République Française"@fr,
+        "France"@frp,
+        "France"@fur,
+        "Frankryk"@fy,
+        "ફ્રાઁસ"@gu,
+        "Yn Rank"@gv,
+        "Francuska"@hbs,
+        "फ़्राँस"@hi,
+        "फ्रांस"@hi,
+        "Francoska"@hsb,
+        "Frans"@ht,
+        "Perancis"@id,
+        "Francia"@ilo,
+        "Francia"@io,
+        "fasygu'e"@jbo,
+        "फ्रांस"@ks,
+        "Frankrish"@ksh,
+        "Pow Frynk"@kw,
+        "Francia"@la,
+        "Francogallia"@la,
+        "Fransia"@lad,
+        "Frankriek"@li,
+        "Francja"@lmo,
+        "Falansia"@ln,
+        "ഫ്രാന്‍സ്"@ml,
+        "Франц улс"@mn,
+        "France"@na,
+        "Frankriek"@nds,
+        "Frankrike"@nn,
+        "Fransia"@nov,
+        "France"@nrm,
+        "France"@pam,
+        "Fransa"@pms,
+        "Fransiya"@qu,
+        "Fransya"@qu,
+        "Franchiya"@rmy,
+        "फ्रांस"@sa,
+        "Frantza"@sc,
+        "Francia"@scn,
+        "Fraunce"@sco,
+        "Faransiiska"@so,
+        "Franca"@sq,
+        "France"@st,
+        "Fransa"@tet,
+        "ประเทศฝรั่งเศส"@th,
+        "Pransya"@tl,
+        "Pranis"@tpi,
+        "Farāni"@ty,
+        "Франция"@udm,
+        "فرانسىيە"@ug,
+        "Franzsa"@vec,
+        "Vrankriek"@vls,
+        "Vrankryk"@vls,
+        "Fransän"@vo,
+        "Fransya"@war ;
+    ns1:childrenFeatures <https://sws.geonames.org/3017382/contains.rdf> ;
+    ns1:countryCode "FR" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.PCLI> ;
+    ns1:locationMap <https://www.geonames.org/3017382/republic-of-france.html> ;
+    ns1:name "France" ;
+    ns1:neighbouringFeatures <https://sws.geonames.org/3017382/neighbours.rdf> ;
+    ns1:officialName "France",
+        "France"@aa,
+        "Frankryk"@af,
+        "Frɛnkyeman"@ak,
+        "ፈረንሳይ"@am,
+        "فرنسا"@ar,
+        "ফ্ৰান্স"@as,
+        "Fransa"@az,
+        "Францыя"@be,
+        "Франция"@bg,
+        "Faransi"@bm,
+        "ফ্রান্স"@bn,
+        "ཕ་རཱན་སི།"@bo,
+        "Frañs"@br,
+        "Francuska"@bs,
+        "França"@ca,
+        "Франци"@ce,
+        "Francie"@cs,
+        "Ffrainc"@cy,
+        "Frankrig"@da,
+        "Frankreich"@de,
+        "ཕྲཱནས"@dz,
+        "France nutome"@ee,
+        "Γαλλία"@el,
+        "France"@en,
+        "Francujo"@eo,
+        "Francia"@es,
+        "Prantsusmaa"@et,
+        "Frantzia"@eu,
+        "فرانسه"@fa,
+        "Farayse"@ff,
+        "Ranska"@fi,
+        "Frakland"@fo,
+        "France"@fr,
+        "Frankrijk"@fy,
+        "an Fhrainc"@ga,
+        "An Fhraing"@gd,
+        "Francia"@gl,
+        "ફ્રાંસ"@gu,
+        "Faransa"@ha,
+        "צרפת"@he,
+        "फ़्रांस"@hi,
+        "Francuska"@hr,
+        "Franciaország"@hu,
+        "Ֆրանսիա"@hy,
+        "Francia"@ia,
+        "Prancis"@id,
+        "France"@ig,
+        "ꃔꇩ"@ii,
+        "Frakkland"@is,
+        "Francia"@it,
+        "フランス"@ja,
+        "フランス共和国"@ja,
+        "Prancis"@jv,
+        "საფრანგეთი"@ka,
+        "Ubaranja"@ki,
+        "Франция"@kk,
+        "Frankrigi"@kl,
+        "បារាំង"@km,
+        "ಫ್ರಾನ್ಸ್"@kn,
+        "프랑스"@ko,
+        "فرانس"@ks,
+        "Fransa"@ku,
+        "Pow Frenk"@kw,
+        "Франция"@ky,
+        "Frankräich"@lb,
+        "Bufalansa"@lg,
+        "Falánsɛ"@ln,
+        "ຝຣັ່ງ"@lo,
+        "Prancūzija"@lt,
+        "Nfalanse"@lu,
+        "Francija"@lv,
+        "Frantsa"@mg,
+        "Wīwī"@mi,
+        "Франција"@mk,
+        "ഫ്രാൻസ്"@ml,
+        "Франц"@mn,
+        "फ्रान्स"@mr,
+        "Perancis"@ms,
+        "Franza"@mt,
+        "ပြင်သစ်"@my,
+        "Frankrike"@nb,
+        "Furansi"@nd,
+        "फ्रान्स"@ne,
+        "Frankrijk"@nl,
+        "Frankrike"@no,
+        "França"@oc,
+        "France"@om,
+        "ଫ୍ରାନ୍ସ"@or,
+        "Франц"@os,
+        "ਫ਼ਰਾਂਸ"@pa,
+        "Francja"@pl,
+        "فرانسه"@ps,
+        "França"@pt,
+        "Francia"@qu,
+        "Frantscha"@rm,
+        "Ubufaransa"@rn,
+        "Franța"@ro,
+        "Франция"@ru,
+        "फ़्रांस:"@sa,
+        "فرانس"@sd,
+        "Frankriika"@se,
+        "Farânzi"@sg,
+        "ප්‍රංශය"@si,
+        "Francúzsko"@sk,
+        "Francija"@sl,
+        "France"@sn,
+        "Faransiis"@so,
+        "Francë"@sq,
+        "Француска"@sr,
+        "Prancis"@su,
+        "Frankrike"@sv,
+        "Ufaransa"@sw,
+        "பிரான்ஸ்"@ta,
+        "ఫ్రాన్స్‌"@te,
+        "Фаронса"@tg,
+        "ฝรั่งเศส"@th,
+        "ፈረንሳይ"@ti,
+        "Fransiýa"@tk,
+        "Falanisē"@to,
+        "Fransa"@tr,
+        "Франция"@tt,
+        "فىرانسىيە"@ug,
+        "Франція"@uk,
+        "فرانس"@ur,
+        "Fransiya"@uz,
+        "Pháp"@vi,
+        "Faraans"@wo,
+        "פֿראַנקרייך"@yi,
+        "Faranse"@yo,
+        "法国"@zh,
+        "i-France"@zu ;
+    ns1:parentFeature <https://sws.geonames.org/12217088/>,
+        <https://sws.geonames.org/12503661/>,
+        <https://sws.geonames.org/6695072/>,
+        <https://sws.geonames.org/9408659/> ;
+    ns1:population "66987244" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/France>,
+        <https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B0%D0%BD%D1%86%D0%B8%D1%8F> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/3017382/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/France> ;
+    owl:sameAs <http://rdf.insee.fr/geo/PAYS_FR> ;
+    ns3:lat "46" ;
+    ns3:long "2" .
+
+<https://sws.geonames.org/2635167/> a ns1:Feature ;
+    ns1:alternateName "Britain",
+        "VK"@af,
+        "ዩናይትድ ኪንግደም"@am,
+        "Reino Unito"@an,
+        "Geāned Cynerīce"@ang,
+        "ܡܠܟܘܬܐ ܡܚܝܕܬܐ"@arc,
+        "Reinu Uníu"@ast,
+        "Reinu Xuníu"@ast,
+        "BK"@az,
+        "Vaeinigts Kinireich"@bar,
+        "Велікабрытанія"@be,
+        "Обединено кралство"@bg,
+        "Обединено кралство Великобритания и Северна Ирландия"@bg,
+        "যুক্তরাজ্য"@bn,
+        "Rouantelezh Unanet Breizh-Veur ha Norzhiwerzhon"@br,
+        "Ujedinjeno Kraljevstvo"@bs,
+        "RU"@ca,
+        "Ĭng-guók"@cdo,
+        "شانشینی یەکگرتوو"@ckb,
+        "Regnu Unitu"@co,
+        "Velká Británie"@cs,
+        "DU"@cy,
+        "Det Forenede Kongerige"@da,
+        "Det Forenede Kongerige Storbritannien og Nordirland"@da,
+        "Großbritannien"@de,
+        "Großbritannien und Nordirland"@de,
+        "UK"@de,
+        "Britain"@en,
+        "U.K"@en,
+        "U.K."@en,
+        "United Kingdom of Great Britain and Northern Ireland"@en,
+        "Unuiĝinta Reĝlando de Granda Britio kaj Nord-Irlando"@eo,
+        "Suurbritannia"@et,
+        "EB"@eu,
+        "پادشاهی متحد بریتانیای کبیر و ایرلند شمالی"@fa,
+        "پادشاهی متحده"@fa,
+        "Yhdistynyt kuningaskunta"@fi,
+        "Stóra Bretland"@fo,
+        "UK"@fo,
+        "R.-u."@fr,
+        "Royômo-Uni"@frp,
+        "Grut-Brittanje"@fy,
+        "An Rìoghachd Aonaichte"@gd,
+        "RU"@gl,
+        "Reino Unido - United Kingdom"@gl,
+        "Reeriaght Unnaneysit"@gv,
+        "Ujedinjeno Kraljevstvo"@hbs,
+        "הממלכה המאוחדת"@he,
+        "संयुक्त राजशाही"@hi,
+        "Ujedinjena Kraljevina"@hr,
+        "Ujedinjeno Kraljevstvo"@hr,
+        "Zjednoćene kralestwo"@hsb,
+        "Wayòm Ini"@ht,
+        "Մեծ Բրիտանիա"@hy,
+        "Միավորված Թագավորություն"@hy,
+        "Britania Raya"@id,
+        "Inggris Raya"@id,
+        "Nagkaykaysa a Pagarian"@ilo,
+        "Unionita Rejio"@io,
+        "UK"@it,
+        "გაერთიანებული სამეფო"@ka,
+        "დიდი ბრიტანეთი"@ka,
+        "Keyaniya Yekbûyî"@ku,
+        "Keyatiya Yekbûyî ya Brîtaniya Mezin û Îrlanda"@ku,
+        "Britanniarum Regnum"@la,
+        "Regnum Unitum"@la,
+        "Groussbritannien an Nordirland"@lb,
+        "Vereineg Keuninkriek"@li,
+        "Regno Unïo"@lij,
+        "JK"@lt,
+        "Jungtinė Didžiosios Britanijos ir Šiaurės Airijos Karalystė"@lt,
+        "Lielbritānija"@lv,
+        "Kīngitanga Kotahi"@mi,
+        "Обединето Кралство"@mk,
+        "Renju Unit"@mt,
+        "Vereenigt Königriek vun Grootbritannien un Noordirland"@nds,
+        "Groot-Brittannië"@nl,
+        "Storbritannia"@nn,
+        "Det forente kongerike Storbritannia og Nord-Irland"@no,
+        "Rouoyaume Unni"@nrm,
+        "Reialme Unit"@oc,
+        "Yhtys Kuningaskundu"@olo,
+        "Pisanmetung a Ka-arian"@pam,
+        "Regn Unì"@pms,
+        "بريتانيا"@ps,
+        "Hukllachasqa Qhapaq Suyu"@qu,
+        "Reginavel Unì da la Gronda Britannia ed Irlanda dal Nord"@rm,
+        "Phandlo Thagaripen la Bare Britaniyako thai le Nordutne Irlandesko"@rmy,
+        "Regatul Unit al Marii Britanii și al Irlandei de Nord"@ro,
+        "Соединенное Королевство"@ru,
+        "Regnu Unitu"@scn,
+        "Unitit Kinrick"@sco,
+        "Velika Britanija"@sl,
+        "Združeno kraljestvo Velike Britanije in Severne Irske"@sl,
+        "Mbretëria e Bashkuar e Britanisë së Madhe dhe Irlandës së Veriut"@sq,
+        "Уједињено Краљевство"@sr,
+        "ஐக்கிய இராச்சியம்"@ta,
+        "Reinu Naklibur"@tet,
+        "Подшоҳии Муттаҳида"@tg,
+        "Nagkakaisang Kaharain"@tl,
+        "Nagkakaisang Kaharian"@tl,
+        "Birleşik Krallık"@tr,
+        "Paratāne"@ty,
+        "بۈيۈك بېرىتانىيە"@ug,
+        "Великобританія"@uk,
+        "برطانیہ"@ur,
+        "Vương quốc Liên hiệp Anh và Bắc Ireland"@vi,
+        "פאראייניגטע קעניגרייך"@yi,
+        "英國"@zh ;
+    ns1:childrenFeatures <https://sws.geonames.org/2635167/contains.rdf> ;
+    ns1:countryCode "GB" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.PCLI> ;
+    ns1:locationMap <https://www.geonames.org/2635167/united-kingdom-of-great-britain-and-northern-ireland.html> ;
+    ns1:name "United Kingdom" ;
+    ns1:neighbouringFeatures <https://sws.geonames.org/2635167/neighbours.rdf> ;
+    ns1:officialName "United Kingdom"@aa,
+        "Verenigde Koninkryk"@af,
+        "Ahendiman Nkabom"@ak,
+        "ዩኬ"@am,
+        "المملكة المتحدة"@ar,
+        "ইউ. কে."@as,
+        "Böyük Britaniya"@az,
+        "Вялікабрытанія"@be,
+        "Вялікая Брытанія"@be,
+        "Великобритания"@bg,
+        "Angilɛtɛri"@bm,
+        "ইউ কে"@bn,
+        "དབྱིན་ཇི་"@bo,
+        "UK"@bs,
+        "Regne Unit de la Gran Bretanya i Irlanda del Nord"@ca,
+        "Йоккха Британи"@ce,
+        "Spojené království"@cs,
+        "Y Deyrnas Unedig"@cy,
+        "Storbritannien"@da,
+        "Vereinigtes Königreich"@de,
+        "ཡུ་ནཱའི་ཊེཌ་ ཀིང་ཌམ"@dz,
+        "United Kingdom nutome"@ee,
+        "ΗΒ"@el,
+        "United Kingdom"@en,
+        "Unuiĝinta Reĝlando"@eo,
+        "Reino Unido"@es,
+        "ÜK"@et,
+        "Erresuma Batua"@eu,
+        "انگلستان"@fa,
+        "بریتانیا"@fa,
+        "Laamateeri Rentundi"@ff,
+        "Britannia"@fi,
+        "Royaume Uni"@fr,
+        "VK"@fy,
+        "RA"@ga,
+        "RA"@gd,
+        "યુ.કે."@gu,
+        "Rywvaneth Unys"@gv,
+        "Biritaniya"@ha,
+        "בריטניה"@he,
+        "यू॰के॰"@hi,
+        "Velika Britanija"@hr,
+        "Egyesült Királyság"@hu,
+        "Միացյալ Թագավորություն"@hy,
+        "Regno Unite"@ia,
+        "Kerajaan Inggris"@id,
+        "UK"@ig,
+        "ꑱꇩ"@ii,
+        "Bretland"@is,
+        "Stóra-Bretland"@is,
+        "Regno Unito"@it,
+        "英国"@ja,
+        "KM"@jv,
+        "გაერთ.სამ."@ka,
+        "Ngeretha"@ki,
+        "Ұлыбритания"@kk,
+        "Tuluit Nunaat"@kl,
+        "ច.អ."@km,
+        "ಯು.ಕೆ."@kn,
+        "영국"@ko,
+        "یُنایٹِڑ کِنگڈَم"@ks,
+        "KY"@ku,
+        "Rywvaneth Unys"@kw,
+        "УБ"@ky,
+        "Groussbritannien"@lb,
+        "Bungereza"@lg,
+        "Angɛlɛtɛ́lɛ"@ln,
+        "ສະຫະລາດຊະອະນາຈັກ"@lo,
+        "Jungtinė Karalystė"@lt,
+        "Angeletele"@lu,
+        "Apvienotā Karaliste"@lv,
+        "Lielbritānijas un Ziemeļīrijas Apvienotā Karaliste"@lv,
+        "Angletera"@mg,
+        "Hononga o Piritene"@mi,
+        "ОК"@mk,
+        "യുണൈറ്റഡ് കിംഗ്ഡം"@ml,
+        "ИБ"@mn,
+        "यू.के."@mr,
+        "UK"@ms,
+        "UK"@mt,
+        "ယူကေ"@my,
+        "Storbritannia"@nb,
+        "United Kingdom"@nd,
+        "युके"@ne,
+        "Verenigd Koninkrijk"@nl,
+        "Storbritannia"@no,
+        "Reiaume Unit"@oc,
+        "United Kingdom"@om,
+        "ୟୁକେ"@or,
+        "Стыр Британи"@os,
+        "ਯੂ.ਕੇ."@pa,
+        "Zjednoczone Królestwo Wielkiej Brytanii"@pl,
+        "برتانیه"@ps,
+        "Reino Unido"@pt,
+        "Reino Unido"@qu,
+        "Reginavel Unì"@rm,
+        "Ubwongereza"@rn,
+        "Regatul Unit"@ro,
+        "Британия"@ru,
+        "संयुक्त राष्ट्र:"@sa,
+        "برطانيه"@sd,
+        "Stuorra-Británnia"@se,
+        "Ködörögbïä--Ôko"@sg,
+        "එ.රා"@si,
+        "UK"@sk,
+        "Združeno kraljestvo (V. Britanija in S. Irska)"@sl,
+        "United Kingdom"@sn,
+        "UK"@so,
+        "MB"@sq,
+        "УК"@sr,
+        "Britania Raya"@su,
+        "Storbritannien"@sv,
+        "Ufalme wa Muungano"@sw,
+        "யூகே"@ta,
+        "యు.కె."@te,
+        "Шоҳигарии Муттаҳида"@tg,
+        "สหราชอาณาจักร"@th,
+        "ዩኬይ"@ti,
+        "Birleşen Patyşalyk"@tk,
+        "Pilitānia"@to,
+        "İngiltere"@tr,
+        "Берләшкән Корольлек"@tt,
+        "ئەنگلىيە"@ug,
+        "Велика Британія"@uk,
+        "Сполучене Королівство"@uk,
+        "یو کے"@ur,
+        "Britaniya"@uz,
+        "Vương quốc Anh"@vi,
+        "Ruwaayom Ini"@wo,
+        "פֿאַראייניגטע קעניגרייך"@yi,
+        "Gẹ̀ẹ́sì"@yo,
+        "英国"@zh,
+        "i-U.K."@zu ;
+    ns1:parentFeature <https://sws.geonames.org/11812257/>,
+        <https://sws.geonames.org/7729883/> ;
+    ns1:population "66488991" ;
+    ns1:shortName "RU"@br,
+        "Great Britain"@en,
+        "UK"@en,
+        "RU"@es,
+        "VK"@nl,
+        "Wielka Brytania"@pl ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/United_Kingdom>,
+        <https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2635167/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/United_Kingdom> ;
+    ns3:lat "54.75844" ;
+    ns3:long "-2.69531" .
+
+<https://sws.geonames.org/2658821/> a ns1:Feature ;
+    ns1:alternateName "كانتون سانت غالن"@ar,
+        "St. Gall"@en,
+        "St. Gallen"@en,
+        "Cantone di San Gallo"@it ;
+    ns1:childrenFeatures <https://sws.geonames.org/2658821/contains.rdf> ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.ADM1> ;
+    ns1:locationMap <https://www.geonames.org/2658821/kanton-st-gallen.html> ;
+    ns1:name "Saint Gall" ;
+    ns1:officialName "Kanton St. Gallen"@de,
+        "Canton of St. Gallen"@en,
+        "Canton de Saint-Gall"@fr,
+        "Canton San Gallo"@it,
+        "장크트갈렌 주"@ko,
+        "Chantun Son Gagl"@rm ;
+    ns1:parentCountry <https://sws.geonames.org/2658434/> ;
+    ns1:parentFeature <https://sws.geonames.org/11919717/>,
+        <https://sws.geonames.org/6692542/> ;
+    ns1:population "514504" ;
+    ns1:shortName "Sankt Gallen"@de,
+        "St. Gallen"@de,
+        "Saint Gall"@en,
+        "Saint Gallen"@en,
+        "Saint-Gall"@fr,
+        "San Gallo"@it,
+        "Son Gagl"@rm ;
+    ns1:wikipediaArticle <https://de.wikipedia.org/wiki/Kanton_St._Gallen>,
+        <https://en.wikipedia.org/wiki/Canton_of_St._Gallen> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2658821/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Canton_of_St._Gallen> ;
+    ns3:lat "47.25" ;
+    ns3:long "9.25" .
+
+<https://sws.geonames.org/2658434/> a ns1:Feature ;
+    ns1:alternateName "Confederatio Helvetica",
+        "Helvetia",
+        "Schweiz",
+        "Schweizerische Eidgenossenschaft",
+        "Schwiz",
+        "Suisse",
+        "Svizzera",
+        "Swiss Confederation",
+        "Switzerland",
+        "সুইজর্লণ্ড"@bn,
+        "Schweizerische Eidgenossenschaft"@de,
+        "Confédération Suisse"@fr,
+        "स्विस"@hi,
+        "Confederazione Svizzera"@it,
+        "Sveits"@nn ;
+    ns1:childrenFeatures <https://sws.geonames.org/2658434/contains.rdf> ;
+    ns1:countryCode "CH" ;
+    ns1:featureClass <https://www.geonames.org/ontology#A> ;
+    ns1:featureCode <https://www.geonames.org/ontology#A.PCLI> ;
+    ns1:locationMap <https://www.geonames.org/2658434/switzerland.html> ;
+    ns1:name "Switzerland" ;
+    ns1:neighbouringFeatures <https://sws.geonames.org/2658434/neighbours.rdf> ;
+    ns1:officialName "Switserland"@af,
+        "Swetzaland"@ak,
+        "ስዊዘርላንድ"@am,
+        "سويسرا"@ar,
+        "চুইজাৰলেণ্ড"@as,
+        "İsveçrə"@az,
+        "Швейцарыя"@be,
+        "Швейцария"@bg,
+        "Suwisi"@bm,
+        "সুইজারল্যান্ড"@bn,
+        "ཧྲུད་ཧྲི།"@bo,
+        "Suis"@br,
+        "Švicarska"@bs,
+        "Suïssa"@ca,
+        "Швейцари"@ce,
+        "Švýcarsko"@cs,
+        "Y Swistir"@cy,
+        "Schweiz"@da,
+        "Schweiz"@de,
+        "སུ་ཝིཊ་ཛར་ལེནཌ"@dz,
+        "Switzerland nutome"@ee,
+        "Ελβετία"@el,
+        "Switzerland"@en,
+        "Svisujo"@eo,
+        "Suiza"@es,
+        "Ĩveits"@et,
+        "Šveits"@et,
+        "Suitza"@eu,
+        "سوئیس"@fa,
+        "Suwiis"@ff,
+        "Sveitsi"@fi,
+        "Sveis"@fo,
+        "Suisse"@fr,
+        "Switserlân"@fy,
+        "an Eilvéis"@ga,
+        "An Eilbheis"@gd,
+        "Suíza"@gl,
+        "સ્વિટ્ઝર્લૅન્ડ"@gu,
+        "Suwizalan"@ha,
+        "שווייץ"@he,
+        "שוויץ"@he,
+        "स्विटज़रलैंड"@hi,
+        "Švicarska"@hr,
+        "Svájc"@hu,
+        "Շվեյցարիա"@hy,
+        "Suissa"@ia,
+        "Swiss"@id,
+        "Switzerland"@ig,
+        "Sviss"@is,
+        "Svizzera"@it,
+        "スイス"@ja,
+        "スイス連邦"@ja,
+        "Switserlan"@jv,
+        "შვეიცარია"@ka,
+        "Uswisi"@ki,
+        "Швейцария"@kk,
+        "Schweizi"@kl,
+        "ស្វ៊ីស"@km,
+        "ಸ್ವಿಟ್ಜರ್ಲ್ಯಾಂಡ್"@kn,
+        "스위스"@ko,
+        "سُوِزَرلینڑ"@ks,
+        "Swîsre"@ku,
+        "Швейцария"@ky,
+        "Confoederatio Helvetica"@la,
+        "Schwäiz"@lb,
+        "Switizirandi"@lg,
+        "Swisɛ"@ln,
+        "ສະວິດເຊີແລນ"@lo,
+        "Šveicarija"@lt,
+        "Swise"@lu,
+        "Šveice"@lv,
+        "Soisa"@mg,
+        "Швајцарија"@mk,
+        "സ്വിറ്റ്സർലാൻഡ്"@ml,
+        "Швейцарь"@mn,
+        "स्वित्झर्लंड"@mr,
+        "Switzerland"@ms,
+        "l-Iżvizzera"@mt,
+        "ဆွစ်ဇာလန်"@my,
+        "Sveits"@nb,
+        "Switzerland"@nd,
+        "स्विजरल्याण्ड"@ne,
+        "Zwitserland"@nl,
+        "Sveits"@no,
+        "Soïssa"@oc,
+        "ସ୍ୱିଜରଲ୍ୟାଣ୍ଡ"@or,
+        "ਸਵਿਟਜ਼ਰਲੈਂਡ"@pa,
+        "Szwajcaria"@pl,
+        "سویس"@ps,
+        "Suíça"@pt,
+        "Suiza"@qu,
+        "Svizra"@rm,
+        "Ubusuwisi"@rn,
+        "Elveția"@ro,
+        "Швейцария"@ru,
+        "سوئزرلينڊ"@sd,
+        "Šveica"@se,
+        "Sûîsi"@sg,
+        "ස්විස්ටර්ලන්තය"@si,
+        "Švajčiarsko"@sk,
+        "Švica"@sl,
+        "Switzerland"@sn,
+        "Swiiserlaand"@so,
+        "Zvicër"@sq,
+        "Швајцарска"@sr,
+        "Schweiz"@sv,
+        "Uswisi"@sw,
+        "ஸ்விட்சர்லாந்து"@ta,
+        "స్విట్జర్లాండ్"@te,
+        "Швейтсария"@tg,
+        "สวิตเซอร์แลนด์"@th,
+        "ስዊዘርላንድ"@ti,
+        "Şweýsariýa"@tk,
+        "Suisilani"@to,
+        "İsviçre"@tr,
+        "Швейцария"@tt,
+        "شىۋېتسارىيە"@ug,
+        "Швейцарія"@uk,
+        "سوئٹزر لینڈ"@ur,
+        "Shveytsariya"@uz,
+        "Thụy Sĩ"@vi,
+        "Siwis"@wo,
+        "שווייץ"@yi,
+        "switiṣilandi"@yo,
+        "瑞士"@zh,
+        "i-Switzerland"@zu ;
+    ns1:parentFeature <https://sws.geonames.org/12217848/>,
+        <https://sws.geonames.org/12503661/>,
+        <https://sws.geonames.org/9408659/>,
+        <https://sws.geonames.org/9961132/> ;
+    ns1:population "8516543" ;
+    ns1:wikipediaArticle <https://en.wikipedia.org/wiki/Switzerland> ;
+    rdfs:isDefinedBy <https://sws.geonames.org/2658434/about.rdf> ;
+    rdfs:seeAlso <https://dbpedia.org/resource/Switzerland> ;
+    ns3:lat "47.00016" ;
+    ns3:long "8.01427" .
+
